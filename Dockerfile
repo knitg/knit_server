@@ -17,10 +17,13 @@ WORKDIR /app
 # RUN pip install pipenv
 RUN pip install -r requirements.txt
 
+# RUN python manage.py collectstatic
 RUN python manage.py makemigrations
 RUN python manage.py migrate
 # RUN pipenv install
 EXPOSE 8000
 #Run Server
 # ENTRYPOINT ["./entrypoint.sh"]
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "./app/manage.py", "runserver", "0.0.0.0:8000"]
+# define the default command to run when starting the container
+CMD ["gunicorn", "--chdir", "app", "--bind", ":8000", "knit_server.wsgi"]

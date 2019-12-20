@@ -1,8 +1,51 @@
 version: '2.1'
 
 services:
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - .:/ljingo
+      - ./nginx:/etc/nginx/conf.d
+      - ./static:/static
+    depends_on:
+      - knit_server
   knit_server:
-    image: knit_server
+    image: mgurjala/knit_server_img:latest
+    volumes: 
+      - .:/app
     build: .
     ports:
       - 8000:8000
+    networks: 
+      - app-network
+
+  # nginx:
+  #   image: nginx:1.13
+  #   # ports:
+  #   #   - 80:80
+  #   ports:
+  #     - 80:80
+  #     - 443:443
+  #     - 8000:8000
+  #   expose:
+  #     - "80"
+  #     - "443"
+  #     - "8000"
+  #   volumes:
+  #     - ./nginx/conf.d:/etc/nginx/conf.d
+  #   depends_on:  # <-- wait for djangoapp to be "ready" before starting this service
+  #     - knit_server
+  #   networks:  # <-- here
+  #     - app-network
+
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
+
+
+
+
