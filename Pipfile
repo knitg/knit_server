@@ -12,6 +12,7 @@ mysqlclient = "*"
 django-model-utils = "*"
 pillow = "*"
 gunicorn = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
