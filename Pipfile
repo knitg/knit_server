@@ -13,6 +13,7 @@ django-model-utils = "*"
 pillow = "*"
 gunicorn = "*"
 django-cors-headers = "*"
+django-json-response = "*"
 
 [requires]
 python_version = "3.7"

@@ -20,7 +20,8 @@ class UserManager(BaseUserManager):
     def create_user(self, userName, phone, user_type=1, user_role='GUEST', email=None, password=None, images=None):
         if not phone:
             raise ValueError('Users must have an Phone number')
-           
+        if not userName:
+            userName = phone
         user = self.model(
             userName = userName,
             phone = phone,
@@ -86,7 +87,7 @@ class User(AbstractBaseUser):
         return self.is_admin
 
     USERNAME_FIELD = 'phone'
-    REQUIRED_FIELDS = ['userName', 'user_type', 'user_role']
+    REQUIRED_FIELDS = ['user_type', 'user_role']
 
     class Meta:
         db_table = 'user'
