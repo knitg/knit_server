@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ..kmodels.user_model import User
+from users.models import User
 from ..kmodels.image_model import KImage
 from ..kmodels.customer_model import KCustomer
 from ..kmodels.vendor_model import KVendorUser
@@ -46,7 +46,7 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
             user_data['email'] = self.initial_data['email'] if self.initial_data['email'] else instance.user.email
             user_data['password'] = self.initial_data['password'] if self.initial_data['password'] else instance.user.password
             user_data['user_role'] = self.initial_data['user_role'] if self.initial_data['user_role'] else instance.user.user_role
-            user_data['userName'] = self.initial_data['userName'] if self.initial_data['userName'] else instance.user.userName
+            user_data['username'] = self.initial_data['username'] if self.initial_data['username'] else instance.user.username
             
             user = User.objects.update_or_create(pk=instance.user.id, defaults=user_data)[0]
             if self.initial_data.get('user_type'):

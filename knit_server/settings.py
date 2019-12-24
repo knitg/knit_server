@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+import datetime
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,7 +26,7 @@ SECRET_KEY = '8vawxcx622k3=#3sv--80=teohkp-6o&pt48&bt4=+k)i%4(mi'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+APPEND_SLASH=False
 
 # Application definition
 
@@ -38,17 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.auth.hashers', 
-    'users',
-    'products',
     'rest_framework',
     'corsheaders',
+    'djoser',
+    "rest_framework.authtoken", 
+    'users',
+    'products',
 ]
-PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
-    'django.contrib.auth.hashers.Argon2PasswordHasher',
-    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -81,20 +78,30 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'knit_server.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'knit_db',
+    #     'USER': 'kuser',
+    #     'PASSWORD':'password',
+    #     'HOST':'139.59.13.86',
+    #     'PORT': '3306',
+    #     'OPTIONS': {
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+    #     }
+    # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'knit_db',
-        'USER': 'kuser',
-        'PASSWORD':'password',
-        'HOST':'139.59.13.86',
+        'USER': 'knit',
+        'PASSWORD':'site',
+        'HOST':'localhost',
         'PORT': '3306',
         'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+            'init_command': "SET foreign_key_checks = 0;"
         }
     }
 }
@@ -121,10 +128,39 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-ACCOUNT_EMAIL_REQUIRED = False
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'phone'
+# ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+# ACCOUNT_EMAIL_REQUIRED = False
+# ACCOUNT_USERNAME_REQUIRED = False
+# ACCOUNT_AUTHENTICATION_METHOD = 'username'
+
+AUTH_USER_MODEL = 'users.User'
+
+
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+]
+# AUTH_USER_MODEL = 'users.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+} 
+
+DJOSER = {
+    'SERIALIZERS': {
+        'current_user': 'users.kserializers.user_serializer.CurrentUserSerializer',
+        'user_create': 'users.kserializers.user_serializer.UserSerializer',
+        'user': 'users.kserializers.user_serializer.CurrentUserSerializer',
+        
+    }
+}
+ 
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/

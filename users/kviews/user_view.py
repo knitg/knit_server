@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 
-from ..kmodels.user_model import User
+from users.models import User
 from ..kserializers.user_serializer import UserSerializer
 
 from rest_framework.response import Response

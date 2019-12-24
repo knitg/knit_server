@@ -4,7 +4,7 @@ from django.db import migrations, models
 import django.db.models.deletion
 import django.utils.timezone
 import users.kmodels.image_model
-import users.kmodels.user_model
+import users.models
 
 
 class Migration(migrations.Migration):
@@ -71,7 +71,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('last_login', models.DateTimeField(blank=True, null=True, verbose_name='last login')),
-                ('userName', models.CharField(max_length=50, unique=True, verbose_name='User Name')),
+                ('username', models.CharField(max_length=50, unique=True, verbose_name='User Name')),
                 ('phone', models.CharField(max_length=50, unique=True, verbose_name='Phone Number')),
                 ('email', models.EmailField(blank=True, max_length=254, null=True, verbose_name='Email Address')),
                 ('password', models.CharField(max_length=128, verbose_name='password')),
@@ -88,7 +88,7 @@ class Migration(migrations.Migration):
                 'managed': True,
             },
             managers=[
-                ('objects', users.kmodels.user_model.UserManager()),
+                ('objects', users.models.UserManager()),
             ],
         ),
         migrations.CreateModel(

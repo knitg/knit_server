@@ -3,7 +3,7 @@ from datetime import datetime
 from django.utils.timezone import now
 from django.conf import settings
 from .address_model import KAddress
-from .user_model import User
+from users.models import User
 
 class KCustomer(models.Model):
     name= models.CharField(null=True, max_length=80,  default=None)  

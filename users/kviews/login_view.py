@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 from django.contrib.auth import authenticate
-from ..kmodels.user_model import User
+from users.models import User
 from ..kserializers.customer_serializer import KCustomerSerializer
 from ..kserializers.user_serializer import UserSerializer
 
@@ -37,13 +37,13 @@ class LoginViewSet(viewsets.ModelViewSet):
         password_valid = User.check_password(password, "pbkdf2_sha256")
         # if password is None:
         #     return Response({'error': 'Please provide valid email/phone and password'}, status=HTTP_400_BAD_REQUEST)
-        # user = authenticate(userName=username)
+        # user = authenticate(username=username)
         if email is not None:
             user = User.objects.filter(email=email, password=password).values()
         elif phone is not None:
             user = User.objects.filter(phone=phone, password=password).values()
         else:
-            user = User.objects.filter(userName=username, password=password).values()
+            user = User.objects.filter(username=username, password=password).values()
             # user = authenticate(username=username, password=password)
  
         if not user:

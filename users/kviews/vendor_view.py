@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 
-from ..kmodels.user_model import User
+from users.models import User
 from ..kmodels.vendor_model import KVendorUser
 from ..kserializers.vendor_serializer import KVendorUserSerializer
 
@@ -25,7 +25,7 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         user_data['email'] = request.data.get('email') if request.data.get('email') else None
         user_data['password'] = request.data.get('password') if request.data.get('password') else None
         user_data['user_role'] = request.data.get('user_role') if request.data.get('user_role') else None
-        user_data['userName'] = request.data.get('userName') if request.data.get('userName') else None
+        user_data['username'] = request.data.get('username') if request.data.get('username') else None
         if request.FILES:
              request.data['images'] = request.FILES
 
