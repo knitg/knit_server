@@ -12,10 +12,7 @@ services:
     depends_on:
       - knit_server
   knit_server:
-    image: mgurjala/knit_server_img:latest
-    volumes: 
-      - .:/app
-    build: .
+    image: mgurjala/knit_server_img:1.0
     ports:
       - 8000:8000
     networks: 

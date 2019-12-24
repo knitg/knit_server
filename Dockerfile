@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /app
 
-COPY ./app /app
+COPY ./ /app
 WORKDIR /app
 
 # RUN pip install --upgrade pip
@@ -23,6 +23,6 @@ RUN python manage.py migrate
 EXPOSE 8000
 #Run Server
 # ENTRYPOINT ["./entrypoint.sh"]
-# CMD ["python", "./app/manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 # define the default command to run when starting the container
-CMD ["gunicorn", "--chdir", "app", "--bind", ":8000", "knit_server.wsgi"]
+# CMD ["gunicorn", "--bind", ":8000", "knit_server.wsgi"]
