@@ -86,7 +86,7 @@ class User(AbstractBaseUser):
     def has_module_perms(self, app_label):
         return self.is_admin
 
-    USERNAME_FIELD = 'username'
+    USERNAME_FIELD = 'phone'
     REQUIRED_FIELDS = ['user_type', 'user_role']
 
     class Meta:

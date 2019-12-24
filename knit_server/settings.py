@@ -128,10 +128,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-# ACCOUNT_EMAIL_REQUIRED = False
-# ACCOUNT_USERNAME_REQUIRED = False
-# ACCOUNT_AUTHENTICATION_METHOD = 'username'
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_EMAIL_REQUIRED = False
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
 
 AUTH_USER_MODEL = 'users.User'
 
@@ -152,14 +152,15 @@ DJOSER = {
     'SERIALIZERS': {
         'current_user': 'users.kserializers.user_serializer.CurrentUserSerializer',
         'user_create': 'users.kserializers.user_serializer.UserSerializer',
-        'user': 'users.kserializers.user_serializer.CurrentUserSerializer',
-        
+        'user': 'users.kserializers.user_serializer.CurrentUserSerializer',        
     }
 }
  
 
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
+    "users.backends.EmailOrPhoneOrUsernameModelBackend",
+    "users.backends.EmailAuthenticate",    
 ]
 
 # Internationalization
