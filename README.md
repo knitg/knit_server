@@ -4,6 +4,8 @@ Knit is complete stitching solution.
 ## PREREQUISITE
 Python 3.x
 
+## USING DOCKER
+
 ## STEPS
 Clone the repo and [cd] to the directory
 
