@@ -2,12 +2,28 @@
 Knit is complete stitching solution.
 
 ## PREREQUISITE
-Python 3.x
+Python version 3.7.2
+Mysql server
+
+Clone the repo and [cd] to the directory
 
 ## USING DOCKER
 
-## STEPS
-Clone the repo and [cd] to the directory
+``` bash
+## Pull the latest image
+docker pull mgurjala/knit_server_img:2.0
+
+------------(Or)----------------
+
+## Build the image and run the tag
+docker build -t <docker hub user name>/<application name>:<tag name> .# all in the folder
+docker run <docker hub user name>/<application name>:<tag name>
+
+```
+
+
+
+### MANUAL STEPS
 
 Run below commands
 ```bash
@@ -72,3 +88,4 @@ GET /product/stitchproducts/<stitch_id> - Get products against to Stitch categor
 GET /product/stitchtypeproducts/<stitch_type_id> - Get products against to Stitch type Category
  
 ```
+
