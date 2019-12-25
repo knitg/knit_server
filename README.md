@@ -1,9 +1,9 @@
 # KNIT API APPLICATION
-Knit is complete stitching solution.
+Knit application apis
 
 ## PREREQUISITE
-Python version 3.7.2
-Mysql server
+1. Python version 3.7.2
+2. Mysql server
 
 Clone the repo and [cd] to the directory
 
