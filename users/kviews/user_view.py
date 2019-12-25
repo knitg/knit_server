@@ -9,6 +9,11 @@ from rest_framework.response import Response
 from rest_framework import status 
  
 
+class UserListViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
