@@ -91,28 +91,28 @@ WSGI_APPLICATION = 'knit_server.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'knit_db',
-    #     'USER': 'kuser',
-    #     'PASSWORD':'password',
-    #     'HOST':'139.59.13.86',
-    #     'PORT': '3306',
-    #     'OPTIONS': {
-    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-    #     }
-    # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'knit_db',
-        'USER': 'knit',
-        'PASSWORD':'site',
-        'HOST':'localhost',
+        'USER': 'kuser',
+        'PASSWORD':'password',
+        'HOST':'139.59.13.86',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET foreign_key_checks = 0;"
         }
-    }
+    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'knit_db',
+    #     'USER': 'knit',
+    #     'PASSWORD':'site',
+    #     'HOST':'localhost',
+    #     'PORT': '3306',
+    #     'OPTIONS': {
+    #         'init_command': "SET foreign_key_checks = 0;"
+    #     }
+    # }
 }
 
 
