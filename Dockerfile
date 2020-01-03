@@ -20,12 +20,14 @@ COPY . /opt/services/djangoapp/src
 # RUN pip install pipenv
 RUN pip install -r requirements.txt
 
-RUN python manage.py makemigrations
-RUN python manage.py migrate
+# RUN python manage.py makemigrations
+# RUN python manage.py makemigrations users
+# RUN python manage.py makemigrations	products
+# RUN python manage.py migrate
 # RUN pipenv install
 EXPOSE 8000
 #Run Server
 # ENTRYPOINT ["./entrypoint.sh"]
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 # define the default command to run when starting the container
 # CMD ["gunicorn", "--bind", ":8000", "knit_server.wsgi"]

@@ -14,32 +14,18 @@ services:
     networks: 
       - app-network
   knit_server:
-    image: mgurjala/knit_server_img:4.0
-    # build: .
+    image: mgurjala/knit_server_img:5.0
+    command:  > 
+        bash -c "
+          python /opt/services/djangoapp/src/manage.py makemigrations users
+          python /opt/services/djangoapp/src/manage.py makemigrations products
+          python /opt/services/djangoapp/src/manage.py migrate
+          gunicorn --chdir /opt/services/djangoapp/src/ --bind :8000 knit_server.wsgi
+        "
     ports:
       - 8000:8000
     networks: 
       - app-network
-
-  # nginx:
-  #   image: nginx:1.13
-  #   # ports:
-  #   #   - 80:80
-  #   ports:
-  #     - 80:80
-  #     - 443:443
-  #     - 8000:8000
-  #   expose:
-  #     - "80"
-  #     - "443"
-  #     - "8000"
-  #   volumes:
-  #     - ./nginx/conf.d:/etc/nginx/conf.d
-  #   depends_on:  # <-- wait for djangoapp to be "ready" before starting this service
-  #     - knit_server
-  #   networks:  # <-- here
-  #     - app-network
-
 
 #Docker Networks
 networks:
