@@ -1,5 +1,9 @@
 FROM python:3.7.2-slim
 
+# arbitrary location choice: you can change the directory
+RUN mkdir -p /opt/services/djangoapp/src
+WORKDIR /opt/services/djangoapp/src
+
 RUN apt-get update && apt-get install -y \
 		gcc \
 		gettext \
@@ -8,10 +12,9 @@ RUN apt-get update && apt-get install -y \
 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /app
 
-COPY ./ /app
-WORKDIR /app
+# copy our project code
+COPY . /opt/services/djangoapp/src
 
 # RUN pip install --upgrade pip
 # RUN pip install pipenv

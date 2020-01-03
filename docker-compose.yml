@@ -11,8 +11,11 @@ services:
       - ./static:/static
     depends_on:
       - knit_server
+    networks: 
+      - app-network
   knit_server:
-    image: mgurjala/knit_server_img:1.0
+    image: mgurjala/knit_server_img:4.0
+    # build: .
     ports:
       - 8000:8000
     networks: 
