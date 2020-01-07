@@ -24,7 +24,7 @@ class KImage(models.Model):
         im = Image.open(self.image)
         output = BytesIO()
         # #Resize/modify the image
-        im = im.resize((800, 600), Image.ANTIALIAS)
+        # im = im.resize((800, 600), Image.ANTIALIAS)
 		# #after modifications, save it to the output
         im.save(output, format='PNG', quality=100)
         

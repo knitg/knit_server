@@ -2,7 +2,8 @@ FROM python:3.7.2-slim
 
 # arbitrary location choice: you can change the directory
 RUN mkdir -p /opt/services/djangoapp/src
-WORKDIR /opt/services/djangoapp/src
+# WORKDIR /opt/services/djangoapp/src
+WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
 		gcc \
@@ -14,7 +15,8 @@ RUN apt-get update && apt-get install -y \
 ENV PYTHONUNBUFFERED 1
 
 # copy our project code
-COPY . /opt/services/djangoapp/src
+# COPY . /opt/services/djangoapp/src
+COPY . /app
 
 # RUN pip install --upgrade pip
 # RUN pip install pipenv
