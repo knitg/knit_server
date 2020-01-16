@@ -1,8 +1,6 @@
 version: '2.1'
-
 services:
   knit_server:
-    # image: mgurjala/knit_server_img:5.0
     build: 
       context: .
       dockerfile: docker/knit_server/Dockerfile    
@@ -23,7 +21,6 @@ services:
     networks: 
       - app-network
   nginx:
-      # image: nginx    
       build: 
         context: .
         dockerfile: docker/nginx/Dockerfile
@@ -43,12 +40,6 @@ networks:
   app-network:
     driver: bridge
 
+#Docker Volumes
 volumes:
   static:
-# bash -c "
-#             python /opt/services/djangoapp/src/manage.py makemigrations users
-#             python /opt/services/djangoapp/src/manage.py makemigrations products
-#             python /opt/services/djangoapp/src/manage.py migrate
-#             gunicorn --chdir /opt/services/djangoapp/src/ --bind :8000 knit_server.wsgi
-#           "
-
