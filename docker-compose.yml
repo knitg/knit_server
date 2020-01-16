@@ -1,25 +1,15 @@
 version: '2.1'
 
 services:
-  nginx:
-    image: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./app:/app
-      - ./nginx:/etc/nginx/conf.d
-      - ./static:/static
-    depends_on:
-      - knit_server
-    networks: 
-      - app-network
   knit_server:
     # image: mgurjala/knit_server_img:5.0
     build: 
-      context: ./app
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: docker/knit_server/Dockerfile    
+    container_name: knit_server
     volumes:
       - ./app:/app
+      - static:/static
     command:  > 
         bash -c "
             python /app/manage.py collectstatic --no-input
@@ -32,13 +22,29 @@ services:
       - 8000:8000
     networks: 
       - app-network
-
+  nginx:
+      # image: nginx    
+      build: 
+        context: .
+        dockerfile: docker/nginx/Dockerfile
+      ports:
+        - "80:80"
+      container_name: knit_nginx    
+      volumes:
+        - ./app:/app
+        - static:/static
+      depends_on:
+        - knit_server
+      networks: 
+        - app-network
+    
 #Docker Networks
 networks:
   app-network:
     driver: bridge
 
-
+volumes:
+  static:
 # bash -c "
 #             python /opt/services/djangoapp/src/manage.py makemigrations users
 #             python /opt/services/djangoapp/src/manage.py makemigrations products
