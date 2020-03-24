@@ -45,9 +45,8 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
             user_data['phone'] = self.initial_data['phone'] if self.initial_data['phone'] else instance.user.phone
             user_data['email'] = self.initial_data['email'] if self.initial_data['email'] else instance.user.email
             user_data['password'] = self.initial_data['password'] if self.initial_data['password'] else instance.user.password
-            user_data['user_role'] = self.initial_data['user_role'] if self.initial_data['user_role'] else instance.user.user_role
             user_data['username'] = self.initial_data['username'] if self.initial_data['username'] else instance.user.username
-            
+                
             user = User.objects.update_or_create(pk=instance.user.id, defaults=user_data)[0]
             if self.initial_data.get('user_type'):
                 user_types = self.initial_data['user_type'].split(',')

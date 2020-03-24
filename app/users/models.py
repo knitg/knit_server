@@ -63,7 +63,7 @@ class User(AbstractBaseUser):
     email = models.EmailField("Email Address", blank=True, null= True)
     password = models.CharField('password', max_length=128, null=False)
     user_type = models.ManyToManyField(KUserType, blank=True, null=True, default=None)
-    user_role = models.CharField(max_length=80, choices=USER_ROLE, default=USER_ROLE.GUEST)
+    user_role = models.CharField(max_length=80, blank=True, null=True, choices=USER_ROLE, default=USER_ROLE.GUEST)
     
     is_admin = models.IntegerField(default=False, blank=True, null=True)
     is_staff = models.IntegerField(default=False, blank=True, null=True)

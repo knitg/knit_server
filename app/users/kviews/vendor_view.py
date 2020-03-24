@@ -32,11 +32,13 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         vendor_details = {}
         
         vendor_details['name'] = request.data.get('name') if request.data.get('name') else None
+        vendor_details['open_time'] = request.data.get('open_time') if request.data.get('open_time') else None
+        vendor_details['close_time'] = request.data.get('close_time') if request.data.get('close_time') else None
         vendor_details['masters_count'] = request.data.get('masters_count') if request.data.get('masters_count') else None
         vendor_details['is_weekends'] = request.data.get('is_weekends') if request.data.get('is_weekends') else False
-        vendor_details['is_weekdays'] = request.data.get('is_weekdays') if request.data.get('is_weekdays') else True
         vendor_details['alternate_days'] = request.data.get('alternate_days') if request.data.get('alternate_days') else None
         vendor_details['is_open'] = request.data.get('is_open') if request.data.get('is_open') else True
+        vendor_details['is_door_service'] = request.data.get('is_door_service') if request.data.get('is_door_service') else False
         vendor_details['is_emergency_available'] = request.data.get('is_emergency_available') if request.data.get('is_emergency_available') else True
         vendor_details['address'] = request.data.get('address') if request.data.get('address') else None
         
@@ -59,16 +61,6 @@ class VendorUserViewSet(viewsets.ModelViewSet):
  
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
-        self.perform_destroy(instance)
+        # self.perform_destroy(instance)
         instance.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-    def perform_destroy(self, instance):
-        for e in instance.images.all():
-            instance.images.remove(e)
-            KImage.objects.get(id=e.id).delete()
-
-
-
-
-
