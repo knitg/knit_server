@@ -39,21 +39,21 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
     def update(self, instance, validated_data):
         instance.name = validated_data['name'] if validated_data['name'] else instance.name
         instance.masters_count = validated_data['masters_count'] if validated_data['masters_count'] else instance.masters_count
-        instance.open_time = self.initial_data['open_time'] if self.initial_data.get('open_time') else None
-        instance.close_time = self.initial_data.get('close_time', None) if self.initial_data.get('close_time', None) else None
+        instance.open_time = self.initial_data['open_time'] if self.initial_data.get('open_time') else instance.open_time
+        instance.close_time = self.initial_data.get('close_time', None) if self.initial_data.get('close_time', None) else instance.close_time
         instance.is_open = validated_data['is_open'] if validated_data['is_open'] else instance.is_open
         instance.is_weekends = validated_data['is_weekends'] if validated_data['is_weekends'] else instance.is_weekends
         instance.is_door_service = validated_data['is_door_service'] if validated_data['is_door_service'] else instance.is_door_service
         instance.is_emergency_available = validated_data['is_emergency_available'] if validated_data['is_emergency_available'] else instance.is_emergency_available
 
         if instance.address and self.initial_data['address']:
-            instance.address = self.initial_data['address'] if self.initial_data['address'] else instance.address
+            instance.address = self.initial_data.get('address', None) if self.initial_data.get('address', None) else instance.address
         user_data = {}
         if instance.user:
-            user_data['phone'] = self.initial_data['phone'] if self.initial_data['phone'] else instance.user.phone
-            user_data['email'] = self.initial_data['email'] if self.initial_data['email'] else instance.user.email
-            user_data['password'] = self.initial_data['password'] if self.initial_data['password'] else instance.user.password
-            user_data['username'] = self.initial_data['username'] if self.initial_data['username'] else instance.user.username
+            user_data['phone'] = self.initial_data.get('phone', None) if self.initial_data.get('phone', None) else instance.user.phone
+            user_data['email'] = self.initial_data.get('email', None) if self.initial_data.get('email', None) else instance.user.email
+            user_data['password'] = self.initial_data.get('password', None) if self.initial_data.get('password', None) else instance.user.password
+            user_data['username'] = self.initial_data.get('username', None) if self.initial_data.get('username', None) else instance.user.username
                 
             user = User.objects.update_or_create(pk=instance.user.id, defaults=user_data)[0]
             if self.initial_data.get('user_type'):
