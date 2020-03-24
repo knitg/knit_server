@@ -1,9 +1,11 @@
 from rest_framework import serializers
 from users.models import User
 from ..kmodels.image_model import KImage
+from ..kmodels.address_model import KAddress
 from ..kmodels.usertype_model import KUserType
 
 from .image_serializer import KImageSerializer
+from .address_serializer import KAddressSerializer
 from .usertype_serializer import KUserTypeSerializer
 
 
@@ -16,9 +18,10 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     images = KImageSerializer(many=True, required=False, allow_null=True)
     user_type = KUserTypeSerializer(many=True, required=False, allow_null=True) 
+    address = KAddressSerializer(many=True, required=False, allow_null=True) 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'password', 'user_type', 'user_role', 'images')
+        fields = ('id', 'username', 'email', 'phone', 'password', 'user_type', 'user_role', 'images', 'address')
          
 
     def create(self, validated_data):
@@ -37,6 +40,11 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             usertypes = list(KUserType.objects.filter(id__in=user_types))
             user.user_type.set(usertypes)
 
+        if self.initial_data.get('address'):
+            addresses = self.initial_data['address'].split(',')
+            address = list(KAddress.objects.filter(id__in=addresses))
+            user.address.set(address)
+
         return user 
 
     def update(self, instance, validated_data):
@@ -51,6 +59,11 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             user_types = self.initial_data['user_type'].split(',')
             usertypes = list(KUserType.objects.filter(id__in=user_types))
             instance.user_type.set(usertypes)  
+    
+        if self.initial_data.get('address'):
+            addresses = self.initial_data['address'].split(',')
+            address = list(KAddress.objects.filter(id__in=addresses))
+            user.address.set(address)
 
         if self.initial_data.get('images'):
             image_data = self.initial_data['images']

@@ -17,7 +17,7 @@ from .kmodels.usertype_model import KUserType
 class UserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, username, phone, user_type=1, user_role='GUEST', email=None, password=None, images=None):
+    def create_user(self, username, phone, user_type=1, user_role='GUEST', email=None, password=None, images=None, address=1):
         if not phone:
             raise ValueError('Users must have an Phone number')
         if not username:
@@ -36,7 +36,7 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, username=None, phone=None, user_type='CUSTOMER', user_role='GUEST', email=None, password=None, **extra_fields):
+    def create_superuser(self, username=None, phone=None, user_type=1, user_role='GUEST', email=None, password=None, **extra_fields):
         extra_fields.setdefault('is_superuser', True)
         if extra_fields.get('is_superuser') is not True:
             raise ValueError('Superuser must have is_superuser=True.')
@@ -49,21 +49,14 @@ class UserManager(BaseUserManager):
 #### USER MODEL
 
 class User(AbstractBaseUser):
-    USER_ROLE = Choices(
-        ('USER', 'USER'),
-        ('ADMIN', 'ADMIN'),
-        ('LEADER', 'LEADER'),
-        ('SUPER_ADMIN', 'SUPER ADMIN'),
-        ('GUEST', 'GUEST'),
-        ('DEL_BOY', 'DELIVERY BOY'),
-    )
     username = models.CharField("User Name", max_length=50, unique=True)
     images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
+    address = models.ManyToManyField(KAddress, blank=True, null=True, default=None)
     phone = models.CharField("Phone Number", max_length=50, unique=True)
     email = models.EmailField("Email Address", blank=True, null= True)
     password = models.CharField('password', max_length=128, null=False)
     user_type = models.ManyToManyField(KUserType, blank=True, null=True, default=None)
-    user_role = models.CharField(max_length=80, blank=True, null=True, choices=USER_ROLE, default=USER_ROLE.GUEST)
+    user_role = models.CharField(max_length=80, blank=True, null=True, default=None)
     
     is_admin = models.IntegerField(default=False, blank=True, null=True)
     is_staff = models.IntegerField(default=False, blank=True, null=True)
@@ -87,7 +80,7 @@ class User(AbstractBaseUser):
         return self.is_admin
 
     USERNAME_FIELD = 'phone'
-    REQUIRED_FIELDS = ['user_type', 'user_role']
+    REQUIRED_FIELDS = ['user_type','username']
 
     class Meta:
         db_table = 'user'

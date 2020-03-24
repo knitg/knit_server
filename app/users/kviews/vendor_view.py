@@ -54,6 +54,10 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     def update(self, request, *args, **kwargs):
         # set to mutable
         request.data._mutable = True
+        
+        if request.FILES:
+            request.data['images'] = request.FILES
+            
         request.data['open_time'] = request.data.get('open_time') if request.data.get('open_time') else None
         request.data['close_time'] = request.data.get('close_time') if request.data.get('close_time') else None
         request.data['masters_count'] = request.data.get('masters_count') if request.data.get('masters_count') else None
@@ -62,9 +66,7 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         request.data['is_open'] = request.data.get('is_open') if request.data.get('is_open') else True
         request.data['is_door_service'] = request.data.get('is_door_service') if request.data.get('is_door_service') else False
         request.data['is_emergency_available'] = request.data.get('is_emergency_available') if request.data.get('is_emergency_available') else True
-
-        if request.FILES:
-            request.data['images'] = request.FILES
+        
         serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
@@ -72,6 +74,11 @@ class VendorUserViewSet(viewsets.ModelViewSet):
  
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
-        # self.perform_destroy(instance)
+        self.perform_destroy(instance)
         instance.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def perform_destroy(self, instance):
+        if instance.user:
+            # instance.images.remove(e)
+            User.objects.get(id=instance.user.id).delete()

@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from users.models import User
 from ..kmodels.image_model import KImage
+from ..kmodels.address_model import KAddress
 from ..kmodels.customer_model import KCustomer
 from ..kmodels.vendor_model import KVendorUser
 from ..kmodels.usertype_model import KUserType
@@ -14,8 +15,8 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = KVendorUser
         # fields = [ 'name','user', 'address']
-        fields = ["id", "name", "user", 'open_time', 'close_time', 'masters_count', 'is_weekends', 'is_open', 'is_emergency_available', 'is_door_service', 'address']
-
+        # fields = ["id", "name", "user", 'open_time', 'close_time', 'masters_count', 'is_weekends', 'is_open', 'is_emergency_available', 'is_door_service', 'address']
+        fields = "__all__"
     def create(self, validated_data):
         users_data = self.initial_data.pop('user')
         validated_data = self.initial_data.pop('vendor')    
@@ -26,6 +27,12 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
             user_types = self.initial_data.get('data')['user_type'].split(',')
             usertypes = list(KUserType.objects.filter(id__in=user_types))
             user.user_type.set(usertypes)
+            
+        if self.initial_data.get('data')['address']:
+            addresses = self.initial_data.get('data')['address'].split(',')
+            address = list(KAddress.objects.filter(id__in=addresses))
+            user.address.set(address)
+
         if self.initial_data.get('data')['images']:
             image_data = self.initial_data.get('data')['images']
             for image in image_data:
@@ -46,7 +53,7 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
         instance.is_door_service = validated_data['is_door_service'] if validated_data['is_door_service'] else instance.is_door_service
         instance.is_emergency_available = validated_data['is_emergency_available'] if validated_data['is_emergency_available'] else instance.is_emergency_available
 
-        if instance.address and self.initial_data['address']:
+        if self.initial_data.get('address'):
             instance.address = self.initial_data.get('address', None) if self.initial_data.get('address', None) else instance.address
         user_data = {}
         if instance.user:
@@ -56,12 +63,17 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
             user_data['username'] = self.initial_data.get('username', None) if self.initial_data.get('username', None) else instance.user.username
                 
             user = User.objects.update_or_create(pk=instance.user.id, defaults=user_data)[0]
-            if self.initial_data.get('user_type'):
+            if not (self.initial_data.get('user_type') is None):
                 user_types = self.initial_data['user_type'].split(',')
                 usertypes = list(KUserType.objects.filter(id__in=user_types))
                 user.user_type.set(usertypes)
 
-            if self.initial_data.get('images'):
+            if not (self.initial_data.get('address') is None):
+                addresses = self.initial_data.get('address').split(',')
+                address = list(KAddress.objects.filter(id__in=addresses))
+                user.address.set(address)
+
+            if not (self.initial_data.get('images') is None):
                 image_data = self.initial_data['images']
                  ### Remove relational images if any ####
                 for e in instance.user.images.all():

@@ -18,7 +18,6 @@ class KVendorUser(models.Model):
     is_door_service = models.BooleanField(default=False)
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=None, null=False)
-    address = models.ForeignKey(KAddress, on_delete=models.CASCADE, default=None, null=True)
     created_at = models.DateTimeField(default=now, editable=False)
     updated_at = models.DateTimeField(default=now, editable=False)
 
