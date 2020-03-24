@@ -14,7 +14,7 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = KVendorUser
         # fields = [ 'name','user', 'address']
-        fields = ["id", "name", "user"]
+        fields = ["id", "name", "user", 'open_time', 'close_time', 'masters_count', 'is_weekends', 'is_open', 'is_emergency_available', 'is_door_service', 'address']
 
     def create(self, validated_data):
         users_data = self.initial_data.pop('user')
@@ -38,6 +38,14 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
             
     def update(self, instance, validated_data):
         instance.name = validated_data['name'] if validated_data['name'] else instance.name
+        instance.masters_count = validated_data['masters_count'] if validated_data['masters_count'] else instance.masters_count
+        instance.open_time = self.initial_data['open_time'] if self.initial_data.get('open_time') else None
+        instance.close_time = self.initial_data.get('close_time', None) if self.initial_data.get('close_time', None) else None
+        instance.is_open = validated_data['is_open'] if validated_data['is_open'] else instance.is_open
+        instance.is_weekends = validated_data['is_weekends'] if validated_data['is_weekends'] else instance.is_weekends
+        instance.is_door_service = validated_data['is_door_service'] if validated_data['is_door_service'] else instance.is_door_service
+        instance.is_emergency_available = validated_data['is_emergency_available'] if validated_data['is_emergency_available'] else instance.is_emergency_available
+
         if instance.address and self.initial_data['address']:
             instance.address = self.initial_data['address'] if self.initial_data['address'] else instance.address
         user_data = {}

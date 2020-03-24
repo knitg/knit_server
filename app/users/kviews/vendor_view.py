@@ -52,6 +52,17 @@ class VendorUserViewSet(viewsets.ModelViewSet):
             return Response(vendor_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, *args, **kwargs):
+        # set to mutable
+        request.data._mutable = True
+        request.data['open_time'] = request.data.get('open_time') if request.data.get('open_time') else None
+        request.data['close_time'] = request.data.get('close_time') if request.data.get('close_time') else None
+        request.data['masters_count'] = request.data.get('masters_count') if request.data.get('masters_count') else None
+        request.data['is_weekends'] = request.data.get('is_weekends') if request.data.get('is_weekends') else False
+        request.data['alternate_days'] = request.data.get('alternate_days') if request.data.get('alternate_days') else None
+        request.data['is_open'] = request.data.get('is_open') if request.data.get('is_open') else True
+        request.data['is_door_service'] = request.data.get('is_door_service') if request.data.get('is_door_service') else False
+        request.data['is_emergency_available'] = request.data.get('is_emergency_available') if request.data.get('is_emergency_available') else True
+
         if request.FILES:
             request.data['images'] = request.FILES
         serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)

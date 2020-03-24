@@ -11,12 +11,7 @@
       "stopOnEntry": false,
       "program": "${workspaceRoot}//app//manage.py",
       "args": ["runserver", "--no-color", "--noreload"],
-      "debugOptions": [
-        "WaitOnAbnormalExit",
-        "WaitOnNormalExit",
-        "RedirectOutput",
-        "DjangoDebugging"
-      ]
+      
     }
   ]
 }
