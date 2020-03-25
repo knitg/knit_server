@@ -3,7 +3,6 @@ from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 from django.contrib.auth import authenticate
 from users.models import User
-from ..kserializers.customer_serializer import KCustomerSerializer
 from ..kserializers.user_serializer import UserSerializer
 
 from rest_framework.authtoken.models import Token

@@ -3,7 +3,6 @@ from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework import status
-
 from ..kmodels.imagemodel import KImage
 from ..kmodels.productmodel import Product
 from ..kserializers.productserializer import ProductSerializer, ProductLinkSerializer
@@ -13,6 +12,8 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
 
     def create(self, request, *args, **kwargs):
+        # set to mutable
+        request.data._mutable = True
         if request.FILES:
             request.data['images'] = request.FILES 
 

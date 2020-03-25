@@ -2,7 +2,6 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import *
 from users.models import User
-from .kmodels.customer_model import KCustomer
 from .kmodels.image_model import KImage
 from .kmodels.address_model import KAddress
 from .kmodels.vendor_model import KVendorUser
@@ -34,5 +33,4 @@ admin.site.register(KImage)
 admin.site.register(KAddress)
 admin.site.register(KUserType)
 admin.site.register(User, UserAdmin)
-admin.site.register(KCustomer)
 admin.site.register(KVendorUser)

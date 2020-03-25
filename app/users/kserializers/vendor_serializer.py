@@ -2,7 +2,6 @@ from rest_framework import serializers
 from users.models import User
 from ..kmodels.image_model import KImage
 from ..kmodels.address_model import KAddress
-from ..kmodels.customer_model import KCustomer
 from ..kmodels.vendor_model import KVendorUser
 from ..kmodels.usertype_model import KUserType
 
@@ -85,4 +84,4 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
                     user.images.add(images)            
 
         instance.save() 
-        return instance    
+        return instance

@@ -21,7 +21,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     address = KAddressSerializer(many=True, required=False, allow_null=True) 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'password', 'user_type', 'user_role', 'images', 'address')
+        fields = ('id','url', 'username', 'email', 'phone', 'password', 'user_type', 'user_role', 'images', 'address')
          
 
     def create(self, validated_data):
@@ -49,11 +49,11 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     def update(self, instance, validated_data):
         user_data = {}
-        instance.phone = self.initial_data['phone'] if self.initial_data['phone'] else instance.phone
-        instance.email = self.initial_data['email'] if self.initial_data['email'] else instance.email
-        instance.password = self.initial_data['password'] if self.initial_data['password'] else instance.password
-        instance.user_role = self.initial_data['user_role'] if self.initial_data['user_role'] else instance.user_role
-        instance.username = self.initial_data['username'] if self.initial_data['username'] else instance.username
+        instance.phone = self.initial_data.get('phone') if self.initial_data.get('phone') else instance.phone
+        instance.email = self.initial_data.get('email') if self.initial_data.get('email') else instance.email
+        instance.password = self.initial_data.get('password') if self.initial_data.get('password') else instance.password
+        instance.user_role = self.initial_data.get('user_role') if self.initial_data.get('user_role') else instance.user_role
+        instance.username = self.initial_data.get('username') if self.initial_data.get('username') else instance.username
         
         if self.initial_data.get('user_type'):
             user_types = self.initial_data['user_type'].split(',')
@@ -63,7 +63,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         if self.initial_data.get('address'):
             addresses = self.initial_data['address'].split(',')
             address = list(KAddress.objects.filter(id__in=addresses))
-            user.address.set(address)
+            instance.address.set(address)
 
         if self.initial_data.get('images'):
             image_data = self.initial_data['images']
@@ -78,5 +78,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
         instance.save()
         return instance    
-
 

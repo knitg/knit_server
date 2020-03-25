@@ -12,6 +12,8 @@ from .stitchserializer import StitchSerializer
 from .stitchtypeserializer import StitchTypeSerializer
 from .stitchdesignserializer import StitchTypeDesignSerializer
 
+import re
+
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     stitch = StitchSerializer(many=False, required=False)
     stitch_type = StitchTypeSerializer(many=False, required=False)
@@ -19,22 +21,32 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
     # stitch = StitchSerializer(many=False)
     class Meta:
         model = Product
-        fields = ('id','code', 'title','description', 'stitch','stitch_type','stitch_type_design','user', 'images')
+        # exclude = ['code']
+        # fields = ('id','code', 'title','description', 'stitch','stitch_type','stitch_type_design','user', 'images')
+        fields = '__all__'
     
     def create(self, validated_data):
+        if not (self.initial_data.get('title', None) is None):
+            validated_data['code'] = re.sub('[\s+]', '', self.initial_data.get('title'))
         ## Image data
-        if self.initial_data['stitch']:
-            if self.initial_data['stitch']:
-                stitchQuerySet = Stitch.objects.filter(id= self.initial_data['stitch'])
-                stitch = serializers.PrimaryKeyRelatedField(queryset=stitchQuerySet, many=False)
-            if self.initial_data['stitch_type']:
-                stitchTypeQuerySet = StitchType.objects.filter(id= self.initial_data['stitch_type'])
-                stitch_type = serializers.PrimaryKeyRelatedField(queryset=stitchTypeQuerySet, many=False)
+        if not (self.initial_data.get('stitch', None) is None):
+            stitchQuerySet = Stitch.objects.filter(id= self.initial_data.get('stitch', 0))
+            stitch = serializers.PrimaryKeyRelatedField(queryset=stitchQuerySet, many=False)
             if len(stitchQuerySet):
                 validated_data['stitch'] = stitchQuerySet[0]
+        if not (self.initial_data.get('stitch_type', None) is None):
+            stitchTypeQuerySet = StitchType.objects.filter(id= self.initial_data.get('stitch_type', 0))
+            stitch_type = serializers.PrimaryKeyRelatedField(queryset=stitchTypeQuerySet, many=False)
             if len(stitchTypeQuerySet):
                 validated_data['stitch_type'] = stitchTypeQuerySet[0]
+        
+        if not (self.initial_data.get('stitch_type_design', None) is None):
+            stitchTypeDesignQuerySet = StitchType.objects.filter(id= self.initial_data.get('stitch_type_design', 0))
+            stitch_type_design = serializers.PrimaryKeyRelatedField(queryset=stitchTypeDesignQuerySet, many=False)
+            if len(stitchTypeDesignQuerySet):
+                validated_data['stitch_type_design'] = stitchTypeDesignQuerySet[0]
 
+        
         product = Product.objects.create(**validated_data)
         product.save()
 
@@ -50,17 +62,30 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 
     def update(self, instance, validated_data):
         # Update the Foo instance
-        instance.title = validated_data['title']
-        instance.description = validated_data['description']
-        instance.code = validated_data['code']
+        instance.title = self.initial_data['title'] if self.initial_data.get('title') else instance.title
+        instance.description = self.initial_data['description'] if self.initial_data.get('description') else instance.description
+        instance.quantity = self.initial_data['quantity'] if self.initial_data.get('quantity') else instance.quantity
+        instance.stitched_date = self.initial_data['stitched_date'] if self.initial_data.get('stitched_date') else instance.stitched_date
+        
+        if not (self.initial_data.get('stitch', None) is None):
+            stitchQuerySet = Stitch.objects.filter(id= self.initial_data.get('stitch', 0))
+            stitch = serializers.PrimaryKeyRelatedField(queryset=stitchQuerySet, many=False)
+            if len(stitchQuerySet):
+                validated_data['stitch'] = stitchQuerySet[0]
+        if not (self.initial_data.get('stitch_type', None) is None):
+            stitchTypeQuerySet = StitchType.objects.filter(id= self.initial_data.get('stitch_type', 0))
+            stitch_type = serializers.PrimaryKeyRelatedField(queryset=stitchTypeQuerySet, many=False)
+            if len(stitchTypeQuerySet):
+                validated_data['stitch_type'] = stitchTypeQuerySet[0]
+        
+        if not (self.initial_data.get('stitch_type_design', None) is None):
+            stitchTypeDesignQuerySet = StitchType.objects.filter(id= self.initial_data.get('stitch_type_design', 0))
+            stitch_type_design = serializers.PrimaryKeyRelatedField(queryset=stitchTypeDesignQuerySet, many=False)
+            if len(stitchTypeDesignQuerySet):
+                validated_data['stitch_type_design'] = stitchTypeDesignQuerySet[0]
 
-        if self.initial_data['stitch']:
-            stitchQuerySet = Stitch.objects.filter(id= self.initial_data['stitch'])
-            instance.stitch = stitchQuerySet[0] if len(stitchQuerySet) else None
-        if self.initial_data['stitch_type']:
-            stitchTypeQuerySet = StitchType.objects.filter(id= self.initial_data['stitch_type'])
-            instance.stitch_type = stitchTypeQuerySet[0] if len(stitchTypeQuerySet) else None
-
+        if not (self.initial_data.get('title', None) is None):
+            instance.code = re.sub('[\s+]', '', self.initial_data.get('title'))
         instance.save()
 
         if self.initial_data.get('images'):
