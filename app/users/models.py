@@ -5,10 +5,7 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.conf import settings
 from model_utils import Choices
  
-from .kmodels.image_model import KImage
-from .kmodels.address_model import KAddress
-from .kmodels.usertype_model import KUserType
-
+from .kmodels.timestamp_model import TimestampedModel
 
 """
     # USER MANAGER ACTIONS HERE
@@ -17,7 +14,7 @@ from .kmodels.usertype_model import KUserType
 class UserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, username, phone, user_type=1, user_role='GUEST', email=None, password=None, images=None, address=1):
+    def create_user(self, username, phone, email=None, password=None, **extra_fields):
         if not phone:
             raise ValueError('Users must have an Phone number')
         if not username:
@@ -25,8 +22,7 @@ class UserManager(BaseUserManager):
         user = self.model(
             username = username,
             phone = phone,
-            email = email,
-            user_role= user_role
+            email = email
         )
         user.set_password(password)
         
@@ -36,7 +32,7 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, username=None, phone=None, user_type=1, user_role='GUEST', email=None, password=None, **extra_fields):
+    def create_superuser(self, username=None, phone=None, email=None, password=None, **extra_fields):
         extra_fields.setdefault('is_superuser', True)
         if extra_fields.get('is_superuser') is not True:
             raise ValueError('Superuser must have is_superuser=True.')
@@ -48,19 +44,15 @@ class UserManager(BaseUserManager):
 
 #### USER MODEL
 
-class User(AbstractBaseUser):
-    username = models.CharField("User Name", max_length=50, unique=True)
-    images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
-    address = models.ManyToManyField(KAddress, blank=True, null=True, default=None)
-    phone = models.CharField("Phone Number", max_length=50, unique=True)
-    email = models.EmailField("Email Address", blank=True, null= True)
+class User(AbstractBaseUser, TimestampedModel):
+    username = models.CharField(db_index=True, max_length=255, unique=True)
+    phone = models.CharField(db_index=True, max_length=50, unique=True)
+    email = models.EmailField(db_index=True, unique=True)
     password = models.CharField('password', max_length=128, null=False)
-    user_type = models.ManyToManyField(KUserType, blank=True, null=True, default=None)
-    user_role = models.CharField(max_length=80, blank=True, null=True, default=None)
     
     is_admin = models.IntegerField(default=False, blank=True, null=True)
     is_staff = models.IntegerField(default=False, blank=True, null=True)
-    is_active = models.IntegerField(default=False, blank=True, null=True)
+    is_active = models.BooleanField(default=True)
     is_superuser = models.IntegerField(blank=True, null=True, default=False)
 
     objects = UserManager()
@@ -80,13 +72,14 @@ class User(AbstractBaseUser):
         return self.is_admin
 
     USERNAME_FIELD = 'phone'
-    REQUIRED_FIELDS = ['user_type','username']
+    REQUIRED_FIELDS = ['email','username']
 
     class Meta:
         db_table = 'user'
         managed = True
         verbose_name = 'user'
         verbose_name_plural = 'users'
+        ordering = ['-created_at', '-updated_at']
 
     def __str__(self):
         return self.phone

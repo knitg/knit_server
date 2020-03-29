@@ -1,16 +1,20 @@
 from rest_framework import serializers
 from users.models import User
 from ..kmodels.image_model import KImage
+from ..kmodels.profile_model import Profile
 from ..kmodels.address_model import KAddress
 from ..kmodels.vendor_model import KVendorUser
 from ..kmodels.usertype_model import KUserType
 
+from .profile_serializer import KProfileSerializer
 from .image_serializer import KImageSerializer
 from .usertype_serializer import KUserTypeSerializer
 from .user_serializer import UserSerializer
 
 class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
     user = UserSerializer(many=False)    
+    images = KImageSerializer(many=True, required=False, allow_null=True)
+    userTypes = KUserTypeSerializer(many=True, required=False, allow_null=True) 
     class Meta:
         model = KVendorUser
         # fields = [ 'name','user', 'address']
@@ -18,39 +22,53 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
         fields = "__all__"
     def create(self, validated_data):
         users_data = self.initial_data.pop('user')
-        validated_data = self.initial_data.pop('vendor')    
-        
+        validated_data = self.initial_data.pop('vendor')  
+        # User creation
         user = User.objects.create_user(**users_data)
         user.save()
-        if self.initial_data.get('data')['user_type']:
-            user_types = self.initial_data.get('data')['user_type'].split(',')
-            usertypes = list(KUserType.objects.filter(id__in=user_types))
-            user.user_type.set(usertypes)
-            
-        if self.initial_data.get('data')['address']:
-            addresses = self.initial_data.get('data')['address'].split(',')
-            address = list(KAddress.objects.filter(id__in=addresses))
-            user.address.set(address)
 
-        if self.initial_data.get('data')['images']:
+        # User profile get 
+        profile = Profile.objects.select_related('user').get(user__pk=user.id)
+        # Vendor creation
+        vendor = KVendorUser.objects.create(user=user, **validated_data)
+        
+        if not (self.initial_data.get('data').get('userTypes') is None):
+            userTypeIds = self.initial_data.get('data').get('userTypes').split(',')
+            usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
+            profile.userTypes.set(usertypes)
+            vendor.userTypes.set(usertypes)
+            
+        if (self.initial_data.get('data').get('userTypes') is None):
+            # usertypes = list(KUserType.objects.filter(user_type__iexact='Customer'))
+            usertypes = list(KUserType.objects.filter(id__in=['1']))
+            profile.userTypes.set(usertypes)
+            vendor.userTypes.set(usertypes)
+        
+        if not (self.initial_data.get('data').get('address') is None):
+            addresses = self.initial_data.get('data').get('address').split(',')
+            address = list(KAddress.objects.filter(id__in=addresses))
+            profile.address.set(address)
+
+        if not (self.initial_data.get('data').get('images') is None):
             image_data = self.initial_data.get('data')['images']
             for image in image_data:
                 c_image= image_data[image]
                 images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
-                user.images.add(images)
-
-        vendor = KVendorUser.objects.create(user=user, **validated_data)
+                vendor.images.add(images)  
+                profile.images.add(usertypes)  
+        
         return vendor
             
     def update(self, instance, validated_data):
-        instance.name = validated_data['name'] if validated_data['name'] else instance.name
-        instance.masters_count = validated_data['masters_count'] if validated_data['masters_count'] else instance.masters_count
-        instance.open_time = self.initial_data['open_time'] if self.initial_data.get('open_time') else instance.open_time
-        instance.close_time = self.initial_data.get('close_time', None) if self.initial_data.get('close_time', None) else instance.close_time
-        instance.is_open = validated_data['is_open'] if validated_data['is_open'] else instance.is_open
-        instance.is_weekends = validated_data['is_weekends'] if validated_data['is_weekends'] else instance.is_weekends
-        instance.is_door_service = validated_data['is_door_service'] if validated_data['is_door_service'] else instance.is_door_service
-        instance.is_emergency_available = validated_data['is_emergency_available'] if validated_data['is_emergency_available'] else instance.is_emergency_available
+        instance.name = self.initial_data.get('name') if self.initial_data.get('name') else instance.name
+        instance.masters = self.initial_data.get('masters') if self.initial_data.get('masters') else instance.masters
+        instance.openTime = self.initial_data.get('openTime') if self.initial_data.get('openTime') else instance.openTime
+        instance.closeTime = self.initial_data.get('closeTime', None) if self.initial_data.get('closeTime', None) else instance.closeTime
+        instance.closed = self.initial_data.get('closed') if self.initial_data.get('closed') else instance.closed
+        instance.isWeekends = self.initial_data.get('isWeekends') if self.initial_data.get('isWeekends') else instance.isWeekends
+        instance.doorService = self.initial_data.get('doorService') if self.initial_data.get('doorService') else instance.doorService
+        instance.emergency = self.initial_data.get('emergency') if self.initial_data.get('emergency') else instance.emergency
+        instance.description = self.initial_data.get('description') if self.initial_data.get('description') else instance.description
 
         if self.initial_data.get('address'):
             instance.address = self.initial_data.get('address', None) if self.initial_data.get('address', None) else instance.address
@@ -62,26 +80,22 @@ class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
             user_data['username'] = self.initial_data.get('username', None) if self.initial_data.get('username', None) else instance.user.username
                 
             user = User.objects.update_or_create(pk=instance.user.id, defaults=user_data)[0]
-            if not (self.initial_data.get('user_type') is None):
-                user_types = self.initial_data['user_type'].split(',')
-                usertypes = list(KUserType.objects.filter(id__in=user_types))
-                user.user_type.set(usertypes)
-
-            if not (self.initial_data.get('address') is None):
-                addresses = self.initial_data.get('address').split(',')
-                address = list(KAddress.objects.filter(id__in=addresses))
-                user.address.set(address)
-
-            if not (self.initial_data.get('images') is None):
-                image_data = self.initial_data['images']
-                 ### Remove relational images if any ####
-                for e in instance.user.images.all():
-                    instance.user.images.remove(e)
-                    KImage.objects.get(id=e.id).delete()
-                for image in image_data:
-                    c_image= image_data[image]
-                    images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
-                    user.images.add(images)            
+              
+        if not (self.initial_data.get('userTypes') is None):
+            userTypeIds = self.initial_data['userTypes'].split(',')
+            usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
+            instance.userTypes.set(usertypes)
+ 
+        if not (self.initial_data.get('images') is None):
+            image_data = self.initial_data['images']
+                ### Remove relational images if any ####
+            for e in instance.user.images.all():
+                instance.user.images.remove(e)
+                KImage.objects.get(id=e.id).delete()
+            for image in image_data:
+                c_image= image_data[image]
+                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
+                instance.images.add(images)          
 
         instance.save() 
         return instance

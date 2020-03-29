@@ -5,6 +5,7 @@ from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 from users.models import User
 from ..kmodels.vendor_model import KVendorUser
 from ..kserializers.vendor_serializer import KVendorUserSerializer
+from ..kserializers.user_serializer import UserSerializer
 
 from rest_framework.response import Response
 from rest_framework import status 
@@ -24,25 +25,30 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         user_data['phone'] = request.data.get('phone') if request.data.get('phone') else None
         user_data['email'] = request.data.get('email') if request.data.get('email') else None
         user_data['password'] = request.data.get('password') if request.data.get('password') else None
-        user_data['user_role'] = request.data.get('user_role') if request.data.get('user_role') else None
         user_data['username'] = request.data.get('username') if request.data.get('username') else None
         if request.FILES:
              request.data['images'] = request.FILES
-
+        
         vendor_details = {}
         
         vendor_details['name'] = request.data.get('name') if request.data.get('name') else None
-        vendor_details['open_time'] = request.data.get('open_time') if request.data.get('open_time') else None
-        vendor_details['close_time'] = request.data.get('close_time') if request.data.get('close_time') else None
-        vendor_details['masters_count'] = request.data.get('masters_count') if request.data.get('masters_count') else None
-        vendor_details['is_weekends'] = request.data.get('is_weekends') if request.data.get('is_weekends') else False
-        vendor_details['alternate_days'] = request.data.get('alternate_days') if request.data.get('alternate_days') else None
-        vendor_details['is_open'] = request.data.get('is_open') if request.data.get('is_open') else True
-        vendor_details['is_door_service'] = request.data.get('is_door_service') if request.data.get('is_door_service') else False
-        vendor_details['is_emergency_available'] = request.data.get('is_emergency_available') if request.data.get('is_emergency_available') else True
-        vendor_details['address'] = request.data.get('address') if request.data.get('address') else None
+        vendor_details['openTime'] = request.data.get('openTime') if request.data.get('openTime') else None
+        vendor_details['closeTime'] = request.data.get('closeTime') if request.data.get('closeTime') else None
+        vendor_details['masters'] = request.data.get('masters') if request.data.get('masters') else None
+        vendor_details['isWeekends'] = request.data.get('isWeekends') if request.data.get('isWeekends') else False
+        vendor_details['alternateDays'] = request.data.get('alternateDays') if request.data.get('alternateDays') else None
+        vendor_details['closed'] = request.data.get('closed') if request.data.get('closed') else True
+        vendor_details['doorService'] = request.data.get('doorService') if request.data.get('doorService') else False
+        vendor_details['emergency'] = request.data.get('emergency') if request.data.get('emergency') else True
         
-        vendor_serializer = KVendorUserSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': request.data}, context={'request': request})
+        profile_details = {}
+        
+        profile_details['userTypes'] = request.data.get('userTypes') if request.data.get('userTypes') else None
+        profile_details['address'] = request.data.get('address') if request.data.get('address') else None
+        if request.FILES:
+             profile_details['images'] = request.FILES
+        
+        vendor_serializer = KVendorUserSerializer(data= {'user': user_data, 'vendor': vendor_details, 'profile':profile_details, 'data': request.data}, context={'request': request})
         
         ### Vendor serializer save initiated
         if vendor_serializer.is_valid():
@@ -57,16 +63,16 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         
         if request.FILES:
             request.data['images'] = request.FILES
-            
-        request.data['open_time'] = request.data.get('open_time') if request.data.get('open_time') else None
-        request.data['close_time'] = request.data.get('close_time') if request.data.get('close_time') else None
-        request.data['masters_count'] = request.data.get('masters_count') if request.data.get('masters_count') else None
-        request.data['is_weekends'] = request.data.get('is_weekends') if request.data.get('is_weekends') else False
-        request.data['alternate_days'] = request.data.get('alternate_days') if request.data.get('alternate_days') else None
-        request.data['is_open'] = request.data.get('is_open') if request.data.get('is_open') else True
-        request.data['is_door_service'] = request.data.get('is_door_service') if request.data.get('is_door_service') else False
-        request.data['is_emergency_available'] = request.data.get('is_emergency_available') if request.data.get('is_emergency_available') else True
-        
+        # request.data['name'] = request.data.get('name') if request.data.get('openTime') else instance.name   
+        # request.data['openTime'] = request.data.get('openTime') if request.data.get('openTime') else instance.openTime
+        # request.data['closeTime'] = request.data.get('closeTime') if request.data.get('closeTime') else  instance.closeTime
+        # request.data['masters'] = request.data.get('masters') if request.data.get('masters') else  instance.masters
+        # request.data['isWeekends'] = request.data.get('isWeekends') if request.data.get('isWeekends') else instance.isWeekends
+        # request.data['alternateDays'] = request.data.get('alternateDays') if request.data.get('alternateDays') else instance.alternateDays
+        # request.data['closed'] = request.data.get('closed') if request.data.get('closed') else instance.closed
+        # request.data['doorService'] = request.data.get('doorService') if request.data.get('doorService') else instance.doorService
+        # request.data['emergency'] = request.data.get('emergency') if request.data.get('emergency') else instance.emergency
+        user = UserSerializer(request.data)
         serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
