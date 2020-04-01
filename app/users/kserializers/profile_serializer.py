@@ -24,6 +24,8 @@ class KProfileSerializer(serializers.ModelSerializer):
     userTypes = KUserTypeSerializer(many=True, required=False, allow_null=True) 
     address = KAddressSerializer(many=True, required=False, allow_null=True) 
     
+    full_address = serializers.CharField(read_only=True)
+    
     class Meta:
         model = Profile
         fields = '__all__'

@@ -37,9 +37,27 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.auth.hashers', 
+    'django.contrib.auth.hashers',
+    'django.contrib.sites',
     'rest_framework',
     
+
+    # ALL AUTHENTICATION MODULE
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    # REST_AUTH 
+    'rest_auth',
+    'rest_auth.registration',
+    
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.linkedin',
+    'allauth.socialaccount.providers.instagram',
+    'allauth.socialaccount.providers.microsoft',
+
     'corsheaders',
     'djoser',
     "rest_framework.authtoken", 
@@ -114,8 +132,24 @@ DATABASES = {
     #     }
     # }
 }
+REST_AUTH_SERIALIZERS = {
+    'USER_DETAILS_SERIALIZER': 'users.kserializers.user_serializer.UserSerializer',
+    'LOGIN_SERIALIZER': 'users.kserializers.login_serializer.LoginSerializer'
+}
+REST_SESSION_LOGIN = True
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SITE_ID = 2
+ACCOUNT_EMAIL_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'phone'
+ACCOUNT_EMAIL_VERIFICATION = 'optional'
 
+ACCOUNT_EMAIL_REQUIRED = False   
+ACCOUNT_USERNAME_REQUIRED = False
 
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+   
+}
 
 MEDIA_URL =  '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -137,18 +171,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-ACCOUNT_EMAIL_REQUIRED = False
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'username'
-
-AUTH_USER_MODEL = 'users.User'
-
-
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -170,13 +196,13 @@ SIMPLE_JWT = {
 }
 
 AUTHENTICATION_BACKENDS = [
-    'social_core.backends.github.GithubOAuth2',
-    'social_core.backends.twitter.TwitterOAuth',
-    'social_core.backends.facebook.FacebookOAuth2',
 
     "django.contrib.auth.backends.ModelBackend",
     "users.backends.EmailOrPhoneOrUsernameModelBackend",
-    "users.backends.EmailAuthenticate",    
+    "users.backends.EmailAuthenticate", 
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 # Internationalization
@@ -191,6 +217,11 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+SOCIAL_AUTH_FACEBOOK_KEY = 'your app client id'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'your app client secret'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', ]  # optional
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {'locale': 'ru_RU'}  # optional
 
 
 # Static files (CSS, JavaScript, Images)

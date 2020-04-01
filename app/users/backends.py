@@ -4,7 +4,7 @@ import re
 
 from django.contrib.auth.models import User
 from django.db.models import Q
-
+from django.contrib.auth.hashers import check_password
 
 class EmailOrPhoneOrUsernameModelBackend(object):
     """
@@ -38,12 +38,11 @@ class EmailAuthenticate(object):
 
     def authenticate(self, username=None,email=None, phone=None,  password=None, **kwargs):
         try:
-            user = get_user_model().objects.get(Q(email=email) | Q(phone=phone) | Q(username=username))
+            user = get_user_model().objects.get((Q(email=email) | Q(phone=phone) | Q(username=username)) )
+            if user.check_password(password):
+                return user
         except get_user_model().DoesNotExist:
             return None
-
-        if user.check_password(password):
-            return user
         return None
 
     def get_user(self,user_id):

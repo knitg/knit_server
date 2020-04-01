@@ -28,7 +28,6 @@ class UserManager(BaseUserManager):
         
         user.is_admin =False
         user.is_active =True
-        user.set_password(password)
         user.save(using=self._db)
         return user
 
@@ -49,6 +48,8 @@ class User(AbstractBaseUser, TimestampedModel):
     phone = models.CharField(db_index=True, max_length=50, unique=True)
     email = models.EmailField(db_index=True, unique=True)
     password = models.CharField('password', max_length=128, null=False)
+    first_name = models.CharField(default=None, max_length=20, null=True, blank=True)
+    last_name = models.CharField(default=None, max_length=20, null=True, blank=True)
     
     is_admin = models.IntegerField(default=False, blank=True, null=True)
     is_staff = models.IntegerField(default=False, blank=True, null=True)

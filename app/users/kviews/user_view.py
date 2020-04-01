@@ -74,8 +74,22 @@ class UserViewSet(viewsets.ModelViewSet):
         else:
             return Response(user_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def update(self, request, *args, **kwargs):
-        serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
+    def update(self, request, *args, **kwargs):        
+        request.data._mutable = True
+
+        userProfile = {}
+        
+        userProfile['firstName'] = request.data.get('firstName') if request.data.get('firstName') else None
+        userProfile['lastName'] = request.data.get('lastName') if request.data.get('lastName') else None
+        userProfile['gender'] = request.data.get('gender') if request.data.get('gender') else None
+        userProfile['married'] = request.data.get('married') if request.data.get('married') else None
+        userProfile['birthday'] = request.data.get('birthday') if request.data.get('birthday') else False
+        userProfile['anniversary'] = request.data.get('anniversary') if request.data.get('anniversary') else None
+        userProfile['userTypes'] = request.data.get('userTypes') if request.data.get('userTypes') else True
+        userProfile['user_role'] = request.data.get('user_role') if request.data.get('user_role') else False
+        userProfile['address'] = request.data.get('address') if request.data.get('address') else True        
+
+        serializer = self.get_serializer(self.get_object(), data= {'userProfile':userProfile, 'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
         return Response(serializer.data)
