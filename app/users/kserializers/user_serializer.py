@@ -3,6 +3,8 @@ from users.models import User
 from ..kmodels.image_model import KImage
 from ..kmodels.address_model import KAddress
 from ..kmodels.usertype_model import KUserType
+from ..kmodels.vendor_model import KVendorUser
+
 import types
 from ..kmodels.profile_model import Profile
 
@@ -23,7 +25,8 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
-    userType = KUserTypeSerializer(source='profile.userTypes', many=True)
+    # userType = KUserTypeSerializer(source='profile.userTypes', many=True, required=False)
+    vendor = serializers.CharField(source='kvendoruser.id', required=False)
     username = serializers.CharField(required=False)
     email = serializers.EmailField(required=False)
     phone = serializers.CharField(required=False)
@@ -70,7 +73,8 @@ class UserSerializer(serializers.ModelSerializer):
         else:
             data['password'] = self.initial_data.get('password')
         return data
-    
+
+    ### USING BELOW METHOD CHECKING ADMIN USER
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         if instance.is_superuser:
@@ -79,42 +83,43 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName', 'userType')
+        fields = ('id', 'username', 'email', 'phone', 'fullName', 'vendor')
+        # fields = ('id', 'username', 'email', 'phone', 'fullName', 'userType', 'vendor')
         # fields = "__all__"
-
-
-    def set_context(self, serializer_field):
-        print("set context")
-
-    def __call__(self):
-        print("call")
 
     def create(self, validated_data):
         # pass
         ## Image data
         self.hasAccountErrors = []
         user = User.objects.create_user(**validated_data)
-        user.save()
-        
 
-        profile = user.profile
-        profile.firstName = request.data.get('firstName', profile.firstName)
-        profile.lastName = request.data.get('lastName', profile.lastName)
-        profile.gender = request.data.get('gender', profile.gender)
-        profile.married = request.data.get('married', profile.married)
-        profile.birthday = request.data.get('birthday', profile.birthday)
-        profile.anniversary = request.data.get('anniversary', profile.anniversary)
-        profile.user_role = request.data.get('user_role', profile.user_role)
+        if self.initial_data.get('userTypes'):
+            userTypeIds = self.initial_data['userTypes'].split(',')
+            kvendoruser = KVendorUser.objects.create(user=user)
+            kvendoruser.save()
+
+        user.save()
+
         
-        if request.data.get('userTypes'):
-            userTypeIds = request.data['userTypes'].split(',')
+        ## PROFILE MODEL CREATES
+        profile = user.profile
+        profile.firstName = self.initial_data.get('firstName', profile.firstName)
+        profile.lastName = self.initial_data.get('lastName', profile.lastName)
+        profile.gender = self.initial_data.get('gender', profile.gender)
+        profile.married = self.initial_data.get('married', profile.married)
+        profile.birthday = self.initial_data.get('birthday', profile.birthday)
+        profile.anniversary = self.initial_data.get('anniversary', profile.anniversary)
+        profile.user_role = self.initial_data.get('user_role', profile.user_role)
+        
+        if self.initial_data.get('userTypes'):
+            userTypeIds = self.initial_data['userTypes'].split(',')
             usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
             profile.userTypes.set(usertypes)
 
-        if type(request.data.get('address')) is str :
-            addresses = request.data['address'].split(',')
+        if type(self.initial_data.get('address')) is str :
+            addresses = self.initial_data['address'].split(',')
             address = list(KAddress.objects.filter(id__in=addresses))
-            instance.address.set(address)
+            profile.address.set(address)
 
         profile.save()
 

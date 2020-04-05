@@ -11,7 +11,7 @@ from datetime import datetime, time,date
 class KVendorUser(TimestampedModel):
     name= models.CharField(null=True, max_length=80,  default=None)
     
-    user = models.ForeignKey(User, on_delete=models.CASCADE, default=None, null=False)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     openTimeStr = "9:30"
     CloseTimeStr = "21:00"
