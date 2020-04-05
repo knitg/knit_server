@@ -15,10 +15,12 @@ class UserManager(BaseUserManager):
     use_in_migrations = True
 
     def create_user(self, username, phone, email=None, password=None, **extra_fields):
-        if not phone:
-            raise ValueError('Users must have an Phone number')
-        if not username:
-            username = phone
+        # if not phone and not Email:
+        #     raise ValueError('Users must have an Phone number')
+        # if not username:
+        #     username = phone
+        # if not email:
+        #     email = phone
         user = self.model(
             username = username,
             phone = phone,
@@ -44,12 +46,10 @@ class UserManager(BaseUserManager):
 #### USER MODEL
 
 class User(AbstractBaseUser, TimestampedModel):
-    username = models.CharField(db_index=True, max_length=255, unique=True)
-    phone = models.CharField(db_index=True, max_length=50, unique=True)
-    email = models.EmailField(db_index=True, unique=True)
+    username = models.CharField(db_index=True, max_length=255, blank=True, null=True)
+    phone = models.CharField(db_index=True, max_length=50, blank=True, null=True)
+    email = models.EmailField(db_index=True, blank=True, null=True)
     password = models.CharField('password', max_length=128, null=False)
-    first_name = models.CharField(default=None, max_length=20, null=True, blank=True)
-    last_name = models.CharField(default=None, max_length=20, null=True, blank=True)
     
     is_admin = models.IntegerField(default=False, blank=True, null=True)
     is_staff = models.IntegerField(default=False, blank=True, null=True)

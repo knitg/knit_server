@@ -145,8 +145,6 @@ REST_AUTH_SERIALIZERS = {
     'LOGIN_SERIALIZER': 'users.kserializers.login_serializer.LoginSerializer',
 }
 
-ACCOUNT_ADAPTER = 'users.kserializers.register_serializer.CustomUserAccountAdapter'
-
 REST_SESSION_LOGIN = True
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 2

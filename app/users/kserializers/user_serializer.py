@@ -23,6 +23,11 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
+    userType = KUserTypeSerializer(source='profile.userTypes', many=True)
+    username = serializers.CharField(required=False)
+    email = serializers.EmailField(required=False)
+    phone = serializers.CharField(required=False)
+
 
     def validate_phone(self, value):
         phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
@@ -30,8 +35,42 @@ class UserSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('Phone length should be 10 numbers')
         if phoneNumber is None:
             raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
+        
+        ## Check if phone number already registered
+        hasPhoneNumbers = User.objects.filter(phone=value)
+        if len(hasPhoneNumbers):
+            raise serializers.ValidationError('Phone number should be unique')
+        
         return value
 
+    def validate_username(self, value):
+        if re.search(r"\s", value):
+            raise serializers.ValidationError("user name shouldn't have spaces")
+        return value
+
+    def validate_email(self, value):
+        ## Check if email already registered
+        isEmailExists = User.objects.filter(email=value)
+        if len(isEmailExists):
+            raise serializers.ValidationError('email already exists')
+        return value
+    
+
+    def validate(self, data):
+        if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
+            raise serializers.ValidationError("Email or phone required")
+        if data.get('username') is None:
+            data['username'] = data.get('username', None)
+        if data.get('email') is None:
+            data['email'] = data.get('email', None)
+        if data.get('phone') is None:
+            data['phone'] = data.get('phone', None)
+        if self.initial_data.get('password') is None:
+            raise serializers.ValidationError("password is required")
+        else:
+            data['password'] = self.initial_data.get('password')
+        return data
+    
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         if instance.is_superuser:
@@ -40,14 +79,46 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName',)
+        fields = ('id', 'username', 'email', 'phone', 'fullName', 'userType')
         # fields = "__all__"
+
+
+    def set_context(self, serializer_field):
+        print("set context")
+
+    def __call__(self):
+        print("call")
 
     def create(self, validated_data):
         # pass
         ## Image data
+        self.hasAccountErrors = []
         user = User.objects.create_user(**validated_data)
         user.save()
+        
+
+        profile = user.profile
+        profile.firstName = request.data.get('firstName', profile.firstName)
+        profile.lastName = request.data.get('lastName', profile.lastName)
+        profile.gender = request.data.get('gender', profile.gender)
+        profile.married = request.data.get('married', profile.married)
+        profile.birthday = request.data.get('birthday', profile.birthday)
+        profile.anniversary = request.data.get('anniversary', profile.anniversary)
+        profile.user_role = request.data.get('user_role', profile.user_role)
+        
+        if request.data.get('userTypes'):
+            userTypeIds = request.data['userTypes'].split(',')
+            usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
+            profile.userTypes.set(usertypes)
+
+        if type(request.data.get('address')) is str :
+            addresses = request.data['address'].split(',')
+            address = list(KAddress.objects.filter(id__in=addresses))
+            instance.address.set(address)
+
+        profile.save()
+
+
         return user 
 
     def update(self, instance, validated_data):
