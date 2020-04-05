@@ -22,10 +22,9 @@ class KProfileSerializer(serializers.ModelSerializer):
 
     images = KImageSerializer(many=True, required=False, allow_null=True)
     userTypes = KUserTypeSerializer(many=True, required=False, allow_null=True) 
-    address = KAddressSerializer(many=True, required=False, allow_null=True) 
-    
+    address = KAddressSerializer(many=True, required=False, allow_null=True)
     full_address = serializers.CharField(read_only=True)
-    
+
     class Meta:
         model = Profile
         fields = '__all__'
@@ -53,7 +52,9 @@ class KProfileSerializer(serializers.ModelSerializer):
             instance.address.set(address)
         instance.save() 
         return instance
-        
+    
+
+
     def get_image(self, obj):
         if obj.image:
             return obj.image

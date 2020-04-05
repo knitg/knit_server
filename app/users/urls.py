@@ -25,12 +25,10 @@ router.register(r'vendor', VendorUserViewSet)
 urlpatterns = [ 
     path('', include(router.urls)),
     path('user/<int:user_id>/profile', ProfileViewSet.as_view({'get': 'list','put': 'update'}), name='profile'),
-    url(r'^rest-auth/facebook/$', FacebookConnectView.as_view(), name='fb_login'),
-    url(r'^rest-auth/twitter/$', TwitterConnectView.as_view(), name='twitter_login'),
-    url(r'^rest-auth/github/$', GithubConnectView.as_view(), name='github_login'),
-    url(r'^socialaccounts/$', SocialAccountListView.as_view(), name='social_account_list'),
-    url(r'^socialaccounts/(?P<pk>\d+)/disconnect/$', SocialAccountDisconnectView.as_view(), name='social_account_disconnect'),
-	#path to djoser end points
-    path('auth/', include('djoser.urls')),
-    path('auth/', include('djoser.urls.jwt')),
+    # url(r'^rest-auth/facebook/$', FacebookConnectView.as_view(), name='fb_login'),
+    # url(r'^rest-auth/twitter/$', TwitterConnectView.as_view(), name='twitter_login'),
+    # url(r'^rest-auth/github/$', GithubConnectView.as_view(), name='github_login'),
+    # url(r'^socialaccounts/$', SocialAccountListView.as_view(), name='social_account_list'),
+    # url(r'^socialaccounts/(?P<pk>\d+)/disconnect/$', SocialAccountDisconnectView.as_view(), name='social_account_disconnect'),
+	
 ]

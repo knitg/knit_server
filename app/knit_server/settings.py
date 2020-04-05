@@ -51,18 +51,16 @@ INSTALLED_APPS = [
     'rest_auth',
     'rest_auth.registration',
     
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.github',
-    'allauth.socialaccount.providers.linkedin',
-    'allauth.socialaccount.providers.instagram',
-    'allauth.socialaccount.providers.microsoft',
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.github',
+    # 'allauth.socialaccount.providers.linkedin',
 
     'corsheaders',
-    'djoser',
     "rest_framework.authtoken", 
-    'rest_framework_simplejwt',
-    'social_django',
+    # 'djoser',
+    # 'rest_framework_simplejwt',
+    # 'social_django',
 
     'users',
     'products',
@@ -78,7 +76,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'social_django.middleware.SocialAuthExceptionMiddleware',
+    # 'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'knit_server.urls'
@@ -132,10 +130,23 @@ DATABASES = {
     #     }
     # }
 }
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+} 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'users.kserializers.user_serializer.UserSerializer',
-    'LOGIN_SERIALIZER': 'users.kserializers.login_serializer.LoginSerializer'
+    'LOGIN_SERIALIZER': 'users.kserializers.login_serializer.LoginSerializer',
 }
+
+ACCOUNT_ADAPTER = 'users.kserializers.register_serializer.CustomUserAccountAdapter'
+
 REST_SESSION_LOGIN = True
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 2
@@ -160,15 +171,6 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
 ]
 
 PASSWORD_HASHERS = [
@@ -176,20 +178,14 @@ PASSWORD_HASHERS = [
 ]
 AUTH_USER_MODEL = 'users.User'
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-} 
 
-DJOSER = {
-    'SERIALIZERS': {
-        'current_user': 'users.kserializers.user_serializer.CurrentUserSerializer',
-        'user_create': 'users.kserializers.user_serializer.UserSerializer',
-        'user': 'users.kserializers.user_serializer.CurrentUserSerializer',        
-    }
-}
+# DJOSER = {
+#     'SERIALIZERS': {
+#         'current_user': 'users.kserializers.user_serializer.CurrentUserSerializer',
+#         'user_create': 'users.kserializers.user_serializer.UserSerializer',
+#         'user': 'users.kserializers.user_serializer.CurrentUserSerializer',        
+#     }
+# }
 
 SIMPLE_JWT = {
    'AUTH_HEADER_TYPES': ('JWT',),

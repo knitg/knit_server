@@ -12,6 +12,7 @@ from .image_serializer import KImageSerializer
 from .address_serializer import KAddressSerializer
 from .usertype_serializer import KUserTypeSerializer
 
+import re
 
 class CurrentUserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,13 +20,31 @@ class CurrentUserSerializer(serializers.ModelSerializer):
         exclude = ['password']
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
+    
+    fullName = serializers.CharField(source='profile.get_full_name', required=False)
+
+    def validate_phone(self, value):
+        phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
+        if len(value) > 10:
+            raise serializers.ValidationError('Phone length should be 10 numbers')
+        if phoneNumber is None:
+            raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
+        return value
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        if instance.is_superuser:
+            representation['admin'] = True
+        return representation
+
     class Meta:
         model = User
-        # fields = ('id','url', 'username', 'email', 'phone', 'password',)
-        fields = "__all__"
+        fields = ('id', 'username', 'email', 'phone', 'fullName',)
+        # fields = "__all__"
 
     def create(self, validated_data):
+        # pass
         ## Image data
         user = User.objects.create_user(**validated_data)
         user.save()
