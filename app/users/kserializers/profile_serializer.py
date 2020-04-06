@@ -19,6 +19,7 @@ class KProfileSerializer(serializers.ModelSerializer):
     lastName = serializers.CharField(allow_blank=True, required=False)
     gender = serializers.IntegerField(required=False)
     married = serializers.BooleanField(required=False)
+    # userTypeIds = serializers.PrimaryKeyRelatedField(many=True, read_only=False, queryset=KUserType.objects.all(), source='userTypes')
 
     images = KImageSerializer(many=True, required=False, allow_null=True)
     userTypes = KUserTypeSerializer(many=True, required=False, allow_null=True) 
@@ -28,6 +29,7 @@ class KProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = '__all__'
+
     def update(self, instance, validated_data):
         instance.firstName = validated_data['firstName'] if validated_data['firstName'] else instance.firstName
         instance.lastName = validated_data['lastName'] if validated_data['lastName'] else instance.lastName
@@ -54,8 +56,3 @@ class KProfileSerializer(serializers.ModelSerializer):
         return instance
     
 
-
-    def get_image(self, obj):
-        if obj.image:
-            return obj.image
-        return 'https://static.productionready.io/images/smiley-cyrus.jpg'

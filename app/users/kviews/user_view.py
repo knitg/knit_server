@@ -1,69 +1,33 @@
 from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
+import django_filters.rest_framework
 
 from users.models import User
 from ..kserializers.user_serializer import UserSerializer
 from django.shortcuts import get_object_or_404
-
+from rest_framework import filters
 from rest_framework.response import Response
 from rest_framework import status 
 from ..kmodels.address_model import KAddress
 from ..kmodels.image_model import KImage
+from url_filter.integrations.drf import DjangoFilterBackend
 
-class UserListViewSet(viewsets.ViewSet):
-    """
-    A simple ViewSet for listing or retrieving users.
-    """
-    def list(self, request):
-        queryset = User.objects.all()
-        serializer = UserSerializer(queryset, many=True, context={'request': request})
-        return Response(serializer.data)
-
-    def retrieve(self, request, pk=None):
-        queryset = User.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = UserSerializer(user, context={'request': request})
-        return Response(serializer.data)
-
-class UserDetailViewSet(viewsets.ViewSet):
-    
-    def list(self, request):
-        pass
-
-    def retrieve(self, request, pk=None):
-        queryset = User.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = UserSerializer(user, context={'request': request})
-        return Response(serializer.data)
-
-
-class UserRegisterViewSet(viewsets.ViewSet):
-    
-    def create(self, request, *args, **kwargs):
-        images_arr = []
-        if request.FILES:
-            request.data['images'] = request.FILES
-
-        user_serializer = UserSerializer(data= request.data)
-        if user_serializer.is_valid():
-            user_serializer.save()
-            return Response({'userId':user_serializer.instance.id}, status=status.HTTP_201_CREATED)
-        else:
-            return Response(user_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-class UserLoginViewSet(viewsets.ViewSet):
-    
-    def retrieve(self, request, pk=None):
-        queryset = User.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = UserSerializer(user, context={'request': request})
-        return Response(serializer.data)
-
+class UserFilterViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    filter_backends = [DjangoFilterBackend]
+    filter_fields = ['id','username', 'email', 'profile', 'phone']
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    # filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
+    # filterset_fields = ['phone', 'email']
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    ordering_fields = ['phone', 'email']
+    ordering = ['phone']
+    search_fields = ['username','phone', '=email']
     parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
 
     def create(self, request, *args, **kwargs):

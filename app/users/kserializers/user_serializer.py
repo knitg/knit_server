@@ -25,12 +25,14 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
-    # userType = KUserTypeSerializer(source='profile.userTypes', many=True, required=False)
-    vendor = serializers.CharField(source='kvendoruser.id', required=False)
+    # image = serializers.CharField(source='profile.get_default_image', required=False)
     username = serializers.CharField(required=False)
     email = serializers.EmailField(required=False)
     phone = serializers.CharField(required=False)
 
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'phone', 'fullName',)
 
     def validate_phone(self, value):
         phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
@@ -79,13 +81,10 @@ class UserSerializer(serializers.ModelSerializer):
         representation = super().to_representation(instance)
         if instance.is_superuser:
             representation['admin'] = True
+        if hasattr(instance, 'kvendoruser'):
+            representation['vendor_id'] = instance.kvendoruser.id
         return representation
 
-    class Meta:
-        model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName', 'vendor')
-        # fields = ('id', 'username', 'email', 'phone', 'fullName', 'userType', 'vendor')
-        # fields = "__all__"
 
     def create(self, validated_data):
         # pass
@@ -95,8 +94,9 @@ class UserSerializer(serializers.ModelSerializer):
 
         if self.initial_data.get('userTypes'):
             userTypeIds = self.initial_data['userTypes'].split(',')
-            kvendoruser = KVendorUser.objects.create(user=user)
-            kvendoruser.save()
+            if not ('1' in userTypeIds):
+                kvendoruser = KVendorUser.objects.create(user=user)
+                kvendoruser.save()
 
         user.save()
 

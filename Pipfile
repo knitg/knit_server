@@ -16,6 +16,7 @@ django-cors-headers = "*"
 django-json-response = "*"
 djoser = "*"
 djangorestframework-jwt = "*"
+django-url-filter = "*"
 
 [requires]
 python_version = "3.7"
