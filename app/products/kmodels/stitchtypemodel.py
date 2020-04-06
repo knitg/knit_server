@@ -9,7 +9,7 @@ from django.utils.timezone import now
 class StitchType(models.Model):
     stype= models.CharField(null=True, max_length=80,  default=None) 
     stitch = models.ForeignKey(Stitch, on_delete=models.CASCADE, blank=False, null=False, default=None)
-    images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
+    images = models.ManyToManyField(KImage, blank=True, default=None)
     code = models.CharField(null=True, max_length=80,  default=None) 
     description = models.CharField(null=True, max_length=120,  default=None) 
     created_at = models.DateTimeField(default=now, editable=False)

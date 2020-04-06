@@ -8,7 +8,7 @@ from django.utils.timezone import now
 class Stitch(models.Model):
     stype= models.CharField(null=True, max_length=80,  default=None)    
     code = models.CharField(null=True, max_length=80,  default=None)
-    images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
+    images = models.ManyToManyField(KImage, blank=True, default=None)
     description = models.CharField(null=True, max_length=80,  default=None) 
     created_at = models.DateTimeField(default=now, editable=False)
     updated_at = models.DateTimeField(default=now, editable=False)

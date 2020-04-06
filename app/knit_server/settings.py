@@ -140,7 +140,9 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ],
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10
 } 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'users.kserializers.user_serializer.UserSerializer',
@@ -157,15 +159,8 @@ ACCOUNT_EMAIL_VERIFICATION = 'optional'
 ACCOUNT_EMAIL_REQUIRED = False   
 ACCOUNT_USERNAME_REQUIRED = False
 
-# Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {
-   
-}
-
 MEDIA_URL =  '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-# Password validation
-# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -177,19 +172,6 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
 AUTH_USER_MODEL = 'users.User'
-
-
-# DJOSER = {
-#     'SERIALIZERS': {
-#         'current_user': 'users.kserializers.user_serializer.CurrentUserSerializer',
-#         'user_create': 'users.kserializers.user_serializer.UserSerializer',
-#         'user': 'users.kserializers.user_serializer.CurrentUserSerializer',        
-#     }
-# }
-
-SIMPLE_JWT = {
-   'AUTH_HEADER_TYPES': ('JWT',),
-}
 
 AUTHENTICATION_BACKENDS = [
 

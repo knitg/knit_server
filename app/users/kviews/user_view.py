@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 import django_filters.rest_framework
-
+from rest_framework.pagination import PageNumberPagination
 from users.models import User
 from ..kserializers.user_serializer import UserSerializer
 from django.shortcuts import get_object_or_404
@@ -13,21 +13,24 @@ from ..kmodels.address_model import KAddress
 from ..kmodels.image_model import KImage
 from url_filter.integrations.drf import DjangoFilterBackend
 
-class UserFilterViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-    filter_backends = [DjangoFilterBackend]
-    filter_fields = ['id','username', 'email', 'profile', 'phone']
+
+class LinkSetPagination(PageNumberPagination):
+    page_size = 10
+    page_size_query_param = 'page_size'
+    max_page_size = 1000
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    # filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
-    # filterset_fields = ['phone', 'email']
-    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
-    ordering_fields = ['phone', 'email']
-    ordering = ['phone']
+    ## Search Filter and ordering
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    
     search_fields = ['username','phone', '=email']
+    
+    pagination_class = LinkSetPagination
+
+    filter_fields = ['id','username', 'email', 'profile', 'phone']
+    
     parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
 
     def create(self, request, *args, **kwargs):
@@ -40,18 +43,16 @@ class UserViewSet(viewsets.ModelViewSet):
 
     def update(self, request, *args, **kwargs):        
         request.data._mutable = True
-
         userProfile = {}
-        
-        userProfile['firstName'] = request.data.get('firstName') if request.data.get('firstName') else None
-        userProfile['lastName'] = request.data.get('lastName') if request.data.get('lastName') else None
-        userProfile['gender'] = request.data.get('gender') if request.data.get('gender') else None
-        userProfile['married'] = request.data.get('married') if request.data.get('married') else None
-        userProfile['birthday'] = request.data.get('birthday') if request.data.get('birthday') else False
-        userProfile['anniversary'] = request.data.get('anniversary') if request.data.get('anniversary') else None
-        userProfile['userTypes'] = request.data.get('userTypes') if request.data.get('userTypes') else True
-        userProfile['user_role'] = request.data.get('user_role') if request.data.get('user_role') else False
-        userProfile['address'] = request.data.get('address') if request.data.get('address') else True        
+        userProfile['firstName'] = request.data.get('firstName')
+        userProfile['lastName'] = request.data.get('lastName')
+        userProfile['gender'] = request.data.get('gender')
+        userProfile['married'] = request.data.get('married')
+        userProfile['birthday'] = request.data.get('birthday')
+        userProfile['anniversary'] = request.data.get('anniversary')
+        userProfile['userTypes'] = request.data.get('userTypes')
+        userProfile['user_role'] = request.data.get('user_role')
+        userProfile['address'] = request.data.get('address')        
 
         serializer = self.get_serializer(self.get_object(), data= {'userProfile':userProfile, 'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)

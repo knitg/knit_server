@@ -10,7 +10,7 @@ from .stitchtypemodel import StitchType
 class StitchTypeDesign(models.Model):
     sdesign= models.CharField(null=True, max_length=80,  default=None) 
     stitch_type = models.ForeignKey(StitchType, on_delete=models.CASCADE, default=None, blank=True, null=True)
-    images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
+    images = models.ManyToManyField(KImage, blank=True, default=None)
     code = models.CharField(null=True, max_length=80,  default=None) 
     description = models.CharField(null=True, max_length=120,  default=None) 
     created_at = models.DateTimeField(default=now, editable=False)

@@ -13,7 +13,7 @@ class Product(models.Model):
     code = models.CharField(null=True, max_length=80,  default=None) 
     title= models.CharField(null=True, max_length=80,  default=None) 
     description = models.CharField(null=True, max_length=120,  default=None) 
-    images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
+    images = models.ManyToManyField(KImage, blank=True, default=None)
     stitch = models.ForeignKey(Stitch, on_delete=models.CASCADE, default=None, null=True, blank=True)   
     stitch_type = models.ForeignKey(StitchType, on_delete=models.CASCADE, default=None, null=True, blank=True)   
     stitch_type_design = models.ForeignKey(StitchTypeDesign, on_delete=models.CASCADE, default=None, null=True, blank=True)

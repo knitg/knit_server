@@ -26,9 +26,9 @@ class UserSerializer(serializers.ModelSerializer):
     
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
     # image = serializers.CharField(source='profile.get_default_image', required=False)
-    username = serializers.CharField(required=False)
-    email = serializers.EmailField(required=False)
-    phone = serializers.CharField(required=False)
+    # username = serializers.CharField(required=False)
+    # email = serializers.EmailField(required=False)
+    # phone = serializers.CharField(required=False)
 
     class Meta:
         model = User

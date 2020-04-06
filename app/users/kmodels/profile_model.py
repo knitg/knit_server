@@ -17,10 +17,10 @@ class Profile(TimestampedModel):
     birthday = models.DateTimeField(blank=True, default=None, null=True)
     anniversary = models.DateTimeField(blank=True, default=None, null=True)
     
-    userTypes = models.ManyToManyField(KUserType, blank=True, null=True, default=None)
+    userTypes = models.ManyToManyField(KUserType)
     user_role = models.CharField(max_length=80, blank=True, null=True, default=None)
-    images = models.ManyToManyField(KImage, blank=True, null=True, default=None)
-    address = models.ManyToManyField(KAddress, blank=True, null=True, default=None)
+    images = models.ManyToManyField(KImage)
+    address = models.ManyToManyField(KAddress)
 
     # In addition to the `bio` field, each user may have a profile image or
     # avatar. This field is not required and it may be blank.
