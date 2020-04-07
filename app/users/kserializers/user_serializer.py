@@ -23,13 +23,10 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-    
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
     password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
-    
     class Meta:
         model = User
-        # exclude = ['password']
         fields = ('id', 'username', 'email', 'phone', 'fullName', 'password')
     
     def create(self, validated_data):
@@ -46,10 +43,10 @@ class UserSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         
-        instance.phone = self.initial_data.get('phone') if self.initial_data.get('phone') else instance.phone
-        instance.email = self.initial_data.get('email') if self.initial_data.get('email') else instance.email
-        instance.password = self.initial_data.get('password') if self.initial_data.get('password') else instance.password
-        instance.username = self.initial_data.get('username') if self.initial_data.get('username') else instance.username
+        instance.phone = self.initial_data.get('phone', instance.phone)
+        instance.email = self.initial_data.get('email', instance.email)
+        instance.password = self.initial_data.get('password', instance.password)
+        instance.username = self.initial_data.get('username', instance.username)
         instance.save()
         
         ## PROFILE MODEL CREATES
