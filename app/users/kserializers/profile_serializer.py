@@ -19,7 +19,7 @@ class KProfileSerializer(serializers.ModelSerializer):
     lastName = serializers.CharField(allow_blank=True, required=False)
     gender = serializers.IntegerField(required=False)
     married = serializers.BooleanField(required=False)
-    # userTypeIds = serializers.PrimaryKeyRelatedField(many=True, read_only=False, queryset=KUserType.objects.all(), source='userTypes')
+    userTypeIds = serializers.PrimaryKeyRelatedField(many=True, read_only=False, queryset=KUserType.objects.all(), source='userTypes')
 
     images = KImageSerializer(many=True, required=False, allow_null=True)
     userTypes = KUserTypeSerializer(many=True, required=False, allow_null=True) 
@@ -42,7 +42,7 @@ class KProfileSerializer(serializers.ModelSerializer):
                 c_image= image_data[image]
                 images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
                 instance.images.add(images)
-
+        
         if self.initial_data.get('userTypes'):
             userTypeIds = self.initial_data['userTypes'].split(',')
             usertypes = list(KUserType.objects.filter(id__in=userTypeIds))

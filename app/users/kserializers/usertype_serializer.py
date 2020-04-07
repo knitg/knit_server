@@ -1,10 +1,10 @@
 from rest_framework import serializers
 from ..kmodels.usertype_model import KUserType
 
-class KUserTypeSerializer(serializers.HyperlinkedModelSerializer):
+class KUserTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = KUserType
-        fields = "__all__"
+        fields = ['id', 'user_type']
 
     def create(self, validated_data):       
         ## Role data 

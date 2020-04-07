@@ -25,104 +25,46 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
-    # image = serializers.CharField(source='profile.get_default_image', required=False)
-    # username = serializers.CharField(required=False)
-    # email = serializers.EmailField(required=False)
-    # phone = serializers.CharField(required=False)
-
+    password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
+    
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName',)
-
-    def validate_phone(self, value):
-        phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
-        if len(value) > 10:
-            raise serializers.ValidationError('Phone length should be 10 numbers')
-        if phoneNumber is None:
-            raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
-        
-        ## Check if phone number already registered
-        hasPhoneNumbers = User.objects.filter(phone=value)
-        if len(hasPhoneNumbers):
-            raise serializers.ValidationError('Phone number should be unique')
-        
-        return value
-
-    def validate_username(self, value):
-        if re.search(r"\s", value):
-            raise serializers.ValidationError("user name shouldn't have spaces")
-        return value
-
-    def validate_email(self, value):
-        ## Check if email already registered
-        isEmailExists = User.objects.filter(email=value)
-        if len(isEmailExists):
-            raise serializers.ValidationError('email already exists')
-        return value
-    
-
-    def validate(self, data):
-        if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
-            raise serializers.ValidationError("Email or phone required")
-        if data.get('username') is None:
-            data['username'] = data.get('username', None)
-        if data.get('email') is None:
-            data['email'] = data.get('email', None)
-        if data.get('phone') is None:
-            data['phone'] = data.get('phone', None)
-        if self.initial_data.get('password') is None:
-            raise serializers.ValidationError("password is required")
-        else:
-            data['password'] = self.initial_data.get('password')
-        return data
-
-    ### USING BELOW METHOD CHECKING ADMIN USER
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        if instance.is_superuser:
-            representation['admin'] = True
-        if hasattr(instance, 'kvendoruser'):
-            representation['vendor_id'] = instance.kvendoruser.id
-        return representation
-
+        # exclude = ['password']
+        fields = ('id', 'username', 'email', 'phone', 'fullName', 'password')
 
     def create(self, validated_data):
-        # pass
-        ## Image data
-        self.hasAccountErrors = []
+
         user = User.objects.create_user(**validated_data)
-
-        if self.initial_data.get('userTypes'):
-            userTypeIds = self.initial_data['userTypes'].split(',')
-            if not ('1' in userTypeIds):
-                kvendoruser = KVendorUser.objects.create(user=user)
-                kvendoruser.save()
-
         user.save()
-
         
         ## PROFILE MODEL CREATES
         profile = user.profile
-        profile.firstName = self.initial_data.get('firstName', profile.firstName)
-        profile.lastName = self.initial_data.get('lastName', profile.lastName)
-        profile.gender = self.initial_data.get('gender', profile.gender)
-        profile.married = self.initial_data.get('married', profile.married)
-        profile.birthday = self.initial_data.get('birthday', profile.birthday)
-        profile.anniversary = self.initial_data.get('anniversary', profile.anniversary)
-        profile.user_role = self.initial_data.get('user_role', profile.user_role)
+        profile_data = self.initial_data.get('profile')
+        if profile_data is not None:
+            profile.firstName = profile_data.get('firstName', profile.firstName)
+            profile.lastName = profile_data.get('lastName', profile.lastName)
+            profile.gender = profile_data.get('gender', profile.gender)
+            profile.married = profile_data.get('married', profile.married)
+            profile.birthday = profile_data.get('birthday', profile.birthday)
+            profile.anniversary = profile_data.get('anniversary', profile.anniversary)
+            profile.user_role = profile_data.get('user_role', profile.user_role)
         
-        if self.initial_data.get('userTypes'):
-            userTypeIds = self.initial_data['userTypes'].split(',')
-            usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
-            profile.userTypes.set(usertypes)
+            if profile_data.get('userTypes'):
+                userTypeIds = profile_data.get('userTypes', '').split(',')
+                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
+                profile.userTypes.set(usertypes)
 
-        if type(self.initial_data.get('address')) is str :
-            addresses = self.initial_data['address'].split(',')
-            address = list(KAddress.objects.filter(id__in=addresses))
-            profile.address.set(address)
+            else :
+                userTypeIds = profile_data.get('userTypes', '').split(',')
+                usertypes = list(KUserType.objects.filter(id__in=['1']))
+                profile.userTypes.set(usertypes)
 
-        profile.save()
+            if type(profile_data.get('address')) is str :
+                addresses = profile_data.get('address', '').split(',')
+                address = list(KAddress.objects.filter(id__in=addresses))
+                profile.address.set(address)
 
+            profile.save()
 
         return user 
 
@@ -159,6 +101,68 @@ class UserSerializer(serializers.ModelSerializer):
 
             profile.save()
         return instance
+
+    # ---=================== USER VALIDATIONS START HERE ==========================--- #
+    #     
+    def validate_phone(self, value):
+        phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
+        if len(value) > 10:
+            raise serializers.ValidationError('Phone length should be 10 numbers')
+        if phoneNumber is None:
+            raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
+        
+        ## Check if phone number already registered
+        hasPhoneNumbers = User.objects.filter(phone=value)
+        if len(hasPhoneNumbers):
+            raise serializers.ValidationError('Phone number should be unique')
+        
+        return value
+
+    def validate_username(self, value):
+        if value is not None and re.search(r"\s", value):
+            raise serializers.ValidationError("user name shouldn't have spaces")
+        return value
+
+    def validate_email(self, value):
+        ## Check if email already registered
+        if value is not None:
+            isEmailExists = User.objects.filter(email=value)
+            if len(isEmailExists):
+                raise serializers.ValidationError('email already exists')
+        return value
+    
+
+    def validate(self, data):
+        if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
+            raise serializers.ValidationError("Email or phone required")
+        if data.get('username') is None:
+            data['username'] = data.get('username', None)
+        if data.get('email') is None:
+            data['email'] = data.get('email', None)
+        if data.get('phone') is None:
+            data['phone'] = data.get('phone', None)
+        if data.get('password') is None:
+            raise serializers.ValidationError("password is required")
+        else:
+            data['password'] = data.get('password')
+        return data
+
+    # USING BELOW METHOD CHECKING ADMIN USER
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        if instance.is_superuser:
+            representation['admin'] = True
+        if hasattr(instance, 'kvendoruser'):
+            representation['vendor_id'] = instance.kvendoruser.id
+        
+        # Reference LAMBDA
+        # userTypeIds = list([u.get('id') for u in instance.profile.userTypes.values()])
+        # if hasattr(instance, 'profile') and 1 not in userTypeIds:
+        #     representation['userTypes'] = [u.get('user_type') for u in instance.profile.userTypes.values() if not 'Customer' in u.get('user_type')]
+        return representation
+
+    # ---=================== USER VALIDATIONS END HERE ==========================--- #
+    #     
 
 
 # Function to Create user Profile

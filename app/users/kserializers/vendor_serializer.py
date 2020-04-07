@@ -11,26 +11,36 @@ from .image_serializer import KImageSerializer
 from .usertype_serializer import KUserTypeSerializer
 from .user_serializer import UserSerializer
 
-class KVendorUserSerializer(serializers.HyperlinkedModelSerializer):
-    user = UserSerializer(many=False)    
-    images = KImageSerializer(many=True, required=False, allow_null=True)
-    userTypes = KUserTypeSerializer(many=True, required=False, allow_null=True) 
+class KVendorUserSerializer(serializers.ModelSerializer):
+    # user = UserSerializer(many=False) 
+    user_id =  serializers.CharField(source="user.id", required=False)
+    phone =  serializers.CharField(source="user.phone", required=False)
+    email =  serializers.EmailField(source="user.email", required=False)
+    # images = KImageSerializer(many=True, required=False, allow_null=True)
+    userTypes = KUserTypeSerializer(source='user.profile.userTypes', many=True, required=False, allow_null=True) 
+    
+    
     class Meta:
         model = KVendorUser
-        # fields = [ 'name','user', 'address']
+        fields = [ 'id', 'name','user_id', 'phone', 'email', 'userTypes']
         # fields = ["id", "name", "user", 'open_time', 'close_time', 'masters_count', 'is_weekends', 'is_open', 'is_emergency_available', 'is_door_service', 'address']
-        fields = "__all__"
+        # fields = "__all__"
+
+
     def create(self, validated_data):
         users_data = self.initial_data.pop('user')
         validated_data = self.initial_data.pop('vendor')  
         # User creation
-        user = User.objects.create_user(**users_data)
-        user.save()
+        user_serializer = UserSerializer(data=users_data, many=False)
+        if user_serializer.is_valid():
+            user_serializer.save()
+        else:
+            raise serializers.ValidationError("Something went wrong with user creation")
 
         # User profile get 
-        profile = Profile.objects.select_related('user').get(user__pk=user.id)
+        profile = user_serializer.instance.profile
         # Vendor creation
-        vendor = KVendorUser.objects.create(user=user, **validated_data)
+        vendor = KVendorUser.objects.create(user=user_serializer.instance, **validated_data)
         
         if not (self.initial_data.get('data').get('userTypes') is None):
             userTypeIds = self.initial_data.get('data').get('userTypes').split(',')

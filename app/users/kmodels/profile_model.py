@@ -4,6 +4,7 @@ from .timestamp_model import TimestampedModel
 from .image_model import KImage
 from .address_model import KAddress
 from .usertype_model import KUserType
+from .vendor_model import KVendorUser
 
 class Profile(TimestampedModel):
     user = models.OneToOneField(
@@ -28,6 +29,7 @@ class Profile(TimestampedModel):
 
     def get_full_name(self):
         return "%s %s" % (self.firstName, self.lastName)
+ 
 
     def get_default_image(self):
         return 'https://static.productionready.io/images/smiley-cyrus.jpg'

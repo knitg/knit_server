@@ -9,6 +9,3 @@ class UserTypeViewSet(viewsets.ModelViewSet):
     serializer_class = KUserTypeSerializer
 
 
-
-
-

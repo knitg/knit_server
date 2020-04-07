@@ -31,8 +31,7 @@ class KVendorUser(TimestampedModel):
     emergency = models.BooleanField(default=False)
     doorService = models.BooleanField(default=False)
     description = models.TextField(max_length=180, blank=True)
-
-    userTypes = models.ManyToManyField(KUserType, blank=True,  default=None)
+    
     images = models.ManyToManyField(KImage, blank=True, default=None)
     
     class Meta:

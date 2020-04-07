@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets, generics
-from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
+from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser, JSONParser
 import django_filters.rest_framework
 from rest_framework.pagination import PageNumberPagination
 from users.models import User
@@ -31,7 +31,8 @@ class UserViewSet(viewsets.ModelViewSet):
 
     filter_fields = ['id','username', 'email', 'profile', 'phone']
     
-    parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+    # parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
 
     def create(self, request, *args, **kwargs):
         user_serializer = UserSerializer(data= request.data)
