@@ -31,75 +31,32 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         # exclude = ['password']
         fields = ('id', 'username', 'email', 'phone', 'fullName', 'password')
-
+    
     def create(self, validated_data):
 
         user = User.objects.create_user(**validated_data)
         user.save()
-        
+
         ## PROFILE MODEL CREATES
         profile = user.profile
         profile_data = self.initial_data.get('profile')
-        if profile_data is not None:
-            profile.firstName = profile_data.get('firstName', profile.firstName)
-            profile.lastName = profile_data.get('lastName', profile.lastName)
-            profile.gender = profile_data.get('gender', profile.gender)
-            profile.married = profile_data.get('married', profile.married)
-            profile.birthday = profile_data.get('birthday', profile.birthday)
-            profile.anniversary = profile_data.get('anniversary', profile.anniversary)
-            profile.user_role = profile_data.get('user_role', profile.user_role)
+        self.profile_save(profile, profile_data)
         
-            if profile_data.get('userTypes'):
-                userTypeIds = profile_data.get('userTypes', '').split(',')
-                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
-                profile.userTypes.set(usertypes)
-
-            else :
-                userTypeIds = profile_data.get('userTypes', '').split(',')
-                usertypes = list(KUserType.objects.filter(id__in=['1']))
-                profile.userTypes.set(usertypes)
-
-            if type(profile_data.get('address')) is str :
-                addresses = profile_data.get('address', '').split(',')
-                address = list(KAddress.objects.filter(id__in=addresses))
-                profile.address.set(address)
-
-            profile.save()
-
         return user 
 
     def update(self, instance, validated_data):
         
-        profile_data = self.initial_data.pop('userProfile')
-
         instance.phone = self.initial_data.get('phone') if self.initial_data.get('phone') else instance.phone
         instance.email = self.initial_data.get('email') if self.initial_data.get('email') else instance.email
         instance.password = self.initial_data.get('password') if self.initial_data.get('password') else instance.password
         instance.username = self.initial_data.get('username') if self.initial_data.get('username') else instance.username
-        
         instance.save()
-        # get and update user profile
+        
+        ## PROFILE MODEL CREATES
         profile = instance.profile
-        if profile_data:
-            profile.firstName = profile_data.get('firstName') if profile_data.get('firstName') else profile.firstName
-            profile.lastName = profile_data.get('lastName') if profile_data.get('lastName') else profile.lastName
-            profile.gender = profile_data.get('gender') if profile_data.get('gender') else profile.gender
-            profile.married = profile_data.get('married') if profile_data.get('married') else profile.married
-            profile.birthday = profile_data.get('birthday') if profile_data.get('birthday') else profile.birthday
-            profile.anniversary = profile_data.get('anniversary') if profile_data.get('anniversary') else profile.anniversary
-            profile.user_role = profile_data.get('user_role') if profile_data.get('user_role') else profile.user_role
-            
-            if profile_data.get('userTypes'):
-                userTypeIds = profile_data['userTypes'].split(',')
-                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
-                profile.userTypes.set(usertypes)
+        profile_data = self.initial_data.get('profile')
+        self.profile_save(profile, profile_data)
 
-            if type(profile_data.get('address')) is str :
-                addresses = profile_data['address'].split(',')
-                address = list(KAddress.objects.filter(id__in=addresses))
-                instance.address.set(address)
-
-            profile.save()
         return instance
 
     # ---=================== USER VALIDATIONS START HERE ==========================--- #
@@ -154,17 +111,38 @@ class UserSerializer(serializers.ModelSerializer):
             representation['admin'] = True
         if hasattr(instance, 'kvendoruser'):
             representation['vendor_id'] = instance.kvendoruser.id
-        
-        # Reference LAMBDA
-        # userTypeIds = list([u.get('id') for u in instance.profile.userTypes.values()])
-        # if hasattr(instance, 'profile') and 1 not in userTypeIds:
-        #     representation['userTypes'] = [u.get('user_type') for u in instance.profile.userTypes.values() if not 'Customer' in u.get('user_type')]
         return representation
-
+        
     # ---=================== USER VALIDATIONS END HERE ==========================--- #
     #     
+    # ---=================== PROFILE DATA SAVE HERE ==========================--- #
 
+    def profile_save(self, profile, profile_data):
+        if profile_data is not None:
+            profile.firstName = profile_data.get('firstName', profile.firstName)
+            profile.lastName = profile_data.get('lastName', profile.lastName)
+            profile.gender = profile_data.get('gender', profile.gender)
+            profile.married = profile_data.get('married', profile.married)
+            profile.birthday = profile_data.get('birthday', profile.birthday)
+            profile.anniversary = profile_data.get('anniversary', profile.anniversary)
+            profile.user_role = profile_data.get('user_role', profile.user_role)
+        
+            if profile_data.get('userTypes'):
+                userTypeIds = profile_data.get('userTypes', '').split(',')
+                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
+                profile.userTypes.set(usertypes)
 
+            else :
+                userTypeIds = profile_data.get('userTypes', '').split(',')
+                usertypes = list(KUserType.objects.filter(id__in=['1']))
+                profile.userTypes.set(usertypes)
+
+            if type(profile_data.get('address')) is str :
+                addresses = profile_data.get('address', '').split(',')
+                address = list(KAddress.objects.filter(id__in=addresses))
+                profile.address.set(address)
+
+            profile.save()
 # Function to Create user Profile
 def create_profile_account(sender, instance, created, **kwargs):
     if created:
