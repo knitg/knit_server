@@ -19,13 +19,13 @@ from ..paginations import LinkSetPagination
 class ProfileListViewSet(ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = KProfileSerializer
-    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    # filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    search_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary'], 
+    # search_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary'], 
     
-    pagination_class = LinkSetPagination
+    # pagination_class = LinkSetPagination
 
-    filter_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary']
+    # filter_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary']
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     
     def get_object(self):

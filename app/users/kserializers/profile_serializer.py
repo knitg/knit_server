@@ -28,7 +28,8 @@ class KProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields = '__all__'
+        # fields = '__all__'
+        fields = ("username", "email", "phone", "userTypes", "firstName", "lastName", "gender", "married", "images", "address", "full_address")
 
     def update(self, instance, validated_data):
         instance.firstName = validated_data['firstName'] if validated_data['firstName'] else instance.firstName
