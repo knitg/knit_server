@@ -33,6 +33,11 @@ urlpatterns = [
     # http://localhost:8000/user/userfilter?search=mahi6535@gm (email search)
     # http://localhost:8000/user/userfilter?search=mbg (username search)
 
+#------================= Related models profile ==========================-------#
+    # http://localhost:8000/user/users?profile__userTypes__in=2
+    # http://localhost:8000/user/userfilter?profile__userTypes__in=2
+    # http://localhost:8000/user/userfilter?profile__firstName__icontains=Mahi
+
 # -------================ Filter and search with PAGINATION ====================--------------#
 
     # http://localhost:8000/user/users?page=2&phone__contains=94    
@@ -44,10 +49,5 @@ urlpatterns = [
     # http://localhost:8000/user/userfilter?id__in=2,4,5
     # http://localhost:8000/user/userfilter?username__contains=Mahi&email=mahi6535@gmail.com
     # http://localhost:8000/user/userfilter?email__icontians=mahi6535@gmail.com
-
-#------================= Related models profile ==========================-------#
-
-    # http://localhost:8000/user/userfilter?profile__userTypes__in=2
-    # http://localhost:8000/user/userfilter?profile__firstName__icontains=Mahi
 
 

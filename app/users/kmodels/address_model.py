@@ -17,13 +17,12 @@ class KAddress(models.Model):
     updated_at = models.DateTimeField(default=now, editable=False)
     
     
-    @property
-    def full_address(self):
+    def get_full_address(self):
         address_line = ""
         address_line += self.address_line_1 if self.address_line_1 else ""
         address_line += ", {}".format(self.address_line_2) if self.address_line_2 else ""
         address_line += ", {}".format(self.landmark) if self.landmark else ""
-        address_line += ", {}".format(self.city) if self.state.city else ""
+        address_line += ", {}".format(self.city) if self.city else ""
         address_line += ", {}".format(self.state) if self.state else ""
         address_line += ", {}".format(self.country) if self.country else ""
         address_line += ", {}".format(self.postalCode) if self.postalCode else ""

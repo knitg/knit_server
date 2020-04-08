@@ -24,10 +24,11 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
+    profile_id = serializers.IntegerField(source='profile.id', required=False)
     # password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName', 'is_admin', 'is_active')
+        fields = ('id', 'username', 'email', 'phone', 'fullName', 'profile_id','is_admin', 'is_active')
     
     def create(self, validated_data):
         validated_data = self.initial_data.get('user')
