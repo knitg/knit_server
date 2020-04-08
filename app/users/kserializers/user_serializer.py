@@ -24,29 +24,28 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     fullName = serializers.CharField(source='profile.get_full_name', required=False)
-    password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
+    # password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName', 'password')
+        fields = ('id', 'username', 'email', 'phone', 'fullName')
     
     def create(self, validated_data):
-
+        validated_data = self.initial_data.get('user')
         user = User.objects.create_user(**validated_data)
         user.save()
 
-        ## PROFILE MODEL CREATES
+        # ------ PROFILE CREATE ------ #
         profile = user.profile
-        profile_data = self.initial_data.get('profile')
+        profile_data = self.initial_data.pop('profile')  
         self.profile_save(profile, profile_data)
-        
+
         return user 
 
-    def update(self, instance, validated_data):
-        
-        instance.phone = self.initial_data.get('phone', instance.phone)
-        instance.email = self.initial_data.get('email', instance.email)
-        instance.password = self.initial_data.get('password', instance.password)
-        instance.username = self.initial_data.get('username', instance.username)
+    def update(self, instance, validated_data):        
+        users_data = self.initial_data.pop('user')
+        instance.phone = users_data.get('phone', instance.phone)
+        instance.email = users_data.get('email', instance.email)
+        instance.username = users_data.get('username', instance.username)
         instance.save()
         
         ## PROFILE MODEL CREATES
@@ -55,6 +54,34 @@ class UserSerializer(serializers.ModelSerializer):
         self.profile_save(profile, profile_data)
 
         return instance
+    
+    # ---=================== PROFILE DATA SAVE HERE ==========================--- #
+    def profile_save(self, profile, profile_data):
+        if profile_data is not None:
+            profile.firstName = profile_data.get('firstName', profile.firstName)
+            profile.lastName = profile_data.get('lastName', profile.lastName)
+            profile.gender = profile_data.get('gender', profile.gender)
+            profile.married = profile_data.get('married', profile.married)
+            profile.birthday = profile_data.get('birthday', profile.birthday)
+            profile.anniversary = profile_data.get('anniversary', profile.anniversary)
+            profile.user_role = profile_data.get('user_role', profile.user_role)
+        
+            if profile_data.get('userTypes') is not None:
+                userTypeIds = profile_data.get('userTypes', '').split(',')
+                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
+                profile.userTypes.set(usertypes)
+
+            else :
+                usertypes = list(KUserType.objects.filter(id__in=['1']))
+                profile.userTypes.set(usertypes)
+
+            if type(profile_data.get('address')) is str :
+                addresses = profile_data.get('address', '').split(',')
+                address = list(KAddress.objects.filter(id__in=addresses))
+                profile.address.set(address)
+
+            profile.save()
+
 
     # ---=================== USER VALIDATIONS START HERE ==========================--- #
     #     
@@ -66,9 +93,10 @@ class UserSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
         
         ## Check if phone number already registered
-        hasPhoneNumbers = User.objects.filter(phone=value)
-        if len(hasPhoneNumbers):
-            raise serializers.ValidationError('Phone number should be unique')
+        if self.instance is None:
+            hasPhoneNumbers = User.objects.filter(phone=value)
+            if len(hasPhoneNumbers):
+                raise serializers.ValidationError('Phone number should be unique')
         
         return value
 
@@ -79,7 +107,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     def validate_email(self, value):
         ## Check if email already registered
-        if value is not None:
+        if value is not None and self.instance is None:
             isEmailExists = User.objects.filter(email=value)
             if len(isEmailExists):
                 raise serializers.ValidationError('email already exists')
@@ -87,15 +115,19 @@ class UserSerializer(serializers.ModelSerializer):
     
 
     def validate(self, data):
+        data = self.initial_data.get('data')
         if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
             raise serializers.ValidationError("Email or phone required")
-        if data.get('username') is None:
+        if data.get('username'):
             data['username'] = data.get('username', None)
-        if data.get('email') is None:
+            self.validate_email(data['username'])
+        if data.get('email'):
             data['email'] = data.get('email', None)
-        if data.get('phone') is None:
+            self.validate_email(data['email'])
+        if data.get('phone'):
             data['phone'] = data.get('phone', None)
-        if data.get('password') is None:
+            self.validate_phone(data['phone'])
+        if data.get('password') is None and self.instance is None:
             raise serializers.ValidationError("password is required")
         else:
             data['password'] = data.get('password')
@@ -112,34 +144,7 @@ class UserSerializer(serializers.ModelSerializer):
         
     # ---=================== USER VALIDATIONS END HERE ==========================--- #
     #     
-    # ---=================== PROFILE DATA SAVE HERE ==========================--- #
-
-    def profile_save(self, profile, profile_data):
-        if profile_data is not None:
-            profile.firstName = profile_data.get('firstName', profile.firstName)
-            profile.lastName = profile_data.get('lastName', profile.lastName)
-            profile.gender = profile_data.get('gender', profile.gender)
-            profile.married = profile_data.get('married', profile.married)
-            profile.birthday = profile_data.get('birthday', profile.birthday)
-            profile.anniversary = profile_data.get('anniversary', profile.anniversary)
-            profile.user_role = profile_data.get('user_role', profile.user_role)
-        
-            if profile_data.get('userTypes'):
-                userTypeIds = profile_data.get('userTypes', '').split(',')
-                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
-                profile.userTypes.set(usertypes)
-
-            else :
-                userTypeIds = profile_data.get('userTypes', '').split(',')
-                usertypes = list(KUserType.objects.filter(id__in=['1']))
-                profile.userTypes.set(usertypes)
-
-            if type(profile_data.get('address')) is str :
-                addresses = profile_data.get('address', '').split(',')
-                address = list(KAddress.objects.filter(id__in=addresses))
-                profile.address.set(address)
-
-            profile.save()
+    
 # Function to Create user Profile
 def create_profile_account(sender, instance, created, **kwargs):
     if created:

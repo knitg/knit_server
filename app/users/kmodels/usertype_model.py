@@ -9,5 +9,8 @@ class KUserType(models.Model):
         verbose_name = 'Knit User type'
         verbose_name_plural = 'Knit User types'
     
+    def __repr__(self):
+        return super().__repr__() + "User type: " + str(self.user_type) 
+
     def __str__(self):
-        return self.type
+        return "{}, {}".format(self.user_type, self.description)

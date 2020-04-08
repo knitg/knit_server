@@ -35,4 +35,4 @@ class Profile(TimestampedModel):
         return 'https://static.productionready.io/images/smiley-cyrus.jpg'
 
     def __str__(self):
-        return self.get_full_name()
+        return "%s %s" % (self.firstName, self.lastName)

@@ -8,13 +8,26 @@ from rest_framework.exceptions import APIException
 
 from ..kmodels.profile_model import Profile
 from ..kserializers.profile_serializer import KProfileSerializer
+from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser, JSONParser
+
+from rest_framework import filters
+from url_filter.integrations.drf import DjangoFilterBackend
 
 from ..renderers import DataJSONRenderer
+from ..paginations import LinkSetPagination
 
 class ProfileListViewSet(ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = KProfileSerializer
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    
+    search_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary'], 
+    
+    pagination_class = LinkSetPagination
 
+    filter_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary']
+    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+    
     def get_object(self):
         queryset = self.get_queryset()
         filter = {}
@@ -26,9 +39,7 @@ class ProfileViewSet(ModelViewSet):
     serializer_class = KProfileSerializer
 
     def get_queryset(self):
-        profile = Profile.objects.select_related('user').filter(
-                    user__pk=self.kwargs['user_id']
-                )
+        profile = Profile.objects.select_related('user').filter(user__pk=self.kwargs['user_id'])
         return profile
 
     def get_object(self):

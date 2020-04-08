@@ -9,48 +9,36 @@ from ..kserializers.user_serializer import UserSerializer
 
 from rest_framework.response import Response
 from rest_framework import status 
- 
+from ..paginations import LinkSetPagination 
+
+from rest_framework import filters
+from url_filter.integrations.drf import DjangoFilterBackend
 
 class VendorUserViewSet(viewsets.ModelViewSet):
     queryset = KVendorUser.objects.all()
     serializer_class = KVendorUserSerializer
-    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    
+    search_fields = ['name','masters', 'emergency', 'doorService']
+    
+    pagination_class = LinkSetPagination
 
+    filter_fields = ['id','name', 'masters', 'closed', 'emergency', 'doorService']
+    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+    
     def create(self, request, *args, **kwargs):
-        # set to mutable
-        request.data._mutable = True
-        ## Files assigned to request data images
-        request.data['images'] = []
-        user_data = {}
-        user_data['phone'] = request.data.get('phone') if request.data.get('phone') else None
-        user_data['email'] = request.data.get('email') if request.data.get('email') else None
-        user_data['password'] = request.data.get('password') if request.data.get('password') else None
-        user_data['username'] = request.data.get('username') if request.data.get('username') else None
+
+        #------------ PREPARE USER INFO ---------------#        
+        user_info = request.data.get('user')
+        profile_info = request.data.get('profile')
+        user_data = self.prepareUserData(user_info, profile_info)
         if request.FILES:
-             request.data['images'] = request.FILES
-        
-        vendor_details = {}
-        
-        vendor_details['name'] = request.data.get('name') if request.data.get('name') else None
-        vendor_details['openTime'] = request.data.get('openTime') if request.data.get('openTime') else None
-        vendor_details['closeTime'] = request.data.get('closeTime') if request.data.get('closeTime') else None
-        vendor_details['masters'] = request.data.get('masters') if request.data.get('masters') else None
-        vendor_details['isWeekends'] = request.data.get('isWeekends') if request.data.get('isWeekends') else False
-        vendor_details['alternateDays'] = request.data.get('alternateDays') if request.data.get('alternateDays') else None
-        vendor_details['closed'] = request.data.get('closed') if request.data.get('closed') else True
-        vendor_details['doorService'] = request.data.get('doorService') if request.data.get('doorService') else False
-        vendor_details['emergency'] = request.data.get('emergency') if request.data.get('emergency') else True
-        
-        profile_details = {}
-        
-        profile_details['userTypes'] = request.data.get('userTypes') if request.data.get('userTypes') else None
-        profile_details['address'] = request.data.get('address') if request.data.get('address') else None
-        if request.FILES:
-             profile_details['images'] = request.FILES
-        
-        vendor_serializer = KVendorUserSerializer(data= {'user': user_data, 'vendor': vendor_details, 'profile':profile_details, 'data': request.data}, context={'request': request})
-        
-        ### Vendor serializer save initiated
+            user_data['profile']['images'] = request.FILES
+
+        #------------ PREPARE VENDOR INFO ---------------#
+        vendor_details = self.prepareVendorData(request.data)
+
+        vendor_serializer = KVendorUserSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': request.data}, context={'request': request})
         if vendor_serializer.is_valid():
             vendor_serializer.save()
             return Response({'vendorId':vendor_serializer.instance.id}, status=status.HTTP_201_CREATED)
@@ -58,26 +46,22 @@ class VendorUserViewSet(viewsets.ModelViewSet):
             return Response(vendor_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, *args, **kwargs):
-        # set to mutable
-        request.data._mutable = True
-        
+
+        #------------ PREPARE USER INFO ---------------#        
+        user_info = request.data.get('user')
+        profile_info = request.data.get('profile')
+        user_data = self.prepareUserData(user_info, profile_info)
         if request.FILES:
-            request.data['images'] = request.FILES
-        # request.data['name'] = request.data.get('name') if request.data.get('openTime') else instance.name   
-        # request.data['openTime'] = request.data.get('openTime') if request.data.get('openTime') else instance.openTime
-        # request.data['closeTime'] = request.data.get('closeTime') if request.data.get('closeTime') else  instance.closeTime
-        # request.data['masters'] = request.data.get('masters') if request.data.get('masters') else  instance.masters
-        # request.data['isWeekends'] = request.data.get('isWeekends') if request.data.get('isWeekends') else instance.isWeekends
-        # request.data['alternateDays'] = request.data.get('alternateDays') if request.data.get('alternateDays') else instance.alternateDays
-        # request.data['closed'] = request.data.get('closed') if request.data.get('closed') else instance.closed
-        # request.data['doorService'] = request.data.get('doorService') if request.data.get('doorService') else instance.doorService
-        # request.data['emergency'] = request.data.get('emergency') if request.data.get('emergency') else instance.emergency
-        user = UserSerializer(request.data)
-        serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
+            user_data['profile']['images'] = request.FILES
+
+        #------------ PREPARE VENDOR INFO ---------------#
+        vendor_details = self.prepareVendorData(request.data)
+        
+        serializer = self.get_serializer(self.get_object(), data={'user': user_data, 'vendor': vendor_details, 'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
-        return Response(serializer.data)
- 
+        return Response({'id':serializer.data.get("id")}, status=status.HTTP_202_ACCEPTED)
+        
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
         self.perform_destroy(instance)
@@ -88,3 +72,35 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         if instance.user:
             # instance.images.remove(e)
             User.objects.get(id=instance.user.id).delete()
+    
+    
+    #======================== CREATE USER ========================#
+    def prepareUserData(self, user_info, profile_info):
+        user_data = {}
+        if user_info:
+            user_data['phone'] = user_info.get('phone')
+            user_data['email'] = user_info.get('email')
+            user_data['password'] = user_info.get('password')
+            user_data['username'] = user_info.get('username')
+            user_data['profile'] = {}
+            if profile_info:
+                user_data['profile']['firstName'] = profile_info.get('firstName')
+                user_data['profile']['lastName'] = profile_info.get('lastName')
+                user_data['profile']['userTypes'] = profile_info.get('userTypes')
+                user_data['profile']['user_role'] = profile_info.get('user_role')
+                user_data['profile']['address'] = profile_info.get('address')     
+        return user_data
+  
+    #======================== CREATE VENDOR ========================#
+    def prepareVendorData(self, vendor_info):
+        vendor_details = {}
+        vendor_details['name'] = vendor_info.get('name')
+        vendor_details['openTime'] = vendor_info.get('openTime')
+        vendor_details['closeTime'] = vendor_info.get('closeTime')
+        vendor_details['masters'] = vendor_info.get('masters')
+        vendor_details['isWeekends'] = vendor_info.get('isWeekends')
+        vendor_details['alternateDays'] = vendor_info.get('alternateDays')
+        vendor_details['closed'] = vendor_info.get('closed')
+        vendor_details['doorService'] = vendor_info.get('doorService')
+        vendor_details['emergency'] = vendor_info.get('emergency')
+        return vendor_details
