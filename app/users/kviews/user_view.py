@@ -21,14 +21,15 @@ class UserViewSet(viewsets.ModelViewSet):
     ## Search Filter and ordering
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    search_fields = ['username','phone', '=email']
+    search_fields = ['username','phone', '=email', 'is_admin', 'is_active']
     
     pagination_class = LinkSetPagination
 
-    filter_fields = ['id','username', 'email', 'profile', 'phone']
+    filter_fields = ['id','username', 'email', 'profile', 'phone', 'is_admin', 'is_active']
     
     # parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+
 
     def create(self, request, *args, **kwargs):        
         # User Data
@@ -59,8 +60,10 @@ class UserViewSet(viewsets.ModelViewSet):
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
-        instance.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        instance.is_active = False
+        instance.save()
+        # instance.delete()
+        return Response({'success':'{} deleted successfully'.format(instance.id)}, status=status.HTTP_200_OK)
 
     
     #======================== CREATE USER ========================#
