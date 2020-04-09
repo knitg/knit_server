@@ -13,6 +13,7 @@ from django.db.models.signals import post_save
 from .image_serializer import KImageSerializer
 from .address_serializer import KAddressSerializer
 from .usertype_serializer import KUserTypeSerializer
+from .profile_serializer import KProfileSerializer
 
 import re
 
@@ -23,12 +24,11 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-    fullName = serializers.CharField(source='profile.get_full_name', required=False)
-    profile_id = serializers.IntegerField(source='profile.id', required=False)
+    fullName = serializers.ReadOnlyField(source='profile.get_full_name', required=False)
     # password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone', 'fullName', 'profile_id','is_admin', 'is_active')
+        fields = ('id', 'username', 'email', 'phone',  'fullName')
     
     def create(self, validated_data):
         validated_data = self.initial_data.get('user')
@@ -47,6 +47,7 @@ class UserSerializer(serializers.ModelSerializer):
         instance.phone = users_data.get('phone', instance.phone)
         instance.email = users_data.get('email', instance.email)
         instance.username = users_data.get('username', instance.username)
+        instance.is_admin = users_data.get('is_admin', instance.is_admin)
         instance.save()
         
         ## PROFILE MODEL CREATES
@@ -72,10 +73,6 @@ class UserSerializer(serializers.ModelSerializer):
                 usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
                 profile.userTypes.set(usertypes)
 
-            else :
-                usertypes = list(KUserType.objects.filter(id__in=['1']))
-                profile.userTypes.set(usertypes)
-
             if type(profile_data.get('address')) is str :
                 addresses = profile_data.get('address', '').split(',')
                 address = list(KAddress.objects.filter(id__in=addresses))
@@ -87,28 +84,29 @@ class UserSerializer(serializers.ModelSerializer):
     # ---=================== USER VALIDATIONS START HERE ==========================--- #
     #     
     def validate_phone(self, value):
-        phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
-        if len(value) > 10:
-            raise serializers.ValidationError('Phone length should be 10 numbers')
-        if phoneNumber is None:
-            raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
-        
-        ## Check if phone number already registered
-        if self.instance is None:
-            hasPhoneNumbers = User.objects.filter(phone=value)
-            if len(hasPhoneNumbers):
-                raise serializers.ValidationError('Phone number should be unique')
+        if value:
+            phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
+            if len(value) > 10:
+                raise serializers.ValidationError('Phone length should be 10 numbers')
+            if phoneNumber is None:
+                raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
+            
+            ## Check if phone number already registered
+            if self.instance is None:
+                hasPhoneNumbers = User.objects.filter(phone=value)
+                if len(hasPhoneNumbers):
+                    raise serializers.ValidationError('Phone number should be unique')
         
         return value
 
     def validate_username(self, value):
-        if value is not None and re.search(r"\s", value):
+        if value and re.search(r"\s", value):
             raise serializers.ValidationError("user name shouldn't have spaces")
         return value
 
     def validate_email(self, value):
         ## Check if email already registered
-        if value is not None and self.instance is None:
+        if value and self.instance is None:
             isEmailExists = User.objects.filter(email=value)
             if len(isEmailExists):
                 raise serializers.ValidationError('email already exists')
@@ -117,17 +115,17 @@ class UserSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         data = self.initial_data.get('data')
+        self.validate_username(data['username'])
+        self.validate_email(data['email'])
+        self.validate_phone(data['phone'])
         if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
             raise serializers.ValidationError("Email or phone required")
         if data.get('username'):
             data['username'] = data.get('username', None)
-            self.validate_email(data['username'])
         if data.get('email'):
             data['email'] = data.get('email', None)
-            self.validate_email(data['email'])
         if data.get('phone'):
             data['phone'] = data.get('phone', None)
-            self.validate_phone(data['phone'])
         if data.get('password') is None and self.instance is None:
             raise serializers.ValidationError("password is required")
         else:

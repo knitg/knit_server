@@ -6,14 +6,13 @@ from ..kmodels.usertype_model import KUserType
 
 from .image_serializer import KImageSerializer
 from .usertype_serializer import KUserTypeSerializer
-from .user_serializer import UserSerializer
 from .address_serializer import KAddressSerializer
 
 class KProfileSerializer(serializers.ModelSerializer):  
     # getting user details
-    username = serializers.CharField(source='user.username')
-    email = serializers.CharField(source='user.email')
-    phone = serializers.CharField(source='user.phone')
+    username = serializers.ReadOnlyField(source='user.username')
+    email = serializers.ReadOnlyField(source='user.email')
+    phone = serializers.ReadOnlyField(source='user.phone')
 
     firstName = serializers.CharField(allow_blank=True, required=False)
     lastName = serializers.CharField(allow_blank=True, required=False)

@@ -215,3 +215,50 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'knit_server_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'app/logs/knit_server.log',
+        },
+        'knit_server_db_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'app/logs/knit_server_db.log',
+        },
+        'users_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'app/logs/users_server.log',
+        },
+        'products_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'app/logs/products_server.log',
+        }
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['knit_server_db_file'],
+            'level': 'DEBUG',
+        },
+        'django.request': {
+            'handlers': ['knit_server_file'],
+            'level': 'INFO',
+        },
+        'users': {
+            'handlers': ['users_file'],
+            'level': 'DEBUG'
+        },
+        'products': {
+            'handlers': ['products_file'],
+            'level': 'INFO'
+        }
+    },
+}

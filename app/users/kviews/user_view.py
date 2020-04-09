@@ -31,7 +31,8 @@ class UserViewSet(viewsets.ModelViewSet):
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
 
 
-    def create(self, request, *args, **kwargs):        
+    def create(self, request, *args, **kwargs):
+        request.data._mutable = True     
         # User Data
         user_data = self.prepareUserData(request.data)
         # Profile Data
@@ -74,6 +75,7 @@ class UserViewSet(viewsets.ModelViewSet):
             user_data['email'] = user_info.get('email')
             user_data['password'] = user_info.get('password')
             user_data['username'] = user_info.get('username')
+            user_data['is_admin'] = user_info.get('is_admin')
         return user_data
     
     #======================== CREATE PROFILE ========================#

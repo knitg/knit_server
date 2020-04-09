@@ -47,7 +47,7 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, TimestampedModel):
     username = models.CharField(db_index=True, max_length=255, blank=True, null=True)
-    phone = models.CharField(db_index=True, max_length=50, blank=True, null=True, unique=True)
+    phone = models.CharField(db_index=True, max_length=50, blank=True, null=True)
     email = models.EmailField(db_index=True, blank=True, null=True)
     password = models.CharField(max_length=128, null=False, blank=False)
     
