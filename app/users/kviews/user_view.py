@@ -14,11 +14,15 @@ from url_filter.integrations.drf import DjangoFilterBackend
 from ..paginations import LinkSetPagination
 
 
+import logging
+logger = logging.getLogger(__name__)
 
 class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
+    logger.debug(" ********** User LOGS ********** ")
+
+    queryset = User.objects.filter(is_active=True)
     serializer_class = UserSerializer
-    ## Search Filter and ordering
+    
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
     search_fields = ['username','phone', '=email', 'is_admin', 'is_active']
@@ -27,42 +31,48 @@ class UserViewSet(viewsets.ModelViewSet):
 
     filter_fields = ['id','username', 'email', 'profile', 'phone', 'is_admin', 'is_active']
     
-    # parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
-    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
-
+    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser)
 
     def create(self, request, *args, **kwargs):
-        request.data._mutable = True     
+        if request.data.get("_mutable"):
+            request.data._mutable = True        
+        logger.debug(" ----- User CREATE initiated ----- ")
         # User Data
         user_data = self.prepareUserData(request.data)
         # Profile Data
         profileObj = request.data.get('profile')
         profile_data = self.prepareProfileData(profileObj)
-        
+        logger.debug("Data prepared. Sending data to the serializer ")
+
         user_serializer = UserSerializer(data= {'user': user_data, 'profile': profile_data, 'data':request.data})
-        if user_serializer.is_valid():
-            user_serializer.save()
-            return Response({'userId':user_serializer.instance.id}, status=status.HTTP_201_CREATED)
-        else:
-            return Response(user_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        user_serializer.is_valid(raise_exception=True)
+        user_serializer.save()
+        logger.debug("User saved successfully!!!")
+        return Response({'userId':user_serializer.instance.id}, status=status.HTTP_201_CREATED)
 
     def update(self, request, *args, **kwargs):   
-        request.data._mutable = True     
-        
+        if request.data.get("_mutable"):
+            request.data._mutable = True  
+        logger.debug(" ----- User UPDATE initiated ----- ")
         user_data = self.prepareUserData(request.data)
         
         profileObj = request.data.get('profile')
         profile_data = self.prepareProfileData(profileObj)      
+        logger.debug("Data prepared. Sending data to the serializer ")
 
         serializer = self.get_serializer(self.get_object(), data= {'user': user_data, 'profile':profile_data, 'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
+        logger.info("Successfully USER updated")
+
         return Response(serializer.data)
 
     def destroy(self, request, *args, **kwargs):
+        logger.debug(" ----- User DELETE initiated ----- ")
         instance = self.get_object()
         instance.is_active = False
         instance.save()
+        logger.info("Successfully USER DELETED")
         # instance.delete()
         return Response({'success':'{} deleted successfully'.format(instance.id)}, status=status.HTTP_200_OK)
 

@@ -26,9 +26,10 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     fullName = serializers.ReadOnlyField(source='profile.get_full_name', required=False)
     # password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
+    errors = {}
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone',  'fullName')
+        fields = ('id', 'username', 'email', 'phone',  'fullName', 'is_active')
     
     def create(self, validated_data):
         validated_data = self.initial_data.get('user')
@@ -87,49 +88,59 @@ class UserSerializer(serializers.ModelSerializer):
         if value:
             phoneNumber = re.search(r'\b[6789]\d{9}\b', value)
             if len(value) > 10:
-                raise serializers.ValidationError('Phone length should be 10 numbers')
+                self.errors['length'] = 'Phone length should be 10 numbers'
             if phoneNumber is None:
-                raise serializers.ValidationError('Phone number should starts with 6,7,8,9 number')
+                self.errors['startWith'] = 'Phone number should starts with 6,7,8,9 number'
             
             ## Check if phone number already registered
-            if self.instance is None:
+            if not (self.instance and self.instance.phone == value):
                 hasPhoneNumbers = User.objects.filter(phone=value)
                 if len(hasPhoneNumbers):
-                    raise serializers.ValidationError('Phone number should be unique')
+                    self.errors['phone_exists'] = 'Phone number is already in use. Try with different number'
         
         return value
 
     def validate_username(self, value):
         if value and re.search(r"\s", value):
             raise serializers.ValidationError("user name shouldn't have spaces")
+        
+        if not (self.instance and self.instance.username == value):
+            hasUserName = User.objects.filter(username=value)
+            if len(hasUserName):
+                self.errors['username_exists'] = 'Username is already in use. Try with different name'
+                
         return value
 
     def validate_email(self, value):
         ## Check if email already registered
-        if value and self.instance is None:
-            isEmailExists = User.objects.filter(email=value)
-            if len(isEmailExists):
-                raise serializers.ValidationError('email already exists')
+        if not (self.instance and self.instance.email == value):
+            hasUserName = User.objects.filter(email=value)
+            if len(hasUserName):
+                self.errors['email_exists'] = 'Email is already in use. Try with different email'
+                
         return value
     
 
     def validate(self, data):
+        self.errors = {}
         data = self.initial_data.get('data')
-        self.validate_username(data['username'])
-        self.validate_email(data['email'])
-        self.validate_phone(data['phone'])
         if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
             raise serializers.ValidationError("Email or phone required")
         if data.get('username'):
             data['username'] = data.get('username', None)
+            self.validate_username(data['username'])
         if data.get('email'):
             data['email'] = data.get('email', None)
+            self.validate_email(data['email'])
         if data.get('phone'):
             data['phone'] = data.get('phone', None)
+            self.validate_phone(data['phone'])
         if data.get('password') is None and self.instance is None:
-            raise serializers.ValidationError("password is required")
+            self.errors['required'] = "Password is required"
+            # raise serializers.ValidationError("password is required")
         else:
             data['password'] = data.get('password')
+        raise serializers.ValidationError(self.errors)
         return data
 
     # USING BELOW METHOD CHECKING ADMIN USER

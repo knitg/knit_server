@@ -140,7 +140,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ],
-    
+    'EXCEPTION_HANDLER': 'users.exceptions.DEFAULT_400_ERROR_EXCEPTION',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10
 } 
@@ -218,6 +218,15 @@ STATICFILES_FINDERS = [
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'file': {
+            'format': ' %(name)-12s %(asctime)s %(levelname)-8s %(message)s'
+        }
+    },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
@@ -226,21 +235,25 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': 'app/logs/knit_server.log',
+            'formatter': 'file'
         },
         'knit_server_db_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': 'app/logs/knit_server_db.log',
+            'formatter': 'file'
         },
         'users_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': 'app/logs/users_server.log',
+            'formatter': 'file'
         },
         'products_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': 'app/logs/products_server.log',
+            'formatter': 'file'
         }
     },
     'loggers': {

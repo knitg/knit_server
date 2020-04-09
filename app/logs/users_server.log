@@ -1,0 +1,8 @@
+ users.kviews.user_view 2020-04-10 00:04:45,697 DEBUG     ----- User UPDATE initiated ----- 
+ users.kviews.user_view 2020-04-10 00:04:45,697 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-10 00:04:46,667 INFO     Successfully USER updated
+ users.kviews.user_view 2020-04-10 00:05:49,790 DEBUG     ********** User LOGS ********** 
+ users.kviews.user_view 2020-04-10 00:06:13,656 DEBUG     ********** User LOGS ********** 
+ users.kviews.user_view 2020-04-10 00:07:27,416 DEBUG     ********** User LOGS ********** 
+ users.kviews.user_view 2020-04-10 00:07:56,809 DEBUG     ********** User LOGS ********** 
+ users.kviews.user_view 2020-04-10 00:08:38,220 DEBUG     ********** User LOGS ********** 
