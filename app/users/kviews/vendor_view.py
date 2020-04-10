@@ -14,6 +14,9 @@ from ..paginations import LinkSetPagination
 from rest_framework import filters
 from url_filter.integrations.drf import DjangoFilterBackend
 
+import logging
+logger = logging.getLogger(__name__)
+
 class VendorUserViewSet(viewsets.ModelViewSet):
     queryset = KVendorUser.objects.all()
     serializer_class = KVendorUserSerializer
@@ -26,8 +29,10 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     filter_fields = ['id','name', 'masters', 'closed', 'emergency', 'doorService']
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     
+
     def create(self, request, *args, **kwargs):
 
+        logger.info(" \n\n ----- VENDOR CREATE initiated -----")
         #------------ PREPARE USER INFO ---------------#        
         user_info = request.data.get('user')
         profile_info = request.data.get('profile')
@@ -37,16 +42,18 @@ class VendorUserViewSet(viewsets.ModelViewSet):
 
         #------------ PREPARE VENDOR INFO ---------------#
         vendor_details = self.prepareVendorData(request.data)
+        logger.debug(user_data)
+        logger.debug("Data prepared. Sending data to the serializer ")
 
         vendor_serializer = KVendorUserSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': request.data}, context={'request': request})
-        if vendor_serializer.is_valid():
-            vendor_serializer.save()
-            return Response({'vendorId':vendor_serializer.instance.id}, status=status.HTTP_201_CREATED)
-        else:
-            return Response(vendor_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+        vendor_serializer.is_valid(raise_exception=True)
+        vendor_serializer.save()
+        logger.debug({'vendorId':vendor_serializer.instance.id, "status":200})
+        logger.debug("Vendor saved successfully!!!")
+        return Response({'vendorId':vendor_serializer.instance.id}, status=status.HTTP_201_CREATED)
+        
     def update(self, request, *args, **kwargs):
-
+        logger.info(" \n\n ----- VENDOR UPDATE initiated ----- ")
         #------------ PREPARE USER INFO ---------------#        
         user_info = request.data.get('user')
         profile_info = request.data.get('profile')
@@ -57,6 +64,8 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         #------------ PREPARE VENDOR INFO ---------------#
         vendor_details = self.prepareVendorData(request.data)
         
+        logger.debug(vendor_details)
+        logger.debug("Vendor update data prepared. Sending data to the vendor serializer ")
         serializer = self.get_serializer(self.get_object(), data={'user': user_data, 'vendor': vendor_details, 'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
@@ -77,18 +86,19 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     #======================== CREATE USER ========================#
     def prepareUserData(self, user_info, profile_info):
         user_data = {}
+        user_data['profile'] = {}
         if user_info:
             user_data['phone'] = user_info.get('phone')
             user_data['email'] = user_info.get('email')
             user_data['password'] = user_info.get('password')
             user_data['username'] = user_info.get('username')
-            user_data['profile'] = {}
-            if profile_info:
-                user_data['profile']['firstName'] = profile_info.get('firstName')
-                user_data['profile']['lastName'] = profile_info.get('lastName')
-                user_data['profile']['userTypes'] = profile_info.get('userTypes')
-                user_data['profile']['user_role'] = profile_info.get('user_role')
-                user_data['profile']['address'] = profile_info.get('address')     
+            
+        if profile_info:
+            user_data['profile']['firstName'] = profile_info.get('firstName')
+            user_data['profile']['lastName'] = profile_info.get('lastName')
+            user_data['profile']['userTypes'] = profile_info.get('userTypes')
+            user_data['profile']['user_role'] = profile_info.get('user_role')
+            user_data['profile']['address'] = profile_info.get('address')     
         return user_data
   
     #======================== CREATE VENDOR ========================#

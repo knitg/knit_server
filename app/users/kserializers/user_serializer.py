@@ -17,6 +17,9 @@ from .profile_serializer import KProfileSerializer
 
 import re
 
+import logging
+logger = logging.getLogger(__name__)
+
 class CurrentUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -31,6 +34,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ('id', 'username', 'email', 'phone',  'fullName', 'is_active')
     
+
     def create(self, validated_data):
         validated_data = self.initial_data.get('user')
         user = User.objects.create_user(**validated_data)
@@ -69,16 +73,20 @@ class UserSerializer(serializers.ModelSerializer):
             profile.anniversary = profile_data.get('anniversary', profile.anniversary)
             profile.user_role = profile_data.get('user_role', profile.user_role)
         
-            if profile_data.get('userTypes') is not None:
-                userTypeIds = profile_data.get('userTypes', '').split(',')
-                usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
-                profile.userTypes.set(usertypes)
+            if profile_data.get('userTypes'):
+                if isinstance(profile_data.get('userTypes'), list):
+                    usertypes = list(KUserType.objects.filter(id__in=profile_data.get('userTypes')))
+                    profile.userTypes.set(usertypes)
+                else:
+                    logger.warning("NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a {} ".format(type(profile_data.get('userTypes'))))
 
-            if type(profile_data.get('address')) is str :
-                addresses = profile_data.get('address', '').split(',')
-                address = list(KAddress.objects.filter(id__in=addresses))
-                profile.address.set(address)
-
+            if profile_data.get('address'):
+                if isinstance(profile_data.get('address'), list):
+                    address = list(KAddress.objects.filter(id__in=profile_data.get('address')))
+                    profile.address.set(address)
+                else:
+                    logger.warning("NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array {}".format(type(profile_data.get('address'))))
+                    
             profile.save()
 
 
@@ -159,5 +167,6 @@ class UserSerializer(serializers.ModelSerializer):
 def create_profile_account(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
+        logger.info("Profile created successfully")
 #Post Save handler to create user Account/Profile
 post_save.connect(create_profile_account, sender=User, weak=False)

@@ -11,6 +11,9 @@ from .image_serializer import KImageSerializer
 from .usertype_serializer import KUserTypeSerializer
 from .user_serializer import UserSerializer
 
+import logging
+logger = logging.getLogger(__name__)
+
 class KVendorUserSerializer(serializers.ModelSerializer):
     # user = UserSerializer(many=False) 
     user_id =  serializers.IntegerField(source="user.id", required=False)
@@ -30,11 +33,12 @@ class KVendorUserSerializer(serializers.ModelSerializer):
         users_data = self.initial_data.pop('user')  
         validated_data = self.initial_data.pop('vendor')  
         # User creation
-        user_serializer = UserSerializer(data=users_data, many=False)
-        if user_serializer.is_valid():
-            user_serializer.save()
-        else:
-            raise serializers.ValidationError("Something went wrong with user creation")
+        logger.info("User create initiated from vendor")
+        user_serializer = UserSerializer(data={'user': users_data, 'profile': users_data.get('profile'), 'data':users_data}, many=False)
+        user_serializer.is_valid(raise_exception=True)
+        user_serializer.save()
+        logger.info("User created successfully")
+
         # Vendor creation
         vendor = KVendorUser.objects.create(user=user_serializer.instance, **validated_data)
         return vendor
@@ -44,6 +48,8 @@ class KVendorUserSerializer(serializers.ModelSerializer):
         vendorObj = self.initial_data.get('vendor')
         self.updateUserData(userObj, instance)
         updated_instance = self.updateVendorData(vendorObj, instance)
+        logger.info(updated_instance)
+        logger.info("Vendor updated successfully")
         return updated_instance
     
 #-------------------------------  UPDATE USER DATA --------------------------------#
@@ -59,15 +65,21 @@ class KVendorUserSerializer(serializers.ModelSerializer):
             instance.user.profile.user_role = user_info['profile'].get('user_role', instance.user.profile.user_role)
         instance.user.save()
         instance.user.profile.save()
-        if user_info['profile'].get('userTypes') is not None:
-            userTypeIds = user_info['profile'].get('userTypes', '').split(',')
-            usertypes = list(KUserType.objects.filter(id__in=userTypeIds))
-            instance.user.profile.userTypes.set(usertypes)
-        if user_info['profile'].get('address') is not None:
-            addressIds = str(user_info['profile'].get('address', '')).split(',')
-            addresses = list(KAddress.objects.filter(id__in=addressIds))
-            instance.user.profile.address.set(addresses)
-            
+        if user_info['profile'].get('userTypes'):
+            if isinstance(user_info['profile'].get('userTypes'), list):
+                usertypes = list(KUserType.objects.filter(id__in=user_info['profile'].get('userTypes')))
+                instance.user.profile.userTypes.set(usertypes)
+            else:
+                logger.warning("NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a {} ".format(type(user_info['profile'].get('userTypes'))))
+
+        if user_info['profile'].get('address'):
+            if isinstance(user_info['profile'].get('address'), list):
+                address = list(KAddress.objects.filter(id__in=user_info['profile'].get('address')))
+                instance.user.profile.address.set(addresses)
+
+            else:
+                logger.warning("NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array {}".format(type(profile_data.get('address'))))
+                
 #-------------------------------  UPDATE VENDOR DATA --------------------------------#
 
     def updateVendorData(self, vendor_info, instance):

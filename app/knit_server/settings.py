@@ -142,7 +142,8 @@ REST_FRAMEWORK = {
     ],
     'EXCEPTION_HANDLER': 'users.exceptions.DEFAULT_400_ERROR_EXCEPTION',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 10,
+    
 } 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'users.kserializers.user_serializer.UserSerializer',

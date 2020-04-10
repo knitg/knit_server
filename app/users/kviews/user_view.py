@@ -18,8 +18,6 @@ import logging
 logger = logging.getLogger(__name__)
 
 class UserViewSet(viewsets.ModelViewSet):
-    logger.debug(" ********** User LOGS ********** ")
-
     queryset = User.objects.filter(is_active=True)
     serializer_class = UserSerializer
     
@@ -32,48 +30,64 @@ class UserViewSet(viewsets.ModelViewSet):
     filter_fields = ['id','username', 'email', 'profile', 'phone', 'is_admin', 'is_active']
     
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser)
+    
+    def retrieve(self, request, *args, **kwargs):
+        logger.info(" ----- User DETAIL initiated ----- ")
+        instance = self.get_object()
+        serializer = self.get_serializer(instance)
+        logger.debug(serializer.data)
+        return Response(serializer.data)
 
     def create(self, request, *args, **kwargs):
+        logger.info(" \n\n ----- USER CREATE initiated -----")   
         if request.data.get("_mutable"):
-            request.data._mutable = True        
-        logger.debug(" ----- User CREATE initiated ----- ")
+            request.data._mutable = True
         # User Data
         user_data = self.prepareUserData(request.data)
         # Profile Data
         profileObj = request.data.get('profile')
         profile_data = self.prepareProfileData(profileObj)
         logger.debug("Data prepared. Sending data to the serializer ")
+        logger.debug(user_data, profile_data)
 
         user_serializer = UserSerializer(data= {'user': user_data, 'profile': profile_data, 'data':request.data})
         user_serializer.is_valid(raise_exception=True)
         user_serializer.save()
+        logger.debug({'userId':user_serializer.instance.id, "status":200})
         logger.debug("User saved successfully!!!")
         return Response({'userId':user_serializer.instance.id}, status=status.HTTP_201_CREATED)
 
-    def update(self, request, *args, **kwargs):   
+    def update(self, request, *args, **kwargs):
+        logger.info(" \n\n ----- USER UPDATE initiated -----")   
         if request.data.get("_mutable"):
-            request.data._mutable = True  
-        logger.debug(" ----- User UPDATE initiated ----- ")
+            request.data._mutable = True
         user_data = self.prepareUserData(request.data)
         
         profileObj = request.data.get('profile')
-        profile_data = self.prepareProfileData(profileObj)      
+        profile_data = self.prepareProfileData(profileObj)
+
+        logger.debug(profile_data, user_data)
         logger.debug("Data prepared. Sending data to the serializer ")
 
         serializer = self.get_serializer(self.get_object(), data= {'user': user_data, 'profile':profile_data, 'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
-        logger.info("Successfully USER updated")
+
+        logger.debug(serializer.data)
+        logger.debug("Successfully USER updated")
 
         return Response(serializer.data)
 
     def destroy(self, request, *args, **kwargs):
-        logger.debug(" ----- User DELETE initiated ----- ")
+        logger.info(" ----- User DELETE initiated ----- ")
         instance = self.get_object()
         instance.is_active = False
+        # PROFILE active set to false
+        instance.profile.is_active = False
+        instance.profile.save()
         instance.save()
-        logger.info("Successfully USER DELETED")
-        # instance.delete()
+        logger.debug(instance)
+        logger.debug("Successfully USER DELETED")
         return Response({'success':'{} deleted successfully'.format(instance.id)}, status=status.HTTP_200_OK)
 
     

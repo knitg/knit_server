@@ -5,5 +5,5 @@ class KAddressSerializer(serializers.ModelSerializer):
     full_address = serializers.ReadOnlyField(source="get_full_address", required=False)
     class Meta:
         model = KAddress
-        fields = "__all__"
-
+        fields = ("id", "address_line_1", "address_line_2", "postalCode", "full_address")
+        # fields = "__all__"

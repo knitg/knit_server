@@ -23,7 +23,7 @@ router.register(r'vendor', VendorUserViewSet)
 
 urlpatterns = [ 
     path('', include(router.urls)),
-    path('user/<int:user_id>/profile', ProfileViewSet.as_view({'get': 'list','put': 'update'}), name='profile'),
+    path('<int:user_id>/profile', ProfileViewSet.as_view({'get': 'list','put': 'update'}), name='profile'),
     
 ]
 

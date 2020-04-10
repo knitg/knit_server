@@ -1,0 +1,412 @@
+ django.request 2020-04-10 17:36:21,498 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 51, in create
+    logger.debug(user_data, profile_data)
+NameError: name 'profile_data' is not defined
+ django.request 2020-04-10 17:37:37,302 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 51, in create
+    logger.debug(user_data, profile_data)
+NameError: name 'profile_data' is not defined
+ django.request 2020-04-10 17:41:21,202 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 56, in create
+    vendor_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\vendor_serializer.py", line 38, in create
+    user_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\user_serializer.py", line 135, in validate
+    if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-10 17:44:15,707 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 56, in create
+    vendor_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\vendor_serializer.py", line 38, in create
+    user_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\user_serializer.py", line 135, in validate
+    if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-10 17:48:39,989 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 56, in create
+    vendor_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\vendor_serializer.py", line 38, in create
+    user_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\user_serializer.py", line 135, in validate
+    if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-10 17:59:13,778 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 56, in create
+    vendor_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\vendor_serializer.py", line 37, in create
+    user_serializer = UserSerializer(data={'user': user_data, 'profile': profile_data.get('profile'), 'data':user_data}, many=False)
+NameError: name 'user_data' is not defined
+ django.request 2020-04-10 18:27:48,772 WARNING  Bad Request: /user/vendor
+ django.request 2020-04-10 18:29:54,883 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 57, in create
+    logger.debug({'vendorId':vendor_serializer.instance.id}, status=status.HTTP_201_CREATED)
+  File "C:\ProgramData\Miniconda3\lib\logging\__init__.py", line 1366, in debug
+    self._log(DEBUG, msg, args, **kwargs)
+TypeError: _log() got an unexpected keyword argument 'status'
+ django.request 2020-04-10 18:30:39,137 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 57, in create
+    logger.debug({'vendorId':vendor_serializer.instance.id, "status":status.HTTP_201_CREATE0D})
+AttributeError: module 'rest_framework.status' has no attribute 'HTTP_201_CREATE0D'
+ django.request 2020-04-10 18:35:56,596 WARNING  Bad Request: /user/vendor
+ django.request 2020-04-10 18:50:53,967 WARNING  Bad Request: /user/users
+ django.request 2020-04-10 18:55:25,824 ERROR    Internal Server Error: /user/vendor
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 56, in create
+    vendor_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 39, in create
+    user_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\user_serializer.py", line 46, in create
+    self.profile_save(profile, profile_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\user_serializer.py", line 85, in profile_save
+    address = list(KAddress.objects.filter(id__in=addresses))
+NameError: name 'addresses' is not defined
+ django.request 2020-04-10 18:59:05,070 WARNING  Not Found: /user/vendors
+ django.request 2020-04-10 18:59:38,051 ERROR    Internal Server Error: /user/vendor/16
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 78, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 49, in update
+    self.updateUserData(userObj, instance)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 68, in updateUserData
+    if user_info['profile'].get('userTypes'):
+KeyError: 'profile'
+ django.request 2020-04-10 19:00:04,719 ERROR    Internal Server Error: /user/vendor/16
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 78, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 49, in update
+    self.updateUserData(userObj, instance)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 68, in updateUserData
+    if user_info['profile'].get('userTypes'):
+KeyError: 'profile'
+ django.request 2020-04-10 19:00:35,314 ERROR    Internal Server Error: /user/vendor/16
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 78, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 49, in update
+    self.updateUserData(userObj, instance)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 68, in updateUserData
+    if user_info['profile'].get('userTypes'):
+KeyError: 'profile'
+ django.request 2020-04-10 19:01:42,348 ERROR    Internal Server Error: /user/vendor/16
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 77, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 49, in update
+    self.updateUserData(userObj, instance)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 68, in updateUserData
+    if user_info['profile'].get('userTypes'):
+KeyError: 'profile'
+ django.request 2020-04-10 19:03:12,033 ERROR    Internal Server Error: /user/vendor/16
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server\app\users\kviews\vendor_view.py", line 77, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 49, in update
+    self.updateUserData(userObj, instance)
+  File "D:\MISC\GITHUB\knit_server\app\users\kserializers\vendor_serializer.py", line 73, in updateUserData
+    logger.warning("NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a {} ".format(type(profile_data.get('userTypes'))))
+NameError: name 'profile_data' is not defined

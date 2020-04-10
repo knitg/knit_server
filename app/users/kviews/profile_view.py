@@ -16,30 +16,32 @@ from url_filter.integrations.drf import DjangoFilterBackend
 from ..renderers import DataJSONRenderer
 from ..paginations import LinkSetPagination
 
+import logging
+logger = logging.getLogger(__name__)
+
 class ProfileListViewSet(ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = KProfileSerializer
-    # filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    # search_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary'], 
+    search_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary'], 
     
-    # pagination_class = LinkSetPagination
+    pagination_class = LinkSetPagination
 
-    # filter_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary']
+    filter_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary']
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
-    
-    def get_object(self):
-        queryset = self.get_queryset()
-        filter = {}
-        filter[self.lookup_field] = self.kwargs['user_id']
-        return get_object_or_404(queryset, **filter)
+
+
+    def get_queryset(self):
+        profile = Profile.objects.filter(is_active=True)
+        return profile
  
 class ProfileViewSet(ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = KProfileSerializer
 
     def get_queryset(self):
-        profile = Profile.objects.select_related('user').filter(user__pk=self.kwargs['user_id'])
+        profile = Profile.objects.select_related('user').filter(user__pk=self.kwargs['user_id'], is_active=True)
         return profile
 
     def get_object(self):
@@ -47,10 +49,9 @@ class ProfileViewSet(ModelViewSet):
         filter = {}
         filter[self.lookup_field] = self.kwargs['user_id']
         return get_object_or_404(queryset, **filter)
-        
+
     def update(self, request, *args, **kwargs):
-        # set to mutable
-        request.data._mutable = True
+        logger.info(" ----- PROFILE UPDATE initiated ----- ")
         if request.FILES:
             request.data['images'] = request.FILES
         
@@ -58,6 +59,8 @@ class ProfileViewSet(ModelViewSet):
         serializer.is_valid(raise_exception=True)
 
         self.perform_update(serializer)
+        logger.debug(serializer.data)
+        logger.debug("Profile updated successfully")
         return Response(serializer.data)
 
 class ProfileDoesNotExist(APIException):

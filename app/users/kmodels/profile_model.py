@@ -26,6 +26,7 @@ class Profile(TimestampedModel):
     # In addition to the `bio` field, each user may have a profile image or
     # avatar. This field is not required and it may be blank.
     image = models.URLField(blank=True)
+    is_active = models.BooleanField(default=True)
 
     def get_full_name(self):
         return "%s %s" % (self.firstName, self.lastName)

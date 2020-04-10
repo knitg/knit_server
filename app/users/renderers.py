@@ -1,5 +1,5 @@
 from .core.renderers import KnitJSONRenderer
-
+ 
 
 class DataJSONRenderer(KnitJSONRenderer):
     object_label = 'data'
