@@ -2,35 +2,26 @@ from django.db import models
 from datetime import datetime
 from django.conf import settings
 from django.utils.timezone import now
-from .address_model import KAddress
+from .address_model import Address
 from .image_model import KImage
-from .usertype_model import KUserType
+from .usertype_model import UserType
 from users.models import User
 from .timestamp_model import TimestampedModel
-from datetime import datetime, time,date
-class KVendorUser(TimestampedModel):
+class Vendor(TimestampedModel):
     name= models.CharField(null=True, max_length=80,  default=None)
     
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    openTimeStr = "9:30"
-    CloseTimeStr = "21:00"
-    startTime = datetime.strptime(openTimeStr,"%H:%M")
-    endTime = datetime.strptime(CloseTimeStr, "%H:%M")
-    
-    startTime = startTime.replace(year=datetime.now().year, month=datetime.now().month, day=datetime.now().day)
-    endTime = endTime.replace(year=datetime.now().year, month=datetime.now().month, day=datetime.now().day)
-    
-    openTime = models.TimeField(default=startTime.time(), blank=True, null=True, )
-    closeTime = models.TimeField(default=endTime.time(), blank=True, null=True, )
+    openTime = models.TimeField(blank=True, null=True )
+    closeTime = models.TimeField(blank=True, null=True )
 
     masters = models.IntegerField(blank=True, null=True, default=None)
     isWeekends = models.BooleanField(default=False, blank=True, null=True)
     alternateDays = models.CharField(max_length=80, blank=True, null=True)
-    closed = models.BooleanField(default=False)
-    emergency = models.BooleanField(default=False)
-    doorService = models.BooleanField(default=False)
-    description = models.TextField(max_length=180, blank=True)
+    closed = models.BooleanField(default=False, blank=True, null=True)
+    emergency = models.BooleanField(default=False, blank=True, null=True)
+    doorService = models.BooleanField(default=False, blank=True, null=True)
+    description = models.TextField(max_length=180, blank=True, null=True)
     
     images = models.ManyToManyField(KImage, blank=True, default=None)
     

@@ -1,4 +1,5 @@
 from django.db import models
+from .timestamp_model import TimestampedModel
 
 from PIL import Image
 from io import BytesIO
@@ -10,7 +11,7 @@ def nameFile(instance, filename):
     imgpath= '/'.join(['user_images', str(instance.source), filename])
     return imgpath
 
-class KImage(models.Model):
+class KImage(TimestampedModel):
     description = models.CharField(max_length=255, blank=True, null=True)
     image = models.ImageField(upload_to=nameFile, max_length=254, blank=False, null=False, default=None)
     source = models.CharField(blank=True, null=True, default='customer', max_length=50)

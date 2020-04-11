@@ -2,33 +2,39 @@ from rest_framework import serializers
 from users.models import User
 from ..kmodels.image_model import KImage
 from ..kmodels.profile_model import Profile
-from ..kmodels.address_model import KAddress
-from ..kmodels.vendor_model import KVendorUser
-from ..kmodels.usertype_model import KUserType
+from ..kmodels.address_model import Address
+from ..kmodels.vendor_model import Vendor
+from ..kmodels.usertype_model import UserType
 
-from .profile_serializer import KProfileSerializer
+from .profile_serializer import ProfileSerializer
 from .image_serializer import KImageSerializer
-from .usertype_serializer import KUserTypeSerializer
+from .usertype_serializer import UserTypeSerializer
 from .user_serializer import UserSerializer
 
 import logging
 logger = logging.getLogger(__name__)
 
-class KVendorUserSerializer(serializers.ModelSerializer):
+class VendorSerializer(serializers.ModelSerializer):
     # user = UserSerializer(many=False) 
+    
     user_id =  serializers.IntegerField(source="user.id", required=False)
     phone =  serializers.CharField(source="user.phone", required=False)
     email =  serializers.EmailField(source="user.email", required=False)
     fullName =  serializers.EmailField(source="user.profile.get_full_name", required=False)
     # images = KImageSerializer(many=True, required=False, allow_null=True)
-    userTypes = KUserTypeSerializer(source='user.profile.userTypes', many=True, required=False, allow_null=True) 
+    userTypes = UserTypeSerializer(source='user.profile.userTypes', many=True, required=False, allow_null=True) 
     
     
     class Meta:
-        model = KVendorUser
-        fields = [ 'id', 'name','user_id', 'phone', 'email', 'userTypes', 'fullName']
+        model = Vendor
+        fields = [ 'id', 'name','user_id', 'phone', 'email', 'userTypes', 'fullName', "openTime", 'closeTime']
         # fields = ["id", "name", "user", 'open_time', 'close_time', 'masters_count', 'is_weekends', 'is_open', 'is_emergency_available', 'is_door_service', 'address']
-        
+    def validate(self, data):
+        data = self.initial_data.get('data')
+        if data.get('name') is None:
+            raise serializers.ValidationError("Name field is required")
+        return data
+
     def create(self, validated_data):
         users_data = self.initial_data.pop('user')  
         validated_data = self.initial_data.pop('vendor')  
@@ -40,7 +46,7 @@ class KVendorUserSerializer(serializers.ModelSerializer):
         logger.info("User created successfully")
 
         # Vendor creation
-        vendor = KVendorUser.objects.create(user=user_serializer.instance, **validated_data)
+        vendor = Vendor.objects.create(user=user_serializer.instance, **validated_data)
         return vendor
             
     def update(self, instance, validated_data):
@@ -67,14 +73,14 @@ class KVendorUserSerializer(serializers.ModelSerializer):
         instance.user.profile.save()
         if user_info['profile'].get('userTypes'):
             if isinstance(user_info['profile'].get('userTypes'), list):
-                usertypes = list(KUserType.objects.filter(id__in=user_info['profile'].get('userTypes')))
+                usertypes = list(UserType.objects.filter(id__in=user_info['profile'].get('userTypes')))
                 instance.user.profile.userTypes.set(usertypes)
             else:
                 logger.warning("NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a {} ".format(type(user_info['profile'].get('userTypes'))))
 
         if user_info['profile'].get('address'):
             if isinstance(user_info['profile'].get('address'), list):
-                address = list(KAddress.objects.filter(id__in=user_info['profile'].get('address')))
+                address = list(Address.objects.filter(id__in=user_info['profile'].get('address')))
                 instance.user.profile.address.set(addresses)
 
             else:

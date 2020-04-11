@@ -3,13 +3,16 @@ from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser, JSONParser
 
 from users.models import User
-from ..kmodels.vendor_model import KVendorUser
-from ..kserializers.vendor_serializer import KVendorUserSerializer
+from ..kmodels.vendor_model import Vendor
+from ..kserializers.vendor_serializer import VendorSerializer
 from ..kserializers.user_serializer import UserSerializer
 
 from rest_framework.response import Response
 from rest_framework import status 
 from ..paginations import LinkSetPagination 
+
+from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
+from ..permissions import ActionBasedPermission
 
 from rest_framework import filters
 from url_filter.integrations.drf import DjangoFilterBackend
@@ -17,10 +20,18 @@ from url_filter.integrations.drf import DjangoFilterBackend
 import logging
 logger = logging.getLogger(__name__)
 
+from datetime import datetime, time,date
+
 class VendorUserViewSet(viewsets.ModelViewSet):
-    queryset = KVendorUser.objects.all()
-    serializer_class = KVendorUserSerializer
+    queryset = Vendor.objects.all()
+    serializer_class = VendorSerializer
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    
+    permission_classes = (ActionBasedPermission,)
+    action_permissions = {
+        IsAuthenticated: ['update', 'partial_update', 'retrieve', 'destroy'],
+        AllowAny: ['list', 'create']
+    }
     
     search_fields = ['name','masters', 'emergency', 'doorService']
     
@@ -45,7 +56,7 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         logger.debug(user_data)
         logger.debug("Data prepared. Sending data to the serializer ")
 
-        vendor_serializer = KVendorUserSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': request.data}, context={'request': request})
+        vendor_serializer = VendorSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': request.data}, context={'request': request})
         vendor_serializer.is_valid(raise_exception=True)
         vendor_serializer.save()
         logger.debug({'vendorId':vendor_serializer.instance.id, "status":200})
@@ -113,4 +124,10 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         vendor_details['closed'] = vendor_info.get('closed')
         vendor_details['doorService'] = vendor_info.get('doorService')
         vendor_details['emergency'] = vendor_info.get('emergency')
+        if vendor_info.get("openTime"):
+            otimeArr = vendor_info.get("openTime").split(":")
+            vendor_details["openTime"] = time(int(otimeArr[0]), int(otimeArr[1]))
+        if vendor_info.get("closeTime"):
+            ctimeArr = vendor_info.get("closeTime").split(":")
+            vendor_details["closeTime"] = time(int(ctimeArr[0]), int(ctimeArr[1]))
         return vendor_details

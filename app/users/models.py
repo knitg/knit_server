@@ -14,7 +14,7 @@ from .kmodels.timestamp_model import TimestampedModel
 class UserManager(BaseUserManager):
     use_in_migrations = True
 
-    def create_user(self, username, phone, email=None, password=None, **extra_fields):
+    def create_user(self, username, phone, email=None, password=None, is_admin=False, **extra_fields):
         # if not phone and not Email:
         #     raise ValueError('Users must have an Phone number')
         # if not username:
@@ -24,12 +24,13 @@ class UserManager(BaseUserManager):
         user = self.model(
             username = username,
             phone = phone,
-            email = email
+            email = email,
+            is_admin = is_admin
         )
         user.set_password(password)
         
-        user.is_admin =False
         user.is_active =True
+        user.created_by = extra_fields.get("created_by")
         user.save(using=self._db)
         return user
 
@@ -39,7 +40,7 @@ class UserManager(BaseUserManager):
             raise ValueError('Superuser must have is_superuser=True.')
         
         user = self.create_user(username, phone, email=email, password=password)
-        user.is_admin = True 
+        user.is_admin = True
         user.save(using=self._db)
         return user
 

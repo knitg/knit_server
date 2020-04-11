@@ -8,11 +8,14 @@ from django.shortcuts import get_object_or_404
 from rest_framework import filters
 from rest_framework.response import Response
 from rest_framework import status 
-from ..kmodels.address_model import KAddress
+from ..kmodels.address_model import Address
 from ..kmodels.image_model import KImage
 from url_filter.integrations.drf import DjangoFilterBackend
 from ..paginations import LinkSetPagination
+from rest_framework.authtoken.models import Token
 
+from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
+from ..permissions import ActionBasedPermission
 
 import logging
 logger = logging.getLogger(__name__)
@@ -21,13 +24,19 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.filter(is_active=True)
     serializer_class = UserSerializer
     
+    permission_classes = (ActionBasedPermission,)
+    action_permissions = {
+        IsAuthenticated: ['update', 'partial_update', 'retrieve','destroy'],
+        AllowAny: ['list', 'create'],
+    }
+    
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
     search_fields = ['username','phone', '=email', 'is_admin', 'is_active']
     
     pagination_class = LinkSetPagination
 
-    filter_fields = ['id','username', 'email', 'profile', 'phone', 'is_admin', 'is_active']
+    filter_fields = ['id','username', 'email', 'profile', 'vendor', 'phone', 'is_admin', 'is_active']
     
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser)
     
@@ -44,6 +53,7 @@ class UserViewSet(viewsets.ModelViewSet):
             request.data._mutable = True
         # User Data
         user_data = self.prepareUserData(request.data)
+        user_data['created_by'] = request.auth.user_id if request.auth else None
         # Profile Data
         profileObj = request.data.get('profile')
         profile_data = self.prepareProfileData(profileObj)
@@ -62,6 +72,7 @@ class UserViewSet(viewsets.ModelViewSet):
         if request.data.get("_mutable"):
             request.data._mutable = True
         user_data = self.prepareUserData(request.data)
+        user_data['updated_by'] = request.auth.user_id if request.auth else None
         
         profileObj = request.data.get('profile')
         profile_data = self.prepareProfileData(profileObj)
@@ -79,9 +90,11 @@ class UserViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
     def destroy(self, request, *args, **kwargs):
-        logger.info(" ----- User DELETE initiated ----- ")
+        logger.info(" \n\n ----- User DELETE initiated ----- ")
         instance = self.get_object()
         instance.is_active = False
+        instance.updated_by = request.auth.user_id if request.auth else instance.updated_by
+        logger.info("User deleted by userid = {} ".format(instance.updated_by))
         # PROFILE active set to false
         instance.profile.is_active = False
         instance.profile.save()

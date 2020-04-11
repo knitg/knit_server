@@ -1,9 +1,9 @@
 from rest_framework import serializers
 from users.models import User
 from ..kmodels.image_model import KImage
-from ..kmodels.address_model import KAddress
-from ..kmodels.usertype_model import KUserType
-from ..kmodels.vendor_model import KVendorUser
+from ..kmodels.address_model import Address
+from ..kmodels.usertype_model import UserType
+from ..kmodels.vendor_model import Vendor
 
 import types
 from ..kmodels.profile_model import Profile
@@ -11,9 +11,9 @@ from ..kmodels.profile_model import Profile
 from django.db.models.signals import post_save
 
 from .image_serializer import KImageSerializer
-from .address_serializer import KAddressSerializer
-from .usertype_serializer import KUserTypeSerializer
-from .profile_serializer import KProfileSerializer
+from .address_serializer import AddressSerializer
+from .usertype_serializer import UserTypeSerializer
+from .profile_serializer import ProfileSerializer
 
 import re
 
@@ -28,23 +28,22 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     fullName = serializers.ReadOnlyField(source='profile.get_full_name', required=False)
+    vendor_id = serializers.ReadOnlyField(source='vendor.id', required=False)
     # password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
     errors = {}
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone',  'fullName', 'is_active')
+        fields = ('id', 'username', 'email', 'phone',  'fullName', 'vendor_id', 'created_at', 'updated_at')
     
 
     def create(self, validated_data):
         validated_data = self.initial_data.get('user')
         user = User.objects.create_user(**validated_data)
         user.save()
-
         # ------ PROFILE CREATE ------ #
         profile = user.profile
         profile_data = self.initial_data.pop('profile')  
         self.profile_save(profile, profile_data)
-
         return user 
 
     def update(self, instance, validated_data):        
@@ -53,6 +52,7 @@ class UserSerializer(serializers.ModelSerializer):
         instance.email = users_data.get('email', instance.email)
         instance.username = users_data.get('username', instance.username)
         instance.is_admin = users_data.get('is_admin', instance.is_admin)
+        instance.updated_by = users_data.get('updated_by', instance.updated_by)
         instance.save()
         
         ## PROFILE MODEL CREATES
@@ -75,14 +75,14 @@ class UserSerializer(serializers.ModelSerializer):
         
             if profile_data.get('userTypes'):
                 if isinstance(profile_data.get('userTypes'), list):
-                    usertypes = list(KUserType.objects.filter(id__in=profile_data.get('userTypes')))
+                    usertypes = list(UserType.objects.filter(id__in=profile_data.get('userTypes')))
                     profile.userTypes.set(usertypes)
                 else:
                     logger.warning("NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a {} ".format(type(profile_data.get('userTypes'))))
 
             if profile_data.get('address'):
                 if isinstance(profile_data.get('address'), list):
-                    address = list(KAddress.objects.filter(id__in=profile_data.get('address')))
+                    address = list(Address.objects.filter(id__in=profile_data.get('address')))
                     profile.address.set(address)
                 else:
                     logger.warning("NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array {}".format(type(profile_data.get('address'))))
@@ -156,8 +156,8 @@ class UserSerializer(serializers.ModelSerializer):
         representation = super().to_representation(instance)
         if instance.is_superuser:
             representation['admin'] = True
-        if hasattr(instance, 'kvendoruser'):
-            representation['vendor_id'] = instance.kvendoruser.id
+        if hasattr(instance, 'vendor'):
+            representation['vendor'] = True 
         return representation
         
     # ---=================== USER VALIDATIONS END HERE ==========================--- #
@@ -170,3 +170,4 @@ def create_profile_account(sender, instance, created, **kwargs):
         logger.info("Profile created successfully")
 #Post Save handler to create user Account/Profile
 post_save.connect(create_profile_account, sender=User, weak=False)
+

@@ -7,7 +7,7 @@ from django.shortcuts import get_list_or_404, get_object_or_404
 from rest_framework.exceptions import APIException
 
 from ..kmodels.profile_model import Profile
-from ..kserializers.profile_serializer import KProfileSerializer
+from ..kserializers.profile_serializer import ProfileSerializer
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser, JSONParser
 
 from rest_framework import filters
@@ -16,12 +16,17 @@ from url_filter.integrations.drf import DjangoFilterBackend
 from ..renderers import DataJSONRenderer
 from ..paginations import LinkSetPagination
 
+from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
+from ..permissions import ActionBasedPermission
+
 import logging
 logger = logging.getLogger(__name__)
 
 class ProfileListViewSet(ModelViewSet):
     queryset = Profile.objects.all()
-    serializer_class = KProfileSerializer
+    serializer_class = ProfileSerializer
+    
+
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
     search_fields = ['firstName','lastName', 'gender', 'user', 'birthday', 'anniversary'], 
@@ -38,7 +43,7 @@ class ProfileListViewSet(ModelViewSet):
  
 class ProfileViewSet(ModelViewSet):
     queryset = Profile.objects.all()
-    serializer_class = KProfileSerializer
+    serializer_class = ProfileSerializer
 
     def get_queryset(self):
         profile = Profile.objects.select_related('user').filter(user__pk=self.kwargs['user_id'], is_active=True)

@@ -157,3 +157,511 @@
  users.kviews.user_view 2020-04-10 19:12:32,989 DEBUG    [OrderedDict([('id', 32), ('username', None), ('email', None), ('phone', '9441076526'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 31), ('username', None), ('email', None), ('phone', '9441076525'), ('fullName', 'Mahi Gurja1'), ('is_active', True), ('vendor_id', 16)]), OrderedDict([('id', 30), ('username', None), ('email', None), ('phone', '9441076559'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 29), ('username', None), ('email', None), ('phone', '9441076547'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 28), ('username', None), ('email', None), ('phone', '9441076546'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 27), ('username', None), ('email', None), ('phone', '9441076524'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 15)]), OrderedDict([('id', 26), ('username', None), ('email', None), ('phone', '9441076523'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 14)]), OrderedDict([('id', 25), ('username', None), ('email', None), ('phone', '9441076522'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 13)]), OrderedDict([('id', 24), ('username', None), ('email', None), ('phone', '9441076521'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 12)]), OrderedDict([('id', 23), ('username', None), ('email', None), ('phone', '9441076520'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 11)]), OrderedDict([('id', 22), ('username', None), ('email', None), ('phone', '9441076519'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 10)]), OrderedDict([('id', 21), ('username', None), ('email', None), ('phone', '9441076518'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 9)]), OrderedDict([('id', 20), ('username', None), ('email', None), ('phone', '9441076517'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 8)]), OrderedDict([('id', 19), ('username', None), ('email', None), ('phone', '9441076516'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 7)]), OrderedDict([('id', 18), ('username', None), ('email', None), ('phone', '9441076515'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 6)]), OrderedDict([('id', 17), ('username', None), ('email', None), ('phone', '9441076514'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 5)]), OrderedDict([('id', 16), ('username', None), ('email', None), ('phone', '9441076513'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 4)]), OrderedDict([('id', 15), ('username', None), ('email', None), ('phone', '9441076512'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 3)]), OrderedDict([('id', 14), ('username', None), ('email', None), ('phone', '9441076511'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 13), ('username', None), ('email', None), ('phone', '9441076549'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 12), ('username', None), ('email', None), ('phone', '9441076548'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 2)]), OrderedDict([('id', 11), ('username', None), ('email', None), ('phone', '8917692576'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 1)]), OrderedDict([('id', 10), ('username', None), ('email', None), ('phone', '9441076544'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 9), ('username', None), ('email', None), ('phone', '9441076543'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 8), ('username', None), ('email', None), ('phone', '9441076542'), ('fullName', 'Test 123'), ('is_active', False)]), OrderedDict([('id', 7), ('username', None), ('email', None), ('phone', '9441076541'), ('fullName', 'Test 123'), ('is_active', False)]), OrderedDict([('id', 6), ('username', ''), ('email', 'mahi65523@gmail.com'), ('phone', '9874511512'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 5), ('username', ''), ('email', ''), ('phone', '9700968688'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 4), ('username', 'mgurjala'), ('email', ''), ('phone', ''), ('fullName', 'Savitha Gurjala'), ('is_active', True)]), OrderedDict([('id', 3), ('username', ''), ('email', 'savitha6535@gmail.com'), ('phone', '9700968687'), ('fullName', 'Savitha Gurjala'), ('is_active', True), ('admin', True)]), OrderedDict([('id', 2), ('username', 'mahi6535'), ('email', ''), ('phone', '8309861660'), ('fullName', ' '), ('is_active', True), ('admin', True)]), OrderedDict([('id', 1), ('username', 'mbgurj'), ('email', 'mahi6535@gmail.com'), ('phone', '9441076540'), ('fullName', ' '), ('is_active', True), ('admin', True)])]
  users.kviews.user_view 2020-04-10 19:13:28,216 INFO      ----- User LIST initiated ----- 
  users.kviews.user_view 2020-04-10 19:13:39,888 DEBUG    [OrderedDict([('id', 32), ('username', None), ('email', None), ('phone', '9441076526'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 31), ('username', None), ('email', None), ('phone', '9441076525'), ('fullName', 'Mahi Gurja1'), ('is_active', True), ('vendor_id', 16)]), OrderedDict([('id', 30), ('username', None), ('email', None), ('phone', '9441076559'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 29), ('username', None), ('email', None), ('phone', '9441076547'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 28), ('username', None), ('email', None), ('phone', '9441076546'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 27), ('username', None), ('email', None), ('phone', '9441076524'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 15)]), OrderedDict([('id', 26), ('username', None), ('email', None), ('phone', '9441076523'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 14)]), OrderedDict([('id', 25), ('username', None), ('email', None), ('phone', '9441076522'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 13)]), OrderedDict([('id', 24), ('username', None), ('email', None), ('phone', '9441076521'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 12)]), OrderedDict([('id', 23), ('username', None), ('email', None), ('phone', '9441076520'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 11)]), OrderedDict([('id', 22), ('username', None), ('email', None), ('phone', '9441076519'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 10)]), OrderedDict([('id', 21), ('username', None), ('email', None), ('phone', '9441076518'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 9)]), OrderedDict([('id', 20), ('username', None), ('email', None), ('phone', '9441076517'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 8)]), OrderedDict([('id', 19), ('username', None), ('email', None), ('phone', '9441076516'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 7)]), OrderedDict([('id', 18), ('username', None), ('email', None), ('phone', '9441076515'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 6)]), OrderedDict([('id', 17), ('username', None), ('email', None), ('phone', '9441076514'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 5)]), OrderedDict([('id', 16), ('username', None), ('email', None), ('phone', '9441076513'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 4)]), OrderedDict([('id', 15), ('username', None), ('email', None), ('phone', '9441076512'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 3)]), OrderedDict([('id', 14), ('username', None), ('email', None), ('phone', '9441076511'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 13), ('username', None), ('email', None), ('phone', '9441076549'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 12), ('username', None), ('email', None), ('phone', '9441076548'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 2)]), OrderedDict([('id', 11), ('username', None), ('email', None), ('phone', '8917692576'), ('fullName', 'Mahipal Guru'), ('is_active', True), ('vendor_id', 1)]), OrderedDict([('id', 10), ('username', None), ('email', None), ('phone', '9441076544'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 9), ('username', None), ('email', None), ('phone', '9441076543'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 8), ('username', None), ('email', None), ('phone', '9441076542'), ('fullName', 'Test 123'), ('is_active', False)]), OrderedDict([('id', 7), ('username', None), ('email', None), ('phone', '9441076541'), ('fullName', 'Test 123'), ('is_active', False)]), OrderedDict([('id', 6), ('username', ''), ('email', 'mahi65523@gmail.com'), ('phone', '9874511512'), ('fullName', 'Test 123'), ('is_active', True)]), OrderedDict([('id', 5), ('username', ''), ('email', ''), ('phone', '9700968688'), ('fullName', ' '), ('is_active', True)]), OrderedDict([('id', 4), ('username', 'mgurjala'), ('email', ''), ('phone', ''), ('fullName', 'Savitha Gurjala'), ('is_active', True)]), OrderedDict([('id', 3), ('username', ''), ('email', 'savitha6535@gmail.com'), ('phone', '9700968687'), ('fullName', 'Savitha Gurjala'), ('is_active', True), ('admin', True)]), OrderedDict([('id', 2), ('username', 'mahi6535'), ('email', ''), ('phone', '8309861660'), ('fullName', ' '), ('is_active', True), ('admin', True)]), OrderedDict([('id', 1), ('username', 'mbgurj'), ('email', 'mahi6535@gmail.com'), ('phone', '9441076540'), ('fullName', ' '), ('is_active', True), ('admin', True)])]
+ users.kviews.user_view 2020-04-11 12:44:47,036 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 12:44:47,037 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 12:44:47,037 DEBUG    {'phone': '9441076561', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None}
+ users.kserializers.user_serializer 2020-04-11 12:44:47,952 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 12:44:48,109 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 12:44:48,110 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 12:44:52,352 DEBUG    {'userId': 33, 'status': 200}
+ users.kviews.user_view 2020-04-11 12:44:53,038 DEBUG    User saved successfully!!!
+ users.exceptions 2020-04-11 13:02:03,064 ERROR    {'non_field_errors': [ErrorDetail(string='Unable to log in with provided credentials or not active user.', code='invalid')], 'status': 400}
+ users.exceptions 2020-04-11 13:02:03,064 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-11 13:04:10,309 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:05:01,234 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:05:01,234 DEBUG    {'phone': '9441076562', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None}
+ users.kserializers.user_serializer 2020-04-11 13:05:01,663 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:05:01,723 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:05:01,723 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:05:01,792 DEBUG    {'userId': 34, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:05:02,349 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:05:27,585 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:05:47,853 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:05:47,853 DEBUG    {'phone': '9441076563', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None}
+ users.kserializers.user_serializer 2020-04-11 13:05:49,582 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:05:49,786 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:05:49,786 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:05:49,963 DEBUG    {'userId': 35, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:05:53,810 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:07:29,046 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:07:47,905 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:07:54,036 DEBUG    {'phone': '9441076564', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 13:07:56,582 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:07:56,723 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:07:56,723 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:07:58,695 DEBUG    {'userId': 36, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:07:58,695 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:08:41,409 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:08:42,656 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:08:43,180 DEBUG    {'phone': '9441076565', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 13:09:24,415 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:09:24,639 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:09:24,639 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:09:24,894 DEBUG    {'userId': 37, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:09:24,894 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:10:42,313 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:10:45,958 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:10:46,532 DEBUG    {'phone': '9441076566', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 13:11:03,667 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:11:06,425 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:11:06,425 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:11:06,501 DEBUG    {'userId': 38, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:11:06,501 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:11:44,952 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:11:46,522 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:11:46,782 DEBUG    {'phone': '9441076567', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 13:12:34,590 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:12:35,433 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:12:35,433 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:12:35,553 DEBUG    {'userId': 39, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:12:35,553 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:17:13,296 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:17:53,045 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:18:48,788 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:19:32,481 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:19:37,602 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:19:38,076 DEBUG    {'phone': '9441076568', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 13:19:42,688 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:19:46,178 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:19:46,178 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:19:46,248 DEBUG    {'userId': 40, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:19:46,248 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:20:56,534 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:20:56,534 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:20:56,534 DEBUG    {'phone': '9441076569', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 13:20:56,942 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:20:57,048 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:20:57,049 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:20:57,128 DEBUG    {'userId': 41, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:20:57,129 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 13:22:21,076 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 13:22:21,077 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:22:21,078 DEBUG    {'phone': '9441076100', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 13:22:21,406 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-11 13:22:21,477 WARNING  NOT SAVED USERTYPES TO PROFILE : Expected UserType ids should be an array bug got a <class 'str'> 
+ users.kserializers.user_serializer 2020-04-11 13:22:21,478 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'int'>
+ users.kviews.user_view 2020-04-11 13:22:21,547 DEBUG    {'userId': 42, 'status': 200}
+ users.kviews.user_view 2020-04-11 13:22:21,547 DEBUG    User saved successfully!!!
+ users.exceptions 2020-04-11 13:25:21,231 ERROR    {'non_field_errors': [ErrorDetail(string='Unable to log in with provided credentials or not active user.', code='invalid')], 'status': 400}
+ users.exceptions 2020-04-11 13:25:21,231 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 13:26:37,844 ERROR    {'detail': ErrorDetail(string='Method "PUT" not allowed.', code='method_not_allowed'), 'status': 405}
+ users.exceptions 2020-04-11 13:26:37,844 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-11 13:26:53,037 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:26:53,038 DEBUG    {'firstName': 'Mahipal', 'lastName': None, 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:26:53,038 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:27:04,920 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:27:04,921 DEBUG    {'firstName': 'Mahipal', 'lastName': 'MAHII', 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:27:04,921 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:27:05,212 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahipal MAHII', 'is_active': True, 'created_by': 1, 'updated_by': None}
+ users.kviews.user_view 2020-04-11 13:27:05,212 DEBUG    Successfully USER updated
+ users.kviews.user_view 2020-04-11 13:28:16,562 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:28:16,563 DEBUG    {'firstName': 'Mahipal', 'lastName': None, 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:28:16,563 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:29:57,713 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:29:57,715 DEBUG    {'firstName': 'Mahipal', 'lastName': None, 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:29:57,715 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:29:58,326 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahipal None', 'is_active': True, 'created_by': 1, 'updated_by': 12}
+ users.kviews.user_view 2020-04-11 13:29:58,326 DEBUG    Successfully USER updated
+ users.kviews.user_view 2020-04-11 13:31:03,670 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:31:03,672 DEBUG    {'firstName': 'Mahipal', 'lastName': None, 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:31:03,672 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:31:04,018 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahipal None', 'is_active': True, 'created_by': 1, 'updated_by': 12}
+ users.kviews.user_view 2020-04-11 13:31:04,018 DEBUG    Successfully USER updated
+ users.kviews.user_view 2020-04-11 13:31:18,394 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:31:18,395 DEBUG    {'firstName': 'Mahipal', 'lastName': '', 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:31:18,395 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:31:18,692 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahipal ', 'is_active': True, 'created_by': 1, 'updated_by': 12}
+ users.kviews.user_view 2020-04-11 13:31:18,692 DEBUG    Successfully USER updated
+ users.kviews.user_view 2020-04-11 13:31:26,682 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:31:26,683 DEBUG    {'firstName': 'Mahipal', 'lastName': None, 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:31:26,683 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:31:27,011 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahipal None', 'is_active': True, 'created_by': 1, 'updated_by': 12}
+ users.kviews.user_view 2020-04-11 13:31:27,011 DEBUG    Successfully USER updated
+ users.kviews.user_view 2020-04-11 13:36:52,293 INFO      ----- User DETAIL initiated ----- 
+ users.kviews.user_view 2020-04-11 13:36:53,075 DEBUG    {'id': 3, 'username': '', 'email': 'savitha6535@gmail.com', 'phone': '9700968687', 'fullName': 'Savitha Gurjala', 'is_active': True, 'created_by': None, 'updated_by': None, 'admin': True}
+ users.kviews.user_view 2020-04-11 13:36:59,427 INFO      ----- User DETAIL initiated ----- 
+ users.kviews.user_view 2020-04-11 13:37:00,130 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahipal None', 'is_active': True, 'created_by': 1, 'updated_by': 12}
+ users.kviews.user_view 2020-04-11 13:37:05,335 INFO      ----- User DELETE initiated ----- 
+ users.kviews.user_view 2020-04-11 13:55:45,906 INFO      
+
+ ----- USER UPDATE initiated -----
+ users.kviews.user_view 2020-04-11 13:55:45,907 DEBUG    {'firstName': 'Mahi', 'lastName': None, 'userTypes': None, 'user_role': None, 'address': None}
+ users.kviews.user_view 2020-04-11 13:55:45,909 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 13:55:46,195 DEBUG    {'id': 41, 'username': None, 'email': None, 'phone': '9441076569', 'fullName': 'Mahi None', 'is_active': True, 'created_by': 1, 'updated_by': 12}
+ users.kviews.user_view 2020-04-11 13:55:46,196 DEBUG    Successfully USER updated
+ users.exceptions 2020-04-11 14:08:45,291 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:08:45,291 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:08:57,934 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:08:57,934 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:09:26,664 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:09:26,664 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:10:12,127 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:10:12,128 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:12:11,342 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:12:11,342 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:12:26,778 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:12:26,779 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:12:40,033 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:12:40,033 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:13:26,485 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:13:26,485 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:13:35,525 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:13:35,525 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:13:38,867 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:13:38,868 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:14:13,143 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:14:13,143 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:19:32,899 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:19:32,899 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:22:57,594 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:22:57,594 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:23:38,359 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 14:23:38,359 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:28:02,921 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:28:02,921 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:29:15,674 ERROR    {'detail': ErrorDetail(string='Invalid token.', code='authentication_failed'), 'status': 401}
+ users.exceptions 2020-04-11 14:29:15,674 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:29:19,751 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:29:19,751 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:29:31,763 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:29:31,763 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:29:33,055 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:29:33,055 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:29:42,349 ERROR    {'detail': ErrorDetail(string='Invalid token.', code='authentication_failed'), 'status': 401}
+ users.exceptions 2020-04-11 14:29:42,349 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-11 14:30:20,990 INFO      ----- User DETAIL initiated ----- 
+ users.kviews.user_view 2020-04-11 14:30:21,702 DEBUG    {'id': 1, 'username': 'mbgurj', 'email': 'mahi6535@gmail.com', 'phone': '9441076540', 'fullName': ' ', 'is_active': True, 'created_by': None, 'updated_by': None, 'admin': True}
+ users.kviews.user_view 2020-04-11 14:30:38,085 INFO      ----- User DETAIL initiated ----- 
+ users.kviews.user_view 2020-04-11 14:30:38,747 DEBUG    {'id': 1, 'username': 'mbgurj', 'email': 'mahi6535@gmail.com', 'phone': '9441076540', 'fullName': ' ', 'is_active': True, 'created_by': None, 'updated_by': None, 'admin': True}
+ users.kviews.user_view 2020-04-11 14:30:40,086 INFO      ----- User DETAIL initiated ----- 
+ users.kviews.user_view 2020-04-11 14:30:42,452 DEBUG    {'id': 1, 'username': 'mbgurj', 'email': 'mahi6535@gmail.com', 'phone': '9441076540', 'fullName': ' ', 'is_active': True, 'created_by': None, 'updated_by': None, 'admin': True}
+ users.exceptions 2020-04-11 14:30:46,465 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:30:46,465 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:38:11,463 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:38:11,463 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 14:38:15,885 ERROR    {'detail': ErrorDetail(string='Invalid token.', code='authentication_failed'), 'status': 401}
+ users.exceptions 2020-04-11 14:38:15,885 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-11 14:38:36,153 INFO      ----- User DETAIL initiated ----- 
+ users.kviews.user_view 2020-04-11 14:38:36,541 DEBUG    {'id': 1, 'username': 'mbgurj', 'email': 'mahi6535@gmail.com', 'phone': '9441076540', 'fullName': ' ', 'is_active': True, 'created_by': None, 'updated_by': None, 'admin': True}
+ users.exceptions 2020-04-11 14:38:55,382 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 14:38:55,382 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 15:06:53,557 ERROR    {'detail': ErrorDetail(string='Invalid token.', code='authentication_failed'), 'status': 401}
+ users.exceptions 2020-04-11 15:06:53,557 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 15:07:44,283 ERROR    {'detail': ErrorDetail(string='Invalid token.', code='authentication_failed'), 'status': 401}
+ users.exceptions 2020-04-11 15:07:44,283 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-11 15:07:50,572 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:07:50,573 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:07:50,573 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:08:59,906 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:08:59,907 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:08:59,907 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:10:23,297 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:10:23,298 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:10:23,298 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:12:11,133 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:12:11,135 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:12:11,135 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'is_staff': 1, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:12:44,390 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:12:44,390 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:12:44,390 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'is_staff': 1, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:14:00,356 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:14:00,357 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:14:00,357 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'is_staff': 1, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:15:24,661 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:15:24,662 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:15:24,663 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'is_staff': True, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:17:18,674 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:17:18,675 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:17:18,675 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'is_staff': True, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:19:19,519 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:19:19,519 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:19:19,519 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'is_staff': None, 'created_by': None}
+ users.kviews.user_view 2020-04-11 15:20:04,762 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:20:04,763 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:20:04,763 DEBUG    {'phone': '9441076540', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:20:09,905 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:20:11,714 DEBUG    {'userId': 1, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:20:11,715 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:20:50,133 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:20:50,134 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:20:50,134 DEBUG    {'phone': '9441076541', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 1}
+ users.kserializers.user_serializer 2020-04-11 15:20:50,474 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:20:50,612 DEBUG    {'userId': 2, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:20:50,612 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:21:28,874 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:21:28,875 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:21:28,876 DEBUG    {'phone': None, 'email': 'mahi6535@gmail.com', 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': 2}
+ users.kserializers.user_serializer 2020-04-11 15:21:29,211 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:21:29,368 DEBUG    {'userId': 3, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:21:29,368 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:25:26,941 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:25:26,942 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:25:26,942 DEBUG    {'phone': None, 'email': 'savitha6535@gmail.com', 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:25:27,841 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:25:27,997 DEBUG    {'userId': 4, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:25:27,998 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:25:41,994 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:25:41,994 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:25:41,994 DEBUG    {'phone': None, 'email': 'kutty6535@gmail.com', 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:25:43,966 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:25:44,117 DEBUG    {'userId': 5, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:25:44,118 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:25:51,325 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:25:51,326 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:25:51,326 DEBUG    {'phone': None, 'email': 'lucky6535@gmail.com', 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:25:52,134 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:25:52,285 DEBUG    {'userId': 6, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:25:52,285 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:26:05,650 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:26:05,650 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:26:05,650 DEBUG    {'phone': None, 'email': None, 'password': 'mahi', 'username': 'lucky', 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:26:06,834 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:26:06,991 DEBUG    {'userId': 7, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:26:06,992 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:26:21,987 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:26:21,987 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:26:21,987 DEBUG    {'phone': None, 'email': None, 'password': 'mahi', 'username': 'midhuna', 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:26:22,851 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:26:23,006 DEBUG    {'userId': 8, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:26:23,006 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:26:33,176 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:26:33,177 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:26:33,177 DEBUG    {'phone': None, 'email': None, 'password': 'mahi', 'username': 'mgurjala', 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:26:34,490 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:26:34,658 DEBUG    {'userId': 9, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:26:34,658 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:26:55,336 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:26:55,336 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:26:55,336 DEBUG    {'phone': '9700968687', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': 1, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:26:56,107 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:26:56,597 DEBUG    {'userId': 10, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:26:56,597 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:27:10,108 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:27:10,108 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:27:10,108 DEBUG    {'phone': '9441076542', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:27:11,115 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:27:11,273 DEBUG    {'userId': 11, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:27:11,273 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-11 15:27:13,235 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:27:13,236 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:27:13,236 DEBUG    {'phone': '9441076542', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.exceptions 2020-04-11 15:27:13,883 ERROR    {'phone_exists': ErrorDetail(string='Phone number is already in use. Try with different number', code='invalid'), 'status': 400}
+ users.exceptions 2020-04-11 15:27:13,883 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-11 15:27:26,131 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-11 15:27:26,131 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-11 15:27:26,132 DEBUG    {'phone': '9441076543', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-11 15:27:26,940 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-11 15:27:27,103 DEBUG    {'userId': 12, 'status': 200}
+ users.kviews.user_view 2020-04-11 15:27:27,104 DEBUG    User saved successfully!!!
+ users.exceptions 2020-04-11 15:35:44,119 ERROR    {'detail': ErrorDetail(string='Invalid page.', code='not_found'), 'status': 404}
+ users.exceptions 2020-04-11 15:35:44,119 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 15:35:55,212 ERROR    {'detail': ErrorDetail(string='Invalid page.', code='not_found'), 'status': 404}
+ users.exceptions 2020-04-11 15:35:55,213 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 15:36:01,703 ERROR    {'detail': ErrorDetail(string='Invalid page.', code='not_found'), 'status': 404}
+ users.exceptions 2020-04-11 15:36:01,703 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 15:40:48,730 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-11 15:40:48,730 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-11 15:42:05,961 ERROR    {'detail': ErrorDetail(string='You do not have permission to perform this action.', code='permission_denied'), 'status': 403}
+ users.exceptions 2020-04-11 15:42:05,961 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.vendor_view 2020-04-11 15:55:45,130 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 15:55:45,131 DEBUG    {'profile': {'firstName': 'Prakash', 'lastName': 'Java', 'userTypes': [1, 2, 3, 4], 'user_role': None, 'address': [1]}, 'phone': '9700968610', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 15:55:45,131 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 15:55:45,134 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 15:55:46,679 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 15:55:47,767 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 15:55:47,844 DEBUG    {'vendorId': 1, 'status': 200}
+ users.kviews.vendor_view 2020-04-11 15:55:47,844 DEBUG    Vendor saved successfully!!!
+ users.kviews.vendor_view 2020-04-11 15:56:58,024 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 15:56:58,025 DEBUG    {'profile': {'firstName': 'Supraja', 'lastName': 'Parameswaran', 'userTypes': [1, 2, 3, 4], 'user_role': None, 'address': None}, 'phone': '9700968611', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 15:56:58,025 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 15:56:58,026 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 15:57:00,929 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 15:57:01,785 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 15:57:01,870 DEBUG    {'vendorId': 2, 'status': 200}
+ users.kviews.vendor_view 2020-04-11 15:57:01,870 DEBUG    Vendor saved successfully!!!
+ users.kviews.vendor_view 2020-04-11 15:58:26,077 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 15:58:26,078 DEBUG    {'profile': {'firstName': 'Vinay', 'lastName': 'Kumar', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968612', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 15:58:26,078 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 15:58:26,079 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 15:58:27,038 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 15:58:28,123 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 16:00:51,128 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:00:51,129 DEBUG    {'profile': {'firstName': 'Vinay', 'lastName': 'Kumar', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968612', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:00:51,129 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 16:00:51,130 INFO     User create initiated from vendor
+ users.exceptions 2020-04-11 16:00:52,222 ERROR    {'phone_exists': ErrorDetail(string='Phone number is already in use. Try with different number', code='invalid'), 'status': 400}
+ users.exceptions 2020-04-11 16:00:52,222 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.vendor_view 2020-04-11 16:00:58,790 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:00:58,790 DEBUG    {'profile': {'firstName': 'Vinay', 'lastName': 'Kumar', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968613', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:00:58,791 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 16:00:58,791 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 16:00:59,882 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 16:01:01,789 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 16:01:01,991 DEBUG    {'vendorId': 3, 'status': 200}
+ users.kviews.vendor_view 2020-04-11 16:01:01,991 DEBUG    Vendor saved successfully!!!
+ users.kviews.vendor_view 2020-04-11 16:04:40,422 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:04:40,423 DEBUG    {'profile': {'firstName': 'Pragwan', 'lastName': 'Paresh', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968614', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:04:40,423 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.vendor_view 2020-04-11 16:05:01,940 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:05:01,940 DEBUG    {'profile': {'firstName': 'Pragwan', 'lastName': 'Paresh', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968614', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:05:01,940 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.vendor_view 2020-04-11 16:05:11,545 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:05:11,546 DEBUG    {'profile': {'firstName': 'Pragwan', 'lastName': 'Paresh', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968614', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:05:11,547 DEBUG    Data prepared. Sending data to the serializer 
+ users.exceptions 2020-04-11 16:05:11,551 ERROR    {'non_field_errors': [ErrorDetail(string='Name is required', code='invalid')], 'status': 400}
+ users.exceptions 2020-04-11 16:05:11,551 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.vendor_view 2020-04-11 16:05:36,112 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:05:36,112 DEBUG    {'profile': {'firstName': 'Pragwan', 'lastName': 'Paresh', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968614', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:05:36,112 DEBUG    Data prepared. Sending data to the serializer 
+ users.exceptions 2020-04-11 16:05:36,115 ERROR    {'non_field_errors': [ErrorDetail(string='Name field is required', code='invalid')], 'status': 400}
+ users.exceptions 2020-04-11 16:05:36,115 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.vendor_view 2020-04-11 16:05:59,326 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:05:59,326 DEBUG    {'profile': {'firstName': 'Pragwan', 'lastName': 'Paresh', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968614', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:05:59,326 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 16:05:59,328 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 16:06:00,239 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 16:06:01,306 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 16:06:01,390 DEBUG    {'vendorId': 4, 'status': 200}
+ users.kviews.vendor_view 2020-04-11 16:06:01,390 DEBUG    Vendor saved successfully!!!
+ users.kviews.vendor_view 2020-04-11 16:39:13,038 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:40:51,005 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:42:17,114 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:42:57,318 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:42:57,319 DEBUG    {'profile': {'firstName': 'Sailesh', 'lastName': 'Sharma', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968618', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:42:57,319 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 16:42:57,319 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 16:42:58,294 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 16:42:59,569 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 16:42:59,686 DEBUG    {'vendorId': 5, 'status': 200}
+ users.kviews.vendor_view 2020-04-11 16:42:59,686 DEBUG    Vendor saved successfully!!!
+ users.kviews.vendor_view 2020-04-11 16:47:59,565 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:48:57,341 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:50:27,264 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:50:42,282 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-11 16:50:42,283 DEBUG    {'profile': {'firstName': 'Vikesh', 'lastName': 'Sharma', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968619', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-11 16:50:42,283 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-11 16:50:42,284 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-11 16:50:43,914 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-11 16:50:45,048 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-11 16:50:45,157 DEBUG    {'vendorId': 6, 'status': 200}
+ users.kviews.vendor_view 2020-04-11 16:50:45,157 DEBUG    Vendor saved successfully!!!

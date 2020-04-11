@@ -143,11 +143,13 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'users.exceptions.DEFAULT_400_ERROR_EXCEPTION',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10,
+    'DATE_INPUT_FORMATS': [("%d-%m-%Y  %H:%M:%S"),]
     
 } 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'users.kserializers.user_serializer.UserSerializer',
     'LOGIN_SERIALIZER': 'users.kserializers.login_serializer.LoginSerializer',
+    'TOKEN_SERIALIZER': 'users.kserializers.token_serializer.MyCustomTokenSerializer',
 }
 
 REST_SESSION_LOGIN = True

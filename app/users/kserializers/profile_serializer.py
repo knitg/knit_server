@@ -1,14 +1,14 @@
 from rest_framework import serializers
 from ..kmodels.image_model import KImage
 from ..kmodels.profile_model import Profile
-from ..kmodels.address_model import KAddress
-from ..kmodels.usertype_model import KUserType
+from ..kmodels.address_model import Address
+from ..kmodels.usertype_model import UserType
 
 from .image_serializer import KImageSerializer
-from .usertype_serializer import KUserTypeSerializer
-from .address_serializer import KAddressSerializer
+from .usertype_serializer import UserTypeSerializer
+from .address_serializer import AddressSerializer
 
-class KProfileSerializer(serializers.ModelSerializer):  
+class ProfileSerializer(serializers.ModelSerializer):  
     # getting user details
     userId = serializers.ReadOnlyField(source='user.id')
     username = serializers.ReadOnlyField(source='user.username')
@@ -19,14 +19,14 @@ class KProfileSerializer(serializers.ModelSerializer):
     lastName = serializers.CharField(allow_blank=True, required=False)
     gender = serializers.IntegerField(required=False)
     married = serializers.BooleanField(required=False)
-    # userTypeIds = serializers.PrimaryKeyRelatedField(many=True, read_only=False, queryset=KUserType.objects.all(), source='userTypes')
+    # userTypeIds = serializers.PrimaryKeyRelatedField(many=True, read_only=False, queryset=UserType.objects.all(), source='userTypes')
 
     images = serializers.SerializerMethodField(read_only=True)
     userTypes = serializers.SerializerMethodField(read_only=True) 
     address = serializers.SerializerMethodField(read_only=True)
-    # full_address = serializers.CharField(read_only=True)
+
     def get_userTypes(self, obj):
-        serializer = KUserTypeSerializer(obj.userTypes, many=True)
+        serializer = UserTypeSerializer(obj.userTypes, many=True)
         return serializer.data 
 
     def get_images(self, obj):
@@ -34,7 +34,7 @@ class KProfileSerializer(serializers.ModelSerializer):
         return serializer.data 
     
     def get_address(self, obj):
-        serializer = KAddressSerializer(obj.address, many=True)
+        serializer = AddressSerializer(obj.address, many=True)
         return serializer.data     
     
     class Meta:
@@ -60,14 +60,14 @@ class KProfileSerializer(serializers.ModelSerializer):
         
         if self.initial_data.get('userTypes') is not None:
             if isinstance(self.initial_data.get('userTypes'), list):
-                usertypes = list(KUserType.objects.filter(id__in=self.initial_data.get("userTypes")))
+                usertypes = list(UserType.objects.filter(id__in=self.initial_data.get("userTypes")))
                 instance.userTypes.set(usertypes)
             else:
                 errors.append("User types expected an array")
 
         if self.initial_data.get('address'):
             if isinstance(self.initial_data.get('address'), list):
-                address = list(KAddress.objects.filter(id__in=self.initial_data.get("address")))
+                address = list(Address.objects.filter(id__in=self.initial_data.get("address")))
                 instance.address.set(address)
             else:
                 errors.append("address ids should be list")

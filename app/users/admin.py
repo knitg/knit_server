@@ -3,9 +3,9 @@ from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import *
 from users.models import User
 from .kmodels.image_model import KImage
-from .kmodels.address_model import KAddress
-from .kmodels.vendor_model import KVendorUser
-from .kmodels.usertype_model import KUserType
+from .kmodels.address_model import Address
+from .kmodels.vendor_model import Vendor
+from .kmodels.usertype_model import UserType
 
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin  as BaseUserAdmin
@@ -30,7 +30,7 @@ class UserAdmin(UserAdmin):
 admin.site.unregister(Group)
 
 admin.site.register(KImage)
-admin.site.register(KAddress)
-admin.site.register(KUserType)
+admin.site.register(Address)
+admin.site.register(UserType)
 admin.site.register(User, UserAdmin)
-admin.site.register(KVendorUser)
+admin.site.register(Vendor)

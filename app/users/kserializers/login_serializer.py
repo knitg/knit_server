@@ -4,8 +4,8 @@ from rest_framework import serializers, exceptions
 from rest_framework.exceptions import ValidationError
 from users.models import User
 from ..kmodels.image_model import KImage
-from ..kmodels.address_model import KAddress
-from ..kmodels.usertype_model import KUserType
+from ..kmodels.address_model import Address
+from ..kmodels.usertype_model import UserType
 import types
 from ..kmodels.profile_model import Profile
 
@@ -13,8 +13,8 @@ from django.utils.translation import ugettext_lazy as _
 from django.db.models.signals import post_save
 
 from .image_serializer import KImageSerializer
-from .address_serializer import KAddressSerializer
-from .usertype_serializer import KUserTypeSerializer
+from .address_serializer import AddressSerializer
+from .usertype_serializer import UserTypeSerializer
 
 UserModel = get_user_model()
 

@@ -19,7 +19,7 @@ router.register(r'user-types', UserTypeViewSet)
 router.register(r'upload', ImageViewSet)
 router.register(r'users', UserViewSet)
 router.register(r'profiles', ProfileListViewSet)
-router.register(r'vendor', VendorUserViewSet)
+router.register(r'vendors', VendorUserViewSet)
 
 urlpatterns = [ 
     path('', include(router.urls)),

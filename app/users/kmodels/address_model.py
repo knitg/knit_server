@@ -1,8 +1,9 @@
 from django.db import models
 from datetime import datetime
 from django.utils.timezone import now
+from .timestamp_model import TimestampedModel
 
-class KAddress(models.Model):
+class Address(TimestampedModel):
     address_line_1= models.CharField(default='', max_length=50)
     address_line_2= models.CharField(max_length=50, blank=True, null=True, default=None)
     landmark= models.CharField(max_length=50, blank=True, null=True, default=None)
@@ -13,8 +14,6 @@ class KAddress(models.Model):
     city= models.CharField(max_length=25, null=True)
     state= models.CharField(max_length=25, blank=True, null=True, default=None)
     country= models.CharField(max_length=45, blank=True, null=True, default=None)
-    created_at = models.DateTimeField(default=now, editable=False)
-    updated_at = models.DateTimeField(default=now, editable=False)
     
     
     def get_full_address(self):

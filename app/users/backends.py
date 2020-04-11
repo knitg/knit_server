@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.contrib.auth import get_user_model
 import re
-
+from django.core.exceptions import MultipleObjectsReturned
 from django.contrib.auth.models import User
 from django.db.models import Q
 from django.contrib.auth.hashers import check_password
@@ -41,7 +41,7 @@ class EmailAuthenticate(object):
             user = get_user_model().objects.get((Q(email=email) | Q(phone=phone) | Q(username=username)) )
             if user.check_password(password):
                 return user
-        except get_user_model().DoesNotExist:
+        except MultipleObjectsReturned:
             return None
         return None
 

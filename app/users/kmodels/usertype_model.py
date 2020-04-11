@@ -1,6 +1,7 @@
 from django.db import models
+from .timestamp_model import TimestampedModel
 
-class KUserType(models.Model):    
+class UserType(TimestampedModel):
     user_type= models.CharField(null=True, max_length=80,  default=None)  
     description = models.CharField(max_length=150, blank=True, null=True)
     class Meta:
