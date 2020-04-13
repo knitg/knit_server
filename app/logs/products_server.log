@@ -194,3 +194,111 @@
  products.kviews.stitchtypeview 2020-04-13 16:52:53,295 INFO     Images length = 2
  products.kviews.stitchtypeview 2020-04-13 16:53:00,550 INFO     {'stitchId': 1, 'status': '200 Ok'}
  products.kviews.stitchtypeview 2020-04-13 16:53:00,550 INFO     Stitch Updated successfully
+ products.kviews.stitchdesignview 2020-04-13 17:22:56,812 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:23:26,620 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kserializers.stitchdesignserializer 2020-04-13 17:23:26,624 INFO     {'stitchType': 'Stitch is required'}
+ products.kviews.stitchdesignview 2020-04-13 17:24:05,876 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kserializers.stitchdesignserializer 2020-04-13 17:24:05,879 INFO     {'stitchType': 'Stitch is required'}
+ products.kviews.stitchdesignview 2020-04-13 17:24:05,880 INFO     {'stitchType': 'Stitch is required'}
+ products.kviews.stitchdesignview 2020-04-13 17:24:05,880 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:25:18,729 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kserializers.stitchdesignserializer 2020-04-13 17:25:18,733 INFO     {'stitchType': 'Stitch Type is required'}
+ products.kviews.stitchdesignview 2020-04-13 17:25:18,733 INFO     {'stitchType': 'Stitch Type is required'}
+ products.kviews.stitchdesignview 2020-04-13 17:25:18,733 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:25:48,720 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:25:48,729 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:25:48,732 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:25:48,732 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:26:11,609 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:26:11,618 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:26:11,620 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:26:11,620 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:28:03,904 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:28:03,907 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:28:03,909 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:28:03,909 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:28:47,603 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:28:47,606 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:28:47,608 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:28:47,608 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:29:22,611 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:29:25,610 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:29:54,237 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:30:19,171 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:30:44,466 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:30:45,949 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:30:55,165 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:30:55,166 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:31:51,456 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:31:52,566 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:31:54,472 INFO     {}
+ products.kviews.stitchdesignview 2020-04-13 17:31:55,631 INFO     StitchType save failed
+ products.kviews.stitchdesignview 2020-04-13 17:32:44,950 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:32:46,570 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:33:42,167 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:33:42,751 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:35:02,304 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:35:19,606 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:36:38,802 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:37:15,474 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:39:04,859 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:39:14,777 INFO     {'stitchTypeId': 1, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-13 17:39:14,777 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchdesignview 2020-04-13 17:45:22,433 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:45:35,837 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:45:50,732 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:45:51,715 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:47:37,805 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:47:38,321 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:47:47,207 INFO     {'stitchTypeId': 3, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-13 17:47:47,207 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchdesignview 2020-04-13 17:48:56,068 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 17:48:56,613 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 17:49:06,330 INFO     {'stitchTypeId': 4, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-13 17:49:06,331 INFO     STITCH TYPE DESIGN saved successfully

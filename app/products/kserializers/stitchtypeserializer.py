@@ -15,22 +15,15 @@ logger = logging.getLogger(__name__)
 
 class StitchTypeSerializer(serializers.ModelSerializer):
     images = serializers.SerializerMethodField(read_only=True, allow_null=True)
-    # stitch = serializers.SerializerMethodField(read_only=True, allow_null=True)
-    
     stitchId = serializers.ReadOnlyField(source='stitch.id')
     stitch = serializers.ReadOnlyField(source='stitch.type')
 
     errors = {}
 
-    # def get_stitch(self, obj):
-    #     stitch_serializer = StitchSerializer(obj.stitch, many=False)
-    #     return stitch_serializer.data 
-    
     def get_images(self, obj):
         serializer = KImageSerializer(obj.images, many=True)
         return serializer.data 
     
-
     class Meta:
         model = StitchType
         fields = ('id', 'type', 'code', 'description','stitchId', 'stitch',  'images')

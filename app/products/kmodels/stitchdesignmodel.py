@@ -22,4 +22,4 @@ class StitchTypeDesign(TimestampedModel):
         verbose_name_plural = 'Knit Stitch Type design'
     
     def __str__(self):
-        return self.sdesign
+        return self.type

@@ -3808,3 +3808,289 @@ Traceback (most recent call last):
   File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchtypeview.py", line 56, in update
     return Response({'stitchTypeId':serializer.data.id}, status=status.HTTP_200_OK)
 AttributeError: 'ReturnDict' object has no attribute 'id'
+ django.request 2020-04-13 17:16:02,408 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchdesignview.py", line 18, in create
+    serializer_class = StitchTypeDesignSerializer
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 1063, in get_fields
+    source, info, model, depth
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 1208, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 1325, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `sdesign` is not valid for model `StitchTypeDesign`.
+ django.request 2020-04-13 17:17:40,321 WARNING  Not Found: /product/stitch-type-designs
+ django.request 2020-04-13 17:21:41,720 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 220, in ensure_connection
+    self.connect()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 197, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\mysql\base.py", line 233, in get_new_connection
+    return Database.connect(**conn_params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\connections.py", line 179, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on '139.59.13.86' (10051)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\pagination.py", line 373, in paginate_queryset
+    self.count = self.get_count(queryset)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\pagination.py", line 510, in get_count
+    return queryset.count()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 397, in count
+    return self.query.get_count(using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 516, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 501, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1135, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 260, in cursor
+    return self._cursor()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 236, in _cursor
+    self.ensure_connection()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 220, in ensure_connection
+    self.connect()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 220, in ensure_connection
+    self.connect()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\base\base.py", line 197, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\mysql\base.py", line 233, in get_new_connection
+    return Database.connect(**conn_params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\connections.py", line 179, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to MySQL server on '139.59.13.86' (10051)")
+ django.request 2020-04-13 17:22:56,909 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchdesignview.py", line 34, in create
+    if stitchdesign_serializer.is_valid():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\stitchdesignserializer.py", line 30, in validate
+    self.errors = {}
+AttributeError: can't set attribute
+ django.request 2020-04-13 17:23:26,717 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchdesignview.py", line 40, in create
+    logger.info(stitchtype_serializer.errors)
+NameError: name 'stitchtype_serializer' is not defined
+ django.request 2020-04-13 17:24:06,032 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:25:18,886 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:25:48,733 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:26:11,620 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:28:03,910 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:28:47,609 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:30:19,173 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:30:55,170 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:31:55,632 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:32:50,812 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:33:55,402 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:35:02,308 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:35:34,384 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:36:52,858 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:37:28,185 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchdesignview.py", line 35, in create
+    stitchdesign_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\stitchdesignserializer.py", line 45, in create
+    if self.initial_data['stitch_type']:
+KeyError: 'stitch_type'
+ django.request 2020-04-13 17:39:14,858 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ django.request 2020-04-13 17:45:22,438 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:45:35,838 WARNING  Bad Request: /product/stitch-type-design
+ django.request 2020-04-13 17:46:07,176 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchdesignview.py", line 35, in create
+    stitchdesign_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\stitchdesignserializer.py", line 59, in create
+    images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='stitch_design_'+str(product.id), size=c_image.size)
+NameError: name 'product' is not defined
+ django.request 2020-04-13 17:47:47,270 ERROR    Internal Server Error: /product/stitch-type-design
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\stitchdesignview.py", line 38, in create
+    return Response({'stitchTypeId':stitchtype_serializer.instance.id}, status=status.HTTP_201_CREATED)
+NameError: name 'stitchtype_serializer' is not defined

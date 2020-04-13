@@ -713,3 +713,17 @@
  users.exceptions 2020-04-12 12:29:38,224 ERROR     -- SOMETHING WRONG -- 
  users.exceptions 2020-04-13 15:50:57,500 ERROR    {'detail': ErrorDetail(string="JSON parse error - 'utf-8' codec can't decode byte 0xff in position 349: invalid start byte", code='parse_error'), 'status': 400}
  users.exceptions 2020-04-13 15:50:57,500 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:32:50,810 ERROR    {'status': 400}
+ users.exceptions 2020-04-13 17:32:50,810 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:33:55,400 ERROR    {'status': 400}
+ users.exceptions 2020-04-13 17:33:55,401 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:35:02,306 ERROR    {'detail': ErrorDetail(string='Missing filename. Request should include a Content-Disposition header with a filename parameter.', code='parse_error'), 'status': 400}
+ users.exceptions 2020-04-13 17:35:02,306 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:35:34,382 ERROR    {'status': 400}
+ users.exceptions 2020-04-13 17:35:34,382 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:36:52,857 ERROR    {'status': 400}
+ users.exceptions 2020-04-13 17:36:52,857 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:45:22,436 ERROR    {'detail': ErrorDetail(string="JSON parse error - 'utf-8' codec can't decode byte 0xff in position 350: invalid start byte", code='parse_error'), 'status': 400}
+ users.exceptions 2020-04-13 17:45:22,436 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 17:45:35,838 ERROR    {'detail': ErrorDetail(string="JSON parse error - 'utf-8' codec can't decode byte 0xff in position 351: invalid start byte", code='parse_error'), 'status': 400}
+ users.exceptions 2020-04-13 17:45:35,838 ERROR     -- SOMETHING WRONG -- 
