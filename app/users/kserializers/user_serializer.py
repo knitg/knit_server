@@ -86,7 +86,13 @@ class UserSerializer(serializers.ModelSerializer):
                     profile.address.set(address)
                 else:
                     logger.warning("NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array {}".format(type(profile_data.get('address'))))
-                    
+                
+            if profile_data.get('images'):
+                image_data = profile_data.get('images')
+                for image in image_data:
+                    c_image= image_data[image]
+                    images = KImage.objects.create(image=c_image, description=profile_data.get('description'), source='user_'+str(profile.id), size=c_image.size)
+                    profile.images.add(images)       
             profile.save()
 
 
@@ -125,7 +131,6 @@ class UserSerializer(serializers.ModelSerializer):
             hasUserName = User.objects.filter(email=value)
             if len(hasUserName):
                 self.errors['email_exists'] = 'Email is already in use. Try with different email'
-                
         return value
     
 
@@ -133,6 +138,7 @@ class UserSerializer(serializers.ModelSerializer):
         self.errors = {}
         data = self.initial_data.get('data')
         if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
+            logger.info("Email or phone number required")
             raise serializers.ValidationError("Email or phone required")
         if data.get('username'):
             data['username'] = data.get('username', None)
@@ -145,9 +151,9 @@ class UserSerializer(serializers.ModelSerializer):
             self.validate_phone(data['phone'])
         if data.get('password') is None and self.instance is None:
             self.errors['required'] = "Password is required"
-            # raise serializers.ValidationError("password is required")
         else:
             data['password'] = data.get('password')
+        logger.info(self.errors)
         raise serializers.ValidationError(self.errors)
         return data
 

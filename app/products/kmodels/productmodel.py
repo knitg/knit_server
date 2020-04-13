@@ -7,23 +7,19 @@ from .stitchmodel import Stitch
 from .imagemodel import KImage
 from .stitchtypemodel import StitchType
 from .stitchdesignmodel import StitchTypeDesign
-from users.models import User
+from .timestamp_model import TimestampedModel
 
-class Product(models.Model):
-    code = models.CharField(null=True, max_length=80,  default=None) 
+class Product(TimestampedModel):
     title= models.CharField(null=True, max_length=80,  default=None) 
     description = models.CharField(null=True, max_length=120,  default=None) 
     images = models.ManyToManyField(KImage, blank=True, default=None)
+    
     stitch = models.ForeignKey(Stitch, on_delete=models.CASCADE, default=None, null=True, blank=True)   
     stitch_type = models.ForeignKey(StitchType, on_delete=models.CASCADE, default=None, null=True, blank=True)   
     stitch_type_design = models.ForeignKey(StitchTypeDesign, on_delete=models.CASCADE, default=None, null=True, blank=True)
 
     user = models.IntegerField(blank=True, null=True) 
-    stitched_date =  models.DateTimeField(default=None, editable=False, blank=True, null=True)
-    quantity =  models.CharField(max_length=10,  default=1, blank=False, null=False)
-
-    created_at = models.DateTimeField(default=now, editable=False)
-    updated_at = models.DateTimeField(default=now, editable=False)
+    quantity =  models.IntegerField(blank=False, null=False, default=0)
 
     class Meta:
         db_table = 'knit_product'

@@ -57,6 +57,10 @@ class UserViewSet(viewsets.ModelViewSet):
         # Profile Data
         profileObj = request.data.get('profile')
         profile_data = self.prepareProfileData(profileObj)
+        if request.FILES:
+            profile_data['images'] = request.FILES
+            logger.info("Images length = {}".format(len(request.FILES)))
+
         logger.debug("Data prepared. Sending data to the serializer ")
         logger.debug(user_data, profile_data)
 

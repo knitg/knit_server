@@ -8,6 +8,11 @@ class TimestampedModel(models.Model):
     # A timestamp reprensenting when this object was last updated.
     updated_at = models.DateTimeField(auto_now=True)
 
+    # A timestamp reprensenting when this object was last updated.
+    created_by = models.IntegerField(default=None, null=True, blank=True)
+    # A timestamp reprensenting when this object was last updated.
+    updated_by = models.IntegerField(default=None, null=True, blank=True)
+
     class Meta:
         abstract = True
 

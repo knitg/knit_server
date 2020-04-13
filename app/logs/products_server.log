@@ -1,0 +1,196 @@
+ products.kviews.stitchview 2020-04-12 12:02:49,540 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-12 12:02:54,061 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-12 12:03:01,697 INFO     {'stitchId': 9, <module 'rest_framework.status' from 'C:\\ProgramData\\Miniconda3\\lib\\site-packages\\rest_framework\\status.py'>: '200 Ok'}
+ products.kviews.stitchview 2020-04-12 12:03:01,698 INFO     Stitch saved successfully
+ products.kviews.stitchtypeview 2020-04-13 14:52:18,559 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 14:52:25,466 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 14:52:58,926 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kserializers.stitchtypeserializer 2020-04-13 14:52:58,931 INFO     {'stitch': 'Stitch is required', 'stitchType': 'Stitch Type is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:53:42,916 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kserializers.stitchtypeserializer 2020-04-13 14:53:42,919 INFO     {'stitch': 'Stitch is required', 'stitchType': 'Stitch Type is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:53:42,919 INFO     {'stitch': 'Stitch is required', 'stitchType': 'Stitch Type is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:53:42,920 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 14:55:06,340 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kserializers.stitchtypeserializer 2020-04-13 14:55:06,344 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:55:06,344 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:55:06,344 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 14:55:47,317 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kserializers.stitchtypeserializer 2020-04-13 14:55:47,318 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:55:47,319 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:55:47,319 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 14:55:53,215 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kserializers.stitchtypeserializer 2020-04-13 14:55:53,216 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:55:53,217 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:55:53,217 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 14:57:25,907 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kserializers.stitchtypeserializer 2020-04-13 14:58:01,900 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:58:01,901 INFO     {'stitch': 'Stitch is required'}
+ products.kviews.stitchtypeview 2020-04-13 14:58:01,901 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 14:58:51,216 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 14:59:54,313 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:00:03,056 INFO     {'stitchTypeId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 15:00:03,057 INFO     Stitch Type saved successfully
+ products.kviews.stitchtypeview 2020-04-13 15:01:20,940 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:01:29,921 INFO     {'stitchTypeId': 2, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 15:01:29,922 INFO     Stitch Type saved successfully
+ products.kviews.stitchtypeview 2020-04-13 15:50:57,415 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:51:08,158 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:51:08,221 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 15:53:08,320 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:53:08,362 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 15:53:14,525 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 15:53:14,525 INFO     Stitch Updated successfully
+ products.kviews.stitchtypeview 2020-04-13 15:56:50,233 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:56:56,398 INFO     {'stitchTypeId': 3, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 15:56:56,398 INFO     Stitch Type saved successfully
+ products.kviews.stitchtypeview 2020-04-13 15:58:10,244 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 15:58:14,501 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 15:58:17,690 INFO     {'stitchTypeId': 4, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 15:58:17,691 INFO     Stitch Type saved successfully
+ products.kviews.stitchview 2020-04-13 16:04:25,858 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:04:25,861 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:05:36,599 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:05:36,601 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:11:16,331 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:11:16,333 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:13:02,567 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:13:02,569 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:14:06,674 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:14:06,677 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:21:22,510 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:21:22,513 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:21:38,995 INFO     {'type': [ErrorDetail(string='Stitch is already exists. Try with different name', code='invalid')]}
+ products.kviews.stitchview 2020-04-13 16:21:40,552 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 16:22:57,365 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:23:02,476 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:23:05,091 INFO     {}
+ products.kviews.stitchtypeview 2020-04-13 16:23:05,091 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 16:23:53,067 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:23:59,351 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:24:08,046 INFO     {}
+ products.kviews.stitchtypeview 2020-04-13 16:24:08,651 INFO     Stitch save failed
+ products.kviews.stitchtypeview 2020-04-13 16:25:15,410 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:25:19,526 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:25:28,887 INFO     {}
+ products.kviews.stitchtypeview 2020-04-13 16:25:29,854 INFO     StitchType save failed
+ products.kviews.stitchtypeview 2020-04-13 16:27:05,648 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:27:06,606 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:27:35,998 INFO     {}
+ products.kviews.stitchtypeview 2020-04-13 16:30:00,764 INFO     StitchType save failed
+ products.kviews.stitchtypeview 2020-04-13 16:30:55,145 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:30:58,618 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:41:45,595 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:41:49,266 INFO     Images length = 2
+ products.kserializers.stitchtypeserializer 2020-04-13 16:41:56,108 INFO     {'stitchType_exists': 'StitchType is already exists. Try with different name'}
+ products.kviews.stitchtypeview 2020-04-13 16:41:56,108 INFO     {'stitchType_exists': 'StitchType is already exists. Try with different name'}
+ products.kviews.stitchtypeview 2020-04-13 16:41:56,109 INFO     StitchType save failed
+ products.kviews.stitchtypeview 2020-04-13 16:42:42,116 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:42:42,163 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:45:06,300 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:45:06,302 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:45:12,848 INFO     {'type': [ErrorDetail(string='Stitch is already exists. Try with different name', code='invalid')]}
+ products.kviews.stitchview 2020-04-13 16:45:13,357 INFO     Stitch save failed
+ products.kviews.stitchview 2020-04-13 16:45:32,128 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-13 16:45:32,131 INFO     Images length = 2
+ products.kviews.stitchview 2020-04-13 16:45:41,721 INFO     {'stitchId': 10, 'status': '200 Ok'}
+ products.kviews.stitchview 2020-04-13 16:45:42,719 INFO     Stitch saved successfully
+ products.kviews.stitchtypeview 2020-04-13 16:47:07,751 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:47:07,805 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:47:14,879 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 16:47:14,879 INFO     Stitch Updated successfully
+ products.kviews.stitchtypeview 2020-04-13 16:48:38,572 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:48:38,617 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:48:45,760 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 16:48:45,761 INFO     Stitch Updated successfully
+ products.kviews.stitchtypeview 2020-04-13 16:51:06,589 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:51:06,637 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:51:13,859 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 16:51:13,860 INFO     Stitch Updated successfully
+ products.kviews.stitchtypeview 2020-04-13 16:51:21,992 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:51:22,043 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:51:29,767 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 16:51:29,767 INFO     Stitch Updated successfully
+ products.kviews.stitchtypeview 2020-04-13 16:51:48,288 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:51:48,325 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:51:55,690 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 16:51:55,690 INFO     Stitch Updated successfully
+ products.kviews.stitchtypeview 2020-04-13 16:52:53,258 INFO      
+
+ ----- STITCH TYPE UPDATE initiated -----
+ products.kviews.stitchtypeview 2020-04-13 16:52:53,295 INFO     Images length = 2
+ products.kviews.stitchtypeview 2020-04-13 16:53:00,550 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-13 16:53:00,550 INFO     Stitch Updated successfully

@@ -1,3 +1,4 @@
+
 from rest_framework import serializers
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 from .imageserializer import KImageSerializer
@@ -9,20 +10,49 @@ from ..kmodels.stitchtypemodel import StitchType
 from ..kmodels.stitchdesignmodel import StitchTypeDesign
 from ..kmodels.productmodel import Product
 
+import logging
+logger = logging.getLogger(__name__)
 
 class StitchTypeSerializer(serializers.ModelSerializer):
-    stitch = StitchSerializer(many=False, required=False)
-    images = KImageSerializer(many=True, required=False, allow_null=True)
+    images = serializers.SerializerMethodField(read_only=True, allow_null=True)
+    # stitch = serializers.SerializerMethodField(read_only=True, allow_null=True)
+    
+    stitchId = serializers.ReadOnlyField(source='stitch.id')
+    stitch = serializers.ReadOnlyField(source='stitch.type')
+
+    errors = {}
+
+    # def get_stitch(self, obj):
+    #     stitch_serializer = StitchSerializer(obj.stitch, many=False)
+    #     return stitch_serializer.data 
+    
+    def get_images(self, obj):
+        serializer = KImageSerializer(obj.images, many=True)
+        return serializer.data 
+    
 
     class Meta:
         model = StitchType
-        fields = ('id', 'stype', 'code', 'description', 'stitch', 'images')
+        fields = ('id', 'type', 'code', 'description','stitchId', 'stitch',  'images')
+
+    def validate(self, data):
+        self.errors = {}
+        if self.initial_data.get('stitch') is None:
+            self.errors['stitch'] = 'Stitch is required'
+        if self.initial_data.get('type'):
+            data['code'] = self.initial_data.get('type', '').replace(" ", "_").upper()
+        else:
+            self.errors['stitchType'] = 'Stitch Type is required'
+        if len(self.errors):
+            logger.info(self.errors)
+            raise serializers.ValidationError(self.errors)
+        return data
 
     def create(self, validated_data):
         ## Image data
         validated_data['code'] = validated_data['code'].upper() if validated_data['code'] else None
         if self.initial_data['stitch']:
-            stitchQuerySet = Stitch.objects.filter(id= self.initial_data['stitch'])
+            stitchQuerySet = Stitch.objects.filter(id= int(self.initial_data['stitch']))
             stitch = serializers.PrimaryKeyRelatedField(queryset=stitchQuerySet, many=False)
             if len(stitchQuerySet):
                 validated_data['stitch'] = stitchQuerySet[0]
@@ -42,12 +72,13 @@ class StitchTypeSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         # Update the Foo instance
-        instance.stype = validated_data['stype']
-        instance.description = validated_data['description']
-        instance.code =  validated_data['code'].upper() if validated_data['code'] else instance.code   
+        
+        instance.type = validated_data.get('type', instance.type)
+        instance.description = validated_data.get('description', instance.description)
+        instance.code =  validated_data.get('code', instance.code).upper()   
         
         if self.initial_data['stitch']:
-            stitchQuerySet = Stitch.objects.filter(id= self.initial_data['stitch'])
+            stitchQuerySet = Stitch.objects.filter(id= int(self.initial_data['stitch']))
             instance.stitch = stitchQuerySet[0] if len(stitchQuerySet) else None        
         instance.save()
 

@@ -6,15 +6,14 @@ from django.utils.timezone import now
 from .stitchmodel import Stitch
 from .imagemodel import KImage
 from .stitchtypemodel import StitchType
+from .timestamp_model import TimestampedModel
 
-class StitchTypeDesign(models.Model):
-    sdesign= models.CharField(null=True, max_length=80,  default=None) 
+class StitchTypeDesign(TimestampedModel):
+    type = models.CharField(null=True, max_length=80,  default=None) 
     stitch_type = models.ForeignKey(StitchType, on_delete=models.CASCADE, default=None, blank=True, null=True)
     images = models.ManyToManyField(KImage, blank=True, default=None)
     code = models.CharField(null=True, max_length=80,  default=None) 
     description = models.CharField(null=True, max_length=120,  default=None) 
-    created_at = models.DateTimeField(default=now, editable=False)
-    updated_at = models.DateTimeField(default=now, editable=False)
 
     class Meta:
         db_table = 'knit_stitch_type_design'

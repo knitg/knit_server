@@ -665,3 +665,51 @@
  users.kserializers.vendor_serializer 2020-04-11 16:50:45,048 INFO     User created successfully
  users.kviews.vendor_view 2020-04-11 16:50:45,157 DEBUG    {'vendorId': 6, 'status': 200}
  users.kviews.vendor_view 2020-04-11 16:50:45,157 DEBUG    Vendor saved successfully!!!
+ users.exceptions 2020-04-12 11:24:33,323 ERROR    {'detail': ErrorDetail(string="JSON parse error - 'utf-8' codec can't decode byte 0xff in position 237: invalid start byte", code='parse_error'), 'status': 400}
+ users.exceptions 2020-04-12 11:24:33,324 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-12 12:17:43,011 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-12 12:17:43,014 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.user_serializer 2020-04-12 12:17:44,105 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-12 12:17:44,311 DEBUG    {'userId': 1, 'status': 200}
+ users.kviews.user_view 2020-04-12 12:17:44,312 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-12 12:21:19,970 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-12 12:21:19,973 INFO     Images length = 1
+ users.kviews.user_view 2020-04-12 12:21:19,973 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-12 12:21:19,974 DEBUG    {'phone': '9700968616', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-12 12:21:20,632 INFO     {}
+ users.kserializers.user_serializer 2020-04-12 12:21:20,896 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-12 12:21:21,746 DEBUG    {'userId': 2, 'status': 200}
+ users.kviews.user_view 2020-04-12 12:21:21,747 DEBUG    User saved successfully!!!
+ users.kviews.vendor_view 2020-04-12 12:27:01,495 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-12 12:27:01,498 DEBUG    {'profile': {'images': <MultiValueDict: {'images': [<InMemoryUploadedFile: 700df30dafed.jpg (image/jpeg)>]}>}}
+ users.kviews.vendor_view 2020-04-12 12:27:01,498 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-12 12:27:01,502 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-12 12:27:01,504 INFO     Email or phone number required
+ users.exceptions 2020-04-12 12:27:01,505 ERROR    {'status': 400}
+ users.exceptions 2020-04-12 12:27:01,505 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.vendor_view 2020-04-12 12:27:46,772 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-12 12:27:46,775 DEBUG    {'profile': {'images': <MultiValueDict: {'images': [<InMemoryUploadedFile: 700df30dafed.jpg (image/jpeg)>]}>}}
+ users.kviews.vendor_view 2020-04-12 12:27:46,776 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-12 12:27:46,778 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-12 12:27:46,779 INFO     Email or phone number required
+ users.exceptions 2020-04-12 12:27:46,779 ERROR    {'status': 400}
+ users.exceptions 2020-04-12 12:27:46,779 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.vendor_view 2020-04-12 12:28:20,062 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-12 12:28:20,064 DEBUG    {'profile': {'images': <MultiValueDict: {'images': [<InMemoryUploadedFile: 700df30dafed.jpg (image/jpeg)>]}>}}
+ users.kviews.vendor_view 2020-04-12 12:28:20,064 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-12 12:28:20,065 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-12 12:29:38,222 INFO     Email or phone number required
+ users.exceptions 2020-04-12 12:29:38,224 ERROR    {'status': 400}
+ users.exceptions 2020-04-12 12:29:38,224 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-13 15:50:57,500 ERROR    {'detail': ErrorDetail(string="JSON parse error - 'utf-8' codec can't decode byte 0xff in position 349: invalid start byte", code='parse_error'), 'status': 400}
+ users.exceptions 2020-04-13 15:50:57,500 ERROR     -- SOMETHING WRONG -- 
