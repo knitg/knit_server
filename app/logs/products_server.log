@@ -302,3 +302,9 @@
  products.kviews.stitchdesignview 2020-04-13 17:48:56,613 INFO     Images length = 2
  products.kviews.stitchdesignview 2020-04-13 17:49:06,330 INFO     {'stitchTypeId': 4, 'status': '200 Ok'}
  products.kviews.stitchdesignview 2020-04-13 17:49:06,331 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchdesignview 2020-04-13 18:02:29,186 INFO      
+
+ ----- STITCH TYPE DESIGN UPDATE initiated -----
+ products.kviews.stitchdesignview 2020-04-13 18:02:29,189 INFO     Images length = 2
+ products.kviews.stitchdesignview 2020-04-13 18:02:37,112 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-13 18:02:37,112 INFO     Stitch Updated successfully
