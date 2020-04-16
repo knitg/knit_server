@@ -727,3 +727,171 @@
  users.exceptions 2020-04-13 17:45:22,436 ERROR     -- SOMETHING WRONG -- 
  users.exceptions 2020-04-13 17:45:35,838 ERROR    {'detail': ErrorDetail(string="JSON parse error - 'utf-8' codec can't decode byte 0xff in position 351: invalid start byte", code='parse_error'), 'status': 400}
  users.exceptions 2020-04-13 17:45:35,838 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-15 16:45:53,368 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-04-15 16:45:53,368 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-15 16:46:07,942 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 16:46:07,942 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 16:46:07,942 DEBUG    {'phone': '8986194824', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kviews.user_view 2020-04-15 16:46:50,263 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 16:46:50,264 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 16:46:50,264 DEBUG    {'phone': '8986194824', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 16:46:50,376 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 16:46:50,484 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 16:46:50,517 DEBUG    {'userId': 3, 'status': 200}
+ users.kviews.user_view 2020-04-15 16:46:50,517 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:17:25,416 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:17:25,418 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:17:25,418 DEBUG    {'phone': '98541241225', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:17:25,564 INFO     {'length': 'Phone length should be 10 numbers', 'startWith': 'Phone number should starts with 6,7,8,9 number'}
+ users.exceptions 2020-04-15 23:17:25,565 ERROR    {'length': ErrorDetail(string='Phone length should be 10 numbers', code='invalid'), 'startWith': ErrorDetail(string='Phone number should starts with 6,7,8,9 number', code='invalid'), 'status': 400}
+ users.exceptions 2020-04-15 23:17:25,565 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-15 23:17:32,226 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:17:32,226 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:17:32,226 DEBUG    {'phone': '9854124122', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:17:32,352 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:17:32,487 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:17:32,525 DEBUG    {'userId': 4, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:17:32,525 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:19:44,389 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:19:44,389 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:19:44,389 DEBUG    {'phone': '9854124123', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:19:44,492 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:20:27,673 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:20:27,708 DEBUG    {'userId': 5, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:20:27,708 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:20:34,274 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:21:25,147 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:21:25,147 DEBUG    {'phone': '9854124113', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:21:25,251 INFO     {}
+ users.kviews.user_view 2020-04-15 23:21:43,731 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:22:10,862 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:22:12,872 DEBUG    {'phone': '9854124113', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': ['2', '4'], 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:22:18,989 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:22:24,627 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:22:26,912 DEBUG    {'userId': 6, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:22:26,912 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:24:24,429 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:24:35,899 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:24:35,899 DEBUG    {'phone': '9854124133', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': ['2', '4'], 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:24:36,012 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:24:37,532 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:24:37,566 DEBUG    {'userId': 7, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:24:37,566 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:26:50,961 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:26:58,666 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:26:58,667 DEBUG    {'phone': '9854124135', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': '4', 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:26:58,782 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:26:59,948 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:26:59,981 DEBUG    {'userId': 8, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:26:59,981 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:27:57,826 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:28:05,522 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:28:05,522 DEBUG    {'phone': '9854124137', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': 4, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:28:05,660 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:28:06,972 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:28:07,027 DEBUG    {'userId': 9, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:28:07,027 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:41:51,570 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:41:58,148 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:41:58,672 DEBUG    {'phone': '9854124139', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': 4, 'created_by': None}
+ users.exceptions 2020-04-15 23:42:01,687 ERROR    {'status': 400}
+ users.exceptions 2020-04-15 23:42:01,687 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-15 23:42:34,217 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:42:47,787 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:42:48,410 DEBUG    {'phone': '9854124139', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': 4, 'created_by': None}
+ users.exceptions 2020-04-15 23:42:51,169 ERROR    {'status': 400}
+ users.exceptions 2020-04-15 23:42:51,171 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-15 23:45:13,370 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:45:29,457 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:45:29,457 DEBUG    {'phone': '9854124139', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': 4, 'created_by': None}
+ users.exceptions 2020-04-15 23:45:29,462 ERROR    {'status': 400}
+ users.exceptions 2020-04-15 23:45:29,462 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-15 23:47:23,961 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:47:28,793 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:47:29,040 DEBUG    {'phone': '9854124139', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': 4, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:47:30,046 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:47:33,930 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:47:50,122 DEBUG    {'userId': 10, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:47:50,122 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-15 23:51:47,183 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:53:32,696 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-15 23:53:36,637 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-15 23:53:37,346 DEBUG    {'phone': '9854124142', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'userrole': 4, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-15 23:53:38,464 INFO     {}
+ users.kserializers.user_serializer 2020-04-15 23:53:43,342 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-15 23:53:44,117 DEBUG    {'userId': <User: 9854124142>, 'status': 200}
+ users.kviews.user_view 2020-04-15 23:53:44,118 DEBUG    User saved successfully!!!
+ users.kviews.user_view 2020-04-16 00:13:48,785 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-16 00:15:52,252 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-16 00:15:58,687 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-16 00:15:58,890 DEBUG    {'phone': '9854124144', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kviews.user_view 2020-04-16 00:17:52,141 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-16 00:18:12,720 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-16 00:18:17,490 DEBUG    {'phone': '9854124144', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-16 00:18:19,389 INFO     {}
+ users.kserializers.user_serializer 2020-04-16 00:18:22,228 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-16 00:20:07,113 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-16 00:20:12,817 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-16 00:20:16,337 DEBUG    {'phone': '9854124148', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-16 00:20:17,841 INFO     {}
+ users.kserializers.user_serializer 2020-04-16 00:20:19,805 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-16 00:20:24,751 DEBUG    {'userId': <User: 9854124148>, 'status': 200}
+ users.kviews.user_view 2020-04-16 00:20:25,740 DEBUG    User saved successfully!!!
+ users.exceptions 2020-04-16 15:37:41,990 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 15:37:41,991 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 15:39:11,288 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 15:39:13,971 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 15:40:36,332 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 15:40:36,332 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 15:53:58,432 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 15:53:58,432 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 15:56:22,363 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 15:56:22,364 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 16:00:56,561 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 16:00:56,562 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 16:36:20,962 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 16:36:20,963 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 16:39:54,766 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 16:39:54,767 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-16 16:44:12,397 ERROR    {'status': 400}
+ users.exceptions 2020-04-16 16:44:12,398 ERROR     -- SOMETHING WRONG -- 

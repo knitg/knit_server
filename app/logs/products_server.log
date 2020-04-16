@@ -308,3 +308,59 @@
  products.kviews.stitchdesignview 2020-04-13 18:02:29,189 INFO     Images length = 2
  products.kviews.stitchdesignview 2020-04-13 18:02:37,112 INFO     {'stitchId': 1, 'status': '200 Ok'}
  products.kviews.stitchdesignview 2020-04-13 18:02:37,112 INFO     Stitch Updated successfully
+ products.kviews.productview 2020-04-16 15:09:59,982 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 15:38:30,449 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 15:40:06,283 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 15:53:06,586 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 15:53:44,999 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 15:56:11,486 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 15:57:27,711 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 16:24:03,857 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 16:30:08,187 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 16:35:58,961 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.productserializer 2020-04-16 16:36:17,583 ERROR    Product title is required
+ products.kviews.productview 2020-04-16 16:38:49,869 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 16:43:59,870 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 16:44:27,282 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-04-16 16:48:47,354 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.productserializer 2020-04-16 16:50:09,509 ERROR    {}
+ products.kviews.productview 2020-04-16 16:52:49,630 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.productserializer 2020-04-16 16:55:23,483 ERROR    {}
+ products.kviews.productview 2020-04-16 19:53:39,725 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.productserializer 2020-04-16 19:53:52,331 ERROR    {}
+ products.kviews.productview 2020-04-16 22:17:53,513 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.productserializer 2020-04-16 22:18:16,013 ERROR    {}

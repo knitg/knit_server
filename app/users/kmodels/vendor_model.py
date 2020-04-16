@@ -26,7 +26,7 @@ class Vendor(TimestampedModel):
     images = models.ManyToManyField(KImage, blank=True, default=None)
     
     class Meta:
-        db_table = 'knit_vendor_user'
+        db_table = 'knit_vendor_users'
         managed = True
     
     def __str__(self):

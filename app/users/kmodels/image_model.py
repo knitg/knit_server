@@ -17,7 +17,7 @@ class KImage(TimestampedModel):
     source = models.CharField(blank=True, null=True, default='customer', max_length=50)
     size = models.IntegerField(blank=True, null=True, default=0)
     class Meta:
-        db_table = 'knit_image'
+        db_table = 'knit_user_image'
         managed = True
 
     def save(self, **kwargs):

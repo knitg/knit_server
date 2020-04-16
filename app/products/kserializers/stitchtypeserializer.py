@@ -8,7 +8,7 @@ from ..kmodels.imagemodel import KImage
 from ..kmodels.stitchmodel import Stitch
 from ..kmodels.stitchtypemodel import StitchType
 from ..kmodels.stitchdesignmodel import StitchTypeDesign
-from ..kmodels.productmodel import Product
+from ..kmodels.product_model import Product
 
 import logging
 logger = logging.getLogger(__name__)

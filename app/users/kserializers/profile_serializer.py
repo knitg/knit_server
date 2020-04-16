@@ -17,14 +17,21 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     firstName = serializers.CharField(allow_blank=True, required=False)
     lastName = serializers.CharField(allow_blank=True, required=False)
-    gender = serializers.IntegerField(required=False)
     married = serializers.BooleanField(required=False)
     # userTypeIds = serializers.PrimaryKeyRelatedField(many=True, read_only=False, queryset=UserType.objects.all(), source='userTypes')
 
+    gender = serializers.SerializerMethodField(read_only=True)
+    user_role = serializers.SerializerMethodField(read_only=True)
     images = serializers.SerializerMethodField(read_only=True)
     userTypes = serializers.SerializerMethodField(read_only=True) 
     address = serializers.SerializerMethodField(read_only=True)
 
+    def get_user_role(self,obj):
+        return obj.get_user_role_display()
+
+    def get_gender(self,obj):
+        return obj.get_gender_display()
+        
     def get_userTypes(self, obj):
         serializer = UserTypeSerializer(obj.userTypes, many=True)
         return serializer.data 
@@ -41,13 +48,14 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         depth = 1
         # fields = '__all__'
-        fields = ("userId", "username", "email", "phone", "userTypes", "firstName", "lastName", "gender", "married", "images", "address", "is_active")
+        fields = ("userId", "username", "email", "phone", "userTypes", "user_role", "firstName", "lastName", "gender", "married", "images", "address", "is_active")
 
     def update(self, instance, validated_data):
         errors = []
         instance.firstName = self.initial_data.get('firstName', instance.firstName)
         instance.lastName = self.initial_data.get('lastName', instance.lastName)
         instance.gender = self.initial_data.get('gender', instance.gender)
+        instance.user_role = self.initial_data.get('user_role', instance.user_role)
         instance.married = self.initial_data.get('married', instance.married)
         instance.anniversary = self.initial_data.get('anniversary', instance.anniversary)
         if self.initial_data.get('images'):

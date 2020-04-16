@@ -28,12 +28,14 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     fullName = serializers.ReadOnlyField(source='profile.get_full_name', required=False)
+    userRole = serializers.ReadOnlyField(source='profile.user_role', required=False)
     vendor_id = serializers.ReadOnlyField(source='vendor.id', required=False)
+
     # password = serializers.CharField(required=False, max_length=105, style={'input_type': 'password'})
     errors = {}
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'phone',  'fullName', 'vendor_id', 'created_at', 'updated_at')
+        fields = ('id', 'username', 'email', 'phone', 'userRole', 'fullName', 'vendor_id')
     
 
     def create(self, validated_data):
@@ -138,7 +140,7 @@ class UserSerializer(serializers.ModelSerializer):
         self.errors = {}
         data = self.initial_data.get('data')
         if data.get('email') is None and data.get('phone') is None and data.get('username') is None:
-            logger.info("Email or phone number required")
+            logger.error("Email or phone number required")
             raise serializers.ValidationError("Email or phone required")
         if data.get('username'):
             data['username'] = data.get('username', None)
@@ -153,7 +155,7 @@ class UserSerializer(serializers.ModelSerializer):
             self.errors['required'] = "Password is required"
         else:
             data['password'] = data.get('password')
-        logger.info(self.errors)
+        logger.error(self.errors)
         raise serializers.ValidationError(self.errors)
         return data
 

@@ -4,7 +4,6 @@ from django.utils.timezone import now
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.conf import settings
 from model_utils import Choices
- 
 from .kmodels.timestamp_model import TimestampedModel
 
 """
@@ -77,10 +76,8 @@ class User(AbstractBaseUser, TimestampedModel):
     REQUIRED_FIELDS = ['email','username']
 
     class Meta:
-        db_table = 'user'
-        managed = True
-        verbose_name = 'user'
-        verbose_name_plural = 'users'
+        db_table = 'knit_user'
+        managed = True 
         ordering = ['-created_at', '-updated_at']
 
     def __str__(self):

@@ -19,7 +19,7 @@ class KImage(models.Model):
     source = models.CharField(blank=True, null=True, default='', max_length=50)
     size = models.IntegerField(blank=True, null=True, default=0)
     class Meta:
-        db_table = 'product_image'
+        db_table = 'knit_product_image'
         managed = True
 
     def save(self, **kwargs):

@@ -67,7 +67,7 @@ class UserViewSet(viewsets.ModelViewSet):
         user_serializer = UserSerializer(data= {'user': user_data, 'profile': profile_data, 'data':request.data})
         user_serializer.is_valid(raise_exception=True)
         user_serializer.save()
-        logger.debug({'userId':user_serializer.instance.id, "status":200})
+        logger.debug({'userId':user_serializer.instance, "status":200})
         logger.debug("User saved successfully!!!")
         return Response({'userId':user_serializer.instance.id}, status=status.HTTP_201_CREATED)
 
@@ -126,6 +126,10 @@ class UserViewSet(viewsets.ModelViewSet):
             profile_data['firstName'] = profile_info.get('firstName')
             profile_data['lastName'] = profile_info.get('lastName')
             profile_data['userTypes'] = profile_info.get('userTypes')
+            profile_data['gender'] = profile_info.get('gender')
+            profile_data['married'] = profile_info.get('married')
+            profile_data['birthday'] = profile_info.get('birthday')
+            profile_data['anniversary'] = profile_info.get('anniversary')
             profile_data['user_role'] = profile_info.get('user_role')
             profile_data['address'] = profile_info.get('address')     
         return profile_data
