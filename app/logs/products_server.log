@@ -364,3 +364,9 @@
 
  ----- PRODUCT CREATE initiated -----
  products.kserializers.productserializer 2020-04-16 22:18:16,013 ERROR    {}
+ products.kviews.stitchview 2020-04-17 00:08:56,108 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-17 00:08:56,110 INFO     Images length = 1
+ products.kviews.stitchview 2020-04-17 00:08:56,602 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchview 2020-04-17 00:08:56,603 INFO     Stitch saved successfully

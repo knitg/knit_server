@@ -16,8 +16,8 @@ from .stitchtypeserializer import StitchTypeSerializer
 from .stitchdesignserializer import StitchTypeDesignSerializer
 from .price_serializer import PriceSerializer
 from .stitchdesignserializer import StitchTypeDesignSerializer
-from .color_choices_serializers import ColorChoiceSerilizer
-from .size_choices_serializers import SizeChoiceSerilizer
+from .color_serializers import ColorSerilizer
+from .size_serializers import SizeSerializer
 from .offers_serializer import OfferSerializer
 
 
@@ -55,11 +55,11 @@ class ProductSerializer(serializers.ModelSerializer):
         return serializer.data 
 
     def get_colors(self,obj):
-        serializer = ColorChoiceSerilizer(obj.colors, many=True)
+        serializer = ColorSerilizer(obj.colors, many=True)
         return serializer.data 
 
     def get_sizes(self,obj):
-        serializer = SizeChoiceSerilizer(obj.sizes, many=True)
+        serializer = SizeSerializer(obj.sizes, many=True)
         return serializer.data 
 
     def get_images(self, obj):

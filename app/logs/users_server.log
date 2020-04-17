@@ -895,3 +895,25 @@
  users.exceptions 2020-04-16 16:39:54,767 ERROR     -- SOMETHING WRONG -- 
  users.exceptions 2020-04-16 16:44:12,397 ERROR    {'status': 400}
  users.exceptions 2020-04-16 16:44:12,398 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.user_view 2020-04-17 00:05:25,283 INFO      
+
+ ----- USER CREATE initiated -----
+ users.kviews.user_view 2020-04-17 00:05:25,285 DEBUG    Data prepared. Sending data to the serializer 
+ users.kviews.user_view 2020-04-17 00:05:25,286 DEBUG    {'phone': '9854124148', 'email': None, 'password': 'mahi', 'username': None, 'is_admin': None, 'created_by': None}
+ users.kserializers.user_serializer 2020-04-17 00:05:25,396 ERROR    {}
+ users.kserializers.user_serializer 2020-04-17 00:05:25,499 INFO     Profile created successfully
+ users.kviews.user_view 2020-04-17 00:05:25,531 DEBUG    {'userId': <User: 9854124148>, 'status': 200}
+ users.kviews.user_view 2020-04-17 00:05:25,531 DEBUG    User saved successfully!!!
+ users.kviews.vendor_view 2020-04-17 00:07:33,290 INFO      
+
+ ----- VENDOR CREATE initiated -----
+ users.kviews.vendor_view 2020-04-17 00:07:33,290 DEBUG    {'profile': {'firstName': 'Vikesh', 'lastName': 'Sharma', 'userTypes': [5], 'user_role': None, 'address': [1]}, 'phone': '9700968619', 'email': None, 'password': 'mahi', 'username': None}
+ users.kviews.vendor_view 2020-04-17 00:07:33,290 DEBUG    Data prepared. Sending data to the serializer 
+ users.kserializers.vendor_serializer 2020-04-17 00:07:33,292 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-17 00:07:33,391 ERROR    {}
+ users.kserializers.user_serializer 2020-04-17 00:07:33,515 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-17 00:07:33,672 INFO     User created successfully
+ users.kviews.vendor_view 2020-04-17 00:07:33,688 DEBUG    {'vendorId': 1, 'status': 200}
+ users.kviews.vendor_view 2020-04-17 00:07:33,688 DEBUG    Vendor saved successfully!!!
+ users.exceptions 2020-04-17 21:24:25,497 ERROR    {'color': [ErrorDetail(string='"Dark Yellow" is not a valid choice.', code='invalid_choice')], 'status': 400}
+ users.exceptions 2020-04-17 21:24:25,498 ERROR     -- SOMETHING WRONG -- 
