@@ -4928,3 +4928,1784 @@ Traceback (most recent call last):
   File "D:\MISC\GITHUB\knit_server//app\products\kserializers\size_serializers.py", line 23, in update
     instance.size = validated_data.get('size', instance.color)
 AttributeError: 'SizeModel' object has no attribute 'color'
+ django.request 2020-04-17 21:58:14,889 WARNING  Not Found: /product/products
+ django.request 2020-04-17 22:46:26,288 ERROR    Internal Server Error: /product/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 25, in create
+    product_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 76, in validate
+    if data.get('title') is None:
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-17 22:47:28,215 WARNING  Bad Request: /product/product
+ django.request 2020-04-17 23:02:04,608 ERROR    Internal Server Error: /product/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 24, in create
+    product_serializer = ProductSerializer(data= {'data':request.data, 'product':product.data, 'product_relations':product.additional_data})
+AttributeError: 'dict' object has no attribute 'data'
+ django.request 2020-04-17 23:06:06,493 ERROR    Internal Server Error: /product/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 24, in create
+    product_serializer = ProductSerializer(data= {'data':request.data, 'product':product['data'], 'product_relations':product['additional_data']})
+KeyError: 'additional_data'
+ django.request 2020-04-17 23:07:51,254 ERROR    Internal Server Error: /product/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 26, in create
+    product_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 99, in create
+    self.setProductRelations(product, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 166, in setProductRelations
+    if isinstance(colors, list):
+NameError: name 'colors' is not defined
+ django.request 2020-04-17 23:14:26,082 ERROR    Internal Server Error: /product/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 26, in create
+    product_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 99, in create
+    self.setProductRelations(product, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 197, in setProductRelations
+    if isinstance(roduct_relations.get('stitch'), list):
+NameError: name 'roduct_relations' is not defined
+ django.request 2020-04-17 23:22:29,704 ERROR    Internal Server Error: /product/product/4
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 35, in update
+    serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 76, in validate
+    if data.get('title') is None:
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-17 23:25:28,559 WARNING  Bad Request: /product/product/4
+ django.request 2020-04-17 23:32:04,698 ERROR    Internal Server Error: /product/product/4
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 36, in update
+    serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 76, in validate
+    if self.instance.get('title') is None and data.get('title') is None:
+AttributeError: 'Product' object has no attribute 'get'
+ django.request 2020-04-17 23:41:29,858 ERROR    Internal Server Error: /product/product/4
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 37, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 119, in update
+    self.setProductRelations(product, product_relations, product)
+TypeError: setProductRelations() takes 3 positional arguments but 4 were given
+ django.request 2020-04-18 00:11:15,981 ERROR    Internal Server Error: /product/product/4
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 37, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 116, in update
+    product.save()
+NameError: name 'product' is not defined
+ django.request 2020-04-18 00:18:17,822 ERROR    Internal Server Error: /product/product/4
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 37, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 115, in update
+    self.setProductRelations(instance, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 125, in setProductRelations
+    product.colors.add(color)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 946, in add
+    through_defaults=through_defaults,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1119, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1066, in _get_target_ids
+    target_ids.add(obj)
+TypeError: unhashable type: 'list'
+ django.request 2020-04-18 00:24:53,507 ERROR    Internal Server Error: /product/product/4
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 37, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 115, in update
+    self.setProductRelations(instance, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 125, in setProductRelations
+    product.colors.add(color)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 946, in add
+    through_defaults=through_defaults,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1119, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1066, in _get_target_ids
+    target_ids.add(obj)
+TypeError: unhashable type: 'list'
+ django.request 2020-04-18 00:35:48,192 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 00:41:51,960 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 30, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 41, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 431, in create
+    obj = self.model(**kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 500, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Offers() got an unexpected keyword argument 'code'
+ django.request 2020-04-18 00:52:38,362 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 30, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 41, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 431, in create
+    obj = self.model(**kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 500, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Offers() got an unexpected keyword argument 'code'
+ django.request 2020-04-18 00:58:41,303 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 30, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 41, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 431, in create
+    obj = self.model(**kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 500, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Offers() got an unexpected keyword argument 'code'
+ django.request 2020-04-18 01:01:52,743 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 30, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 40, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1372, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1351, in get_prep_value
+    value = super().get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1312, in to_python
+    parsed = parse_datetime(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\dateparse.py", line 107, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+ django.request 2020-04-18 12:03:28,260 ERROR    Internal Server Error: /user/vendors
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 55, in create
+    vendor_details = self.prepareVendorData(request.data)
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 129, in prepareVendorData
+    vendor_details["openTime"] = time(int(otimeArr[0]), int(otimeArr[1]))
+ValueError: invalid literal for int() with base 10: '30 AM'
+ django.request 2020-04-18 12:04:32,476 WARNING  Bad Request: /user/vendors
+ django.request 2020-04-18 12:05:55,235 WARNING  Not Found: /user/vendor
+ django.request 2020-04-18 12:05:55,347 WARNING  Not Found: /favicon.ico
+ django.request 2020-04-18 12:14:04,008 WARNING  Bad Request: /user/vendors
+ django.request 2020-04-18 12:14:42,943 WARNING  Bad Request: /user/vendors
+ django.request 2020-04-18 12:24:30,281 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 35, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 40, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1372, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1351, in get_prep_value
+    value = super().get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1312, in to_python
+    parsed = parse_datetime(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\dateparse.py", line 107, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+ django.request 2020-04-18 12:26:14,724 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 32, in create
+    sdata = datetime.strptime(request.data.get('offer_from'), "%Y-%m-%d").date()
+AttributeError: module 'datetime' has no attribute 'strptime'
+ django.request 2020-04-18 12:26:41,058 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 32, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'), "%Y-%m-%d").date()
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 362, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: T00:00
+ django.request 2020-04-18 12:28:29,695 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 32, in create
+    sdata = date(request.data.get('offer_from'))
+TypeError: an integer is required (got type str)
+ django.request 2020-04-18 12:30:53,831 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 32, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'), "%Y-%m-%dT%I:%M").date()
+NameError: name 'datetime' is not defined
+ django.request 2020-04-18 12:31:28,072 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'), "%Y-%m-%dT%I:%M").date()
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 359, in _strptime
+    (data_string, format))
+ValueError: time data '2020-04-18T00:00' does not match format '%Y-%m-%dT%I:%M'
+ django.request 2020-04-18 12:32:23,881 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'), "%Y-%m-%d %I:%M").date()
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 359, in _strptime
+    (data_string, format))
+ValueError: time data '2020-04-18T00:00' does not match format '%Y-%m-%d %I:%M'
+ django.request 2020-04-18 13:42:35,018 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 34, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'), "%Y-%m-%dT%H:%M:%S.%fZ")
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 359, in _strptime
+    (data_string, format))
+ValueError: time data '2020-04-18T00:00' does not match format '%Y-%m-%dT%H:%M:%S.%fZ'
+ django.request 2020-04-18 13:44:21,998 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 34, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'), "%Y-%m-%dT%H:%M:%S")
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\ProgramData\Miniconda3\lib\_strptime.py", line 359, in _strptime
+    (data_string, format))
+ValueError: time data '2020-04-18T00:00' does not match format '%Y-%m-%dT%H:%M:%S'
+ django.request 2020-04-18 13:45:20,570 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 34, in create
+    sdata = datetime.datetime.strptime(request.data.get('offer_from'))
+TypeError: strptime() takes exactly 2 arguments (1 given)
+ django.request 2020-04-18 13:59:03,246 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 32, in create
+    validated_data['openTime'] = arrow.get(request.data.get('offer_from'))
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 467, in __setitem__
+    self._assert_mutable()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 464, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ django.request 2020-04-18 13:59:49,009 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 34, in create
+    validated_data['openTime'] = arrow.get(request.data.get('offer_from'))
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 467, in __setitem__
+    self._assert_mutable()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 464, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ django.request 2020-04-18 14:00:22,383 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    request.data['openTime'] = arrow.get(request.data.get('offer_from'))
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 467, in __setitem__
+    self._assert_mutable()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 464, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ django.request 2020-04-18 14:02:09,403 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:03:51,784 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 32, in create
+    request.data['offer_from'] = arrow.get(request.data.get('offer_from'))
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\api.py", line 21, in get
+    return _factory.get(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\factory.py", line 196, in get
+    dt = parser.DateTimeParser(locale).parse_iso(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 211, in parse_iso
+    return self._parse_multiformat(datetime_string, formats)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 494, in _parse_multiformat
+    string, ", ".join(formats)
+arrow.parser.ParserError: Could not match input '' to any of the following formats: YYYY-MM-DD, YYYY-M-DD, YYYY-M-D, YYYY/MM/DD, YYYY/M/DD, YYYY/M/D, YYYY.MM.DD, YYYY.M.DD, YYYY.M.D, YYYYMMDD, YYYY-DDDD, YYYYDDDD, YYYY-MM, YYYY/MM, YYYY.MM, YYYY
+ django.request 2020-04-18 14:06:09,824 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:07:27,738 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:28:57,245 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 31, in create
+    request.data._mutable = True
+AttributeError: 'dict' object has no attribute '_mutable'
+ django.request 2020-04-18 14:29:35,481 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    request.data['from_date'] = arrow.get(request.data.get('from_date')).format('YYYY-MM-DD HH:mm:ss ZZ')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\api.py", line 21, in get
+    return _factory.get(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\factory.py", line 196, in get
+    dt = parser.DateTimeParser(locale).parse_iso(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 211, in parse_iso
+    return self._parse_multiformat(datetime_string, formats)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 494, in _parse_multiformat
+    string, ", ".join(formats)
+arrow.parser.ParserError: Could not match input '18/04/2019 00:00:00' to any of the following formats: YYYY-MM-DD HH:mm:ss, YYYY-M-DD HH:mm:ss, YYYY-M-D HH:mm:ss, YYYY/MM/DD HH:mm:ss, YYYY/M/DD HH:mm:ss, YYYY/M/D HH:mm:ss, YYYY.MM.DD HH:mm:ss, YYYY.M.DD HH:mm:ss, YYYY.M.D HH:mm:ss, YYYYMMDD HH:mm:ss, YYYY-DDDD HH:mm:ss, YYYYDDDD HH:mm:ss, YYYY-MM HH:mm:ss, YYYY/MM HH:mm:ss, YYYY.MM HH:mm:ss, YYYY HH:mm:ss
+ django.request 2020-04-18 14:30:01,918 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    request.data['from_date'] = arrow.get(request.data.get('from_date')).format('YYYY-MM-DD HH:mm:ss ZZ')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\api.py", line 21, in get
+    return _factory.get(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\factory.py", line 196, in get
+    dt = parser.DateTimeParser(locale).parse_iso(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 211, in parse_iso
+    return self._parse_multiformat(datetime_string, formats)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 494, in _parse_multiformat
+    string, ", ".join(formats)
+arrow.parser.ParserError: Could not match input '18/04/2019' to any of the following formats: YYYY-MM-DD, YYYY-M-DD, YYYY-M-D, YYYY/MM/DD, YYYY/M/DD, YYYY/M/D, YYYY.MM.DD, YYYY.M.DD, YYYY.M.D, YYYYMMDD, YYYY-DDDD, YYYYDDDD, YYYY-MM, YYYY/MM, YYYY.MM, YYYY
+ django.request 2020-04-18 14:30:26,168 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    request.data['from_date'] = arrow.get(request.data.get('from_date')).format('YYYY-MM-DD HH:mm:ss ZZ')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\api.py", line 21, in get
+    return _factory.get(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\factory.py", line 196, in get
+    dt = parser.DateTimeParser(locale).parse_iso(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 211, in parse_iso
+    return self._parse_multiformat(datetime_string, formats)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 494, in _parse_multiformat
+    string, ", ".join(formats)
+arrow.parser.ParserError: Could not match input '18-04-2019' to any of the following formats: YYYY-MM-DD, YYYY-M-DD, YYYY-M-D, YYYY/MM/DD, YYYY/M/DD, YYYY/M/D, YYYY.MM.DD, YYYY.M.DD, YYYY.M.D, YYYYMMDD, YYYY-DDDD, YYYYDDDD, YYYY-MM, YYYY/MM, YYYY.MM, YYYY
+ django.request 2020-04-18 14:31:07,154 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:36:24,355 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:36:52,333 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:37:44,746 WARNING  Bad Request: /product/offers
+ django.request 2020-04-18 14:40:28,030 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 42, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 36, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1372, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1351, in get_prep_value
+    value = super().get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1312, in to_python
+    parsed = parse_datetime(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\dateparse.py", line 107, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+ django.request 2020-04-18 14:40:56,410 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 42, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 36, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1372, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1351, in get_prep_value
+    value = super().get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1336, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“2019-04-18 00:00:00 +00:00” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+ django.request 2020-04-18 14:43:06,295 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 42, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 36, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1372, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1351, in get_prep_value
+    value = super().get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1336, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020 00:00:00” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+ django.request 2020-04-18 14:47:09,735 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 33, in create
+    request.data['from_date'] = arrow.get(request.data.get('from_date')).format('YYYY-MM-DD HH:mm:ss')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\api.py", line 21, in get
+    return _factory.get(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\factory.py", line 196, in get
+    dt = parser.DateTimeParser(locale).parse_iso(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 211, in parse_iso
+    return self._parse_multiformat(datetime_string, formats)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 494, in _parse_multiformat
+    string, ", ".join(formats)
+arrow.parser.ParserError: Could not match input '05-04-2018 15:25' to any of the following formats: YYYY-MM-DD HH:mm, YYYY-M-DD HH:mm, YYYY-M-D HH:mm, YYYY/MM/DD HH:mm, YYYY/M/DD HH:mm, YYYY/M/D HH:mm, YYYY.MM.DD HH:mm, YYYY.M.DD HH:mm, YYYY.M.D HH:mm, YYYYMMDD HH:mm, YYYY-DDDD HH:mm, YYYYDDDD HH:mm, YYYY-MM HH:mm, YYYY/MM HH:mm, YYYY.MM HH:mm, YYYY HH:mm
+ django.request 2020-04-18 14:49:19,410 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 35, in create
+    offer_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 27, in validate
+    data['from_date'] = arrow.get(data.get('from_date')).format('YYYY-MM-DD HH:mm:ss')
+NameError: name 'arrow' is not defined
+ django.request 2020-04-18 14:49:41,191 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 35, in create
+    offer_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 28, in validate
+    data['from_date'] = arrow.get(data.get('from_date')).format('YYYY-MM-DD HH:mm:ss')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\api.py", line 21, in get
+    return _factory.get(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\factory.py", line 196, in get
+    dt = parser.DateTimeParser(locale).parse_iso(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 211, in parse_iso
+    return self._parse_multiformat(datetime_string, formats)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\arrow\parser.py", line 494, in _parse_multiformat
+    string, ", ".join(formats)
+arrow.parser.ParserError: Could not match input '05-04-2018 15:25' to any of the following formats: YYYY-MM-DD HH:mm, YYYY-M-DD HH:mm, YYYY-M-D HH:mm, YYYY/MM/DD HH:mm, YYYY/M/DD HH:mm, YYYY/M/D HH:mm, YYYY.MM.DD HH:mm, YYYY.M.DD HH:mm, YYYY.M.D HH:mm, YYYYMMDD HH:mm, YYYY-DDDD HH:mm, YYYYDDDD HH:mm, YYYY-MM HH:mm, YYYY/MM HH:mm, YYYY.MM HH:mm, YYYY HH:mm
+ django.request 2020-04-18 14:52:42,451 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 35, in create
+    offer_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 29, in validate
+    logger.info("from date - {}".format(data['from_date']))
+NameError: name 'logger' is not defined
+ django.request 2020-04-18 14:53:04,731 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 35, in create
+    offer_serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 37, in validate
+    logger.info("to date - {}".format(request.data['to_date']))
+NameError: name 'request' is not defined
+ django.request 2020-04-18 14:53:28,944 ERROR    Internal Server Error: /product/offers
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\mysql\base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'BEST_FIVE' for key 'code'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 36, in create
+    offer_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 45, in create
+    offer = Offers.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1377, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\backends\mysql\base.py", line 74, in execute
+    return self.cursor.execute(query, args)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'BEST_FIVE' for key 'code'")
+ django.request 2020-04-18 14:56:33,820 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 44, in update
+    serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 20, in validate
+    if data.get('code'):
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-18 14:57:21,002 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\offers_view.py", line 43, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 52, in update
+    instance.code = validated_data.get('code', instance.code).upper()
+AttributeError: 'NoneType' object has no attribute 'upper'
+ django.request 2020-04-18 15:02:55,381 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    return ReturnDict(ret, serializer=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: 'Offers' object is not iterable
+ django.request 2020-04-18 15:05:57,562 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 20, in to_representation
+    instance['from_date'] = arrow.get(instance.get('from_date')).format('YYYY-MM-DD')
+AttributeError: 'Offers' object has no attribute 'get'
+ django.request 2020-04-18 15:07:20,964 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 20, in to_representation
+    instance['from_date'] = arrow.get(instance.from_date).format('YYYY-MM-DD')
+TypeError: 'Offers' object does not support item assignment
+ django.request 2020-04-18 15:08:07,172 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\offers_serializer.py", line 20, in to_representation
+    instance['from_date'] = arrow.get(instance.from_date).format('YYYY-MM-DD HH:mm:ss')
+TypeError: 'Offers' object does not support item assignment
+ django.request 2020-04-18 15:12:31,145 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    return ReturnDict(ret, serializer=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: 'Offers' object is not iterable
+ django.request 2020-04-18 15:13:25,476 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    return ReturnDict(ret, serializer=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: 'Offers' object is not iterable
+ django.request 2020-04-18 19:59:10,550 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    return ReturnDict(ret, serializer=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: 'Offers' object is not iterable
+ django.request 2020-04-18 19:59:44,803 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    return ReturnDict(ret, serializer=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: 'Offers' object is not iterable
+ django.request 2020-04-18 20:01:05,625 ERROR    Internal Server Error: /product/offers/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    return ReturnDict(ret, serializer=self)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: 'NoneType' object is not iterable

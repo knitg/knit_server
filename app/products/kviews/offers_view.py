@@ -9,7 +9,10 @@ from url_filter.integrations.drf import DjangoFilterBackend
 
 from ..kmodels.offers_model import Offers
 from ..kserializers.offers_serializer import OfferSerializer
+from django.utils.dateparse import parse_date
 
+import arrow
+        
 import logging
 logger = logging.getLogger(__name__)
 
@@ -19,22 +22,23 @@ class OffersViewSet(viewsets.ModelViewSet):
 
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    search_fields = ['offer_title','offer_code','discount','discount_type','offer_from','offer_to', 'stitch']
+    search_fields = ['title','code','discount','from_date','to_date', 'is_active']
     
-    filter_fields = ['offer_title','offer_code','discount','discount_type','offer_from','offer_to', 'stitch']
+    filter_fields = ['title','code','discount','from_date','to_date', 'is_active']
     
     def create(self, request, *args, **kwargs):  
-        logger.info(" \n\n ----- OFFER CREATE initiated -----")
-        offer_serializer = OfferSerializer(data= request.data)
+        logger.info(" \n\n ----- OFFER CREATE initiated -----") 
+        offer_serializer = OfferSerializer(data= {'data': request.data})
+        
         offer_serializer.is_valid(raise_exception=True)
         offer_serializer.save()
         logger.info({'offerId':offer_serializer.instance.id, 'status':'200 Ok'})
         logger.info("Offer saved successfully")
-        return Response({'stitchId':offer_serializer.instance.id}, status=status.HTTP_201_CREATED)
+        return Response({'offerId':offer_serializer.instance.id}, status=status.HTTP_201_CREATED)
     
     def update(self, request, *args, **kwargs):
-        logger.info(" \n\n ----- OFFER UPDATE initiated -----")
-        serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
+        logger.info(" \n\n ----- OFFER UPDATE initiated -----") 
+        serializer = self.get_serializer(self.get_object(), data={'data': request.data}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
         logger.info({'offerId':serializer.instance.id, 'status':'200 Ok'})

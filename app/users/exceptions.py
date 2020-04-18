@@ -1,6 +1,5 @@
 from rest_framework.views import exception_handler
 
-
 import logging
 logger = logging.getLogger(__name__)
 

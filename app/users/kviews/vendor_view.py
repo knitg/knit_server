@@ -124,10 +124,10 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         vendor_details['closed'] = vendor_info.get('closed')
         vendor_details['doorService'] = vendor_info.get('doorService')
         vendor_details['emergency'] = vendor_info.get('emergency')
-        if vendor_info.get("openTime"):
-            otimeArr = vendor_info.get("openTime").split(":")
-            vendor_details["openTime"] = time(int(otimeArr[0]), int(otimeArr[1]))
-        if vendor_info.get("closeTime"):
-            ctimeArr = vendor_info.get("closeTime").split(":")
-            vendor_details["closeTime"] = time(int(ctimeArr[0]), int(ctimeArr[1]))
+        # if vendor_info.get("openTime"):
+        #     otimeArr = vendor_info.get("openTime").split(":")
+        #     vendor_details["openTime"] = time(int(otimeArr[0]), int(otimeArr[1]))
+        # if vendor_info.get("closeTime"):
+        #     ctimeArr = vendor_info.get("closeTime").split(":")
+        #     vendor_details["closeTime"] = time(int(ctimeArr[0]), int(ctimeArr[1]))
         return vendor_details

@@ -5,7 +5,7 @@ from ..kmodels.profile_model import Profile
 from ..kmodels.address_model import Address
 from ..kmodels.vendor_model import Vendor
 from ..kmodels.usertype_model import UserType
-
+import datetime
 from .profile_serializer import ProfileSerializer
 from .image_serializer import KImageSerializer
 from .usertype_serializer import UserTypeSerializer
@@ -24,6 +24,9 @@ class VendorSerializer(serializers.ModelSerializer):
     # images = KImageSerializer(many=True, required=False, allow_null=True)
     userTypes = UserTypeSerializer(source='user.profile.userTypes', many=True, required=False, allow_null=True) 
     
+    
+    openTime = serializers.TimeField(format='%I:%M:%S %p', input_formats='%I:%M:%S %p', required=False)
+    closeTime = serializers.TimeField(format='%I:%M:%S %p', input_formats='%I:%M:%S %p', required=False)
     
     class Meta:
         model = Vendor
