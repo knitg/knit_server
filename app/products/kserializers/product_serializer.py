@@ -24,6 +24,12 @@ import re
 import logging
 logger = logging.getLogger(__name__)
 
+class ProductListSerializer(serializers.ModelSerializer):  
+    class Meta:
+        model = Product
+        fields = ('id', 'title','description', 'quantity', 'price')
+
+
 class ProductSerializer(serializers.ModelSerializer):
 
     stitch = serializers.SerializerMethodField(read_only=True)
@@ -86,6 +92,11 @@ class ProductSerializer(serializers.ModelSerializer):
             else:
                 logger.error("Product Price is required")
                 self.errors['price_required'] = "Product Price is required"
+            if self.instance is None and data.get('user'):
+                data['user'] = data.get('user', None)
+            else:
+                logger.error("Product User is required")
+                self.errors['user_required'] = "Product user is required"
             logger.error(self.errors)
             raise serializers.ValidationError(self.errors)
         return data
@@ -109,6 +120,7 @@ class ProductSerializer(serializers.ModelSerializer):
         instance.description = product_input.get('description', instance.description)
         instance.quantity = product_input.get('quantity', instance.quantity)
         instance.price = product_input.get('price', instance.price)
+        instance.user = product_input.get('user', instance.user)
         instance.in_stock = product_input.get('in_stock', instance.in_stock)
 
         self.setProductRelations(instance, product_relations)
@@ -142,7 +154,10 @@ class ProductSerializer(serializers.ModelSerializer):
                     logger.warning("NOT SAVED SIZES : Expected color ids should be an array bug got a {} ".format(type(sizes)))
             
             # IMAGES RELATION HERE
-            if product_relations.get('images'): 
+            if product_relations.get('images'):
+                for e in product_relations.get('images').images.all():
+                    instance.images.remove(e)
+                    KImage.objects.get(id=e.id).delete()
                 for image in product_relations.get('images'):
                     c_image= image_data[image]
                     images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
@@ -172,25 +187,4 @@ class ProductSerializer(serializers.ModelSerializer):
                 else:
                     logger.warning("NOT SAVED STITCH TYPE DESIGN CATEGORY  : Expected STITCH TYPE DESIGN ids should be an array bug got a {} ".format(type(colors)))
         
-            
-            # validated_data['images'] = self.initial_data['images']
-            # image_data = validated_data.pop('images')
-
-            # ### Remove relational images if any ####
-            # for e in instance.images.all():
-            #     instance.images.remove(e)
-            #     KImage.objects.get(id=e.id).delete()
-            # for image in image_data:
-            #     c_image= image_data[image]
-            #     images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='product_'+str(instance.id), size=c_image.size)
-            #     instance.images.add(images)
-###
-#   Product Serializer returns products with foreignkey hyperlinks
-###
-
-class ProductLinkSerializer(serializers.HyperlinkedModelSerializer):
-    
-    images = KImageSerializer(many=True, required=False, allow_null=False)
-    class Meta:
-        model = Product
-        fields = ('id','code', 'title','description', 'stitch','stitch_type','stitch_type_design','user', 'images')
+ 

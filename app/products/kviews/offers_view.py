@@ -27,7 +27,7 @@ class OffersViewSet(viewsets.ModelViewSet):
     filter_fields = ['title','code','discount','from_date','to_date', 'is_active']
     
     def create(self, request, *args, **kwargs):  
-        logger.info(" \n\n ----- OFFER CREATE initiated -----") 
+        logger.info(" \n\n ----- OFFER CREATE initiated -----")
         offer_serializer = OfferSerializer(data= {'data': request.data})
         
         offer_serializer.is_valid(raise_exception=True)

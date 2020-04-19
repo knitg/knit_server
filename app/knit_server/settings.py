@@ -65,6 +65,7 @@ INSTALLED_APPS = [
 
     'users',
     'products',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -104,6 +105,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'knit_server.wsgi.application'
 
+# TIME_ZONE =  'Asia/Kolkata'
+# USE_I18N = True
+
+# USE_L10N = True
+
+# USE_TZ = True
+# DATE_INPUT_FORMATS = [
+#     '%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y'
+# ]
+# DATETIME_INPUT_FORMATS = [
+#     '%d/%m/%Y %H:%M',
+#     '%d/%m/%Y %H:%M:%S'
+# ]
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -143,7 +157,8 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'users.exceptions.DEFAULT_400_ERROR_EXCEPTION',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10,
-    'DATE_INPUT_FORMATS': [("%d-%m-%Y  %H:%M:%S"),]
+    'DATE_INPUT_FORMATS': ["%d-%m-%Y", "%d-%m-%Y %H:$M"],
+    'DATETIME_FORMAT': "%d-%m-%YT%H:%M:%S.%fZ",
     
 } 
 REST_AUTH_SERIALIZERS = {

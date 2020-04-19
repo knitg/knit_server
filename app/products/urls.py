@@ -8,8 +8,9 @@ from .kviews.stitchview import StitchViewSet
 from .kviews.stitchtypeview import StitchTypeViewSet
 from .kviews.stitchdesignview import StitchTypeDesignViewSet
 from .kviews.offers_view import OffersViewSet
-from .kviews.productview import ProductViewSet, ProductByUserViewSet, ProductByStitchViewSet, ProductByStitchTypeViewSet
+from .kviews.productview import ProductViewSet, ProductListViewSet
 from .kviews.colors_view import ColorsViewSet
+from .kviews.material_view import MaterialViewSet
 from .kviews.sizes_view import SizesViewSet
 
 router = routers.DefaultRouter(trailing_slash=False)
@@ -17,9 +18,11 @@ router.register(r'upload', ImageViewSet)
 router.register(r'stitch', StitchViewSet)
 router.register(r'stitch-types', StitchTypeViewSet)
 router.register(r'stitch-type-design', StitchTypeDesignViewSet)
-router.register(r'product', ProductViewSet) 
-router.register(r'offers', OffersViewSet) 
-router.register(r'colors', ColorsViewSet) 
+router.register(r'products', ProductViewSet)
+router.register(r'product-list', ProductListViewSet)
+router.register(r'offers', OffersViewSet)
+router.register(r'colors', ColorsViewSet)
+router.register(r'materials', MaterialViewSet)
 router.register(r'sizes', SizesViewSet)
 
 # router.register(r'userproducts/(?P<user_id>\d+)', ProductByUserViewSet)

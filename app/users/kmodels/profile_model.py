@@ -14,8 +14,8 @@ class Profile(TimestampedModel):
     # Personal details 
     firstName = models.TextField(blank=True, null=True, default='')
     lastName = models.TextField(blank=True, null=True, default='')
-    gender = models.IntegerField(blank=True, default=None, null=True, choices=GENDER_CHOICES, max_length=1)
-    user_role = models.IntegerField(max_length=10, choices=USER_ROLE_CHOICES, blank=True, null=True, default=1)
+    gender = models.IntegerField(blank=True, default=None, null=True, choices=GENDER_CHOICES)
+    user_role = models.IntegerField(choices=USER_ROLE_CHOICES, blank=True, null=True, default=1)
     married = models.BooleanField(default=False, blank=True, null=True)
     birthday = models.DateTimeField(blank=True, default=None, null=True)
     anniversary = models.DateTimeField(blank=True, default=None, null=True)

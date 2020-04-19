@@ -996,3 +996,9 @@
  users.exceptions 2020-04-18 14:36:52,332 ERROR     -- SOMETHING WRONG -- 
  users.exceptions 2020-04-18 14:37:44,744 ERROR    {'required': ErrorDetail(string='Offer code is required', code='invalid'), 'status': 400}
  users.exceptions 2020-04-18 14:37:44,744 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-19 20:13:30,556 ERROR    {'required': ErrorDetail(string='Duration field is required', code='invalid'), 'status': 400}
+ users.exceptions 2020-04-19 20:13:30,558 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-19 23:08:38,322 ERROR    {'required': ErrorDetail(string='stitch_id field is required', code='invalid'), 'status': 400}
+ users.exceptions 2020-04-19 23:08:38,323 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-04-19 23:08:59,798 ERROR    {'required': ErrorDetail(string='stitch_id field is required', code='invalid'), 'status': 400}
+ users.exceptions 2020-04-19 23:08:59,799 ERROR     -- SOMETHING WRONG -- 

@@ -177,3 +177,70 @@
  products.kserializers.offers_serializer 2020-04-18 14:58:03,837 INFO     to date - 2020-04-30 23:22:00
  products.kviews.offers_view 2020-04-18 14:58:03,859 INFO     {'offerId': 1, 'status': '200 Ok'}
  products.kviews.offers_view 2020-04-18 14:58:03,860 INFO     Offer Updated successfully
+ products.kviews.stitchview 2020-04-18 20:15:04,310 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-18 20:15:04,470 INFO     {'stitchId': 1, 'status': '200 Ok'}
+ products.kviews.stitchview 2020-04-18 20:15:04,470 INFO     Stitch saved successfully
+ products.kviews.stitchview 2020-04-18 20:15:16,438 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-18 20:15:16,805 INFO     {'stitchId': 2, 'status': '200 Ok'}
+ products.kviews.stitchview 2020-04-18 20:15:16,805 INFO     Stitch saved successfully
+ products.kviews.stitchview 2020-04-18 20:15:23,440 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-18 20:15:23,890 INFO     {'stitchId': 3, 'status': '200 Ok'}
+ products.kviews.stitchview 2020-04-18 20:15:23,890 INFO     Stitch saved successfully
+ products.kviews.stitchview 2020-04-18 20:19:12,281 INFO      
+
+ ----- STITCH CREATE initiated -----
+ products.kviews.stitchview 2020-04-18 20:19:12,425 INFO     {'stitchId': 4, 'status': '200 Ok'}
+ products.kviews.stitchview 2020-04-18 20:19:12,425 INFO     Stitch saved successfully
+ products.kviews.stitchtypeview 2020-04-18 20:19:25,130 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-18 20:19:25,278 INFO     {'stitchTypeId': 1, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-18 20:19:25,278 INFO     Stitch Type saved successfully
+ products.kviews.stitchtypeview 2020-04-18 20:19:32,685 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-18 20:19:32,820 INFO     {'stitchTypeId': 2, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-18 20:19:32,820 INFO     Stitch Type saved successfully
+ products.kviews.stitchtypeview 2020-04-18 20:20:07,668 INFO      
+
+ ----- STITCH TYPE CREATE initiated -----
+ products.kviews.stitchtypeview 2020-04-18 20:20:07,807 INFO     {'stitchTypeId': 3, 'status': '200 Ok'}
+ products.kviews.stitchtypeview 2020-04-18 20:20:07,808 INFO     Stitch Type saved successfully
+ products.kviews.stitchdesignview 2020-04-18 20:21:10,688 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-18 20:21:10,843 INFO     {'stitchTypeId': 1, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-18 20:21:10,844 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchdesignview 2020-04-18 20:21:27,038 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-18 20:21:27,250 INFO     {'stitchTypeId': 2, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-18 20:21:27,250 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchdesignview 2020-04-18 20:21:50,582 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-18 20:21:50,861 INFO     {'stitchTypeId': 3, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-18 20:21:50,861 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchdesignview 2020-04-18 20:21:56,999 INFO      
+
+ ----- STITCH TYPE DESIGN CREATE initiated -----
+ products.kviews.stitchdesignview 2020-04-18 20:21:57,556 INFO     {'stitchTypeId': 4, 'status': '200 Ok'}
+ products.kviews.stitchdesignview 2020-04-18 20:21:57,556 INFO     STITCH TYPE DESIGN saved successfully
+ products.kviews.stitchview 2020-04-18 20:23:25,397 INFO      
+
+ ----- STITCH DELETED initiated -----
+ products.kviews.stitchview 2020-04-18 20:23:25,928 INFO     Stitch deleted successfully
+ products.kviews.productview 2020-04-18 20:34:06,682 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-04-18 20:34:06,686 ERROR    {}
+ products.kviews.productview 2020-04-18 20:35:00,782 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-04-18 20:35:00,783 ERROR    {}

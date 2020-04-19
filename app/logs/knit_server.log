@@ -6709,3 +6709,1033 @@ Traceback (most recent call last):
   File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\utils\serializer_helpers.py", line 18, in __init__
     super().__init__(*args, **kwargs)
 TypeError: 'NoneType' object is not iterable
+ django.request 2020-04-19 12:30:53,425 WARNING  Not Found: /favicon.ico
+ django.request 2020-04-19 18:43:05,425 WARNING  Not Found: /
+ django.request 2020-04-19 18:43:52,048 WARNING  Not Found: /
+ django.request 2020-04-19 18:43:56,970 WARNING  Not Found: /orders
+ django.request 2020-04-19 18:49:51,152 ERROR    Internal Server Error: /orders/image
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\order_image_view.py", line 22, in create
+    image_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\image_serializer.py", line 12, in create
+    img = OrderImage.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kmodels\image_model.py", line 38, in save
+    super(KImage, self).save()
+NameError: name 'KImage' is not defined
+ django.request 2020-04-19 18:54:08,625 ERROR    Internal Server Error: /orders/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\product_order_view.py", line 33, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\product_order_serializer.py", line 29, in create
+    product_order = StitchOrder.objects.create(**validated_data)
+NameError: name 'StitchOrder' is not defined
+ django.request 2020-04-19 19:10:02,597 ERROR    Internal Server Error: /orders/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\product_order_view.py", line 33, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\product_order_serializer.py", line 31, in create
+    product_order = ProductOrder.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 431, in create
+    obj = self.model(**kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 500, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: ProductOrder() got an unexpected keyword argument 'csrfmiddlewaretoken'
+ django.request 2020-04-19 19:11:44,884 ERROR    Internal Server Error: /orders/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\product_order_view.py", line 33, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\product_order_serializer.py", line 31, in create
+    product_order = ProductOrder.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 431, in create
+    obj = self.model(**kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 500, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: ProductOrder() got an unexpected keyword argument 'csrfmiddlewaretoken'
+ django.request 2020-04-19 19:54:56,331 ERROR    Internal Server Error: /orders/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\product_order_view.py", line 33, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\product_order_serializer.py", line 22, in validate
+    if data.get('product_id') is None:
+AttributeError: 'NoneType' object has no attribute 'get'
+ django.request 2020-04-19 19:56:41,647 ERROR    Internal Server Error: /orders/product
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\product_order_view.py", line 33, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 228, in is_valid
+    'Cannot call `.is_valid()` as no `data=` keyword argument was '
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+ django.request 2020-04-19 20:13:30,726 WARNING  Bad Request: /orders/master
+ django.request 2020-04-19 20:15:02,767 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = OrderMaster.objects.create(**validated_data)
+NameError: name 'OrderMaster' is not defined
+ django.request 2020-04-19 20:17:30,029 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 812, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 961, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 954, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“true” value must be either True, False, or None.']
+ django.request 2020-04-19 20:21:21,960 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:33:37,943 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:40:21,064 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:41:11,314 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:44:20,076 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:48:54,858 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:52:18,478 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:53:00,310 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:53:27,954 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:55:44,988 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 22:59:15,365 ERROR    Internal Server Error: /orders/master
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\request_masters_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\request_master_serializer.py", line 31, in create
+    order_master = RequestMaster.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“04-18-2020” value has an invalid date format. It must be in YYYY-MM-DD format.']
+ django.request 2020-04-19 23:08:17,846 ERROR    Internal Server Error: /orders/stitch
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\stitch_order_view.py", line 33, in create
+    serializer = RequestMasterSerializer(data= {'data': valid_data})
+NameError: name 'RequestMasterSerializer' is not defined
+ django.request 2020-04-19 23:08:38,490 WARNING  Bad Request: /orders/stitch
+ django.request 2020-04-19 23:08:59,847 WARNING  Bad Request: /orders/stitch
+ django.request 2020-04-19 23:10:00,422 ERROR    Internal Server Error: /orders/stitch
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kviews\stitch_order_view.py", line 36, in create
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\orders\kserializers\stitch_order_serializer.py", line 34, in create
+    stitch_order = StitchOrder.objects.create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 746, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 784, in save_base
+    force_update, using, update_fields,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 886, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\base.py", line 925, in _do_insert
+    using=using, raw=raw,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1376, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in as_sql
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1321, in <listcomp>
+    for obj in self.query.objs
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1320, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1261, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 817, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1216, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1211, in get_prep_value
+    return self.to_python(value)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1186, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['“” value has an invalid date format. It must be in YYYY-MM-DD format.']

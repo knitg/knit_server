@@ -18,7 +18,7 @@ class StitchSerializer(serializers.HyperlinkedModelSerializer):
     
     class Meta:
         model = Stitch
-        fields = ('id','type', 'code', 'description', 'images')
+        fields = ('id','type', 'code', 'images')
         parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
         
     def validate(self, data):
