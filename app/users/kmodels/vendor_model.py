@@ -7,7 +7,12 @@ from .image_model import KImage
 from .usertype_model import UserType
 from users.models import User
 from .timestamp_model import TimestampedModel
-class Vendor(TimestampedModel):
+
+import os
+import csv
+
+
+class Vendor(models.Model):
     name= models.CharField(null=True, max_length=80,  default=None)
     
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -26,8 +31,9 @@ class Vendor(TimestampedModel):
     images = models.ManyToManyField(KImage, blank=True, default=None)
     
     class Meta:
-        db_table = 'knit_vendor_users'
+        db_table = 'knit_vendor'
         managed = True
     
     def __str__(self):
         return self.name
+

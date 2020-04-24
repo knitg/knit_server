@@ -7,7 +7,7 @@ from .timestamp_model import TimestampedModel
 
 class ProductOrder(TimestampedModel):
 
-    product_id= models.IntegerField(null=True, max_length=20,  default=None)
+    product_id= models.IntegerField(null=True, default=None)
     details = models.CharField(null=True, max_length=180,  default=None)
     
     class Meta:

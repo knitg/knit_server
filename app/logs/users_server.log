@@ -1002,3 +1002,120 @@
  users.exceptions 2020-04-19 23:08:38,323 ERROR     -- SOMETHING WRONG -- 
  users.exceptions 2020-04-19 23:08:59,798 ERROR    {'required': ErrorDetail(string='stitch_id field is required', code='invalid'), 'status': 400}
  users.exceptions 2020-04-19 23:08:59,799 ERROR     -- SOMETHING WRONG -- 
+ users.kserializers.user_serializer 2020-04-24 17:31:19,278 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 17:31:19,385 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 17:31:19,450 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 17:31:19,564 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 17:31:19,625 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 17:31:19,743 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 17:31:19,857 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 17:31:19,967 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 17:31:20,068 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 17:31:20,171 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 17:31:20,268 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 17:31:20,370 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 17:31:20,469 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-24 18:09:26,637 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 18:09:26,757 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 18:09:26,819 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 18:09:26,941 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 18:09:27,001 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 18:09:27,107 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:07:56,855 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:07:56,906 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:07:56,926 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-24 19:08:55,825 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:09:21,152 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:09:21,185 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:09:21,219 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-24 19:10:11,919 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:10:11,941 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:10:11,964 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.vendor_serializer 2020-04-24 19:10:11,975 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:10:12,020 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:10:12,122 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:10:12,138 INFO     User created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:10:12,156 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:10:12,201 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:10:12,298 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:10:12,315 INFO     User created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:10:12,334 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:10:12,381 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:10:12,477 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:10:12,493 INFO     User created successfully
+ users.kserializers.user_serializer 2020-04-24 19:10:53,312 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:10:53,331 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:10:53,353 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.vendor_serializer 2020-04-24 19:10:53,358 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:10:53,405 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:17:46,611 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:17:46,709 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:17:46,764 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:17:46,870 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:17:46,920 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:17:47,021 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:17:47,075 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:17:47,122 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:17:47,219 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:17:47,234 INFO     User created successfully
+ users.kserializers.user_serializer 2020-04-24 19:18:30,260 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:18:30,276 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:18:30,295 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-24 19:18:38,661 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:18:38,677 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:18:38,695 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-24 19:19:53,083 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:19:53,185 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:19:53,233 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:19:53,348 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:19:53,418 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:19:53,519 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:53,559 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:19:53,614 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:19:53,711 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:53,727 INFO     User created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:53,744 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:19:53,790 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:19:53,886 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:53,903 INFO     User created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:53,921 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:19:53,967 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:19:54,062 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:54,078 INFO     User created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:19:54,095 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:19:54,143 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-24 19:22:09,429 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:22:09,528 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:22:09,574 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:22:09,677 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:22:09,724 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:22:09,829 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:22:09,868 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:22:09,933 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:22:10,036 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:22:10,051 INFO     User created successfully
+ users.kserializers.user_serializer 2020-04-24 19:24:30,750 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:24:30,849 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:24:30,903 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:24:31,017 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:24:31,063 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:24:31,164 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:24:31,205 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:24:31,250 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:24:31,353 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:24:31,368 INFO     User created successfully
+ users.kserializers.user_serializer 2020-04-24 19:25:23,815 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-24 19:25:23,831 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:25:23,847 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.vendor_serializer 2020-04-24 19:25:23,851 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:25:23,900 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-24 19:25:46,165 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:25:46,262 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:25:46,308 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:25:46,408 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-04-24 19:25:46,457 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:25:46,556 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:25:46,597 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-04-24 19:25:46,641 ERROR    {}
+ users.kserializers.user_serializer 2020-04-24 19:25:46,741 INFO     Profile created successfully
+ users.kserializers.vendor_serializer 2020-04-24 19:25:46,756 INFO     User created successfully

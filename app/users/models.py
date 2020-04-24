@@ -6,6 +6,10 @@ from django.conf import settings
 from model_utils import Choices
 from .kmodels.timestamp_model import TimestampedModel
 
+from django.db.models import Q
+import os
+import csv
+from django.conf import settings
 """
     # USER MANAGER ACTIONS HERE
 """
@@ -57,7 +61,13 @@ class User(AbstractBaseUser, TimestampedModel):
     is_superuser = models.IntegerField(blank=True, null=True, default=False)
 
     objects = UserManager()
-
+    
+    @classmethod
+    def create(cls, username, phone, email=None, password=None, is_admin=False,):
+        user = cls.objects.create_user(cls, username=username, phone=phone, email=email, password=password, is_admin=is_admin)
+        user.set_password(password)
+        # do something with the book
+        return user
     @property
     def is_superuser(self):
         return self.is_admin
@@ -71,7 +81,7 @@ class User(AbstractBaseUser, TimestampedModel):
 
     def has_module_perms(self, app_label):
         return self.is_admin
-
+    
     USERNAME_FIELD = 'phone'
     REQUIRED_FIELDS = ['email','username']
 
@@ -85,3 +95,4 @@ class User(AbstractBaseUser, TimestampedModel):
 
     def __unicode__(self):
         return 
+ 

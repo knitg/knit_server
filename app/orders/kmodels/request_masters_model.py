@@ -7,7 +7,7 @@ from .timestamp_model import TimestampedModel
 class RequestMaster(TimestampedModel):
 
     # Product details
-    duration = models.IntegerField(null=True, max_length=80,  default=None) # hours
+    duration = models.IntegerField(null=True, default=None) # hours
     details = models.CharField(null=True, max_length=180,  default=None)
     master_id = models.IntegerField(null=True, blank=True, default=None)
 
