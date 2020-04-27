@@ -2341,3 +2341,5 @@
  users.kserializers.user_serializer 2020-04-27 13:39:24,307 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
  users.kserializers.user_serializer 2020-04-27 13:39:24,324 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
  users.kserializers.user_serializer 2020-04-27 13:39:24,340 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.exceptions 2020-04-27 13:39:27,229 ERROR    {'non_field_errors': [ErrorDetail(string='Stitch is already there', code='invalid')], 'status': 400}
+ users.exceptions 2020-04-27 13:39:27,229 ERROR     -- SOMETHING WRONG -- 

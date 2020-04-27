@@ -10,3 +10,16 @@
  products.kviews.csv_ref_stitch_view 2020-04-27 13:38:57,440 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
  products.kviews.csv_ref_stitch_view 2020-04-27 13:38:57,440 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
  products.kviews.csv_ref_stitch_view 2020-04-27 13:38:57,440 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,120 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,122 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,122 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,122 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,123 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,123 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,228 INFO     False
