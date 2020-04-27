@@ -25,7 +25,7 @@ class KImage(models.Model):
     def save(self, **kwargs):
         if self.image:
             #Opening the uploaded image
-            im = Image.open(self.image)
+            im = Image.open(self.image.name)
             output = BytesIO()
             # #Resize/modify the image
             # im = im.resize((800, 600), Image.ANTIALIAS)

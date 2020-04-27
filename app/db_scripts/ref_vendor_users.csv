@@ -1,8 +1,8 @@
-Username,Phone number,email,password,Vendor Name,Emergency,Door delivery,Masters
-tailor_user,8529631472,tailor123@gmail.com,site,Awesome Tailors,1,,22
-boutique_user,8529631473,boutique123@gmail.com,site,Beauty Boutiques,1,,17
-fd_user,8529631476,fd_user@gmail.com,site,Fashion Techies ,1,,
-md_user,8529631477,md_user@gmail.com,site,Maggam Varietys,1,,
-master,8529631478,master123@gmail.com,site,Jayanth Sinha,1,,
-sales,8529631479,sales123@gmail.com,site,Praveen Mishra,1,,
-delivery,8529631480,delivery123@gmail.com,site,Prakash Kesineni,1,,
+username,phone,email,password,name,emergency,doorService,masters,,
+tailor_user,8529631472,tailor123@gmail.com,site,Awesome Tailors,1,,22,,
+boutique_user,8529631473,boutique123@gmail.com,site,Beauty Boutiques,1,,17,,
+fd_user,8529631476,fd_user@gmail.com,site,Fashion Techies ,1,,,,
+md_user,8529631477,md_user@gmail.com,site,Maggam Varietys,1,,,,
+master,8529631478,master123@gmail.com,site,Jayanth Sinha,1,,,,
+sales,8529631479,sales123@gmail.com,site,Praveen Mishra,1,,,,
+delivery,8529631480,delivery123@gmail.com,site,Prakash Kesineni,1,,,,

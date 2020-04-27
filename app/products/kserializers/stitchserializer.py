@@ -5,13 +5,12 @@ from .imageserializer import KImageSerializer
 from ..kmodels.imagemodel import KImage
 from ..kmodels.stitchmodel import Stitch
 from ..kmodels.stitchtypemodel import StitchType
-from ..kmodels.stitchdesignmodel import StitchTypeDesign
 from ..kmodels.product_model import Product
 
 
 class StitchSerializer(serializers.HyperlinkedModelSerializer):
     images = serializers.SerializerMethodField(read_only=True)
-
+    erros = {}
     def get_images(self, obj):
         serializer = KImageSerializer(obj.images, many=True)
         return serializer.data 
@@ -23,7 +22,10 @@ class StitchSerializer(serializers.HyperlinkedModelSerializer):
         
     def validate(self, data):
         if data.get('type'):
-            data['code'] = data.get('type', '').replace(" ", "_").upper()
+            data['code'] = data.get('type', '').replace(" ", "_").upper()            
+            hasType = Stitch.objects.filter(type=data.get('type'))
+            if len(hasType):
+               raise serializers.ValidationError("Stitch is already there")
         else:
             raise serializers.ValidationError("Stitch type is required")
         return data

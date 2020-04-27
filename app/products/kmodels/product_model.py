@@ -6,7 +6,6 @@ from django.utils.timezone import now
 from .stitchmodel import Stitch
 from .imagemodel import KImage
 from .stitchtypemodel import StitchType
-from .stitchdesignmodel import StitchTypeDesign
 from .timestamp_model import TimestampedModel 
 from .color_model import ColorModel
 from .sizes_model import SizeModel
@@ -30,7 +29,6 @@ class Product(TimestampedModel):
     #Categorys
     stitch = models.ManyToManyField(Stitch)
     stitch_type = models.ManyToManyField(StitchType)
-    stitch_type_design = models.ManyToManyField(StitchTypeDesign)
 
     #Product belongs to vendor
     user = models.IntegerField(blank=True, null=True) 

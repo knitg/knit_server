@@ -11,7 +11,7 @@ class StitchType(TimestampedModel):
     stitch = models.ForeignKey(Stitch, on_delete=models.CASCADE, blank=False, null=False, default=None)
     images = models.ManyToManyField(KImage, blank=True, default=None)
     code = models.CharField(null=True, max_length=80,  default=None) 
-    description = models.CharField(null=True, max_length=120,  default=None) 
+    description = models.CharField(null=True, max_length=250,  default=None) 
     
     class Meta:
         db_table = 'knit_stitch_type'

@@ -19,11 +19,11 @@ class ProductListViewSet(viewsets.ModelViewSet):
     serializer_class = ProductListSerializer
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    search_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type', 'stitch_type_design']
+    search_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type']
     
     pagination_class = LinkSetPagination
 
-    filter_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type', 'stitch_type_design']
+    filter_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type']
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     
 
@@ -32,11 +32,11 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    search_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type', 'stitch_type_design']
+    search_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type']
     
     pagination_class = LinkSetPagination
 
-    filter_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type', 'stitch_type_design']
+    filter_fields = ['id', 'title','description', 'quantity', 'price', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type']
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     
     def create(self, request, *args, **kwargs):
@@ -90,5 +90,4 @@ class ProductViewSet(viewsets.ModelViewSet):
         additional_data['offers'] = product_input.get('offers')
         additional_data['stitch'] = product_input.get('stitch')
         additional_data['stitch_type'] = product_input.get('stitch_type')
-        additional_data['stitch_type_design'] = product_input.get('stitch_type_design')
         return {'data': product, 'additional_data': additional_data}

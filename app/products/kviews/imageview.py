@@ -16,7 +16,7 @@ class ImageViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         images_arr = []
         for image in request.FILES:
-            image_serializer = KImageSerializer(data= {'description': request.data['description'], 'image': request.FILES[image]})
+            image_serializer = KImageSerializer(data= {'description': request.data.get('description'), 'image': request.FILES[image]})
             if image_serializer.is_valid():
                 image_serializer.save()
                 images_arr.append(image_serializer.instance.id)

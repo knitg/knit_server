@@ -13,7 +13,7 @@ from ..paginations import LinkSetPagination
 
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
 from ..permissions import ActionBasedPermission
-
+import arrow
 from rest_framework import filters
 from url_filter.integrations.drf import DjangoFilterBackend
 
@@ -124,10 +124,50 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         vendor_details['closed'] = vendor_info.get('closed')
         vendor_details['doorService'] = vendor_info.get('doorService')
         vendor_details['emergency'] = vendor_info.get('emergency')
-        # if vendor_info.get("openTime"):
-        #     otimeArr = vendor_info.get("openTime").split(":")
-        #     vendor_details["openTime"] = time(int(otimeArr[0]), int(otimeArr[1]))
-        # if vendor_info.get("closeTime"):
-        #     ctimeArr = vendor_info.get("closeTime").split(":")
-        #     vendor_details["closeTime"] = time(int(ctimeArr[0]), int(ctimeArr[1]))
         return vendor_details
+
+import csv
+
+## USER CAN UPLOAD VENDORS FROM CSV/EXCEL
+class UploadVendorSpreadSheetViewSet(viewsets.ModelViewSet):
+    queryset = Vendor.objects.all()
+    serializer_class = VendorSerializer
+     
+    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+
+    def create(self, request, *args, **kwargs):
+        csvFile = ''
+        if request.FILES:
+            csvFile = request.FILES
+
+        for csv_file in request.FILES:
+            logger.info(" \n\n ----- CSV VENDOR CREATE initiated -----")
+            # with open(request.FILES[csv_file].name) as f:
+            decoded_file = request.FILES[csv_file].read().decode('utf-8').splitlines()
+            csv_reader = csv.DictReader(decoded_file)
+            # reader = csv_reader.reader
+            results = []
+            for i, row in enumerate(csv_reader):
+                if (i >= 1 and row):
+                    print(row)
+                    user_data = {}
+                    user_data['username'] = row.get('username')
+                    user_data['phone'] = row.get('phone')
+                    user_data['email'] = row.get('email')
+                    user_data['password'] = row.get('password')
+                    vendor_details = {}
+                    vendor_details['name'] = row.get('name')
+                    vendor_details['masters'] = 0 if row.get('masters') else 0
+                    vendor_details['doorService'] = row.get('doorService')
+                    vendor_details['emergency'] = row.get('emergency')
+
+
+                    vendor_serializer = VendorSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': vendor_details})
+                    vendor_serializer.is_valid(raise_exception=True)
+                    try:
+                        vendor_serializer.save()
+                        print("INSIDE IF")
+                        results.append({'vendorId':vendor_serializer.instance.id, "status":status.HTTP_201_CREATED})
+                    except Exception:
+                        print("Already has the vendor")
+        return Response(results, status=status.HTTP_201_CREATED)
