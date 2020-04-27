@@ -23,9 +23,6 @@ class StitchSerializer(serializers.HyperlinkedModelSerializer):
     def validate(self, data):
         if data.get('type'):
             data['code'] = data.get('type', '').replace(" ", "_").upper()            
-            hasType = Stitch.objects.filter(type=data.get('type'))
-            if len(hasType):
-               raise serializers.ValidationError("Stitch is already there")
         else:
             raise serializers.ValidationError("Stitch type is required")
         return data
@@ -33,9 +30,12 @@ class StitchSerializer(serializers.HyperlinkedModelSerializer):
     def create(self, validated_data):
         ## Image data 
         validated_data['code'] = validated_data.get('code')
-        stitch = Stitch.objects.create(**validated_data)
-        stitch.save()
-
+        try:
+            obj = Stitch.objects.get(code=validated_data.get("code"))
+        except Stitch.DoesNotExist:
+            stitch = Stitch.objects.create(**validated_data)
+            stitch.save()
+        
         if self.initial_data.get('images'):
             image_data = self.initial_data.get('images')
             for image in image_data:

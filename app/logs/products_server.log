@@ -23,3 +23,562 @@
  products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,123 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
  products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,123 INFO     PREPARED STITCH DATA 
  products.kviews.csv_ref_stitch_view 2020-04-27 13:39:27,228 INFO     False
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,077 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,079 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,079 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,079 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,080 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,080 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,185 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,186 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,252 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,253 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,253 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,253 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,254 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,268 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,268 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,331 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,333 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,333 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,333 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,334 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,348 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,348 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,409 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,410 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,410 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,410 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,411 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,424 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,424 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,485 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,487 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,487 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,488 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,488 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,504 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,504 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,569 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,571 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,571 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,572 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,572 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,588 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,588 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,651 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,653 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,653 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,653 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,653 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,668 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,669 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,735 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,736 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,736 INFO     OrderedDict([('type', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,736 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,737 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,750 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,750 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:52:07,815 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:02,777 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:02,779 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:02,779 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:02,779 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:02,780 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:02,780 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:10,327 INFO     False
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:39,309 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:39,312 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:39,312 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:39,312 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:39,312 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:39,312 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:42,528 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:44,135 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:46,461 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:48,295 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:48,295 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:48,296 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:48,296 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,444 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,445 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,459 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,460 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,460 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,461 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:49,461 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,061 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,061 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,076 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,078 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,078 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,078 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,079 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,481 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,481 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,494 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,495 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,495 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,495 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,495 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,889 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,889 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,902 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,906 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,906 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,907 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:50,907 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,491 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,491 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,505 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,509 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,509 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,510 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,510 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,904 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,904 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,924 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,925 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,926 INFO     OrderedDict([('type', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,926 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:51,926 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:52,301 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:52,302 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:53:52,316 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:23,380 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:23,383 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:23,383 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:23,383 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:23,383 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:23,383 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:26,115 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:27,496 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:28,225 INFO     {'stitchId': 188, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:28,226 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:28,226 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:28,227 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:28,227 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,130 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,130 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,280 INFO     {'stitchId': 189, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,281 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,281 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,281 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:29,281 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,006 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,006 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,158 INFO     {'stitchId': 190, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,158 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,158 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,158 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,159 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,796 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:30,797 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,180 INFO     {'stitchId': 191, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,181 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,181 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,182 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,182 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,561 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:32,562 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:34,104 INFO     {'stitchId': 192, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:34,107 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:34,107 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:34,108 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:34,108 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,218 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,219 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,345 INFO     {'stitchId': 193, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,346 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,346 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,346 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:35,346 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:36,061 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:36,062 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:36,275 INFO     {'stitchId': 194, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:36,276 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:36,276 INFO     OrderedDict([('type', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:37,189 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:37,189 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:37,712 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:37,713 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:54:37,936 INFO     {'stitchId': 195, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:44,138 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:44,142 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:44,142 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:44,143 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:44,143 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:44,143 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,253 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,254 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,510 INFO     {'stitchId': 196, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,511 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,511 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,511 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,511 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,512 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,513 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,679 INFO     {'stitchId': 197, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,680 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,680 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,680 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,680 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,681 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,681 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,847 INFO     {'stitchId': 198, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,848 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,848 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,848 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,848 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,849 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:49,849 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,050 INFO     {'stitchId': 199, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,051 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,051 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,051 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,051 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,052 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,052 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,294 INFO     {'stitchId': 200, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,295 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,295 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,295 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,295 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,296 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,296 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,433 INFO     {'stitchId': 201, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,434 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,434 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,434 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,434 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,435 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,435 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,653 INFO     {'stitchId': 202, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,654 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,654 INFO     OrderedDict([('type', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,655 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,655 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,655 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,655 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:50,888 INFO     {'stitchId': 203, 'status': '200 Ok'}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,610 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,612 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,612 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,612 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,612 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,613 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,614 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,614 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,712 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,713 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,713 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,714 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,714 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,715 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,715 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,729 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,730 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,730 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,731 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,731 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,732 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,732 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,746 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,747 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,747 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,748 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,748 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,749 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,749 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,763 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,764 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,764 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,765 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,765 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,766 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,767 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,781 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,782 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,782 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,783 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,783 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,784 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,785 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,798 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,799 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,800 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,800 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,800 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,801 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,802 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,815 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,816 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,816 INFO     OrderedDict([('type', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,817 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,817 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,818 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,818 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:56:59,832 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,488 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,489 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,490 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,490 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,490 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,490 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,491 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,491 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,580 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,581 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,581 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,582 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,582 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,583 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,583 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,595 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,596 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,596 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,596 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,597 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,597 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,597 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,610 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,611 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,611 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,611 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,611 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,612 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,612 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,625 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,626 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,626 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,626 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,626 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,627 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,627 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,640 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,641 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,642 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,642 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,642 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,643 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,643 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,656 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,657 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,657 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,657 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,657 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,658 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,658 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,671 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,672 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,672 INFO     OrderedDict([('type', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,672 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,673 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,673 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,674 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:10,687 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,113 INFO      
+
+ ----- CSV STITCH CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,114 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,114 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,114 INFO     OrderedDict([('type', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'Blouse related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,115 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,115 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,116 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:44,116 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,239 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,241 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,241 INFO     OrderedDict([('type', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'Sarees related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,243 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,243 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,246 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,246 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,263 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,265 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,265 INFO     OrderedDict([('type', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'Lehengas related information here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,266 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,267 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,270 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,270 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,286 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,292 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,292 INFO     OrderedDict([('type', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,293 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,293 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,295 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,295 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,309 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,310 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,310 INFO     OrderedDict([('type', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,310 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,311 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,312 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,312 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,325 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,326 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,326 INFO     OrderedDict([('type', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,326 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,326 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,327 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,327 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,340 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,341 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,341 INFO     OrderedDict([('type', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,342 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,342 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,343 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,343 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,356 ERROR    Something wrong with stitch serializer save
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,356 INFO      
+
+
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,357 INFO     OrderedDict([('type', 'PartyWear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,357 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,357 INFO     PREPARED STITCH DATA 
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,358 INFO     True
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,358 INFO     Before serializer save call
+ products.kviews.csv_ref_stitch_view 2020-04-27 14:57:45,592 INFO     {'stitchId': 204, 'status': '200 Ok'}

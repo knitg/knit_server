@@ -2294,3 +2294,4 @@ Traceback (most recent call last):
     hasType = Stitch.objects.filter(type=value)
 NameError: name 'value' is not defined
  django.request 2020-04-27 13:39:27,230 WARNING  Bad Request: /product/csv-stitch
+ django.request 2020-04-27 14:53:10,329 WARNING  Bad Request: /product/csv-stitch

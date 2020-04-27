@@ -48,10 +48,13 @@ class StitchTypeSerializer(serializers.ModelSerializer):
             stitch = serializers.PrimaryKeyRelatedField(queryset=stitchQuerySet, many=False)
             if len(stitchQuerySet):
                 validated_data['stitch'] = stitchQuerySet[0]
+        try:
+            obj = StitchType.objects.get(code=validated_data.get("code"))
+        except Stitch.DoesNotExist:
+            stitchtype = StitchType.objects.create(**validated_data)
+            stitchtype.save()
 
-        stitchtype = StitchType.objects.create(**validated_data)
-        stitchtype.save()
-
+        
         if self.initial_data.get('images'):
             validated_data['images'] = self.initial_data['images']
             image_data = validated_data.pop('images')
