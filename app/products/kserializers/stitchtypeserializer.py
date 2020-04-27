@@ -43,17 +43,27 @@ class StitchTypeSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         ## Image data
         validated_data['code'] = validated_data['code'].upper() if validated_data['code'] else None
-        if self.initial_data['stitch']:
+        validated_data['description'] = self.initial_data.get("description")
+        if self.initial_data.get('stitch'):
             stitchQuerySet = Stitch.objects.filter(id= int(self.initial_data['stitch']))
             stitch = serializers.PrimaryKeyRelatedField(queryset=stitchQuerySet, many=False)
             if len(stitchQuerySet):
                 validated_data['stitch'] = stitchQuerySet[0]
+        
         try:
-            obj = StitchType.objects.get(code=validated_data.get("code"))
-        except Stitch.DoesNotExist:
-            stitchtype = StitchType.objects.create(**validated_data)
+            stitchtype = StitchType.objects.get(code=validated_data.get("code"))
+            stitchtype.type = validated_data.get('type', stitchtype.type)
+            stitchtype.stitch = validated_data.get('stitch', stitchtype.stitch)
+            stitchtype.description = validated_data.get('description', stitchtype.description)
+            stitchtype.code =  validated_data.get('code', stitchtype.code).upper()
+            if self.initial_data.get("images"):
+                for e in stitchtype.images.all():
+                    stitchtype.images.remove(e)
+                    KImage.objects.get(id=e.id).delete()
             stitchtype.save()
-
+        except StitchType.DoesNotExist:
+            stitchtype = StitchType(**validated_data)
+            stitchtype.save()
         
         if self.initial_data.get('images'):
             validated_data['images'] = self.initial_data['images']

@@ -17,7 +17,7 @@ class StitchSerializer(serializers.HyperlinkedModelSerializer):
     
     class Meta:
         model = Stitch
-        fields = ('id','type', 'code', 'images')
+        fields = ('id','type', 'code', 'images', 'description')
         parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
         
     def validate(self, data):
@@ -30,10 +30,19 @@ class StitchSerializer(serializers.HyperlinkedModelSerializer):
     def create(self, validated_data):
         ## Image data 
         validated_data['code'] = validated_data.get('code')
+        validated_data['description'] = self.initial_data.get("description", None)
         try:
-            obj = Stitch.objects.get(code=validated_data.get("code"))
+            stitch = Stitch.objects.get(code=validated_data.get("code"))
+            stitch.type = validated_data.get('type', stitch.type)
+            stitch.description = validated_data.get('description', stitch.description)
+            stitch.code =  validated_data.get('code', stitch.code).upper()
+            if self.initial_data.get("images"):
+                for e in stitch.images.all():
+                    stitch.images.remove(e)
+                    KImage.objects.get(id=e.id).delete()
+            stitch.save()
         except Stitch.DoesNotExist:
-            stitch = Stitch.objects.create(**validated_data)
+            stitch = Stitch(**validated_data)
             stitch.save()
         
         if self.initial_data.get('images'):
