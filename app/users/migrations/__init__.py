@@ -5,6 +5,7 @@ import os
 import csv
 from django.conf import settings
 from ..kserializers.user_serializer import UserSerializer
+from ..kserializers.address_serializer import AddressSerializer
 from ..kserializers.vendor_serializer import VendorSerializer
 
 def checkTables(tablename):
@@ -57,6 +58,51 @@ def create_users():
                     print("USER ERROR ", user_serializer.errors)
 
 
+### ADDRESS load from CSV ###
+def create_address():
+    print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_address.csv'))
+    with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_address.csv')) as f:
+        reader = csv.reader(f)
+        users = []
+        profile = []
+        for i, row in enumerate(reader):
+            print(row)
+            if (i >= 1 and row):
+                #======================== CREATE ADDRESS ========================#
+                try:
+                    address_data = {}
+                    address_data['address_type'] = row[0] # "address_type"
+                    address_data['house_name'] = row[1] #"house_name"
+                    address_data['address_line1'] = row[2] #"address_line1"
+                    address_data['address_line2'] = row[3] #"address_line2"
+                    address_data['area_name'] = row[4] # "area_name"
+                    address_data['landmark'] = row[5] # "landmark"
+                    address_data['postalCode'] = row[6] # "postalCode"
+                    address_data['latitude'] = row[7] # "latitude"
+                    address_data['longitude'] = row[8] # "longitude"
+                    address_data['geoAddress'] = row[9] # "geoAddress"
+                    address_data['city'] = row[10] # "city"
+                    address_data['state'] = row[11] # "state"
+                    address_data['country'] = row[12] # "country"
+                    address_serializer = AddressSerializer(data= address_data)
+                except ValueError as e:
+                    print("VALUE ERROR ", e)
+                    return  ValueError("Something went wrong with values", e)
+                except IndexError as e:
+                    print("Index ERROR ", e)
+                    return KeyError("Something went wrong with keys", e)
+                except AttributeError as e:
+                    print("Attribute error", e)
+                    return AttributeError("attribute error")
+                except TypeError as e:
+                    print("TYPE ERROR", e)
+                    return TypeError("TYPE ERROR {}".format(e))
+                try:
+                    address_serializer.is_valid()
+                    address_serializer.save()
+                except Exception:
+                    print("\n ADDRESS ERROR ", address_serializer.errors)
+
 
 
 ### REFERENCE VENDOR USERS ###
@@ -91,5 +137,5 @@ if checkTables('ref_user_types') is not None:
     create_user_types()
 if checkTables('knit_user'):
     create_users() 
-# elif checkTables('knit_vendor'):
-#     create_vendor_users()
+if checkTables('ref_address'):
+    create_address()

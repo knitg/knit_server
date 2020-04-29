@@ -1,5 +1,5 @@
 from django.db import models
-from .stitchmodel import Stitch
+from .category_model import Category
 from .choices_model import DISCOUNT_TYPE_CHOICES
 
 class Offers(models.Model):

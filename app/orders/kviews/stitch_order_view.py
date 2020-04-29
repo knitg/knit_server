@@ -22,9 +22,9 @@ class StitchOrderViewSet(viewsets.ModelViewSet):
 
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     
-    search_fields = ['id','title', 'details', 'expected_date', 'emergency', 'stitch_id', 'is_vfm', 'material_types']
+    search_fields = ['id','title', 'details', 'expected_date', 'emergency', 'category_id', 'is_vfm', 'material_types']
     
-    filter_fields = ['id','title', 'details', 'expected_date', 'emergency', 'stitch_id', 'is_vfm', 'material_types']
+    filter_fields = ['id','title', 'details', 'expected_date', 'emergency', 'category_id', 'is_vfm', 'material_types']
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     
     def create(self, request, *args, **kwargs):  
@@ -62,7 +62,7 @@ class StitchOrderViewSet(viewsets.ModelViewSet):
         request_data['details'] = request_input.get('details')
         request_data['expected_date'] = request_input.get('expected_date')
         request_data['emergency'] = request_input.get('emergency', False)
-        request_data['stitch_id'] = request_input.get('stitch_id')
+        request_data['category_id'] = request_input.get('category_id')
         request_data['is_vfm'] = request_input.get('is_vfm', False)
         request_data['material_types'] = request_input.get('material_types')
         return request_data

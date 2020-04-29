@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
 from ..kmodels.imagemodel import KImage
-from ..kmodels.stitchmodel import Stitch
-from ..kmodels.stitchtypemodel import StitchType
+from ..kmodels.category_model import Category
+from ..kmodels.sub_category_model import SubCategory
 from ..kmodels.product_model import Product
 from ..kmodels.color_model import ColorModel
 from ..kmodels.sizes_model import SizeModel
@@ -10,8 +10,8 @@ from ..kmodels.sizes_model import SizeModel
 
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser
 from .imageserializer import KImageSerializer
-from .stitchserializer import StitchSerializer
-from .stitchtypeserializer import StitchTypeSerializer
+from .category_serializer import CategorySerializer
+from .sub_category_serializer import SubCategorySerializer
 from .color_serializers import ColorSerilizer
 from .size_serializers import SizeSerializer
 from .offers_serializer import OfferSerializer
@@ -29,8 +29,8 @@ class ProductListSerializer(serializers.ModelSerializer):
 
 class ProductSerializer(serializers.ModelSerializer):
 
-    stitch = serializers.SerializerMethodField(read_only=True)
-    stitch_type = serializers.SerializerMethodField(read_only=True)
+    category = serializers.SerializerMethodField(read_only=True)
+    sub_category = serializers.SerializerMethodField(read_only=True)
     colors = serializers.SerializerMethodField(read_only=True)
     sizes = serializers.SerializerMethodField(read_only=True)
     offers = serializers.SerializerMethodField(read_only=True)
@@ -38,12 +38,12 @@ class ProductSerializer(serializers.ModelSerializer):
     errors = {}
 
 
-    def get_stitch(self,obj):
-        serializer = StitchSerializer(obj.stitch, many=True)
+    def get_category(self,obj):
+        serializer = CategorySerializer(obj.category, many=True)
         return serializer.data 
 
-    def get_stitch_type(self,obj):
-        serializer = StitchTypeSerializer(obj.stitch_type, many=True)
+    def get_sub_category(self,obj):
+        serializer = SubCategorySerializer(obj.sub_category, many=True)
         return serializer.data
 
     def get_offers(self,obj):
@@ -65,7 +65,7 @@ class ProductSerializer(serializers.ModelSerializer):
         
     class Meta:
         model = Product
-        fields = ('id', 'title','description', 'quantity', 'colors', 'sizes', 'offers', 'stitch', 'stitch_type', 'images')
+        fields = ('id', 'title','description', 'quantity', 'colors', 'sizes', 'offers', 'category', 'sub_category', 'images')
 
     def validate(self, data):
         self.errors = {}
@@ -155,19 +155,19 @@ class ProductSerializer(serializers.ModelSerializer):
                     images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
                     product.images.add(images)
 
-            # STITCH CATEGORY RELATION HERE
-            if product_relations.get('stitch'):
-                if isinstance(product_relations.get('stitch'), list):
-                    stitch1 = list(Stitch.objects.filter(id__in=product_relations.get('stitch')))
-                    product.stitch.set(stitch1)
+            # CATEGORY RELATION HERE
+            if product_relations.get('category'):
+                if isinstance(product_relations.get('category'), list):
+                    category_list = list(Stitch.objects.filter(id__in=product_relations.get('category')))
+                    product.category.set(category_list)
                 else:
-                    logger.warning("NOT SAVED IN STITCH CATEGORY : Expected stitch ids should be an array bug got a {} ".format(type(stitch)))
+                    logger.warning("NOT SAVED IN CATEGORY CATEGORY : Expected category ids should be an array bug got a {} ".format(type(category)))
             
-            # STITCH TYPE CATEGORY RELATION HERE
-            if product_relations.get('stitch_type'):
-                if isinstance(product_relations.get('stitch_type'), list):
-                    stitch_type_1 = list(ColorModel.objects.filter(id__in=product_relations.get('stitch_type')))
-                    product.colors.set(stitch_type_1)
+            # SUB CATEGORYRELATION HERE
+            if product_relations.get('sub_category'):
+                if isinstance(product_relations.get('sub_category'), list):
+                    sub_category = list(ColorModel.objects.filter(id__in=product_relations.get('sub_category')))
+                    product.colors.set(sub_category)
                 else:
-                    logger.warning("NOT SAVED STITCH TYPE CATEGORY : Expected stitch_type ids should be an array bug got a {} ".format(type(stitch_type)))
+                    logger.warning("NOT SAVED SUB CATEGORY TYPE CATEGORY : Expected sub_category ids should be an array bug got a {} ".format(type(sub_category)))
             

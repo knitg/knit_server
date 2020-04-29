@@ -3,9 +3,9 @@ from django.db import models
 from datetime import datetime
 from django.utils.timezone import now
 
-from .stitchmodel import Stitch
+from .category_model import Category
 from .imagemodel import KImage
-from .stitchtypemodel import StitchType
+from .sub_category_model import SubCategory
 from .timestamp_model import TimestampedModel 
 from .color_model import ColorModel
 from .sizes_model import SizeModel
@@ -27,17 +27,15 @@ class Product(TimestampedModel):
     sizes = models.ManyToManyField(SizeModel, blank=True, default=None)
     
     #Categorys
-    stitch = models.ManyToManyField(Stitch)
-    stitch_type = models.ManyToManyField(StitchType)
+    category = models.ManyToManyField(Category)
+    sub_Category = models.ManyToManyField(SubCategory)
 
     #Product belongs to vendor
     user = models.IntegerField(blank=True, null=True) 
 
     class Meta:
-        db_table = 'knit_product'
+        db_table = 'product'
         managed = True
-        verbose_name = 'Knit Product'
-        verbose_name_plural = 'Knit Products'
     
     def __str__(self):
         return self.code

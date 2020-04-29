@@ -13,6 +13,26 @@ def uploadFolder(instance, filename):
     imgpath= '/'.join(['images', str(instance.source), filename])
     return imgpath
 
+def resize(image_pil, width, height):
+    '''
+    Resize PIL image keeping ratio and using white background.
+    '''
+    ratio_w = width / image_pil.width
+    ratio_h = height / image_pil.height
+    if ratio_w < ratio_h:
+        # It must be fixed by width
+        resize_width = width
+        resize_height = round(ratio_w * image_pil.height)
+    else:
+        # Fixed by height
+        resize_width = round(ratio_h * image_pil.width)
+        resize_height = height
+    image_resize = image_pil.resize((resize_width, resize_height), Image.ANTIALIAS)
+    background = Image.new('RGBA', (width, height), (255, 255, 255, 255))
+    offset = (round((width - resize_width) / 2), round((height - resize_height) / 2))
+    background.paste(image_resize, offset)
+    return background.convert('RGB')
+
 class KImage(models.Model):
     description = models.CharField(max_length=255, blank=True, null=True)
     image = models.ImageField(upload_to=uploadFolder, max_length=254, blank=True, null=True)
@@ -25,12 +45,16 @@ class KImage(models.Model):
     def save(self, **kwargs):
         if self.image:
             #Opening the uploaded image
-            im = Image.open(self.image.name)
+            try:
+                pil_img = Image.open(self.image)
+            except Exception:
+                pil_img = Image.open(self.image.name)
+            
+            # resize image to proportionate
+            im = resize(pil_img, 800, 800)
             output = BytesIO()
-            # #Resize/modify the image
-            # im = im.resize((800, 600), Image.ANTIALIAS)
             # #after modifications, save it to the output
-            im.save(output, format='PNG', quality=100)
+            im.save(output, format='JPEG', quality=80)
             
             #change the imagefield value to be the newley modifed image value
             self.image = InMemoryUploadedFile(output,'ImageField', "%s.png" %self.image.name.split('.')[0], 'image/png', sys.getsizeof(output), None)

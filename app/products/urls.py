@@ -4,9 +4,9 @@ from . import views
 from django.conf.urls import url
 
 from .kviews.imageview import ImageViewSet
-from .kviews.stitchview import StitchViewSet
-from .kviews.csv_ref_stitch_view import CSVUploadStitchViewSet, CSVUploadStitchTypeViewSet
-from .kviews.stitchtypeview import StitchTypeViewSet
+from .kviews.category_view import CategoryViewSet
+from .kviews.csv_ref_categories_view import CSVUploadCategoryViewSet, CSVUploadSubCategoryViewSet
+from .kviews.sub_category_view import SubCategoryViewSet
 from .kviews.offers_view import OffersViewSet
 from .kviews.productview import ProductViewSet, ProductListViewSet
 from .kviews.colors_view import ColorsViewSet
@@ -15,10 +15,10 @@ from .kviews.sizes_view import SizesViewSet
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'upload', ImageViewSet)
-router.register(r'csv-stitch', CSVUploadStitchViewSet, basename="csv-stitch")
-router.register(r'csv-stitch-types', CSVUploadStitchTypeViewSet, basename="csv-stitch-types")
-router.register(r'stitch', StitchViewSet, basename="stitch")
-router.register(r'stitch-types', StitchTypeViewSet)
+router.register(r'csv-categorys', CSVUploadCategoryViewSet, basename="csv-categorys")
+router.register(r'csv-sub-categorys', CSVUploadSubCategoryViewSet, basename="csv-sub-categorys")
+router.register(r'categorys', CategoryViewSet, basename="categorys")
+router.register(r'sub-categorys', SubCategoryViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'product-list', ProductListViewSet)
 router.register(r'offers', OffersViewSet)
