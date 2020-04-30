@@ -25,6 +25,9 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
             data['code'] = data.get('title', '').replace(" ", "_").upper()            
         else:
             raise serializers.ValidationError("Category title is required")
+        hasCategory = Category.objects.filter(code= data['code'])
+        if len(hasCategory):
+            raise serializers.ValidationError("Category already existed")
         return data
 
     def create(self, validated_data):

@@ -32,11 +32,14 @@ class SubCategorySerializer(serializers.ModelSerializer):
         if self.initial_data.get('title'):
             data['code'] = self.initial_data.get('title', '').replace(" ", "_").upper()
         else:
-            self.errors['title'] = 'Category title required'
+            self.errors['title'] = 'Category title required' 
         
+        hasSubCategory = SubCategory.objects.filter(code= data['code'])
+        if len(hasSubCategory):
+            self.errors['subcategory_exists'] = 'Sub Category already exists' 
+
         if self.initial_data.get('category') is None:
             self.errors['category'] = 'Category type required'
-
         if len(self.errors):
             logger.info(self.errors)
             raise serializers.ValidationError(self.errors)

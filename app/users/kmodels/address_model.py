@@ -2,6 +2,8 @@ from django.db import models
 from datetime import datetime
 from django.utils.timezone import now
 from .timestamp_model import TimestampedModel
+from django.utils.text import slugify
+
 
 class Address(TimestampedModel):
     address_type = models.CharField(default="", max_length=120)
@@ -17,8 +19,7 @@ class Address(TimestampedModel):
     city= models.CharField(max_length=125, null=True)
     state= models.CharField(max_length=125, blank=True, null=True, default=None)
     country= models.CharField(max_length=95, blank=True, null=True, default=None)
-    
-    
+
     def get_full_address(self):
         address_line = ""
         address_line += self.house_name if self.house_name else ""
@@ -31,7 +32,7 @@ class Address(TimestampedModel):
         address_line += ", {}".format(self.country) if self.country else ""
         address_line += ", {}".format(self.postalCode) if self.postalCode else ""
         return address_line
-
+ 
 
     class Meta:
         db_table = 'ref_address'

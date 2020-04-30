@@ -54,9 +54,9 @@ def create_materials():
                     material.save() 
 
 #### IF TABLE WERE PRESENT IN DB #####
-if checkTables('ref_materials') is not None: 
-    create_materials()
-if checkTables('ref_sizes'):
-    create_sizes()
-if checkTables('ref_colors'):
-    create_colors()
+# if checkTables('ref_materials') is not None: 
+#     create_materials()
+# if checkTables('ref_sizes'):
+#     create_sizes()
+# if checkTables('ref_colors'):
+#     create_colors()
