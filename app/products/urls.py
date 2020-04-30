@@ -5,7 +5,7 @@ from django.conf.urls import url
 
 from .kviews.imageview import ImageViewSet
 from .kviews.category_view import CategoryViewSet
-from .kviews.csv_ref_categories_view import CSVUploadCategoryViewSet, CSVUploadSubCategoryViewSet, CSVUploadRefTblViewSet
+from .kviews.csv_product_ref_tables_view import CSVUploadCategoryViewSet, CSVUploadSubCategoryViewSet, CSVUploadProductRefTblViewSet
 from .kviews.sub_category_view import SubCategoryViewSet
 from .kviews.offers_view import OffersViewSet
 from .kviews.productview import ProductViewSet, ProductListViewSet
@@ -17,7 +17,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'upload', ImageViewSet)
 router.register(r'csv-categorys', CSVUploadCategoryViewSet, basename="csv-categorys")
 router.register(r'csv-sub-categorys', CSVUploadSubCategoryViewSet, basename="csv-sub-categorys")
-router.register(r'csv-ref-tables', CSVUploadRefTblViewSet, basename="csv-ref-tables")
+router.register(r'csv-product-ref-tables', CSVUploadProductRefTblViewSet, basename="csv-product-ref-tables")
 router.register(r'categorys', CategoryViewSet, basename="categorys")
 router.register(r'sub-categorys', SubCategoryViewSet)
 router.register(r'products', ProductViewSet)

@@ -27,8 +27,6 @@ class CurrentUserSerializer(serializers.ModelSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-    print("\n\n\n\n","USER SERIALIZER")
-
     fullName = serializers.ReadOnlyField(source='profile.get_full_name', required=False)
     userRole = serializers.ReadOnlyField(source='profile.user_role', required=False)
     vendor_id = serializers.ReadOnlyField(source='vendor.id', required=False)

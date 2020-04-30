@@ -203,3 +203,12 @@
  users.kserializers.user_serializer 2020-04-30 16:08:09,290 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
  users.kserializers.user_serializer 2020-04-30 16:08:09,306 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
  users.kserializers.user_serializer 2020-04-30 16:08:09,321 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-30 16:18:10,383 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-30 16:18:10,398 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-30 16:18:10,413 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-30 16:20:50,734 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-30 16:20:50,750 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-30 16:20:50,764 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kserializers.user_serializer 2020-04-30 16:26:03,145 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-04-30 16:26:03,161 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-04-30 16:26:03,179 ERROR    {'email_exists': 'Email is already in use. Try with different email'}

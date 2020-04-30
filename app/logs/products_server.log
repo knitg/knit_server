@@ -6823,3 +6823,73 @@
  products.kviews.csv_ref_categories_view 2020-04-30 16:07:28,816 INFO     PREPARED CATEGORY DATA 
  products.kviews.csv_ref_categories_view 2020-04-30 16:07:28,830 INFO     False
  products.kviews.csv_ref_categories_view 2020-04-30 16:07:28,830 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:12,992 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,693 INFO      
+
+ ----- CSV CATEGORY CREATE initiated -----
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,693 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,693 INFO     OrderedDict([('title', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'All types of blouse stitch patterns')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,694 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,694 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,709 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,709 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,710 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,710 INFO     OrderedDict([('title', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'All types of saree stitch types')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,711 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,711 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,726 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,726 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,727 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,727 INFO     OrderedDict([('title', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'All types of lehengas stitch types')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,728 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,728 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,744 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,744 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,746 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,746 INFO     OrderedDict([('title', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,746 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,746 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,761 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,761 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,762 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,762 INFO     OrderedDict([('title', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,764 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,764 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,778 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,778 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,783 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,784 INFO     OrderedDict([('title', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,784 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,784 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,799 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,800 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,801 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,801 INFO     OrderedDict([('title', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,801 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,801 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,815 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,815 ERROR    Something wrong with CATEGORY serializer save
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,816 INFO      
+
+
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,816 INFO     OrderedDict([('title', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,817 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,817 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,834 INFO     False
+ products.kviews.csv_ref_categories_view 2020-04-30 16:08:18,834 ERROR    Something wrong with CATEGORY serializer save

@@ -12,6 +12,9 @@ from .kviews.profile_view import ProfileListViewSet, ProfileViewSet
 from .kviews.sociallogin_view import FacebookConnectView, TwitterConnectView, GithubConnectView
 from rest_auth.registration.views import (SocialAccountListView, SocialAccountDisconnectView)
 
+from .kviews.csv_user_ref_tables_view import CSVUploadUserRefTblViewSet
+
+
 router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r'address', AddressViewSet)
@@ -21,6 +24,7 @@ router.register(r'users', UserViewSet)
 router.register(r'profiles', ProfileListViewSet)
 router.register(r'vendors', VendorUserViewSet)
 router.register(r'csv-vendors', UploadVendorSpreadSheetViewSet)
+router.register(r'csv-user-ref-tables', CSVUploadUserRefTblViewSet, basename="csv-user-ref-tables")
 
 urlpatterns = [ 
     path('', include(router.urls)),
