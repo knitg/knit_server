@@ -1,214 +1,271 @@
- users.kserializers.user_serializer 2020-04-30 11:57:48,154 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 11:57:48,173 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 11:57:48,215 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:17:13,543 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:17:13,559 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:17:13,574 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:17:56,485 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:17:56,510 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:17:56,525 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:18:33,001 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:18:33,017 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:18:33,033 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:19:20,410 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:19:20,427 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:19:20,443 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:27:37,274 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:27:37,289 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:27:37,305 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:28:49,929 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:28:49,950 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:28:49,966 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:29:29,210 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:29:29,226 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:29:29,242 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:30:28,345 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:30:28,362 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:30:28,378 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:30:54,335 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:30:54,351 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:30:54,370 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:31:23,046 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:31:23,062 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:31:23,078 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:32:47,080 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:32:47,096 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:32:47,111 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:33:30,853 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:33:30,870 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:33:30,886 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:34:54,418 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:34:54,439 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:34:54,455 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:36:11,330 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:36:11,346 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:36:11,361 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:37:16,729 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:37:16,744 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:37:16,759 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:38:02,468 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:38:02,484 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:38:02,500 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:40:09,441 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:40:09,457 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:40:09,475 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:40:51,710 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:40:51,726 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:40:51,742 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:43:01,511 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:43:01,527 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:43:01,543 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:45:17,105 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:45:17,121 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:45:17,136 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:46:20,585 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:46:20,601 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:46:20,616 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:46:48,850 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:46:48,865 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:46:48,880 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 12:47:35,961 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:47:35,983 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:47:36,000 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.exceptions 2020-04-30 12:47:42,626 ERROR    {'non_field_errors': [ErrorDetail(string='Category title is required', code='invalid')], 'status': 400}
- users.exceptions 2020-04-30 12:47:42,626 ERROR     -- SOMETHING WRONG -- 
- users.kserializers.user_serializer 2020-04-30 12:48:04,900 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:48:04,916 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:48:04,934 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.exceptions 2020-04-30 12:48:12,072 ERROR    {'non_field_errors': [ErrorDetail(string='Category title is required', code='invalid')], 'status': 400}
- users.exceptions 2020-04-30 12:48:12,072 ERROR     -- SOMETHING WRONG -- 
- users.kserializers.user_serializer 2020-04-30 12:49:55,206 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 12:49:55,221 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 12:49:55,236 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:01:11,711 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:01:11,727 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:01:11,742 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:02:52,904 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:02:52,920 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:02:52,935 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:04:45,714 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:04:45,730 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:04:45,747 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:05:09,597 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:05:09,614 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:05:09,630 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:05:58,604 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:05:58,620 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:05:58,635 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:06:44,809 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:06:44,825 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:06:44,840 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:08:40,807 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:08:40,823 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:08:40,838 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:11:29,486 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:11:29,502 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:11:29,520 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:21:12,995 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:21:13,011 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:21:13,026 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:21:50,266 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:21:50,282 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:21:50,297 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:22:25,989 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:22:26,007 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:22:26,030 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:23:13,566 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:23:13,585 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:23:13,605 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:23:56,752 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:23:56,767 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:23:56,782 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:28:22,794 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:28:22,810 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:28:22,827 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:30:28,443 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:30:28,459 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:30:28,474 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:36:27,032 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:36:27,048 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:36:27,063 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:36:45,632 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:36:45,648 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:36:45,663 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:37:48,048 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:37:48,063 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:37:48,078 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:38:08,533 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:38:08,549 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:38:08,564 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:39:23,734 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:39:23,749 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:39:23,764 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:41:16,656 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:41:16,677 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:41:16,692 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 13:44:46,783 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 13:44:46,800 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 13:44:46,817 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 14:47:36,411 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 14:47:36,434 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 14:47:36,451 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 14:50:00,517 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 14:50:00,534 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 14:50:00,551 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 14:51:16,846 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 14:51:16,865 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 14:51:16,883 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 14:52:58,585 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 14:52:58,602 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 14:52:58,618 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 14:53:08,934 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 14:53:08,951 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 14:53:08,967 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 14:54:21,801 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 14:54:21,820 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 14:54:21,835 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:07:05,890 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:07:05,906 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:07:05,921 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:08:05,352 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:08:05,368 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:08:05,383 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:09:53,709 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:09:53,724 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:09:53,739 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:11:51,922 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:11:51,940 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:11:51,956 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:13:53,895 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:13:53,911 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:13:53,926 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:19:50,791 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:19:50,807 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:19:50,824 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:20:07,235 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:20:07,251 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:20:07,266 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:43:59,405 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:43:59,420 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:43:59,435 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 15:50:25,880 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 15:50:25,903 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 15:50:25,919 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:01:49,543 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:01:49,564 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:01:49,581 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:03:08,672 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:03:08,688 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:03:08,703 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:06:51,216 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:06:51,231 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:06:51,246 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:08:09,290 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:08:09,306 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:08:09,321 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:18:10,383 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:18:10,398 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:18:10,413 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:20:50,734 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:20:50,750 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:20:50,764 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
- users.kserializers.user_serializer 2020-04-30 16:26:03,145 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
- users.kserializers.user_serializer 2020-04-30 16:26:03,161 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
- users.kserializers.user_serializer 2020-04-30 16:26:03,179 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:15,736 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-01 23:27:16,033 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-05-01 23:27:16,049 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-05-01 23:27:16,064 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:16,065 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:16,068 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:16,068 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:27:16,069 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:27:18,451 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:20,201 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:20,206 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:20,206 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:27:20,206 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:27:21,033 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:21,033 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:21,035 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:21,037 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:21,037 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:21,038 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:27:21,039 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:09,091 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-01 23:28:09,372 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-05-01 23:28:09,399 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-05-01 23:28:09,421 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:09,423 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:09,426 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:09,427 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:09,428 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:11,163 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:11,163 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:11,169 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:11,169 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:11,169 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:11,834 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:11,834 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:11,838 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:11,838 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:11,838 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:12,423 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:12,423 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:12,427 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:12,427 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:12,427 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:12,965 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:12,965 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:12,969 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:12,969 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:12,969 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:13,600 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:13,601 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:13,604 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:13,604 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:13,604 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:14,113 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:14,113 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:14,117 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:14,117 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:28:14,117 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:28:14,643 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:28:14,643 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:00,060 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:00,251 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-01 23:33:00,339 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-05-01 23:33:00,355 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-05-01 23:33:00,371 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:00,372 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:00,375 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:00,375 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:00,376 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:02,336 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:02,336 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:02,340 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:02,340 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:02,340 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:03,015 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:03,015 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:03,018 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:03,019 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:03,019 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:03,632 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:03,632 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:03,638 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:03,638 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:03,638 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:04,152 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:04,153 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:04,156 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:04,156 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:04,156 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:04,688 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:04,689 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:04,692 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:04,692 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:04,692 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:05,250 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:05,250 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:05,254 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:05,254 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:33:05,254 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:33:05,876 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:33:05,876 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:25,591 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:25,789 INFO      
+
+ ----- CSV Address CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:25,862 INFO      
+
+ ----- CSV USER CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-01 23:38:25,879 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-05-01 23:38:25,894 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-05-01 23:38:25,910 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:25,911 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:25,913 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:25,914 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:25,915 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,693 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,693 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,697 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,697 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:29,697 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,738 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,739 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,742 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,742 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:29,742 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,783 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,783 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,787 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,787 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:29,787 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,829 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,829 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,832 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,833 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:29,833 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,873 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,873 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,876 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,876 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:29,876 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,917 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,917 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,920 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,920 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:38:29,921 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:38:29,961 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:38:29,961 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:43,497 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:43,497 INFO      
+
+ ----- CSV USER TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:43,850 INFO      
+
+ ----- CSV Address CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:43,970 INFO      
+
+ ----- CSV USER CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-01 23:41:44,001 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-05-01 23:41:44,029 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-05-01 23:41:44,056 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,061 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,063 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,063 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,064 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,137 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,137 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,149 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,150 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,150 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,226 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,226 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,238 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,238 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,238 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,312 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,313 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,317 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,317 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,317 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,392 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,392 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,396 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,396 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,396 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,469 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,469 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,478 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,478 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,478 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,552 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,553 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,568 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,568 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:44,568 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:44,644 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:44,645 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,071 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,071 INFO      
+
+ ----- CSV USER TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,420 INFO      
+
+ ----- CSV Address CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,537 INFO      
+
+ ----- CSV USER CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-01 23:41:59,569 ERROR    {'username_exists': 'Username is already in use. Try with different name'}
+ users.kserializers.user_serializer 2020-05-01 23:41:59,596 ERROR    {'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kserializers.user_serializer 2020-05-01 23:41:59,623 ERROR    {'email_exists': 'Email is already in use. Try with different email'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,627 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,630 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,630 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:59,630 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:59,705 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,705 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,709 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,709 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:59,709 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:59,782 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,782 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,785 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,785 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:59,785 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:59,858 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,859 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,871 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,871 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:59,871 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:41:59,944 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,944 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,948 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:41:59,948 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:41:59,948 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:42:00,022 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,022 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,026 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,026 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:42:00,026 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:42:00,099 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,099 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,102 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,102 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-01 23:42:00,102 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-01 23:42:00,176 ERROR    {'username_exists': 'Username is already in use. Try with different name', 'email_exists': 'Email is already in use. Try with different email', 'phone_exists': 'Phone number is already in use. Try with different number'}
+ users.kviews.csv_user_ref_tables_view 2020-05-01 23:42:00,176 ERROR    Something wrong with VENDOR save

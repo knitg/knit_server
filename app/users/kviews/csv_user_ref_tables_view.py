@@ -31,10 +31,10 @@ class CSVUploadUserRefTblViewSet(viewsets.ModelViewSet):
         logger.info(" \n\n ----- CSV CATEGORY TYPE CREATE initiated -----")
         results = []
         try:
-            create_user_types()
-            create_address()
-            create_users()
-            create_vendor_users()
+            results.append({"user_types": create_user_types()})
+            results.append({"address": create_address()})
+            results.append({"users": create_users()})
+            results.append({"vendor": create_vendor_users()})
             
         except Exception as e:
             print("something went wrong", e)
@@ -44,22 +44,30 @@ class CSVUploadUserRefTblViewSet(viewsets.ModelViewSet):
  
 ### REFERENCE USER TYPES ###
 def create_user_types():
+    logger.info(" \n\n ----- CSV USER TYPE CREATE initiated -----")
+    results = []
     print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_user_type.csv'))
     with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_user_type.csv')) as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
             if (i >= 1 and row):
                 print(row)
-                user_type, created = UserType.objects.get_or_create(
-                    user_type=row[0],
-                    description=row[1]
-                )
-                if created:
-                    user_type.save() 
+                try:
+                    user_type, created = UserType.objects.get_or_create(user_type=row[0], description=row[1])
+                    if created:
+                        user_type.save() 
+                    results.append({'userTypeId':user_type.id})
+                except Exception as e:
+                    print("\n USER ERROR ", e)
+                    results.append({'errors': e})
+    return results
+                
 
 
 ### Users load from CSV ###
 def create_users():
+    logger.info(" \n\n ----- CSV USER CREATE initiated -----")
+    results = []
     print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_users.csv'))
     with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_users.csv')) as f:
         reader = csv.reader(f)
@@ -80,14 +88,19 @@ def create_users():
                 user_data['is_admin'] = admin
 
                 user_serializer = UserSerializer(data= {'user': user_data, 'profile': {}, 'data':user_data})
-                if user_serializer.is_valid():
+                try:
+                    user_serializer.is_valid()
                     user_serializer.save()
-                else:
-                    print("USER ERROR ", user_serializer.errors)
-
+                    results.append({'userId':user_serializer.instance.id})
+                except Exception:
+                    print("\n USER ERROR ", user_serializer.errors)
+                    results.append({'errors':user_serializer.errors})
+    return results
 
 ### ADDRESS load from CSV ###
 def create_address():
+    logger.info(" \n\n ----- CSV Address CREATE initiated -----")
+    results = []
     print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_address.csv'))
     with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_address.csv')) as f:
         reader = csv.reader(f)
@@ -115,47 +128,67 @@ def create_address():
                     address_serializer = AddressSerializer(data= address_data)
                 except ValueError as e:
                     print("VALUE ERROR ", e)
-                    return  ValueError("Something went wrong with values", e)
+                    # return  ValueError("Something went wrong with values", e)
+                    results.append({'value_error':'{}'.format(e)})
                 except IndexError as e:
                     print("Index ERROR ", e)
-                    return KeyError("Something went wrong with keys", e)
+                    results.append({'index_error':'{}'.format(e)})
+                    # return KeyError("Something went wrong with keys", e)
                 except AttributeError as e:
                     print("Attribute error", e)
-                    return AttributeError("attribute error")
+                    results.append({'attribute_error':'{}'.format(e)})
+                    # return AttributeError("attribute error")
                 except TypeError as e:
                     print("TYPE ERROR", e)
-                    return TypeError("TYPE ERROR {}".format(e))
+                    results.append({'type_error':'{}'.format(e)})
+                    # return TypeError("TYPE ERROR {}".format(e))
                 try:
                     address_serializer.is_valid()
                     address_serializer.save()
+                    results.append({'vendorId':address_serializer.instance.id})
                 except Exception:
                     print("\n ADDRESS ERROR ", address_serializer.errors)
-
+                    results.append({'errors':address_serializer.errors})
+        return results
 
 
 ### REFERENCE VENDOR USERS ###
 def create_vendor_users():
-    print("\n\n\n\n")
+    logger.info(" \n\n ----- CSV VENDOR CREATE initiated -----")
+    results = []
     print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_vendor_users.csv'))
     with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_vendor_users.csv')) as f:
         reader = csv.reader(f)
         for i, row in enumerate(reader):
             if (i >= 1 and row):
                 print(row)
-                user_data = {}
-                user_data['username'] = row[0]
-                user_data['phone'] = row[1]
-                user_data['email'] = row[2]
-                user_data['password'] = row[3]
-                vendor_details = {}
-                vendor_details['name'] = row[4]
-                vendor_details['masters'] = int(row[7])
-                vendor_details['doorService'] = row[6]
-                vendor_details['emergency'] = row[5]
+                try:
+                    user_data = {}
+                    user_data['username'] = row[0]
+                    user_data['phone'] = row[1]
+                    user_data['email'] = row[2]
+                    user_data['password'] = row[3]
+                    vendor_details = {}
+                    vendor_details['name'] = row[4]
+                    vendor_details['masters'] = int(row[7]) if row[7] else None
+                    vendor_details['doorService'] = row[6]
+                    vendor_details['emergency'] = row[5]
 
-                vendor_serializer = VendorSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': vendor_details})
-                if vendor_serializer.is_valid():
+                    vendor_serializer = VendorSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': vendor_details})
+                    logger.info(vendor_serializer.is_valid())    
+                    vendor_serializer.is_valid()
+                    logger.info("Before serializer save call")
+                    vendor_serializer.save()                    
                     vendor_serializer.save()
-                else:
-                    print("VENDOR Error", vendor_serializer.errors)
+                    logger.info({'vendorId':vendor_serializer.instance.id, 'status':'200 Ok'})
+                    print("SAVED VENDOR")
+                    results.append({'vendorId':vendor_serializer.instance.id})
+                except Exception as e:
+                    logger.error("Something wrong with VENDOR save")
+                    print("Already has the VENDOR", e)
+                    results.append({'error': "{}".format(e)})
+
+        return results
+
+               
  
