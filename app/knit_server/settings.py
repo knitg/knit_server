@@ -252,25 +252,25 @@ LOGGING = {
         'knit_server_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'app/logs/knit_server.log',
+            'filename': 'logs/knit_server.log',
             'formatter': 'file'
         },
         'knit_server_db_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'app/logs/knit_server_db.log',
+            'filename': 'logs/knit_server_db.log',
             'formatter': 'file'
         },
         'users_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'app/logs/users_server.log',
+            'filename': 'logs/users_server.log',
             'formatter': 'file'
         },
         'products_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'app/logs/products_server.log',
+            'filename': 'logs/products_server.log',
             'formatter': 'file'
         }
     },
