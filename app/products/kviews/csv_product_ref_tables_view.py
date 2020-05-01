@@ -36,16 +36,27 @@ class CSVUploadProductRefTblViewSet(viewsets.ModelViewSet):
         logger.info(" \n\n ----- CSV CATEGORY TYPE CREATE initiated -----")
         results = []
         try:
-            create_colors()
-            create_sizes()
-            create_materials()
+            results.append({"colors" : create_colors()})
+            results.append({"sizes" : create_sizes()})
+            results.append({"materials" : create_materials()})
+            
             if request.FILES.get("category"):
                 results.append({"categorys" : category_csv(request.FILES.get("category"))})
+            else:
+                results.append({"category" : "'category' file field - Please upload csv file for category references"})
             if request.FILES.get("subcategory"):
                 results.append({"sub-categorys" : sub_category_csv(request.FILES.get("subcategory"))})
-            
+            else:
+                results.append({"subcategory-error" : "'subcategory' file field - Please upload csv file for sub-category references"})
+        
+        except FileNotFoundError as e:
+            results.append({"file_error": "{}".format(e)})
+            print("File not found error ??", e)
+        
         except Exception as e:
-            print("something went wrong", e)
+            results.append({"errors": "{}".format(e)})
+            print("Other error ??", e)
+        return Response(results, status=status.HTTP_201_CREATED)
         
         # results = sub_category_csv(request.FILES)
         return Response(results, status=status.HTTP_201_CREATED)
@@ -82,53 +93,89 @@ class CSVUploadSubCategoryViewSet(viewsets.ModelViewSet):
 
 ### REFERENCE COLORS ###
 def create_colors():
-    with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_colors.csv')) as f:
-        reader = csv.reader(f)
-        for i, row in enumerate(reader):
-            if (i >= 1 and row):
-                color, created = ColorModel.objects.get_or_create(color=row[0])
-                if created:
-                    print("REFERENCE COLORS CREATED")
-                    color.save()
-                else:
-                    print("Color already there")
+    logger.info(" \n\n ----- CSV COLOR CREATE initiated -----")
+    results = []
+    try:
+        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_colors.csv')) as f:
+            reader = csv.reader(f)
+            for i, row in enumerate(reader):
+                if (i >= 1 and row):
+                    try:
+                        color, created = ColorModel.objects.get_or_create(color=row[0])
+                        if created:
+                            print("REFERENCE COLORS CREATED")
+                            color.save()
+                        results.append({'colorId':color.id})
+                    except Exception as e:
+                        print("\n COLOR ERROR ", e)
+                        results.append({'errors': e})
 
+    except TypeError as e:
+        logger.error("{}". format(e))
+        raise TypeError("Type error {}".format(e))
+        results.append({'errors': e})
+    
+    return results
 ### REFERENCE SIZES ###
 def create_sizes():
-    with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_sizes.csv')) as f:
-        reader = csv.reader(f)
-        for i, row in enumerate(reader):
-            if (i >= 1 and row):
-                size, created = SizeModel.objects.get_or_create(size=row[0])
-                if created:
-                    print("REFERENCE SIZE CREATED")
-                    size.save()
-                else:
-                    print("Color already there")
+    logger.info(" \n\n ----- CSV SIZE CREATE initiated -----")
+    results = []
+    try:
+        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_sizes.csv')) as f:
+            reader = csv.reader(f)
+            for i, row in enumerate(reader):
+                if (i >= 1 and row):
+                    try:
+                        size, created = SizeModel.objects.get_or_create(size=row[0])
+                        if created:
+                            print("REFERENCE SIZES CREATED")
+                            size.save()
+                        results.append({'sizeId':size.id})
+                    except Exception as e:
+                        print("\n SIZE ERROR ", e)
+                        results.append({'errors': e})
+                    
+    except TypeError as e:
+        logger.error("{}". format(e))
+        raise TypeError("Type error {}".format(e))
+        results.append({'errors': e})
+    
+    return results
 
 ### REFERENCE MATERIAL ###
 def create_materials(): 
-    with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_materials.csv')) as f:
-        reader = csv.reader(f)
-        for i, row in enumerate(reader):
-            if (i >= 1 and row):
-                material, created = MaterialModel.objects.get_or_create(
-                    material=row[0]
-                )
-                if created:
-                    print("REFERENCE MATERIALS CREATED")
-                    material.save()  
-                else:
-                    print("Color already there")
+    logger.info(" \n\n ----- CSV MATERIAL CREATE initiated -----")
+    results = []
+    try:
+        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_materials.csv')) as f:
+            reader = csv.reader(f)
+            for i, row in enumerate(reader):
+                if (i >= 1 and row):
+                    try:
+                        material, created = MaterialModel.objects.get_or_create(material=row[0])
+                        if created:
+                            print("REFERENCE MATERIALS CREATED")
+                            material.save()
+                        results.append({'materialId':material.id})
+                    except Exception as e:
+                        print("\n SIZE ERROR ", e)
+                        results.append({'errors': e})
+                    
+    except TypeError as e:
+        logger.error("{}". format(e))
+        raise TypeError("Type error {}".format(e))
+        results.append({'errors': e})
+    
+    return results
 
 
 #### CATEGORY CSV FILES ######
 def category_csv(file):
+    logger.info(" \n\n ----- CSV CATEGORY CREATE initiated -----")
     results = []
     errors = []
     try:
         # for csv_file in files:
-        logger.info(" \n\n ----- CSV CATEGORY CREATE initiated -----")
         decoded_file = file.read().decode('utf-8').splitlines()
         csv_reader = csv.DictReader(decoded_file)
         for i, row in enumerate(csv_reader):
@@ -170,8 +217,9 @@ def category_csv(file):
 
 #### CATEGORY TYPE CSV FILES ######
 def sub_category_csv(file):
+    logger.info(" \n\n ----- CSV SUB CATEGORY CREATE initiated -----")
+    results = []
     try:
-        results = []
         decoded_file = file.read().decode(errors='replace').splitlines()
         csv_reader = csv.DictReader(decoded_file)
         for i, row in enumerate(csv_reader):
