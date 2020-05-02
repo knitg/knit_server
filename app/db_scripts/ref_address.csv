@@ -1,5 +1,27 @@
 address_type,house_name,address_line1,address_line2,area_name,landmark,postalcode,latitude,longitude,geoaddress,city,state,country
-HOME,Sri Aditya Wiiz Lagoon,"Flat B 402, B Block","Crayons Road, adjacent to vertex Lakeview villas",Nizampet,Oppsite Crayons School,500090,,,,Hyderabad,Telangana,India
-HOME,Sri Aditya Wiiz Lagoon,"Flat C 105, C Block","Crayons Road, adjacent to vertex Lakeview villas",Nizampet,Oppsite Crayons School,500090,,,,Hyderabad,Telangana,India
-OFFICE,Dendukuri House,538/34 II block,"Jubilee hills, Road no 45",Jubilee hills,Near Telangana Bhavan,500082,,,,Hyderabad,Telangana,India
-OTHER,Blossom Vally,Flat 401,"BATA Line, Pochamma Gally",Pragati Nagar,beside Bata show room,500090,,,,Hyderabad,Telangana,India
+HOME,Sri Aditya Wiiz Lagoon,"Flat B 402, B Block","Crayons Road, adjacent to vertex Lakeview villas",Nizampet,Oppsite Crayons School,500090,17.5197,78.3779,,Hyderabad,Telangana,India
+HOME,Sri Aditya Wiiz Lagoon,"Flat C 105, C Block","Crayons Road, adjacent to vertex Lakeview villas",Nizampet,Oppsite Crayons School,500090,17.51941353,78.37865102,,Hyderabad,Telangana,India
+OFFICE,Dendukuri House,538/34 II block,"Jubilee hills, Road no 45",Jubilee hills,Near Telangana Bhavan,500082,17.4308362,78.4102882,,Hyderabad,Telangana,India
+OTHER,Blossom Vally,Flat 401,"BATA Line, Pochamma Gally",Pragati Nagar,beside Bata show room,500090,17.51363719,78.37976295,,Hyderabad,Telangana,India
+HOME,Tantra Boutiques,"3rd floor, wing A","Film nagar junction, road no 46",Jubilee hills,Near Australian Pitzaa,500082,17.43122517,78.4081478,,Hyderabad,Telangana,India
+OFFICE,Amanatra designs,"Ground floor,  543/2A","Jubilee hills, Road no 38",Jubilee hills,Near Telangana Bhavan,500082,17.43096927,78.4084643,,Hyderabad,Telangana,India
+OTHER,Pulla reddy home,"First Floor, 110","Usha mullapudy Rd, ward 122",Viveka Nanda Nagar,Usha Mullapudi Rd,500072,17.49209125,78.40652516,,Hyderabad,Telangana,India
+HOME,SVR House,Second Floor 221,"Sitaramaraju Rd, ward 185",Kukat pally,Usha Mullapudi Rd,500072,17.48216247,78.41620636,,Hyderabad,Telangana,India
+OFFICE,PNR Bhavan,538/34 II block,Ward 114 KPHB Colony,Kphb Colony,KPHB Metro,500071,17.49682915,78.3889745,,Hyderabad,Telangana,India
+OTHER,Pushpak,"5th floor, C 512",Ward 115 Balaji Nagar,Balaji Nagar,KPHB Road,500072,17.49266932,78.40041036,,Hyderabad,Telangana,India
+OTHER,balaji Towers,"8th floor, D 812",Ward 114 KPHB Colony,Kphb Colony,KPHB Metro,500072,17.49317662,78.38761816,,Hyderabad,Telangana,India
+OTHER,Tirumala Mansion,"Ground floor, G12",Ward 121 Kukatpally,Kukat Pally,Near JNTU College,500072,17.48237078,78.4113941,,Hyderabad,Telangana,India
+OTHER,Vallet High Towers,"9 th floor, 901","A block, Nizampet",Nizampet,Bata Show room,500071,17.51485228,78.38234738,,Hyderabad,Telangana,India
+OTHER,kamala Nilayam,"Vertex lake view villas, First Line",Ward 124 Hydernagar,Near Pochamma Temple,Beside Vertex Lakeview villas,500090,17.51283847,78.38408694,,Hyderabad,Telangana,India
+OTHER,Prasad Towers,"First Floor, A221","Ward123, Nizampet road",Nizampet,beside nizampet main road,500090,17.51376285,78.3837321,,Hyderabad,Telangana,India
+OTHER,Pushpak,"11th floor, C 512",Ward 114 KPHB Colony,Kphb Colony,KPHB Metro,500071,17.49317662,78.38761816,,Hyderabad,Telangana,India
+HOME,Ocean lakeview villas,"245/22A, II A ","Crayons Road, adjacent to vertex Lakeview villas",Nizampet,Oppsite Crayons School,500090,17.5397,78.3879,,Hyderabad,Telangana,India
+HOME,Sri Aditya Wiiz Lagoon,"Flat C 105, C Block","Crayons Road, adjacent to vertex Lakeview villas",Nizampet,Oppsite Crayons School,500090,17.52941353,78.36865102,,Hyderabad,Telangana,India
+OFFICE,Anbus Heights,531/32 II block,"Jubilee hills, Road no 45",Jubilee hills,Near Telangana Bhavan,500082,17.4408362,78.4202882,,Hyderabad,Telangana,India
+OTHER,Alekya Homes,245/23A aaa,"BATA Line, Pochamma Gally",Pragati Nagar,beside Bata show room,500090,17.53363719,78.37162952,,Hyderabad,Telangana,India
+HOME,Beauty Villas,"3rd floor, wing A","Film nagar junction, road no 46",Jubilee hills,Near Australian Pitzaa,500082,17.43122517,78.4081478,,Hyderabad,Telangana,India
+OFFICE,Amanatra designs,"Ground floor,  543/2A","Jubilee hills, Road no 38",Jubilee hills,Near Telangana Bhavan,500082,17.43096927,78.4084643,,Hyderabad,Telangana,India
+OTHER,Ranganath Nivas,"First Floor, 110","Usha mullapudy Rd, ward 122",Viveka Nanda Nagar,Usha Mullapudi Rd,500072,17.49909125,78.42652516,,Hyderabad,Telangana,India
+HOME,KL House,Second Floor 221,"Sitaramaraju Rd, ward 185",Kukat pally,Usha Mullapudi Rd,500072,17.41216247,78.42320636,,Hyderabad,Telangana,India
+OFFICE,PK Ground Heights,538/34 II block,Ward 114 KPHB Colony,Kphb Colony,KPHB Metro,500071,17.42682915,78.3189745,,Hyderabad,Telangana,India
+OTHER,Sri Pushpa Nivas,"5th floor, C 112",Ward 115 Balaji Nagar,Balaji Nagar,KPHB Road,500072,17.41266932,78.41041036,,Hyderabad,Telangana,India

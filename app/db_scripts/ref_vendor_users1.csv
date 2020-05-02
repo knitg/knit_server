@@ -1,8 +1,0 @@
-username,phone,email,password,name,emergency,doorService,masters,openTime,closeTime
-tailor_user,8529631472,tailor123@gmail.com,site,Awesome Tailors,1,,22,9:30:00,7:30:00
-boutique_user,8529631473,boutique123@gmail.com,site,Beauty Boutiques,1,,17,9:30:00,7:30:00
-fd_user,8529631476,fd_user@gmail.com,site,Fashion Techies ,1,,,9:30:00,7:30:00
-md_user,8529631477,md_user@gmail.com,site,Maggam Varietys,1,,,9:30:00,7:30:00
-master,8529631478,master123@gmail.com,site,Jayanth Sinha,1,,,9:30:00,7:30:00
-sales,8529631479,sales123@gmail.com,site,Praveen Mishra,1,,,9:30:00,7:30:00
-delivery,8529631480,delivery123@gmail.com,site,Prakash Kesineni,1,,,9:30:00,7:30:00
