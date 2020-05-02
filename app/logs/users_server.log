@@ -1,0 +1,25 @@
+ users.exceptions 2020-05-02 19:37:38,074 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-05-02 19:37:38,075 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-02 19:37:55,378 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-05-02 19:37:55,379 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-02 19:38:11,544 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-05-02 19:38:11,544 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-02 19:39:14,870 ERROR    {'detail': ErrorDetail(string='Authentication credentials were not provided.', code='not_authenticated'), 'status': 401}
+ users.exceptions 2020-05-02 19:39:14,871 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-02 19:50:18,754 ERROR    {'detail': ErrorDetail(string='Method "POST" not allowed.', code='method_not_allowed'), 'status': 405}
+ users.exceptions 2020-05-02 19:50:18,754 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.usertype_view 2020-05-02 19:50:38,349 INFO      
+
+ ----- USER TYPE UPDATE initiated -----
+ users.kviews.usertype_view 2020-05-02 19:52:25,965 INFO      
+
+ ----- USER TYPE UPDATE initiated -----
+ users.exceptions 2020-05-02 19:54:10,552 ERROR    {'detail': ErrorDetail(string='Method "PUT" not allowed.', code='method_not_allowed'), 'status': 405}
+ users.exceptions 2020-05-02 19:54:10,552 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.usertype_view 2020-05-02 19:54:15,933 INFO      
+
+ ----- USER TYPE CREATE initiated -----
+ users.kviews.usertype_view 2020-05-02 19:54:23,176 DEBUG    {'userTypeId': <UserType: Seller2, Seller description3>User type: Seller2, 'status': 200}
+ users.kviews.usertype_view 2020-05-02 19:54:23,177 DEBUG    User type saved successfully!!!
+ users.exceptions 2020-05-02 19:58:01,861 ERROR    {'detail': ErrorDetail(string='Method "POST" not allowed.', code='method_not_allowed'), 'status': 405}
+ users.exceptions 2020-05-02 19:58:01,861 ERROR     -- SOMETHING WRONG -- 

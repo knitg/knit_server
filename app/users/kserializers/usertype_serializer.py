@@ -4,7 +4,7 @@ from ..kmodels.usertype_model import UserType
 class UserTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserType
-        fields = ['id', 'user_type']
+        fields = ['id', 'user_type', 'description']
 
     def create(self, validated_data):       
         ## Role data 

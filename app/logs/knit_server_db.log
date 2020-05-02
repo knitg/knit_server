@@ -1,0 +1,101 @@
+ django.db.backends 2020-05-02 19:34:14,598 DEBUG    (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:34:14,611 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:34:14,624 DEBUG    (0.016) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:34:15,565 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:34:15,592 DEBUG    (0.031) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:34:15,614 DEBUG    (0.016) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:34:28,480 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:34:28,493 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:34:28,512 DEBUG    (0.015) SELECT COUNT(*) AS `__count` FROM `ref_user_types`; args=()
+ django.db.backends 2020-05-02 19:34:28,528 DEBUG    (0.016) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` LIMIT 10; args=()
+ django.db.backends 2020-05-02 19:34:55,508 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:34:55,525 DEBUG    (0.016) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` WHERE `ref_user_types`.`id` = 2 LIMIT 21; args=(2,)
+ django.db.backends 2020-05-02 19:35:05,058 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:35:05,072 DEBUG    (0.016) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` WHERE `ref_user_types`.`id` = 2 LIMIT 21; args=(2,)
+ django.db.backends 2020-05-02 19:35:07,333 DEBUG    (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:35:07,363 DEBUG    (0.031) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` WHERE `ref_user_types`.`id` = 2 LIMIT 21; args=(2,)
+ django.db.backends 2020-05-02 19:39:55,724 DEBUG    (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:39:55,738 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:39:55,752 DEBUG    (0.016) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:39:56,384 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:39:56,418 DEBUG    (0.032) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:39:56,448 DEBUG    (0.016) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:40:29,696 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:40:29,710 DEBUG    (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:40:29,727 DEBUG    (0.031) INSERT INTO `ref_user_types` (`created_at`, `updated_at`, `created_by`, `updated_by`, `user_type`, `description`) VALUES ('2020-05-02 14:10:29.710050', '2020-05-02 14:10:29.710050', NULL, NULL, NULL, NULL); args=['2020-05-02 14:10:29.710050', '2020-05-02 14:10:29.710050', None, None, None, None]
+ django.db.backends 2020-05-02 19:41:18,234 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:41:18,246 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:41:18,259 DEBUG    (0.015) SELECT COUNT(*) AS `__count` FROM `ref_user_types`; args=()
+ django.db.backends 2020-05-02 19:41:18,275 DEBUG    (0.016) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` LIMIT 10; args=()
+ django.db.backends 2020-05-02 19:44:09,676 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:44:09,690 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:44:09,703 DEBUG    (0.016) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:44:10,290 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:44:10,316 DEBUG    (0.015) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:44:10,340 DEBUG    (0.015) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:47:51,451 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:47:51,465 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:47:51,478 DEBUG    (0.016) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:47:52,066 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:47:52,081 DEBUG    (0.016) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:47:52,103 DEBUG    (0.016) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:47:58,886 DEBUG    (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:47:58,899 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:47:58,913 DEBUG    (0.000) SELECT COUNT(*) AS `__count` FROM `ref_user_types`; args=()
+ django.db.backends 2020-05-02 19:47:58,934 DEBUG    (0.015) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` LIMIT 10; args=()
+ django.db.backends 2020-05-02 19:49:47,002 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:49:47,016 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:49:47,029 DEBUG    (0.016) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:49:47,910 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:49:47,925 DEBUG    (0.016) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:49:47,944 DEBUG    (0.015) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:50:50,002 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:50:50,016 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:50:50,038 DEBUG    (0.016) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` LIMIT 21; args=()
+ django.db.backends 2020-05-02 19:51:59,763 DEBUG    (0.015) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` WHERE `ref_user_types`.`id` = 8 LIMIT 21; args=(8,)
+ django.db.backends 2020-05-02 19:51:59,785 DEBUG    (0.016) UPDATE `ref_user_types` SET `created_at` = '2020-05-02 14:10:29.710050', `updated_at` = '2020-05-02 14:21:59.767642', `created_by` = NULL, `updated_by` = NULL, `user_type` = NULL, `description` = 'Seller description' WHERE `ref_user_types`.`id` = 8; args=('2020-05-02 14:10:29.710050', '2020-05-02 14:21:59.767642', 'Seller description', 8)
+ django.db.backends 2020-05-02 19:52:12,353 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:52:12,368 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:52:12,498 DEBUG    (0.125) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:52:13,587 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:52:13,603 DEBUG    (0.016) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:52:13,622 DEBUG    (0.016) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:52:26,775 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:52:26,787 DEBUG    (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:52:26,800 DEBUG    (0.016) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` WHERE `ref_user_types`.`id` = 8 LIMIT 21; args=(8,)
+ django.db.backends 2020-05-02 19:52:39,484 DEBUG    (0.016) UPDATE `ref_user_types` SET `created_at` = '2020-05-02 14:10:29.710050', `updated_at` = '2020-05-02 14:22:39.463980', `created_by` = NULL, `updated_by` = NULL, `user_type` = 'Seller', `description` = 'Seller description' WHERE `ref_user_types`.`id` = 8; args=('2020-05-02 14:10:29.710050', '2020-05-02 14:22:39.463980', 'Seller', 'Seller description', 8)
+ django.db.backends 2020-05-02 19:53:26,101 DEBUG    (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:53:26,115 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:53:26,129 DEBUG    (0.016) SELECT VERSION(); args=None
+ django.db.backends 2020-05-02 19:53:27,037 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:53:27,052 DEBUG    (0.016) SHOW FULL TABLES; args=None
+ django.db.backends 2020-05-02 19:53:27,070 DEBUG    (0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ django.db.backends 2020-05-02 19:54:21,990 DEBUG    (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:54:22,004 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:54:22,024 DEBUG    (0.031) INSERT INTO `ref_user_types` (`created_at`, `updated_at`, `created_by`, `updated_by`, `user_type`, `description`) VALUES ('2020-05-02 14:24:22.004210', '2020-05-02 14:24:22.005162', NULL, NULL, 'Seller2', 'Seller description3'); args=['2020-05-02 14:24:22.004210', '2020-05-02 14:24:22.005162', None, None, 'Seller2', 'Seller description3']
+ django.db.backends 2020-05-02 19:54:32,044 DEBUG    (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+ django.db.backends 2020-05-02 19:54:32,060 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:54:32,075 DEBUG    (0.016) SELECT COUNT(*) AS `__count` FROM `ref_user_types`; args=()
+ django.db.backends 2020-05-02 19:54:32,095 DEBUG    (0.015) SELECT `ref_user_types`.`id`, `ref_user_types`.`created_at`, `ref_user_types`.`updated_at`, `ref_user_types`.`created_by`, `ref_user_types`.`updated_by`, `ref_user_types`.`user_type`, `ref_user_types`.`description` FROM `ref_user_types` LIMIT 10; args=()
+ django.db.backends 2020-05-02 19:54:54,053 DEBUG    (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:54:54,067 DEBUG    (0.015) SELECT COUNT(*) AS `__count` FROM `ref_colors`; args=()
+ django.db.backends 2020-05-02 19:54:54,081 DEBUG    (0.016) SELECT `ref_colors`.`id`, `ref_colors`.`color`, `ref_colors`.`code` FROM `ref_colors` LIMIT 10; args=()
+ django.db.backends 2020-05-02 19:56:41,650 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:56:41,667 DEBUG    (0.016) INSERT INTO `ref_colors` (`color`, `code`) VALUES ('Dark Brown', 'DARK-BROWN'); args=['Dark Brown', 'DARK-BROWN']
+ django.db.backends 2020-05-02 19:58:06,733 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:58:06,748 DEBUG    (0.016) SELECT `ref_colors`.`id`, `ref_colors`.`color`, `ref_colors`.`code` FROM `ref_colors` WHERE `ref_colors`.`id` = 14 LIMIT 21; args=(14,)
+ django.db.backends 2020-05-02 19:58:06,771 DEBUG    (0.015) UPDATE `ref_colors` SET `color` = 'DarkK Brown', `code` = 'DARKK-BROWN' WHERE `ref_colors`.`id` = 14; args=('DarkK Brown', 'DARKK-BROWN', 14)
+ django.db.backends 2020-05-02 19:58:10,394 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:58:10,407 DEBUG    (0.016) SELECT COUNT(*) AS `__count` FROM `ref_colors`; args=()
+ django.db.backends 2020-05-02 19:58:10,421 DEBUG    (0.016) SELECT `ref_colors`.`id`, `ref_colors`.`color`, `ref_colors`.`code` FROM `ref_colors` LIMIT 10; args=()
+ django.db.backends 2020-05-02 19:58:18,212 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:58:18,225 DEBUG    (0.000) SELECT COUNT(*) AS `__count` FROM `ref_colors`; args=()
+ django.db.backends 2020-05-02 19:58:18,239 DEBUG    (0.016) SELECT `ref_colors`.`id`, `ref_colors`.`color`, `ref_colors`.`code` FROM `ref_colors` LIMIT 10 OFFSET 10; args=()
+ django.db.backends 2020-05-02 19:58:28,570 DEBUG    (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:58:28,584 DEBUG    (0.016) SELECT `ref_colors`.`id`, `ref_colors`.`color`, `ref_colors`.`code` FROM `ref_colors` WHERE `ref_colors`.`id` = 14 LIMIT 21; args=(14,)
+ django.db.backends 2020-05-02 19:58:28,605 DEBUG    (0.016) UPDATE `ref_colors` SET `color` = 'Dark Brown', `code` = 'DARK-BROWN' WHERE `ref_colors`.`id` = 14; args=('Dark Brown', 'DARK-BROWN', 14)
+ django.db.backends 2020-05-02 19:58:32,205 DEBUG    (0.016) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:58:32,217 DEBUG    (0.015) SELECT COUNT(*) AS `__count` FROM `ref_colors`; args=()
+ django.db.backends 2020-05-02 19:58:32,231 DEBUG    (0.016) SELECT `ref_colors`.`id`, `ref_colors`.`color`, `ref_colors`.`code` FROM `ref_colors` LIMIT 10 OFFSET 10; args=()
+ django.db.backends 2020-05-02 19:58:46,513 DEBUG    (0.015) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ django.db.backends 2020-05-02 19:58:46,526 DEBUG    (0.016) SELECT COUNT(*) AS `__count` FROM `ref_sizes`; args=()

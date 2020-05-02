@@ -1,0 +1,14 @@
+ django.request 2020-05-01 19:26:21,536 WARNING  Not Found: /
+ django.request 2020-05-01 19:26:21,647 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-02 19:34:26,592 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-02 19:37:38,075 WARNING  Unauthorized: /user/user-types/1
+ django.request 2020-05-02 19:37:55,379 WARNING  Unauthorized: /user/user-types/2
+ django.request 2020-05-02 19:38:11,545 WARNING  Unauthorized: /user/user-types/2
+ django.request 2020-05-02 19:39:14,871 WARNING  Unauthorized: /user/user-types
+ django.request 2020-05-02 19:50:18,755 WARNING  Method Not Allowed: /user/user-types/8
+ django.request 2020-05-02 19:54:10,553 WARNING  Method Not Allowed: /user/user-types
+ django.request 2020-05-02 19:54:42,798 WARNING  Not Found: /user/colors
+ django.request 2020-05-02 19:54:45,779 WARNING  Not Found: /user/color
+ django.request 2020-05-02 19:54:50,473 WARNING  Not Found: /product/color
+ django.request 2020-05-02 19:58:01,861 WARNING  Method Not Allowed: /product/colors/14
+ django.request 2020-05-02 19:58:42,611 WARNING  Not Found: /product/size
