@@ -12,3 +12,174 @@
  django.request 2020-05-02 19:54:50,473 WARNING  Not Found: /product/color
  django.request 2020-05-02 19:58:01,861 WARNING  Method Not Allowed: /product/colors/14
  django.request 2020-05-02 19:58:42,611 WARNING  Not Found: /product/size
+ django.request 2020-05-03 11:41:59,755 WARNING  Not Found: /user/vndors
+ django.request 2020-05-03 11:41:59,888 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-04 22:57:36,066 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-04 23:24:48,223 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 38, in create
+    relations['category'] = request.data.pop("category")
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 506, in pop
+    self._assert_mutable()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 464, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ django.request 2020-05-04 23:26:10,417 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 40, in create
+    relations['category'] = request.data.pop("category")
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 506, in pop
+    self._assert_mutable()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\http\request.py", line 464, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ django.request 2020-05-04 23:26:53,670 WARNING  Bad Request: /product/maggam-catalogs
+ django.request 2020-05-04 23:32:45,506 WARNING  Bad Request: /product/maggam-catalogs
+ django.request 2020-05-04 23:38:24,452 WARNING  Bad Request: /product/maggam-catalogs
+ django.request 2020-05-04 23:40:28,371 WARNING  Bad Request: /product/maggam-catalogs
+ django.request 2020-05-04 23:45:32,186 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 559, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 417, in get
+    self.model._meta.object_name
+products.kmodels.maggam_catalog_model.MaggamCatalog.DoesNotExist: MaggamCatalog matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 46, in create
+    if maggam_catalog_serializer.is_valid():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\maggam_catalog_serializer.py", line 51, in create
+    maggam_catalog, created = MaggamCatalog.objects.get_or_create(**validated_data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 562, in get_or_create
+    return self._create_object_from_params(kwargs, params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 596, in _create_object_from_params
+    obj = self.create(**params)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\MISC\GITHUB\knit_server//app\products\kmodels\maggam_catalog_model.py", line 27, in save
+    super(MaggamCatalog).save(*args, **kwargs)
+AttributeError: 'super' object has no attribute 'save'
+ django.request 2020-05-04 23:47:25,021 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 46, in create
+    if maggam_catalog_serializer.is_valid():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\maggam_catalog_serializer.py", line 59, in create
+    if category_str:
+NameError: name 'category_str' is not defined
+ django.request 2020-05-04 23:49:06,268 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 46, in create
+    if maggam_catalog_serializer.is_valid():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\maggam_catalog_serializer.py", line 66, in create
+    maggam_catalog.category.set(catalog)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1008, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 946, in add
+    through_defaults=through_defaults,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1119, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1063, in _get_target_ids
+    (self.model._meta.object_name, obj)
+TypeError: 'Category' instance expected, got <MaggamCatalog: Buttons>
+ django.request 2020-05-04 23:54:09,861 WARNING  Bad Request: /product/maggam-catalogs
+ django.request 2020-05-04 23:57:52,975 WARNING  Not Found: /product/csv-ref-tables

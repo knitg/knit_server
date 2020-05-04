@@ -21,9 +21,9 @@ router.register(r'address', AddressViewSet)
 router.register(r'user-types', UserTypeViewSet)
 router.register(r'upload', ImageViewSet)
 router.register(r'users', UserViewSet)
-router.register(r'profiles', ProfileListViewSet)
-router.register(r'vendors', VendorUserViewSet)
-router.register(r'csv-vendors', UploadVendorSpreadSheetViewSet)
+router.register(r'profiles', ProfileListViewSet, )
+router.register(r'vendors', VendorUserViewSet, basename="vendors")
+router.register(r'csv-vendors', UploadVendorSpreadSheetViewSet, basename="csv_vendors")
 router.register(r'csv-user-ref-tables', CSVUploadUserRefTblViewSet, basename="csv-user-ref-tables")
 
 urlpatterns = [ 

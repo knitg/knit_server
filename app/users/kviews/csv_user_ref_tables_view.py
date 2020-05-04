@@ -71,46 +71,6 @@ def create_user_types():
     
     return results
                 
-
-
-### Users load from CSV ###
-def create_users():
-    logger.info(" \n\n ----- CSV USER CREATE initiated -----")
-    results = []
-    try:
-        print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_users.csv'))
-        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_users.csv')) as f:
-            reader = csv.reader(f)
-            users = []
-            profile = []
-            for i, row in enumerate(reader):
-                print(row)
-                if (i >= 1 and row):
-                    admin = False
-                    if row[4]:
-                        admin = True if (row[4] and row[4] == '1') else False 
-                    #======================== CREATE USER ========================#
-                    user_data = {}
-                    user_data['phone'] = row[1]
-                    user_data['email'] = row[2]
-                    user_data['password'] = row[3]
-                    user_data['username'] = row[0]
-                    user_data['is_admin'] = admin
-
-                    user_serializer = UserSerializer(data= {'user': user_data, 'profile': {}, 'data':user_data})
-                    try:
-                        user_serializer.is_valid()
-                        user_serializer.save()
-                        results.append({'userId':user_serializer.instance.id})
-                    except Exception:
-                        print("\n USER ERROR ", user_serializer.errors)
-                        results.append({'errors':user_serializer.errors})
-    except Exception as e:
-        logger.error("{}". format(e))
-        results.append({'errors': e})
-    
-    return results
-
 ### ADDRESS load from CSV ###
 def create_address():
     logger.info(" \n\n ----- CSV Address CREATE initiated -----")
@@ -171,28 +131,71 @@ def create_address():
     return results
 
 
+
+### Users load from CSV ###
+def create_users():
+    logger.info(" \n\n ----- CSV USER CREATE initiated -----")
+    results = []
+    try:
+        print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_users.csv'))
+        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_users.csv')) as f:
+            reader = csv.reader(f)
+            users = []
+            profile = []
+            for i, row in enumerate(reader):
+                print(row)
+                if (i >= 1 and row):
+                    admin = False
+                    if row[4]:
+                        admin = True if (row[4] and row[4] == '1') else False 
+                    #======================== CREATE USER ========================#
+                    user_data = {}
+                    user_data['phone'] = row[1]
+                    user_data['email'] = row[2]
+                    user_data['password'] = row[3]
+                    user_data['username'] = row[0]
+                    user_data['is_admin'] = admin
+
+                    user_serializer = UserSerializer(data= {'user': user_data, 'profile': {}, 'data':user_data})
+                    try:
+                        user_serializer.is_valid()
+                        user_serializer.save()
+                        results.append({'userId':user_serializer.instance.id})
+                    except Exception:
+                        print("\n USER ERROR ", user_serializer.errors)
+                        results.append({'errors':user_serializer.errors})
+    except Exception as e:
+        logger.error("{}". format(e))
+        results.append({'errors': e})
+    
+    return results
+
 ### REFERENCE VENDOR USERS ###
 def create_vendor_users():
     logger.info(" \n\n ----- CSV VENDOR CREATE initiated -----")
     results = []
     try:
-        print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_vendor_users.csv'))
-        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_vendor_users.csv')) as f:
+        print(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_vendor_users_each30.csv'))
+        with open(os.path.join(settings.BASE_DIR, 'db_scripts', 'ref_vendor_users_each30.csv')) as f:
             reader = csv.reader(f)
             for i, row in enumerate(reader):
                 if (i >= 1 and row):
                     print(row)
                     try:
                         user_data = {}
-                        user_data['username'] = row[0]
-                        user_data['phone'] = row[1]
-                        user_data['email'] = row[2]
-                        user_data['password'] = row[3]
+                        user_data['profile'] = {}
+
+                        user_data['username'] = row[0] if row[0] else None
+                        user_data['phone'] = row[1] if row[1] else None
+                        user_data['email'] = row[2] if row[2] else None
+                        user_data['password'] = row[3] if row[3] else None
+                        user_data['profile']['address'] = row[8] if row[8] else None
+
                         vendor_details = {}
-                        vendor_details['name'] = row[4]
+                        vendor_details['name'] = row[4] if row[4] else None
+                        vendor_details['emergency'] = row[5] if row[7] else None
+                        vendor_details['doorService'] = row[6] if row[6] else None
                         vendor_details['masters'] = int(row[7]) if row[7] else None
-                        vendor_details['doorService'] = row[6]
-                        vendor_details['emergency'] = row[5]
 
                         vendor_serializer = VendorSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': vendor_details})
                         logger.info(vendor_serializer.is_valid())    

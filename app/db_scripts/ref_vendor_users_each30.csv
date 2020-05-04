@@ -1,0 +1,120 @@
+username,phone,email,password,name,emergency,doorService,masters,address
+tailor1,9784512144,tailor123@gmail.com,site,Beauty Tailors,1,,22,1
+tailor2,9784512145,tailor2@gmail.com,site,PV Tailors,1,,23,2
+tailor3,9784512146,tailor3@gmail.com,site,Awesome Tailors,1,,24,3
+tailor4,9784512147,tailor4@gmail.com,site,F and F Matching,1,,25,4
+tailor5,9784512148,tailor5@gmail.com,site,Stitch Tailoring,1,,26,5
+tailor6,9784512149,tailor6@gmail.com,site,Fair Matches,1,,27,6
+tailor7,9784512121,tailor7@gmail.com,site,AK Tailors,1,,28,7
+tailor8,9784512122,tailor8@gmail.com,site,Mango Boutiqes,1,,29,8
+tailor9,9784512123,tailor9@gmail.com,site,Passion Matching,1,,30,9
+tailor10,9784512124,tailor10@gmail.com,site,Unique Tailoring,1,,31,10
+tailor11,9784512125,tailor11@gmail.com,site,Sudha Tailoring,1,,32,11
+tailor12,9784512126,tailor12@gmail.com,site,J and J stitches,1,,33,12
+tailor13,9784512127,tailor13@gmail.com,site,Sunny Tailors,1,,34,13
+tailor14,9784512128,tailor14@gmail.com,site,Cuty cuts,1,,35,14
+tailor15,9784512129,tailor15@gmail.com,site,Baby Boutique,1,,36,15
+tailor16,9784512130,tailor16@gmail.com,site,Sneha Boutique,1,,37,16
+tailor17,9784512131,tailor17@gmail.com,site,Purple Boutique,1,,38,17
+tailor18,9784512132,tailor18@gmail.com,site,Red Tailors,1,,39,18
+tailor19,9784512133,tailor19@gmail.com,site,Grape Tailors,1,,40,19
+tailor20,9784512134,tailor20@gmail.com,site,Orange Boutique,1,,41,20
+tailor21,9784512135,tailor21@gmail.com,site,Perfect Tailors,1,,42,21
+tailor22,9784512136,tailor22@gmail.com,site,Perfume Boutiques,1,,43,22
+tailor23,9784512137,tailor23@gmail.com,site,Packer Stitches,1,,44,23
+tailor24,9784512138,tailor24@gmail.com,site,Hello Tailors,1,,45,24
+tailor25,9784512139,tailor25@gmail.com,site,Bonus Boutique,1,,46,25
+tailor26,9784512140,tailor26@gmail.com,site,Kutty Fashion World,1,,47,26
+tailor27,9784512141,tailor27@gmail.com,site,Dolly Tailors,1,,48,27
+tailor28,9784512142,tailor28@gmail.com,site,Minnu Magic Tailors,1,,49,28
+tailor29,9784512143,tailor29@gmail.com,site,Heaven Boutique,1,,50,29
+,,,,,,,,
+boutique1,9784512310,boutique123@gmail.com,site,Beauty boutiques,1,1,23,1
+boutique2,9784512311,boutique2@gmail.com,site,PV boutiques,1,1,24,2
+boutique3,9784512312,boutique3@gmail.com,site,Awesome boutiques,1,1,25,3
+boutique4,9784512313,boutique4@gmail.com,site,F and F Matching,1,0,26,4
+boutique5,9784512314,boutique5@gmail.com,site,Stitch boutiqueing,1,1,27,5
+boutique6,9784512315,boutique6@gmail.com,site,Fair Matches,1,0,28,6
+boutique7,9784512316,boutique7@gmail.com,site,AK boutiques,1,1,29,7
+boutique8,9784512317,boutique8@gmail.com,site,Mango Boutiqes,1,1,30,8
+boutique9,9784512318,boutique9@gmail.com,site,Passion Matching,1,0,31,9
+boutique10,9784512319,boutique10@gmail.com,site,Unique boutiqueing,1,1,32,10
+boutique11,9784512320,boutique11@gmail.com,site,Sudha boutiqueing,1,0,33,11
+boutique12,9784512321,boutique12@gmail.com,site,J and J stitches,1,1,34,12
+boutique13,9784512322,boutique13@gmail.com,site,Sunny boutiques,1,1,35,13
+boutique14,9784512323,boutique14@gmail.com,site,Cuty cuts,1,0,36,14
+boutique15,9784512324,boutique15@gmail.com,site,Baby Boutique,1,0,37,15
+boutique16,9784512325,boutique16@gmail.com,site,Sneha Boutique,1,0,38,16
+boutique17,9784512326,boutique17@gmail.com,site,Purple Boutique,1,0,39,17
+boutique18,9784512327,boutique18@gmail.com,site,Red boutiques,1,0,40,18
+boutique19,9784512328,boutique19@gmail.com,site,Grape boutiques,1,0,41,19
+boutique20,9784512329,boutique20@gmail.com,site,Orange Boutique,1,0,42,20
+boutique21,9784512330,boutique21@gmail.com,site,Perfect boutiques,1,1,43,21
+boutique22,9784512331,boutique22@gmail.com,site,Perfume Boutiques,1,1,44,22
+boutique23,9784512332,boutique23@gmail.com,site,Packer Stitches,1,0,45,23
+boutique24,9784512333,boutique24@gmail.com,site,Hello boutiques,1,1,46,24
+boutique25,9784512334,boutique25@gmail.com,site,Bonus Boutique,1,0,47,25
+boutique26,9784512335,boutique26@gmail.com,site,Kutty Fashion World,1,0,48,26
+boutique27,9784512336,boutique27@gmail.com,site,Dolly boutiques,1,0,49,27
+boutique28,9784512337,boutique28@gmail.com,site,Minnu Magic boutiques,1,0,50,28
+boutique29,9784512338,boutique29@gmail.com,site,Heaven Boutique,1,0,51,29
+,,,,,,,,
+fashion1,9784512410,fashion123@gmail.com,site,Beauty fashions,1,1,,1
+fashion2,9784512411,fashion2@gmail.com,site,PV fashions,1,1,,2
+fashion3,9784512412,fashion3@gmail.com,site,Awesome fashions,1,1,,3
+fashion4,9784512413,fashion4@gmail.com,site,F and F Matching,1,0,,4
+fashion5,9784512414,fashion5@gmail.com,site,Stitch fashioning,1,1,,5
+fashion6,9784512415,fashion6@gmail.com,site,Fair Matches,1,0,,6
+fashion7,9784512416,fashion7@gmail.com,site,AK fashions,1,1,,7
+fashion8,9784512417,fashion8@gmail.com,site,Mango Boutiqes,1,1,,8
+fashion9,9784512418,fashion9@gmail.com,site,Passion Matching,1,0,,9
+fashion10,9784512419,fashion10@gmail.com,site,Unique fashioning,1,1,,10
+fashion11,9784512420,fashion11@gmail.com,site,Sudha fashioning,1,0,,11
+fashion12,9784512421,fashion12@gmail.com,site,J and J stitches,1,1,,12
+fashion13,9784512422,fashion13@gmail.com,site,Sunny fashions,1,1,,13
+fashion14,9784512423,fashion14@gmail.com,site,Cuty cuts,1,0,,14
+fashion15,9784512424,fashion15@gmail.com,site,Baby fashion,1,0,,15
+fashion16,9784512425,fashion16@gmail.com,site,Sneha fashion,1,0,,16
+fashion17,9784512426,fashion17@gmail.com,site,Purple fashion,1,0,,17
+fashion18,9784512427,fashion18@gmail.com,site,Red fashions,1,0,,18
+fashion19,9784512428,fashion19@gmail.com,site,Grape fashions,1,0,,19
+fashion20,9784512429,fashion20@gmail.com,site,Orange fashion,1,0,,20
+fashion21,9784512430,fashion21@gmail.com,site,Perfect fashions,1,1,,21
+fashion22,9784512431,fashion22@gmail.com,site,Perfume fashions,1,1,,22
+fashion23,9784512432,fashion23@gmail.com,site,Packer Stitches,1,0,,23
+fashion24,9784512433,fashion24@gmail.com,site,Hello fashions,1,1,,24
+fashion25,9784512434,fashion25@gmail.com,site,Bonus fashion,1,0,,25
+fashion26,9784512435,fashion26@gmail.com,site,Kutty Fashion World,1,0,,26
+fashion27,9784512436,fashion27@gmail.com,site,Dolly fashions,1,0,,27
+fashion28,9784512437,fashion28@gmail.com,site,Minnu Magic fashions,1,0,,28
+fashion29,9784512438,fashion29@gmail.com,site,Heaven fashion,1,0,,29
+,,,,,,,,
+maggam1,9784512510,maggam123@gmail.com,site,Beauty maggams,1,1,12,1
+maggam2,9784512511,maggam2@gmail.com,site,PV maggams,1,1,13,2
+maggam3,9784512512,maggam3@gmail.com,site,Awesome maggams,1,1,14,3
+maggam4,9784512513,maggam4@gmail.com,site,F and F Matching,1,0,15,4
+maggam5,9784512514,maggam5@gmail.com,site,Stitch maggaming,1,1,16,5
+maggam6,9784512515,maggam6@gmail.com,site,Fair Matches,1,0,17,6
+maggam7,9784512516,maggam7@gmail.com,site,AK maggams,1,1,18,7
+maggam8,9784512517,maggam8@gmail.com,site,Mango Boutiqes,1,1,19,8
+maggam9,9784512518,maggam9@gmail.com,site,Passion Matching,1,0,20,9
+maggam10,9784512519,maggam10@gmail.com,site,Unique maggaming,1,1,21,10
+maggam11,9784512520,maggam11@gmail.com,site,Sudha maggaming,1,0,22,11
+maggam12,9784512521,maggam12@gmail.com,site,J and J stitches,1,1,23,12
+maggam13,9784512522,maggam13@gmail.com,site,Sunny maggams,1,1,24,13
+maggam14,9784512523,maggam14@gmail.com,site,Cuty cuts,1,0,25,14
+maggam15,9784512524,maggam15@gmail.com,site,Baby maggam,1,0,26,15
+maggam16,9784512525,maggam16@gmail.com,site,Sneha maggam,1,0,27,16
+maggam17,9784512526,maggam17@gmail.com,site,Purple maggam,1,0,28,17
+maggam18,9784512527,maggam18@gmail.com,site,Red maggams,1,0,29,18
+maggam19,9784512528,maggam19@gmail.com,site,Grape maggams,1,0,30,19
+maggam20,9784512529,maggam20@gmail.com,site,Orange maggam,1,0,31,20
+maggam21,9784512530,maggam21@gmail.com,site,Perfect maggams,1,1,32,21
+maggam22,9784512531,maggam22@gmail.com,site,Perfume maggams,1,1,33,22
+maggam23,9784512532,maggam23@gmail.com,site,Packer Stitches,1,0,34,23
+maggam24,9784512533,maggam24@gmail.com,site,Hello maggams,1,1,35,24
+maggam25,9784512534,maggam25@gmail.com,site,Bonus maggam,1,0,36,25
+maggam26,9784512535,maggam26@gmail.com,site,Kutty maggam World,1,0,37,26
+maggam27,9784512536,maggam27@gmail.com,site,Dolly maggams,1,0,38,27
+maggam28,9784512537,maggam28@gmail.com,site,Minnu Magic maggams,1,0,39,28
+maggam29,9784512538,maggam29@gmail.com,site,Heaven maggam,1,0,40,29

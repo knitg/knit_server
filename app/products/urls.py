@@ -12,6 +12,9 @@ from .kviews.productview import ProductViewSet, ProductListViewSet
 from .kviews.colors_view import ColorsViewSet
 from .kviews.material_view import MaterialViewSet
 from .kviews.sizes_view import SizesViewSet
+from .kviews.maggam_catalog_view import MaggamCatalogViewSet
+from .kviews.fashion_catalog_view import FashionCatalogViewSet
+
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'upload', ImageViewSet)
@@ -19,6 +22,8 @@ router.register(r'csv-categorys', CSVUploadCategoryViewSet, basename="csv-catego
 router.register(r'csv-sub-categorys', CSVUploadSubCategoryViewSet, basename="csv-sub-categorys")
 router.register(r'csv-product-ref-tables', CSVUploadProductRefTblViewSet, basename="csv-product-ref-tables")
 router.register(r'categorys', CategoryViewSet, basename="categorys")
+router.register(r'maggam-catalogs', MaggamCatalogViewSet, basename="maggam-catalogs")
+router.register(r'fashion-catalogs', FashionCatalogViewSet, basename="fashion-catalogs") 
 router.register(r'sub-categorys', SubCategoryViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'product-list', ProductListViewSet)

@@ -23,3 +23,961 @@
  users.kviews.usertype_view 2020-05-02 19:54:23,177 DEBUG    User type saved successfully!!!
  users.exceptions 2020-05-02 19:58:01,861 ERROR    {'detail': ErrorDetail(string='Method "POST" not allowed.', code='method_not_allowed'), 'status': 405}
  users.exceptions 2020-05-02 19:58:01,861 ERROR     -- SOMETHING WRONG -- 
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:11,462 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:11,462 INFO      
+
+ ----- CSV USER TYPE CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:12,125 INFO      
+
+ ----- CSV Address CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:12,947 INFO      
+
+ ----- CSV USER CREATE initiated -----
+ users.kserializers.user_serializer 2020-05-03 11:41:12,964 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:13,063 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:13,108 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:13,207 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:13,252 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:13,352 INFO     Profile created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,383 INFO      
+
+ ----- CSV VENDOR CREATE initiated -----
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,385 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,385 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:13,386 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:13,426 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:13,521 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:13,543 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:13,560 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,605 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,607 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,608 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:13,608 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:13,648 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:13,741 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:13,756 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:13,771 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,817 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,822 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:13,822 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:13,822 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:13,864 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:13,958 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:13,973 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:13,988 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,033 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,035 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,035 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,036 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:14,077 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:14,174 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:14,190 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,204 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,249 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,252 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,252 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,252 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:14,292 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:14,388 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:14,403 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,418 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,463 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,468 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,468 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,468 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:14,511 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:14,608 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:14,623 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,638 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,685 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,690 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,690 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,690 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:14,731 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:14,828 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:14,843 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,858 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,904 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,907 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:14,907 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:14,907 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:14,946 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:15,043 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:15,058 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,073 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,117 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,120 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,120 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,121 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:15,161 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:15,256 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:15,271 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,286 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,331 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,335 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,335 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,335 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:15,380 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:15,479 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:15,494 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,510 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,558 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,564 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:15,565 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,565 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:15,606 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:15,919 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:15,938 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:15,956 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,008 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,011 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,011 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,011 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:16,054 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:16,148 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:16,164 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,178 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,223 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,226 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,226 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,226 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:16,266 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:16,360 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:16,375 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,390 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,435 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,442 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,442 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,442 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:16,488 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:16,581 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:16,596 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,611 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,655 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,659 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,659 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,659 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:16,699 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:16,794 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:16,808 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,823 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,868 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,873 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:16,873 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:16,874 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:16,915 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:17,010 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:17,025 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,040 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,085 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,090 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,090 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,090 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:17,139 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:17,233 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:17,248 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,263 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,309 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,320 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,320 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,321 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:17,369 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:17,468 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:17,482 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,497 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,542 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,544 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,544 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,545 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:17,585 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:17,680 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:17,695 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,711 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,759 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,764 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,764 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,765 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:17,808 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:17,905 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:17,921 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,937 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,983 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,988 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:17,988 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:17,988 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:18,031 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:18,129 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:18,144 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,159 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,204 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,211 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,211 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,211 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:18,259 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:18,363 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:18,379 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,396 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,446 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,448 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,448 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,448 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:18,491 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:18,593 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:18,609 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,625 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,675 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,686 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,686 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,686 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:18,730 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:18,834 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:18,850 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,866 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,912 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,915 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:18,916 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:18,916 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:18,961 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:19,068 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:19,083 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,099 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,144 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,272 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,272 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,272 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:19,320 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:19,432 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:19,451 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,470 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,515 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,517 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,517 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,518 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:19,558 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:19,656 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:19,671 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,686 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,731 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,734 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,734 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,734 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:19,777 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:19,879 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:19,894 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,910 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,957 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,962 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:19,962 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:19,963 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:20,004 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:20,100 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:20,116 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,130 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,175 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,178 INFO     False
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,179 INFO     Before serializer save call
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,179 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,181 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,181 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,182 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:20,225 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:20,324 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:20,340 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,356 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,404 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,408 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,408 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,408 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:20,452 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:20,549 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:20,564 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,579 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,624 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,626 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,627 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,627 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:20,668 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:20,767 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:20,782 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,797 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,841 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,842 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:20,843 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:20,843 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:20,887 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:20,982 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:20,996 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,012 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,057 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,061 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,061 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,061 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:21,105 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:21,199 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:21,214 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,229 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,279 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,286 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,287 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,287 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:21,328 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:21,422 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:21,437 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,451 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,496 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,499 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,499 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,499 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:21,540 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:21,635 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:21,650 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,665 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,709 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,712 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,712 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,712 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:21,756 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:21,851 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:21,865 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,880 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,926 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,931 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:21,931 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:21,931 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:21,970 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:22,064 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:22,079 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,094 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,139 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,145 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,145 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,146 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:22,189 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:22,283 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:22,299 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,314 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,359 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,363 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,363 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,363 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:22,405 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:22,500 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:22,515 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,529 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,576 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,585 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,586 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,586 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:22,632 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:22,728 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:22,744 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,760 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,807 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,812 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:22,812 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,813 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:22,857 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:22,959 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:22,974 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:22,989 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,033 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,036 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,037 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,037 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:23,077 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:23,172 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:23,187 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,201 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,246 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,250 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,250 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,250 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:23,295 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:23,395 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:23,410 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,425 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,472 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,476 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,477 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,477 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:23,520 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:23,613 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:23,628 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,644 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,688 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,693 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,693 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,693 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:23,735 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:23,831 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:23,846 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,861 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,906 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,913 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:23,913 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:23,913 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:23,958 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:24,053 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:24,068 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,083 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,128 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,131 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,131 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,132 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:24,171 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:24,276 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:24,291 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,306 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,350 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,352 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,352 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,352 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:24,394 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:24,488 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:24,503 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,518 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,563 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,567 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,567 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,567 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:24,608 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:24,701 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:24,716 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,731 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,775 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,781 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:24,781 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,782 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:24,827 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:24,926 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:24,941 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:24,957 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,003 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,005 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,005 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,005 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:25,051 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:25,163 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:25,181 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,199 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,252 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,257 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,258 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,258 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:25,304 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:25,398 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:25,413 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,427 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,472 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,476 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,476 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,477 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:25,520 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:25,613 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:25,628 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,643 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,686 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,691 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,691 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,691 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:25,736 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:25,830 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:25,845 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,861 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,909 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,918 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:25,918 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:25,919 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:25,964 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:26,058 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:26,073 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,087 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,132 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,136 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,136 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,137 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:26,178 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:26,276 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:26,291 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,305 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,350 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,356 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,356 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,357 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:26,404 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:26,501 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:26,516 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,531 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,574 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,578 INFO     False
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,578 INFO     Before serializer save call
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,578 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,582 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,582 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,582 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:26,621 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:26,715 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:26,730 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,745 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,791 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,802 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:26,803 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,803 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:26,848 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:26,941 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:26,955 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:26,970 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,016 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,020 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,020 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,020 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:27,061 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:27,156 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:27,171 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,185 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,232 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,238 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,239 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,239 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:27,279 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:27,374 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:27,389 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,403 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,447 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,453 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,454 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,454 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:27,506 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:27,603 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:27,618 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,635 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,681 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,689 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,689 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,689 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:27,733 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:27,830 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:27,845 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,860 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,906 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,912 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:27,912 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:27,913 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:27,953 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:28,049 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:28,064 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,079 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,122 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,125 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,125 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,125 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:28,170 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:28,263 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:28,278 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,293 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,336 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,341 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,341 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,342 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:28,393 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:28,494 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:28,509 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,524 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,569 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,574 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,574 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,574 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:28,614 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:28,708 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:28,724 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,739 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,786 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,794 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:28,794 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,795 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:28,849 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:28,942 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:28,957 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:28,972 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,018 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,022 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,023 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,023 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:29,065 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:29,160 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:29,175 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,190 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,233 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,236 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,236 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,237 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:29,277 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:29,373 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:29,387 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,402 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,448 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,456 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,457 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,457 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:29,503 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:29,603 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:29,618 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,634 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,678 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,682 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,682 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,682 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:29,725 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:29,820 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:29,835 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,850 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,892 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,895 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:29,896 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:29,896 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:29,937 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:30,035 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:30,050 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,064 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,109 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,115 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,115 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,116 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:30,159 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:30,252 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:30,267 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,282 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,329 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,340 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,341 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,341 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:30,383 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:30,477 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:30,492 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,506 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,550 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,555 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,555 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,555 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:30,596 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:30,690 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:30,704 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,719 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,765 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,772 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:30,773 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,773 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:30,834 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:30,932 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:30,947 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:30,962 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,008 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,013 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,014 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,014 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:31,063 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:31,160 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:31,175 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,189 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,233 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,238 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,238 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,238 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:31,279 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:31,373 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:31,388 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,406 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,460 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,468 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,469 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,469 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:31,516 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:31,613 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:31,628 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,645 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,690 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,694 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,694 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,695 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:31,736 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:31,829 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:31,843 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,858 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,902 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,904 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:31,905 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:31,905 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:31,946 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:32,044 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:32,059 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,073 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,121 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,127 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,127 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,128 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:32,174 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:32,278 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:32,294 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,308 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,352 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,355 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,355 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,355 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:32,396 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:32,489 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:32,503 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,518 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,563 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,568 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,569 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,569 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:32,611 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:32,704 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:32,723 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,739 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,784 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,788 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:32,788 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,789 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:32,832 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:32,927 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:32,947 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:32,962 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,007 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,015 INFO     False
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,015 INFO     Before serializer save call
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,016 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,018 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,018 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,018 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:33,058 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:33,153 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:33,168 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,183 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,229 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,235 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,235 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,235 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:33,279 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:33,372 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:33,387 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,402 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,446 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,453 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,453 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,453 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:33,502 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:33,598 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:33,613 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,628 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,672 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,677 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,677 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,678 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:33,728 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:33,829 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:33,844 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,858 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,902 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,905 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:33,906 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:33,906 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:33,947 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:34,044 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:34,059 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,074 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,119 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,124 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,125 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,125 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:34,176 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:34,273 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:34,289 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,303 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,349 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,352 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,353 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,353 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:34,394 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:34,487 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:34,507 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,522 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,568 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,573 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,574 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,574 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:34,621 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:34,726 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:34,741 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,756 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,801 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,804 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:34,805 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,805 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:34,845 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:34,939 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:34,954 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:34,969 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,014 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,017 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,017 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,017 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:35,060 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:35,159 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:35,174 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,189 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,234 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,243 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,244 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,244 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:35,288 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:35,383 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:35,399 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,415 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,463 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,470 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,471 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,471 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:35,517 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:35,612 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:35,628 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,642 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,686 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,690 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,691 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,691 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:35,735 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:35,837 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:35,852 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,866 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,910 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,912 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:35,912 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:35,912 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:35,951 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:36,046 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:36,062 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,077 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,123 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,127 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,127 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,127 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:36,169 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:36,265 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:36,279 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,294 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,343 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,353 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,353 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,353 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:36,393 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:36,490 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:36,504 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,519 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,566 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,574 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,574 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,575 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:36,630 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:36,727 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:36,742 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,757 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,801 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,809 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:36,809 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,809 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:36,850 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:36,944 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:36,959 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:36,974 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,021 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,025 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,026 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,026 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:37,071 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:37,167 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:37,181 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,195 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,242 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,251 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,251 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,252 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:37,301 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:37,402 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:37,417 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,431 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,474 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,479 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,480 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,480 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:37,523 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:37,617 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:37,632 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,647 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,692 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,696 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,696 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,696 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:37,740 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:37,836 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:37,851 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,865 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,910 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,915 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:37,915 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:37,915 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:37,957 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:38,056 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:38,071 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,086 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,130 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,137 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,137 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,138 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:38,185 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:38,281 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:38,295 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,311 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,355 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,360 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,360 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,361 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:38,404 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:38,499 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:38,514 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,529 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,576 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,590 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,591 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,591 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:38,631 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:38,726 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:38,741 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,757 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,801 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,805 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:38,806 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,806 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:38,850 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:38,944 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:38,959 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:38,974 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,021 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,025 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,025 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:39,025 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:39,069 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:39,166 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:39,181 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:39,196 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,243 ERROR    Something wrong with VENDOR save
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,247 INFO     True
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,247 INFO     Before serializer save call
+ users.kserializers.vendor_serializer 2020-05-03 11:41:39,247 INFO     User create initiated from vendor
+ users.kserializers.user_serializer 2020-05-03 11:41:39,290 ERROR    {}
+ users.kserializers.user_serializer 2020-05-03 11:41:39,386 INFO     Profile created successfully
+ users.kserializers.user_serializer 2020-05-03 11:41:39,401 WARNING  NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array <class 'str'>
+ users.kserializers.vendor_serializer 2020-05-03 11:41:39,416 INFO     User created successfully
+ users.kviews.csv_user_ref_tables_view 2020-05-03 11:41:39,462 ERROR    Something wrong with VENDOR save

@@ -41,6 +41,10 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     
 
+    def get_queryset(self):
+        profile = Profile.objects.filter(is_active=True)
+        return profile
+
     def create(self, request, *args, **kwargs):
 
         logger.info(" \n\n ----- VENDOR CREATE initiated -----")
