@@ -1001,3 +1001,11 @@
  users.exceptions 2020-05-05 20:52:55,526 ERROR     -- SOMETHING WRONG -- 
  users.exceptions 2020-05-05 21:40:53,271 ERROR    {'status': 400}
  users.exceptions 2020-05-05 21:40:53,271 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-05 22:28:35,613 ERROR    {'detail': ErrorDetail(string='Method "POST" not allowed.', code='method_not_allowed'), 'status': 405}
+ users.exceptions 2020-05-05 22:28:35,613 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-05 22:35:41,653 ERROR    {'non_field_errors': [ErrorDetail(string='Fashion Design already existed', code='invalid')], 'status': 400}
+ users.exceptions 2020-05-05 22:35:41,653 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-05 22:38:52,237 ERROR    {'non_field_errors': [ErrorDetail(string='Fashion Design already existed', code='invalid')], 'status': 400}
+ users.exceptions 2020-05-05 22:38:52,237 ERROR     -- SOMETHING WRONG -- 
+ users.exceptions 2020-05-05 22:39:19,035 ERROR    {'non_field_errors': [ErrorDetail(string='Fashion Design already existed', code='invalid')], 'status': 400}
+ users.exceptions 2020-05-05 22:39:19,035 ERROR     -- SOMETHING WRONG -- 

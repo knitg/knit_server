@@ -581,3 +581,11 @@ Traceback (most recent call last):
   File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 183, in setProductRelations
     instance.category.set(catalog)
 NameError: name 'instance' is not defined
+ django.request 2020-05-05 22:18:06,337 WARNING  Bad Request: /product/fashion-catalogs
+ django.request 2020-05-05 22:23:50,643 WARNING  Not Found: /product/fashion-catalog
+ django.request 2020-05-05 22:25:13,783 WARNING  Bad Request: /product/fashion-catalogs
+ django.request 2020-05-05 22:26:57,353 WARNING  Not Found: //media/images/fashion_catalogs/fashion_2/3_broad_flared_lehenga.png
+ django.request 2020-05-05 22:28:35,613 WARNING  Method Not Allowed: /product/fashion-catalogs/2
+ django.request 2020-05-05 22:35:41,653 WARNING  Bad Request: /product/fashion-catalogs/1
+ django.request 2020-05-05 22:38:52,238 WARNING  Bad Request: /product/fashion-catalogs/1
+ django.request 2020-05-05 22:39:19,038 WARNING  Bad Request: /product/fashion-catalogs/1

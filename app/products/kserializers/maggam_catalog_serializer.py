@@ -37,13 +37,13 @@ class MaggamCatalogSerializer(serializers.HyperlinkedModelSerializer):
             raise serializers.ValidationError("Maggam catelog title is required")
         if data.get('userId') is None:
             raise serializers.ValidationError("user id is required")
-        if self.initial_data.get('catalog_relations') is None:
-            if self.initial_data.get('catalog_relations').get("category"):
+        if self.initial_data.get('catalog_relations') is not None:
+            if self.initial_data.get('catalog_relations').get("category") is None:
                 raise serializers.ValidationError("Category is required")
-
-        hasMaggamDesign = MaggamCatalog.objects.filter(title= data['title'])
-        if len(hasMaggamDesign):
-            raise serializers.ValidationError("Maggam Design already existed")
+        if self.instance is None:
+            hasMaggamDesign = MaggamCatalog.objects.filter(title= data['title'])
+            if len(hasMaggamDesign):
+                raise serializers.ValidationError("Maggam Design already existed")
         return data
 
     def create(self, validated_data):
