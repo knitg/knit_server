@@ -42,8 +42,8 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     
 
     def get_queryset(self):
-        profile = Profile.objects.filter(is_active=True)
-        return profile
+        vendor = Vendor.objects.all()
+        return vendor
 
     def create(self, request, *args, **kwargs):
 

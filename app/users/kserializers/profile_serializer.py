@@ -63,7 +63,7 @@ class ProfileSerializer(serializers.ModelSerializer):
             image_data = validated_data.pop('images')
             for image in image_data:
                 c_image= image_data[image]
-                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
+                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='users/user_'+str(user.id), size=c_image.size)
                 instance.images.add(images)
         
         if self.initial_data.get('userTypes') is not None:

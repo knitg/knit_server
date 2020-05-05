@@ -183,3 +183,401 @@ Traceback (most recent call last):
 TypeError: 'Category' instance expected, got <MaggamCatalog: Buttons>
  django.request 2020-05-04 23:54:09,861 WARNING  Bad Request: /product/maggam-catalogs
  django.request 2020-05-04 23:57:52,975 WARNING  Not Found: /product/csv-ref-tables
+ django.request 2020-05-05 18:48:21,195 WARNING  Not Found: /user/vendor
+ django.request 2020-05-05 18:48:21,300 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-05 18:48:24,460 WARNING  Not Found: /user/vendors/
+ django.request 2020-05-05 18:48:27,561 ERROR    Internal Server Error: /user/vendors
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 45, in get_queryset
+    profile = Profile.objects.filter(is_active=True)
+NameError: name 'Profile' is not defined
+ django.request 2020-05-05 18:50:40,360 WARNING  Not Found: /users/vendors
+ django.request 2020-05-05 18:50:44,243 ERROR    Internal Server Error: /user/vendors
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 45, in get_queryset
+    profile = Profile.objects.filter(is_active=True)
+NameError: name 'Profile' is not defined
+ django.request 2020-05-05 18:52:54,319 WARNING  Not Found: /user/vendors/
+ django.request 2020-05-05 18:52:54,447 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-05 18:52:57,765 WARNING  Not Found: /user/vendor
+ django.request 2020-05-05 18:53:05,024 ERROR    Internal Server Error: /user/vendors
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 45, in get_queryset
+    profile = Vendor.objects.filter(is_active=True)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1340, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1371, in _add_q
+    check_filterable=check_filterable,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1240, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1077, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1473, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: alternateDays, closeTime, closed, description, doorService, emergency, id, images, isWeekends, masters, name, openTime, user, user_id
+ django.request 2020-05-05 19:01:44,904 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 47, in create
+    maggam_catalog_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\maggam_catalog_serializer.py", line 60, in create
+    c_image= image_data[image]
+UnboundLocalError: local variable 'image_data' referenced before assignment
+ django.request 2020-05-05 19:02:31,327 WARNING  Bad Request: /product/maggam-catalogs
+ django.request 2020-05-05 19:02:45,721 ERROR    Internal Server Error: /product/maggam-catalogs
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\maggam_catalog_view.py", line 47, in create
+    maggam_catalog_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\maggam_catalog_serializer.py", line 60, in create
+    c_image= image_data[image]
+NameError: name 'image_data' is not defined
+ django.request 2020-05-05 19:41:17,244 WARNING  Not Found: /product/csv-ref-tables
+ django.request 2020-05-05 20:04:45,305 ERROR    Internal Server Error: /product/maggam-catalogs/1
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 514, in to_representation
+    for field in fields:
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 375, in _readable_fields
+    for field in self.fields.values():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 1139, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'category' was declared on serializer MaggamCatalogSerializer, but has not been included in the 'fields' option.
+ django.request 2020-05-05 20:09:33,046 WARNING  Method Not Allowed: /product/maggam-catalogs/1
+ django.request 2020-05-05 20:14:18,979 WARNING  Not Found: /product/product
+ django.request 2020-05-05 20:14:36,243 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:16:36,458 ERROR    Internal Server Error: /product/products
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\fields.py", line 1905, in to_representation
+    return method(value)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 46, in get_sub_category
+    serializer = SubCategorySerializer(obj.sub_category, many=True)
+AttributeError: 'Product' object has no attribute 'sub_category'
+ django.request 2020-05-05 20:34:50,673 ERROR    Internal Server Error: /product/products/2
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 62, in update
+    self.perform_update(serializer)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 78, in perform_update
+    serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 118, in update
+    self.setProductRelations(instance, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 170, in setProductRelations
+    product.colors.set(sub_category)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1008, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 946, in add
+    through_defaults=through_defaults,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1119, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1063, in _get_target_ids
+    (self.model._meta.object_name, obj)
+TypeError: 'ColorModel' instance expected, got <SubCategory: NET_BLOUSE>
+ django.request 2020-05-05 20:50:43,060 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:51:07,037 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:51:41,454 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:52:00,765 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:52:07,163 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:52:28,930 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 20:52:55,527 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 21:40:53,272 WARNING  Bad Request: /product/products
+ django.request 2020-05-05 21:42:21,957 ERROR    Internal Server Error: /product/products
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 46, in create
+    product.additional_data['images'] = request.FILES
+AttributeError: 'dict' object has no attribute 'additional_data'
+ django.request 2020-05-05 21:48:24,721 ERROR    Internal Server Error: /product/products
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 52, in create
+    product_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 102, in create
+    self.setProductRelations(product, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 133, in setProductRelations
+    product.colors.set(col)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1008, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 946, in add
+    through_defaults=through_defaults,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1119, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1063, in _get_target_ids
+    (self.model._meta.object_name, obj)
+TypeError: 'ColorModel' instance expected, got <Category: BLOUSE>
+ django.request 2020-05-05 21:52:13,514 ERROR    Internal Server Error: /product/products
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 52, in create
+    product_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 103, in create
+    self.setProductRelations(product, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 170, in setProductRelations
+    c_image= image_data[image]
+NameError: name 'image_data' is not defined
+ django.request 2020-05-05 21:52:57,325 ERROR    Internal Server Error: /product/products
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\MISC\GITHUB\knit_server//app\products\kviews\productview.py", line 52, in create
+    product_serializer.save()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 103, in create
+    self.setProductRelations(product, product_relations)
+  File "D:\MISC\GITHUB\knit_server//app\products\kserializers\product_serializer.py", line 183, in setProductRelations
+    instance.category.set(catalog)
+NameError: name 'instance' is not defined

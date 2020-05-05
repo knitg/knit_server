@@ -55,10 +55,19 @@ class MaggamCatalogViewSet(viewsets.ModelViewSet):
     
     def update(self, request, *args, **kwargs):
         logger.info(" \n\n ----- Maggam Catalog UPDATE initiated -----")
+        relations = {}
         if request.FILES:
-            request.data['images'] = request.FILES
-            logger.info("Images length = {}".format(len(request.FILES)))     
-        serializer = self.get_serializer(self.get_object(), data=request.data, partial=True)
+            relations['images'] = request.FILES
+            logger.info("Images length = {}".format(len(request.FILES)))
+        relations['category'] = request.data.get("category")
+        
+        catalog = {}
+        catalog['title'] = request.data.get("title")
+        catalog['userId'] = request.data.get("userId")
+        catalog['details'] = request.data.get("details")
+        catalog['customizable'] = request.data.get("customizable")
+
+        serializer = self.get_serializer(self.get_object(), data={'data':request.data, 'catalog':catalog, 'catalog_relations':relations}, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
         logger.info({'catalogId':serializer.instance.id, 'status':'200 Ok'})

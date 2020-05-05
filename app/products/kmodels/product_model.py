@@ -28,7 +28,7 @@ class Product(TimestampedModel):
     
     #Categorys
     category = models.ManyToManyField(Category)
-    sub_Category = models.ManyToManyField(SubCategory)
+    sub_category = models.ManyToManyField(SubCategory)
 
     #Product belongs to vendor
     user = models.IntegerField(blank=True, null=True) 

@@ -52,7 +52,7 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
             image_data = self.initial_data.get('images')
             for image in image_data:
                 c_image= image_data[image]
-                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='category_'+str(category.id), size=c_image.size)
+                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='categorys/c_'+str(category.id), size=c_image.size)
                 category.images.add(images)         
 
         return category

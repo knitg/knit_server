@@ -42,11 +42,12 @@ class ProductViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         logger.info(" \n\n ----- PRODUCT CREATE initiated -----")
         product = self.prepareProductData(request.data)
+        images = {}
         if request.FILES:
-            product.additional_data['images'] = request.FILES
+            images = request.FILES
         logger.debug(product)
         logger.debug("Data prepared. Sending data to the serializer ")
-        product_serializer = ProductSerializer(data= {'data':request.data, 'product':product['data'], 'product_relations':product['additional_data']})
+        product_serializer = ProductSerializer(data= {'data':request.data, 'product':product['data'], 'product_relations':product['additional_data'], 'images': images})
         product_serializer.is_valid(raise_exception=True)
         product_serializer.save()
         logger.debug({'productId':product_serializer.instance.id, "status":200})
@@ -88,6 +89,6 @@ class ProductViewSet(viewsets.ModelViewSet):
         additional_data['colors'] = product_input.get('colors')
         additional_data['sizes'] = product_input.get('sizes')
         additional_data['offers'] = product_input.get('offers')
-        additional_data['stitch'] = product_input.get('stitch')
-        additional_data['stitch_type'] = product_input.get('stitch_type')
+        additional_data['category'] = product_input.get('category')
+        additional_data['sub_category'] = product_input.get('sub_category')
         return {'data': product, 'additional_data': additional_data}

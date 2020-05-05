@@ -1881,3 +1881,901 @@
 
  ----- MAGGAM CATALOG CREATE initiated -----
  products.kviews.maggam_catalog_view 2020-05-05 00:04:57,288 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 00:05:16,883 INFO     {'catalogId': 5, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 00:05:17,652 INFO     Maggam Catalog saved successfully
+ products.kviews.maggam_catalog_view 2020-05-05 19:01:44,681 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:01:44,685 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 19:02:31,217 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:02:31,221 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 19:02:31,326 INFO     {'non_field_errors': [ErrorDetail(string='Maggam Design already existed', code='invalid')]}
+ products.kviews.maggam_catalog_view 2020-05-05 19:02:31,326 INFO     Maggam Catalog save failed
+ products.kviews.maggam_catalog_view 2020-05-05 19:02:45,508 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:02:45,511 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 19:04:09,532 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:04:09,536 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 19:04:09,945 INFO     {'catalogId': 8, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:04:09,946 INFO     Maggam Catalog saved successfully
+ products.kviews.maggam_catalog_view 2020-05-05 19:21:11,124 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:21:11,126 INFO     Images length = 3
+ products.kviews.maggam_catalog_view 2020-05-05 19:21:11,676 INFO     {'catalogId': 9, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:21:11,676 INFO     Maggam Catalog saved successfully
+ products.kviews.maggam_catalog_view 2020-05-05 19:30:43,233 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:30:43,236 INFO     Images length = 3
+ products.kviews.maggam_catalog_view 2020-05-05 19:30:43,803 INFO     {'catalogId': 10, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:30:43,803 INFO     Maggam Catalog saved successfully
+ products.kviews.maggam_catalog_view 2020-05-05 19:31:03,978 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:31:03,981 INFO     Images length = 3
+ products.kviews.maggam_catalog_view 2020-05-05 19:31:04,525 INFO     {'catalogId': 11, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:31:04,526 INFO     Maggam Catalog saved successfully
+ products.kviews.maggam_catalog_view 2020-05-05 19:32:01,176 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:32:01,178 INFO     Images length = 2
+ products.kviews.maggam_catalog_view 2020-05-05 19:32:01,628 INFO     {'catalogId': 12, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:32:01,628 INFO     Maggam Catalog saved successfully
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:32,435 INFO      
+
+ ----- CSV CATEGORY TYPE CREATE initiated -----
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:32,435 INFO      
+
+ ----- CSV COLOR CREATE initiated -----
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:33,546 INFO      
+
+ ----- CSV SIZE CREATE initiated -----
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:34,089 INFO      
+
+ ----- CSV MATERIAL CREATE initiated -----
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,279 INFO      
+
+ ----- CSV CATEGORY CREATE initiated -----
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,279 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,279 INFO     OrderedDict([('title', 'Blouse'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\blouse.jpg'), ('description', 'All types of blouse stitch patterns')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,283 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,283 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,300 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,301 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,453 INFO     {'categoryId': 1, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,454 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,454 INFO     OrderedDict([('title', 'Sarees'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\sarees.jpg'), ('description', 'All types of saree stitch types')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,456 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\sarees.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,456 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,470 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,470 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,584 INFO     {'categoryId': 2, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,585 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,585 INFO     OrderedDict([('title', 'Lehengas'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\lehenga.jpg'), ('description', 'All types of lehengas stitch types')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,588 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,588 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,603 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,603 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,723 INFO     {'categoryId': 3, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,724 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,724 INFO     OrderedDict([('title', 'Kurtis'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\kurtis.jpg'), ('description', 'Kurtis description here..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,728 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,728 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,742 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,742 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,863 INFO     {'categoryId': 4, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,865 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,866 INFO     OrderedDict([('title', 'Shirts'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\shirts.jpg'), ('description', 'Shirt description here..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,871 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\shirts.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,871 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,888 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:35,889 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,010 INFO     {'categoryId': 5, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,011 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,011 INFO     OrderedDict([('title', 'Pants'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\pants.jpg'), ('description', 'Pants description here..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,013 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,013 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,026 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,027 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,136 INFO     {'categoryId': 6, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,137 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,137 INFO     OrderedDict([('title', 'Frocks '), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\frocks.jpg'), ('description', 'Frock description here..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,140 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\frocks.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,140 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,155 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,156 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,283 INFO     {'categoryId': 7, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,284 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,284 INFO     OrderedDict([('title', 'Party Wear'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch\\gagra.jpg'), ('description', 'Party wear description here..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,286 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch\gagra.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,286 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,299 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,299 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,414 INFO     {'categoryId': 8, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,415 INFO      
+
+ ----- CSV SUB CATEGORY CREATE initiated -----
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,415 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,415 INFO     OrderedDict([('title', 'Net blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Net_Blouse.jpg'), ('description', 'This is chick look every woman must wear once in her 20s and/or 30s. There are various designs available in net blouses itself, including net on the sleeves, neck, back or overall')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,421 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,421 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,451 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Net_Blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,451 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,465 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,465 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,585 INFO     {'subCategoryId': 1, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,585 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,585 INFO     OrderedDict([('title', 'Back Buttoned Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Back-buttoned-blouse.jpg'), ('description', 'The concealed beauty of back buttons and short sleeves could give you that perfect appealing look. You could consider wearing them with designer sarees. In order to ace up your look it is advised to team up statement jewellery.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,594 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,594 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,623 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Back-buttoned-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,625 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,638 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,638 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,787 INFO     {'subCategoryId': 2, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,788 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,839 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,839 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,872 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Boat-Neck.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,872 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,886 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:36,886 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,027 INFO     {'subCategoryId': 3, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,032 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,033 INFO     OrderedDict([('title', 'Princess Cut Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Princess-cut-blouse.jpg'), ('description', 'These style of blouses are trend of the B-town. This style could add up a twist and contemporary look. This blouse could be a perfect option if teamed with light weighed sarees.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,044 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,044 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,073 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Princess-cut-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,074 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,087 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,088 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,230 INFO     {'subCategoryId': 4, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,231 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,231 INFO     OrderedDict([('title', 'Zari work blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\zari_blouse.jpg'), ('description', 'There are various options for blouses to be paired with a plain silk saree and zari work is one of the most unique pair one can choose to go with.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,242 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,243 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,270 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\zari_blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,270 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,284 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,284 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,405 INFO     {'subCategoryId': 5, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,406 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,458 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,458 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,487 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Bell_sleeves_style_blouses.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,488 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,501 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,502 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,638 INFO     {'subCategoryId': 6, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,638 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,675 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,676 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,705 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Full-sleeves-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,705 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,719 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,719 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,855 INFO     {'subCategoryId': 7, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,856 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,856 INFO     OrderedDict([('title', 'Elbow Length Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Elbow-length-blouse.jpg'), ('description', 'The length of the sleeves do vary from 3 to 7 inches. These style of blouse do have presence right from the ages but you could always quirk up the look.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,866 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,866 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,903 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Elbow-length-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,903 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,917 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:37,917 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,075 INFO     {'subCategoryId': 8, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,077 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,078 INFO     OrderedDict([('title', 'Mirror blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Mirror-blouse.jpg'), ('description', 'While women in Rajasthan and gujarat have been wearing mirror blouses since centuries,the trend reincarnated in the fashion space with a storm.Beautifully embroided blouses with mirror patterns chosen wisely to suit not just one piece of cloth nut many,the delicate work done on the blouse oozes oomph and elegance.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,087 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,089 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,123 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Mirror-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,123 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,137 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,137 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,292 INFO     {'subCategoryId': 9, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,293 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,293 INFO     OrderedDict([('title', 'Embroidery Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Embroidery_blouse.jpg'), ('description', 'To give a heavy look to your saree, an embroidered blouse could simply raise the stakes. Tip: you can choose to wear a contrasting colour blouse with embroidery done is same colour as the saree.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,296 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,296 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,325 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Embroidery_blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,325 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,339 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,339 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,470 INFO     {'subCategoryId': 10, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,471 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,508 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,508 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,536 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\POT_NECK.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,536 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,550 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,550 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,671 INFO     {'subCategoryId': 11, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,672 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,672 INFO     OrderedDict([('title', 'Quarter Sleeves Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Quarter-sleeves-blouse.jpg'), ('description', 'When you wish to have that perfect essence of smart ethnic dressing, then this style is ultimate option to reach your fashion goals.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,682 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,682 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,710 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Quarter-sleeves-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,711 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,725 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,725 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,879 INFO     {'subCategoryId': 12, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,880 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,880 INFO     OrderedDict([('title', 'Knotted Style Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Knotted-style-blouse.jpg'), ('description', 'Get the perfect dose of sexy look with alluring knotted style blouse. They could simply grace up your charm and will surely make that heads turn in white collar events or parties. Online stores has exclusive range of collection and varieties of fabrics are easily available with door step delivery option.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,893 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,894 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,930 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Knotted-style-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,931 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,945 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:38,945 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,111 INFO     {'subCategoryId': 13, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,112 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,112 INFO     OrderedDict([('title', 'Jacket Style Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Jacket-style-blouse.jpg'), ('description', 'Even in the time of fashion revolution this style has amazingly stood up to every expectation and remained to be unbeatable one. Complete awesomeness could be well defined if you would team it up with traditional style of Sarees.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,123 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,123 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,151 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Jacket-style-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,151 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,166 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,166 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,312 INFO     {'subCategoryId': 14, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,313 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,313 INFO     OrderedDict([('title', 'One Side Fashion Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\One-side-fashion-blouse.jpg'), ('description', 'If you wish to be style icon then this style of blouse could be one of the sorted solution. online store even has variation of colors available.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,324 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,324 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,353 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\One-side-fashion-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,353 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,367 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,367 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,518 INFO     {'subCategoryId': 15, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,519 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,519 INFO     OrderedDict([('title', 'Halter Neck Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Halter-neck-blouse.jpg'), ('description', 'This style is perfect for people who have medium bust size. The pear shaped design gives you a perfect solution of trendy fashion zest. They give an indo western appeal to the saree. They can be paired with short patli or dhoti saree. They are generally made with georgette, satin or crepe')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,529 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,529 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,557 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Halter-neck-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,558 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,571 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,571 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,708 INFO     {'subCategoryId': 16, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,709 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,709 INFO     OrderedDict([('title', 'High Neck Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\high-neck-blouse.jpg'), ('description', 'This style resembles like a t-shirt but could be one of the smart solution to grace up your overall look. If paired this style with good designer saree it could envy your gossip makers.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,720 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,720 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,753 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\high-neck-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,753 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,767 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,767 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,903 INFO     {'subCategoryId': 17, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,903 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,903 INFO     OrderedDict([('title', 'Chinese Collar Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Chinese-Collar-blouse.jpg'), ('description', 'One of the luminous advantage of this style of blouse is that they can help you to look fuller. Online store has amazing range of options with viability of materials like crepe, chiffon, cotton and embroidered sarees. This style of blouse is sure shot way to give you that high profiled look. This blouse design was a hit in 2016 and can be given an elegant look by basic tailoring. They are coupled with crepe and chiffon sarees')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,915 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,915 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,944 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Chinese-Collar-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,944 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,958 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:39,958 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,096 INFO     {'subCategoryId': 18, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,097 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,097 INFO     OrderedDict([('title', 'Bow back blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Bow_back_blouse.jpg'), ('description', 'This blouse is a balanced fusion of modernity and ethnicity. A bow knot in the back of a broadly open blouse will make your spook completely contemporary.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,108 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,109 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,137 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Bow_back_blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,137 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,150 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,150 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,283 INFO     {'subCategoryId': 19, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,284 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,284 INFO     OrderedDict([('title', 'Patch Work Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Patch_work_blouse.jpg'), ('description', 'A plain silk saree requires no second thoughts. However, your plain silk saree can be embraced more if paired with a patch work blouse.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,296 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,296 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,324 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Patch_work_blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,324 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,337 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,337 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,464 INFO     {'subCategoryId': 20, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,466 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,466 INFO     OrderedDict([('title', 'Long Sleeved Blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\long_sleeved_blouse.jpg'), ('description', 'Apt for someone with long but flabby arms these long sleeved blouses swear by to never go wrong.One can even play a little with the sleeves for adding a slight twist to them,like going all flared,or by adding ruffles near the wrist.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,476 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,477 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,505 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\long_sleeved_blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,505 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,521 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,521 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,650 INFO     {'subCategoryId': 21, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,651 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,651 INFO     OrderedDict([('title', 'Panelled blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Panelled-blouse.jpg'), ('description', 'Panelled blouses are made with two or more panels or fabrics stitched together for a quirky sense of style.For a save,avoid wearing one if you are flat chested or with full sleeves')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,658 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,658 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,687 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Panelled-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,687 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,700 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,700 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,843 INFO     {'subCategoryId': 22, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,844 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,844 INFO     OrderedDict([('title', 'High neck blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\high-neck-blouse.jpg'), ('description', 'High neck blouses are a less fuss blouse,not much show of skin or pondering over the cleavage show,these blouses are meant for anyone with a long,slender,toned neck or quite obvious and toned set of collar bones.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,855 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,856 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,885 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\high-neck-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,885 INFO     PREPARED CATEGORY DATA 
+ products.kserializers.sub_category_serializer 2020-05-05 19:42:40,899 INFO     {'subcategory_exists': 'Sub Category already exists'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,901 INFO     False
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,901 ERROR    Something wrong with SUB CATEGORY serializer save
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,902 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,902 INFO     OrderedDict([('title', 'Off shoulder blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Off-shoulder-blouse.jpg'), ('description', 'Anyone who likes to sweat it out in gym or have a toned pair of arms(god gifted) can try this,for this look good shoulders,good toned collar bones can do wonders.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,904 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,904 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,932 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Off-shoulder-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,932 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,946 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:40,946 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,086 INFO     {'subCategoryId': 23, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,087 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,087 INFO     OrderedDict([('title', 'U neck blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\U-neck-blouse.jpg'), ('description', 'Just like U necked suits U shaped blouses too suit everyone,irrespective of shape but not size.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,089 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,089 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,116 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\U-neck-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,117 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,130 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,131 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,269 INFO     {'subCategoryId': 24, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,270 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,270 INFO     OrderedDict([('title', 'Cutwork blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Cutwork-blouse.jpg'), ('description', 'Cut work blouses are for women who like to keep it classy and trendy and like to go innovative with their wardrobe choices')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,283 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,283 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,321 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Cutwork-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,321 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,335 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,335 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,477 INFO     {'subCategoryId': 25, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,478 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,478 INFO     OrderedDict([('title', 'Backless blouse'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Backless-blouse.jpg'), ('description', 'Backless blouses are a statement in themselves,a daring look with a oomph of femme fatale this look makes sure one look at the back is enough to knock out the target.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,488 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,488 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,518 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Backless-blouse.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,518 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,532 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,533 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,675 INFO     {'subCategoryId': 26, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,675 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,675 INFO     OrderedDict([('title', 'Square Neck Blouses'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Square-neck-blouses.jpg'), ('description', 'You could even try out Deep Square and knot with hangings from behind. To be a perfect summer ready you could try out the brighter hues.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,685 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,685 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,713 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Square-neck-blouses.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,713 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,727 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,727 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,860 INFO     {'subCategoryId': 27, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,861 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,861 INFO     OrderedDict([('title', 'Tier Blouse Designs'), ('category-code', 'BLOUSE'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\Tier-blouse-designs.jpg'), ('description', 'The aspiring continued doris with same pattern could give you an ultimate chic look. Three doris with hangings is simply impressive to flaunt well your confidence. The bold pati in the last tier could give you that perfect style element.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,870 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,871 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,899 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\Tier-blouse-designs.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,899 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,913 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:41,913 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,052 INFO     {'subCategoryId': 28, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,054 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,054 INFO     OrderedDict([('title', 'Half & Half Style Blouse'), ('category-code', 'BLOUSE'), ('image', ''), ('description', 'A lot has been discussed and said about the western style and patterns, the Indian designers are infusing lot of creativity to give out perfect element of traditionalism and fusion of perfect contemporary look. Generally considered as Tube blouse, this trend is present right from the British times. Little part of shoulder being covered gives a perfect touch of unique look.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,064 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,064 INFO     <QuerySet [<Category: BLOUSE>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,089 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,102 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,102 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,144 INFO     {'subCategoryId': 29, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,145 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,145 INFO     OrderedDict([('title', 'Pall Fico'), ('category-code', 'SAREES'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\2_pall_fico.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,146 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,146 INFO     <QuerySet [<Category: SAREES>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,173 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\2_pall_fico.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,173 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,187 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,187 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,318 INFO     {'subCategoryId': 30, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,319 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,319 INFO     OrderedDict([('title', 'Kuchu'), ('category-code', 'SAREES'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\2_kuchu_work.jpg'), ('description', 'Saree Pallu with Kuchu Designs Tassels are also known as Kuchu or Latkans')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,321 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,321 INFO     <QuerySet [<Category: SAREES>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,351 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\2_kuchu_work.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,351 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,364 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,365 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,501 INFO     {'subCategoryId': 31, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,502 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,502 INFO     OrderedDict([('title', 'Pallu'), ('category-code', 'SAREES'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\2_pallu.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,504 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,504 INFO     <QuerySet [<Category: SAREES>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,541 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\2_pallu.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,541 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,562 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,562 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,702 INFO     {'subCategoryId': 32, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,703 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,703 INFO     OrderedDict([('title', 'Lace Work'), ('category-code', 'SAREES'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\lace_work.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,704 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,705 INFO     <QuerySet [<Category: SAREES>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,736 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\lace_work.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,736 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,750 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,750 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,880 INFO     {'subCategoryId': 33, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,883 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,883 INFO     OrderedDict([('title', 'A-line Lehenga'), ('category-code', 'LEHENGAS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\3_aline_lehenga.jpg'), ('description', 'The stunning and stylish A-line lehenga is absolutely perfect for the ethnic yet modish look. The hemline of the lehenga makes it more glamorous and creates a flare look.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,891 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,892 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,927 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_aline_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,927 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,941 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:42,941 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,070 INFO     {'subCategoryId': 34, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,071 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,071 INFO     OrderedDict([('title', 'Sharara Cut Lehenga'), ('category-code', 'LEHENGAS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\3_sharara_cut_lehenga.jpg'), ('description', 'From simple to a designer, there are a huge variety of styles and designs in sharara cut lehenga, which has an elegant palazzo with a loose hem.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,081 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,081 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,109 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_sharara_cut_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,109 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,123 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,123 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,250 INFO     {'subCategoryId': 35, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,251 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,306 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,306 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,338 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_straight_cut_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,339 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,352 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,352 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,477 INFO     {'subCategoryId': 36, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,477 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,523 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,523 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,550 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_jacket_cut_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,551 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,565 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,565 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,697 INFO     {'subCategoryId': 37, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,699 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,699 INFO     OrderedDict([('title', 'Saree Style Lehenga'), ('category-code', 'LEHENGAS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\3_saree_style_lehenga.jpg'), ('description', 'The illusion of saree comes with the draping of the dupatta, which we usually do in saree. However, this is far better than saree as you can wear this style of lehenga comfortably without any hassle. Moreover, the flare of this stylish lehenga is definitely icing on the cake.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,708 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,708 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,736 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_saree_style_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,737 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,751 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,751 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,903 INFO     {'subCategoryId': 38, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,905 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,906 INFO     OrderedDict([('title', 'Fishtail Lehenga'), ('category-code', 'LEHENGAS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\3_fishtail_lehenga.jpg'), ('description', 'The elegant and classy flare of the mermaid lehenga is absolutely irresistible. Furthermore, fishtail lehenga is perfect for those girls or ladies who are looking for the attire to accentuate their curves.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,915 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,915 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,951 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_fishtail_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,951 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,964 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:43,964 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,091 INFO     {'subCategoryId': 39, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,091 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,092 INFO     OrderedDict([('title', 'Broad Flared Lehenga'), ('category-code', 'LEHENGAS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\3_broad_flared_lehenga.jpg'), ('description', 'These were some of the most elegant and fascinating lehenga styles, which can be considered to wear it on special occasions or festivals, especially with a perfect clutch, classy accessory and most importantly, trendy footwear.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,100 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,101 INFO     <QuerySet [<Category: LEHENGAS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,135 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\3_broad_flared_lehenga.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,136 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,149 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,149 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,277 INFO     {'subCategoryId': 40, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,278 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,278 INFO     OrderedDict([('title', 'Tail Cut Kurti'), ('category-code', 'KURTIS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\4_tail_cut_kurtis.jpg'), ('description', 'Tail cut kurtis are very similar to asymmetrical kurtis, except they are a little longer at the back. They bump up your style instantly. This style is trending for the last few seasons.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,288 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,289 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,317 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_tail_cut_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,317 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,331 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,331 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,660 INFO     {'subCategoryId': 41, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,662 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,663 INFO     OrderedDict([('title', 'High-Low Kurti'), ('category-code', 'KURTIS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\4_high_low_kurtis.jpg'), ('description', 'High-low kurtis are another variant that falls under the asymmetrical bucket. Except these do not have a definition, and have a straight hemline.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,670 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,671 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,702 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_high_low_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,702 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,717 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,717 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,838 INFO     {'subCategoryId': 42, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,840 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,873 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,873 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,901 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_flared_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,901 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,915 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:44,915 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,037 INFO     {'subCategoryId': 43, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,037 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,068 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,069 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,096 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_straight_cut_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,097 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,111 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,111 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,243 INFO     {'subCategoryId': 44, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,244 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,244 INFO     OrderedDict([('title', 'Shirt Style Kurti'), ('category-code', 'KURTIS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\4_shirt_style_kurtis.jpg'), ('description', 'Shirt style kurtis are everywhere because they are both stylish and comfortable. A perfect blend of traditional and contemporary, these are easy to carry off and style.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,255 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,256 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,283 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_shirt_style_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,284 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,298 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,298 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,427 INFO     {'subCategoryId': 45, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,429 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,462 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,462 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,490 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_anarkali_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,490 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,504 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,504 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,626 INFO     {'subCategoryId': 46, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,626 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,654 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,654 INFO     <QuerySet [<Category: KURTIS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,681 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\4_indo_western_kurtis.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,682 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,695 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,696 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,823 INFO     {'subCategoryId': 47, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,824 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,824 INFO     OrderedDict([('title', 'Office Shirts'), ('category-code', 'SHIRTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\5_office_Shirt.jpg'), ('description', 'Roll up your sleeves and get to work while looking effortlessly smart. The office shirt is an ideal choice for those who work in a desk job.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,828 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,828 INFO     <QuerySet [<Category: SHIRTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,856 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\5_office_Shirt.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,856 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,870 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,870 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,992 INFO     {'subCategoryId': 48, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,993 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:45,994 INFO     OrderedDict([('title', 'Denim Shirt'), ('category-code', 'SHIRTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\5_denim_shirt.jpg'), ('description', 'The denim shirt is a piece of clothing that can instantly tie an outfit together. Be it a casual gathering or a smart-casual event, it creates an effortless sense of cool. Opt for a light-coloured T-shirt under the denim, and wear it with a dark-coloured pair of pants for a simple, yet trendy look.')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,005 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,005 INFO     <QuerySet [<Category: SHIRTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,035 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\5_denim_shirt.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,035 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,050 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,050 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,170 INFO     {'subCategoryId': 49, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,171 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,193 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,193 INFO     <QuerySet [<Category: SHIRTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,221 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\5_Linen_Shirt.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,221 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,235 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,235 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,356 INFO     {'subCategoryId': 50, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,358 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,391 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,391 INFO     <QuerySet [<Category: SHIRTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,421 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\5_polo_Shirt.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,422 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,435 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,435 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,554 INFO     {'subCategoryId': 51, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,555 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,588 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,589 INFO     <QuerySet [<Category: SHIRTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,614 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,628 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,628 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,667 INFO     {'subCategoryId': 52, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,668 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,669 INFO     OrderedDict([('title', 'Straight Pants'), ('category-code', 'PANTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\6_straight_pants.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,670 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,670 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,698 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_straight_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,698 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,713 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,713 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,844 INFO     {'subCategoryId': 53, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,845 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,846 INFO     OrderedDict([('title', 'Boot-cut'), ('category-code', 'PANTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\6_flare_pants.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,847 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,847 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,876 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_flare_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,876 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,889 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:46,890 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,013 INFO     {'subCategoryId': 54, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,014 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,014 INFO     OrderedDict([('title', 'Stirrup'), ('category-code', 'PANTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\6_stirrup_pants.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,016 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,016 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,044 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_stirrup_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,044 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,058 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,058 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,196 INFO     {'subCategoryId': 55, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,196 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,196 INFO     OrderedDict([('title', 'Flare Pants'), ('category-code', 'PANTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\6_flare_pants.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,197 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,197 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,222 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_flare_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,222 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,236 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,236 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,358 INFO     {'subCategoryId': 56, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,359 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,359 INFO     OrderedDict([('title', 'Pegged Pants'), ('category-code', 'PANTS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\6_pegged_pants.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,363 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,363 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,394 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_pegged_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,394 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,407 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,407 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,528 INFO     {'subCategoryId': 57, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,529 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,558 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,558 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,586 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_slimfit_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,586 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,599 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,600 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,758 INFO     {'subCategoryId': 58, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,760 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,795 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,795 INFO     <QuerySet [<Category: PANTS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,826 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\6_palazzo_pants.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,827 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,840 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,840 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,964 INFO     {'subCategoryId': 59, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,965 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,965 INFO     OrderedDict([('title', 'Patterned Fracks'), ('category-code', 'FROCKS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\7_patterned_frack.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,966 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:47,966 INFO     <QuerySet [<Category: FROCKS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,000 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\7_patterned_frack.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,000 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,016 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,016 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,135 INFO     {'subCategoryId': 60, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,136 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,136 INFO     OrderedDict([('title', 'Gowns'), ('category-code', 'FROCKS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\7_gown_frack.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,138 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,138 INFO     <QuerySet [<Category: FROCKS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,169 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\7_gown_frack.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,169 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,186 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,186 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,323 INFO     {'subCategoryId': 61, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,325 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,325 INFO     OrderedDict([('title', 'Multi layered'), ('category-code', 'FROCKS'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\7_multi_layeredd_frack.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,326 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,326 INFO     <QuerySet [<Category: FROCKS>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,355 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\7_multi_layeredd_frack.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,355 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,369 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,369 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,498 INFO     {'subCategoryId': 62, 'status': '200 Ok'}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,499 INFO      
+
+
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,500 INFO     OrderedDict([('title', 'Long Gown'), ('category-code', 'PARTY_WEAR'), ('image', 'D:\\MISC\\GITHUB\\MISC\\ref_images\\stitch_types\\8_long_gown.jpg'), ('description', 'Coming soon..')])
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,501 INFO     ---- SUB CATEGORY OBJ --- 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,501 INFO     <QuerySet [<Category: PARTY_WEAR>]>
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,532 INFO     {'images': <File: D:\MISC\GITHUB\MISC\ref_images\stitch_types\8_long_gown.jpg>}
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,532 INFO     PREPARED CATEGORY DATA 
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,545 INFO     True
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,545 INFO     Before serializer save call
+ products.kviews.csv_product_ref_tables_view 2020-05-05 19:42:48,668 INFO     {'subCategoryId': 63, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:46:57,010 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 19:46:57,012 INFO     Images length = 2
+ products.kviews.maggam_catalog_view 2020-05-05 19:46:57,501 INFO     {'catalogId': 1, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 19:46:57,501 INFO     Maggam Catalog saved successfully
+ products.kviews.maggam_catalog_view 2020-05-05 20:01:20,056 INFO      
+
+ ----- Maggam Catalog UPDATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 20:01:20,059 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 20:01:20,764 INFO     {'catalogId': 1, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 20:01:20,764 INFO     Maggam Catalog  Updated successfully
+ products.kviews.maggam_catalog_view 2020-05-05 20:09:38,705 INFO      
+
+ ----- MAGGAM CATALOG CREATE initiated -----
+ products.kviews.maggam_catalog_view 2020-05-05 20:09:38,708 INFO     Images length = 1
+ products.kviews.maggam_catalog_view 2020-05-05 20:09:39,106 INFO     {'catalogId': 2, 'status': '200 Ok'}
+ products.kviews.maggam_catalog_view 2020-05-05 20:09:39,107 INFO     Maggam Catalog saved successfully
+ products.kviews.productview 2020-05-05 20:14:36,241 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 20:14:36,242 ERROR    Product User is required
+ products.kserializers.product_serializer 2020-05-05 20:14:36,242 ERROR    {'user_required': 'Product user is required'}
+ products.kviews.productview 2020-05-05 20:16:30,185 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 20:16:30,186 ERROR    {}
+ products.kviews.productview 2020-05-05 20:27:44,687 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 20:27:44,689 ERROR    {}
+ products.kviews.productview 2020-05-05 20:50:43,058 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:51:07,036 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:51:39,226 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:52:00,764 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:52:04,875 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:52:19,333 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:52:53,373 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 20:52:58,592 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 21:40:53,270 ERROR    Product title is required
+ products.kviews.productview 2020-05-05 21:41:49,514 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kviews.productview 2020-05-05 21:47:47,846 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 21:47:59,124 ERROR    {}
+ products.kviews.productview 2020-05-05 21:51:38,630 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 21:51:54,100 ERROR    {}
+ products.kviews.productview 2020-05-05 21:52:55,068 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 21:52:55,074 ERROR    {}
+ products.kviews.productview 2020-05-05 21:55:52,866 INFO      
+
+ ----- PRODUCT CREATE initiated -----
+ products.kserializers.product_serializer 2020-05-05 21:55:52,871 ERROR    {}

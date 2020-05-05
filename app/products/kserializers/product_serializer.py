@@ -5,6 +5,7 @@ from ..kmodels.category_model import Category
 from ..kmodels.sub_category_model import SubCategory
 from ..kmodels.product_model import Product
 from ..kmodels.color_model import ColorModel
+from ..kmodels.offers_model import Offers
 from ..kmodels.sizes_model import SizeModel
 
 
@@ -126,6 +127,11 @@ class ProductSerializer(serializers.ModelSerializer):
                 if isinstance(product_relations.get('colors'), list):
                     color = list(ColorModel.objects.filter(id__in=product_relations.get('colors')))
                     product.colors.set(color)
+                
+                elif isinstance(product_relations.get('colors'), str):
+                    colors_arr = product_relations.get('colors').split(",")
+                    col = list(ColorModel.objects.filter(id__in=colors_arr))
+                    product.colors.set(col)
                 else:
                     logger.warning("NOT SAVED COLORS : Expected color ids should be an array bug got a {} ".format(type(colors)))
             
@@ -134,40 +140,61 @@ class ProductSerializer(serializers.ModelSerializer):
                 if isinstance(product_relations.get('sizes'), list):
                     size = list(SizeModel.objects.filter(id__in=product_relations.get('sizes')))
                     product.sizes.set(size)
+                
+                elif isinstance(product_relations.get('sizes'), str):
+                    size_arr = product_relations.get('sizes').split(",")
+                    size = list(SizeModel.objects.filter(id__in=size_arr))
+                    product.sizes.set(size)
                 else:
                     logger.warning("NOT SAVED SIZES : Expected color ids should be an array bug got a {} ".format(type(sizes)))
             
             # OFFERS RELATION HERE
             if product_relations.get('offers'):
                 if isinstance(product_relations.get('offers'), list):
-                    size = list(SizeModel.objects.filter(id__in=product_relations.get('offers')))
-                    product.sizes.set(size)
+                    offer = list(Offers.objects.filter(id__in=product_relations.get('offers')))
+                    product.offers.set(offer)
+
+                elif isinstance(product_relations.get('offers'), str):
+                    offer_arr = product_relations.get('offers').split(",")
+                    offer = list(Offers.objects.filter(id__in=offer_arr))
+                    product.offer.set(offer)
                 else:
                     logger.warning("NOT SAVED SIZES : Expected color ids should be an array bug got a {} ".format(type(sizes)))
             
             # IMAGES RELATION HERE
-            if product_relations.get('images'):
-                for e in product_relations.get('images').images.all():
+            if self.initial_data.get('images'):
+                for e in product.images.all():
                     instance.images.remove(e)
                     KImage.objects.get(id=e.id).delete()
-                for image in product_relations.get('images'):
-                    c_image= image_data[image]
-                    images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='user_'+str(user.id), size=c_image.size)
+                for image in self.initial_data.get('images'):
+                    c_image= self.initial_data.get('images')[image]
+                    images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='products/product_'+str(product.id), size=c_image.size)
                     product.images.add(images)
 
             # CATEGORY RELATION HERE
             if product_relations.get('category'):
                 if isinstance(product_relations.get('category'), list):
-                    category_list = list(Stitch.objects.filter(id__in=product_relations.get('category')))
+                    category_list = list(Category.objects.filter(id__in=product_relations.get('category')))
                     product.category.set(category_list)
+                
+                elif isinstance(product_relations.get('category'), str):
+                    category_arr = product_relations.get('category').split(",")
+                    catalog = list(Category.objects.filter(id__in=category_arr))
+                    product.category.set(catalog)
                 else:
                     logger.warning("NOT SAVED IN CATEGORY CATEGORY : Expected category ids should be an array bug got a {} ".format(type(category)))
             
             # SUB CATEGORYRELATION HERE
             if product_relations.get('sub_category'):
                 if isinstance(product_relations.get('sub_category'), list):
-                    sub_category = list(ColorModel.objects.filter(id__in=product_relations.get('sub_category')))
-                    product.colors.set(sub_category)
+                    sub_category = list(SubCategory.objects.filter(id__in=product_relations.get('sub_category')))
+                    product.sub_category.set(sub_category)
+                
+                elif isinstance(product_relations.get('sub_category'), str):
+                    sub_category_arr = product_relations.get('sub_category').split(",")
+                    s_catalog = list(SubCategory.objects.filter(id__in=sub_category_arr))
+                    product.sub_category.set(s_catalog)
+
                 else:
                     logger.warning("NOT SAVED SUB CATEGORY TYPE CATEGORY : Expected sub_category ids should be an array bug got a {} ".format(type(sub_category)))
             

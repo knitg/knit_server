@@ -75,7 +75,7 @@ class SubCategorySerializer(serializers.ModelSerializer):
             image_data = validated_data.pop('images')
             for image in image_data:
                 c_image= image_data[image]
-                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='subCategory_'+str(subCategory.id), size=c_image.size)
+                images = KImage.objects.create(image=c_image, description=self.initial_data.get('description'), source='subcategorys/subcat_'+str(subCategory.id), size=c_image.size)
                 subCategory.images.add(images)         
 
         return subCategory
