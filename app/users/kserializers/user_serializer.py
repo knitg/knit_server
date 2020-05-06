@@ -73,7 +73,7 @@ class UserSerializer(serializers.ModelSerializer):
             profile.married = profile_data.get('married', profile.married)
             profile.birthday = profile_data.get('birthday', profile.birthday)
             profile.anniversary = profile_data.get('anniversary', profile.anniversary)
-            profile.user_role = profile_data.get('user_role', profile.user_role)
+            profile.user_role = profile_data.get('user_role', profile.user_role) 
         
             if profile_data.get('userTypes'):
                 if isinstance(profile_data.get('userTypes'), list):
@@ -86,6 +86,12 @@ class UserSerializer(serializers.ModelSerializer):
                 if isinstance(profile_data.get('address'), list):
                     address = list(Address.objects.filter(id__in=profile_data.get('address')))
                     profile.address.set(address)
+
+                elif isinstance(profile_data.get('address'), str):
+                    arr = profile_data.get('address').split(",")
+                    addr = list(Address.objects.filter(id__in=arr))
+                    profile.address.set(addr)
+
                 else:
                     logger.warning("NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array {}".format(type(profile_data.get('address'))))
                 

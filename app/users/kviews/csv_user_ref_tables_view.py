@@ -94,8 +94,8 @@ def create_address():
                         address_data['area_name'] = row[4] # "area_name"
                         address_data['landmark'] = row[5] # "landmark"
                         address_data['postalCode'] = row[6] # "postalCode"
-                        address_data['latitude'] = row[7] # "latitude"
-                        address_data['longitude'] = row[8] # "longitude"
+                        address_data['latitude'] = float(row[7]) # "latitude"
+                        address_data['longitude'] = float(row[8]) # "longitude"
                         address_data['geoAddress'] = row[9] # "geoAddress"
                         address_data['city'] = row[10] # "city"
                         address_data['state'] = row[11] # "state"
@@ -201,7 +201,6 @@ def create_vendor_users():
                         logger.info(vendor_serializer.is_valid())    
                         vendor_serializer.is_valid()
                         logger.info("Before serializer save call")
-                        vendor_serializer.save()                    
                         vendor_serializer.save()
                         logger.info({'vendorId':vendor_serializer.instance.id, 'status':'200 Ok'})
                         print("SAVED VENDOR")

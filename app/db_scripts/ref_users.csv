@@ -1,4 +1,4 @@
-Username,Phone number,email,password,admin
-mahi6535,,,pass,1
-,9441076540,,pass,1
-,,mahi6535@gmail.com,pass,1
+Username,Phone number,email,password,admin,address
+mahi6535,,,pass,1,1
+,9441076540,,pass,1,2
+,,mahi6535@gmail.com,pass,1,3

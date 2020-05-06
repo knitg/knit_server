@@ -22,15 +22,15 @@ class Address(TimestampedModel):
 
     def get_full_address(self):
         address_line = ""
-        address_line += self.house_name if self.house_name else ""
-        address_line += ", {}".format(self.address_line1) if self.address_line1 else ""
-        address_line += ", {}".format(self.address_line2) if self.address_line2 else ""        
-        address_line += ", {}".format(self.area_name) if self.area_name else ""
-        address_line += ", {}".format(self.landmark) if self.landmark else ""
-        address_line += ", {}".format(self.city) if self.city else ""
-        address_line += ", {}".format(self.state) if self.state else ""
-        address_line += ", {}".format(self.country) if self.country else ""
-        address_line += ", {}".format(self.postalCode) if self.postalCode else ""
+        # address_line += self.house_name if self.house_name else ""
+        # address_line += ", {}".format(self.address_line1) if self.address_line1 else ""
+        # address_line += ", {}".format(self.address_line2) if self.address_line2 else ""        
+        # address_line += ", {}".format(self.area_name) if self.area_name else ""
+        # address_line += ", {}".format(self.landmark) if self.landmark else ""
+        # address_line += ", {}".format(self.city) if self.city else ""
+        # address_line += ", {}".format(self.state) if self.state else ""
+        # address_line += ", {}".format(self.country) if self.country else ""
+        # address_line += ", {}".format(self.postalCode) if self.postalCode else ""
         return address_line
  
 

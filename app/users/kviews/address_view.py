@@ -36,19 +36,38 @@ class AddressViewSet(viewsets.ModelViewSet):
     
     # parser_classes = (FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
     parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
-
+    
+    def get_queryset(self):
+        radius = 5
+        limit=100
+        radius = float(radius) / 1000.0
+        query = """SELECT
+                        id, (
+                        3959 * acos (
+                        cos ( radians(17) )
+                        * cos( radians( latitude ) )
+                        * cos( radians( longitude ) - radians(78) )
+                        + sin ( radians(17) )
+                        * sin( radians( latitude ) )
+                        )
+                    ) AS distance
+                    FROM ref_address
+                    HAVING distance > 1 
+                    ORDER BY `distance`  DESC LIMIT 0 , 100"""
+        queryset = Address.objects.raw(query) 
+        return queryset
     
     def create(self, request, *args, **kwargs):
-            category_serializer = AddressSerializer(data= request.data)
-            try:
-                category_serializer.is_valid()
-                category_serializer.save()
-                logger.info({'categoryId':category_serializer.instance.id, 'status':'200 Ok'})
-                logger.info("Category saved successfully")
-                return Response({'categoryId':category_serializer.instance.id}, status=status.HTTP_201_CREATED)
-            except Exception as e:        
-                logger.info(category_serializer.errors)
-                logger.info("Category save failed")
-                return Response(category_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        address_serializer = AddressSerializer(data= request.data)
+        try:
+            address_serializer.is_valid()
+            address_serializer.save()
+            logger.info({'categoryId':address_serializer.instance.id, 'status':'200 Ok'})
+            logger.info("Category saved successfully")
+            return Response({'categoryId':address_serializer.instance.id}, status=status.HTTP_201_CREATED)
+        except Exception as e:        
+            logger.info(address_serializer.errors)
+            logger.info("Category save failed")
+            return Response(address_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 

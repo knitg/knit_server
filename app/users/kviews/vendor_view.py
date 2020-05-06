@@ -42,8 +42,22 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     
 
     def get_queryset(self):
-        vendor = Vendor.objects.all()
-        return vendor
+        radius = 3
+        limit=100
+        radius = float(radius) / 1000.0
+        query = """SELECT id, (6367*acos(cos(radians(%2f))
+                *cos(radians(17.51941353))*cos(radians(78.37865102)-radians(%2f))
+                +sin(radians(%2f))*sin(radians(17.51941353))))
+                AS distance FROM knit_user_profile HAVING
+                distance < %2f ORDER BY distance LIMIT 0, %d""" % (
+            float(17.51941353),
+            float(78.37865102),
+            float(17.51941353),
+            radius,
+            limit
+        )
+        queryset = Vendor.objects.raw(query) 
+        return queryset
 
     def create(self, request, *args, **kwargs):
 

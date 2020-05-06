@@ -6,7 +6,7 @@ class AddressSerializer(serializers.ModelSerializer):
     errors = {}
     class Meta:
         model = Address
-        fields = ("id", "address_type", "house_name", "address_line1", "address_line2","area_name", "landmark", "postalCode","city", "state", "full_address")
+        fields = ("id", "address_type", "house_name", "address_line1", "address_line2", "latitude", "longitude", "area_name", "landmark", "postalCode","city", "state", "full_address")
         # fields = "__all__"
     
     def validate(self, data):
