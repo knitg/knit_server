@@ -1911,3 +1911,364 @@ Traceback (most recent call last):
   File "C:\ProgramData\Miniconda3\lib\site-packages\MySQLdb\connections.py", line 239, in query
     _mysql.connection.query(self, query)
 django.db.utils.OperationalError: (1054, "Unknown column '$latitude' in 'field list'")
+ django.request 2020-05-09 20:52:18,977 WARNING  Not Found: /favicon.ico
+ django.request 2020-05-09 22:16:08,519 ERROR    Internal Server Error: /user/vendors
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\fields.py", line 1905, in to_representation
+    return method(value)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\vendor_serializer.py", line 38, in get_userTypes
+    serializer = UserTypeSerializer(obj.user_type, many=True)
+AttributeError: 'Vendor' object has no attribute 'user_type'
+ django.request 2020-05-09 22:16:38,122 ERROR    Internal Server Error: /user/vendors
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\fields.py", line 1905, in to_representation
+    return method(value)
+  File "D:\MISC\GITHUB\knit_server//app\users\kserializers\vendor_serializer.py", line 38, in get_userTypes
+    serializer = UserTypeSerializer(obj.user_type, many=True)
+AttributeError: 'Vendor' object has no attribute 'user_type'
+ django.request 2020-05-09 22:38:40,402 ERROR    Internal Server Error: /user/vendorsByAddress
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 217, in get_queryset
+    return Vendor.objects.filter(address__latitude__contains=17).filter(address__longitude__contains=78).annotate(count=Count('address')).order_by('-count')
+NameError: name 'Count' is not defined
+ django.request 2020-05-09 23:01:03,110 ERROR    Internal Server Error: /user/vendorsByAddress
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 240, in get_queryset
+    return Vendor.objects.annotate(distance=Expression).order_by('distance')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1071, in annotate
+    clone.query.add_annotation(annotation, alias, is_summary=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1015, in add_annotation
+    summarize=is_summary)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 531, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize, simple_col)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1670, in resolve_ref
+    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1557, in setup_joins
+    names[:pivot], opts, allow_many, fail_on_missing=True,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1473, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'address.latitude' into field. Choices are: address, alternateDays, closeTime, closed, description, doorService, emergency, id, images, isWeekends, masters, name, openTime, user, userTypes, user_id
+ django.request 2020-05-09 23:02:34,936 ERROR    Internal Server Error: /user/vendorsByAddress
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 240, in get_queryset
+    return Vendor.objects.annotate(distance=Expression).order_by('distance')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1071, in annotate
+    clone.query.add_annotation(annotation, alias, is_summary=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1015, in add_annotation
+    summarize=is_summary)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 531, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize, simple_col)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1670, in resolve_ref
+    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1557, in setup_joins
+    names[:pivot], opts, allow_many, fail_on_missing=True,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1473, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'latitude' into field. Choices are: address, alternateDays, closeTime, closed, description, doorService, emergency, id, images, isWeekends, masters, name, openTime, user, userTypes, user_id
+ django.request 2020-05-09 23:03:06,216 ERROR    Internal Server Error: /user/vendorsByAddress
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 240, in get_queryset
+    return Vendor.objects.annotate(distance=Expression).order_by('distance')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1071, in annotate
+    clone.query.add_annotation(annotation, alias, is_summary=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1015, in add_annotation
+    summarize=is_summary)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 531, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize, simple_col)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1670, in resolve_ref
+    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1557, in setup_joins
+    names[:pivot], opts, allow_many, fail_on_missing=True,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1473, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'address.latitude' into field. Choices are: address, alternateDays, closeTime, closed, description, doorService, emergency, id, images, isWeekends, masters, name, openTime, user, userTypes, user_id
+ django.request 2020-05-09 23:04:32,251 ERROR    Internal Server Error: /user/vendorsByAddress
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 240, in get_queryset
+    return Vendor.objects.filter(address__latitude__contains=17).annotate(distance=Expression).order_by('distance')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1071, in annotate
+    clone.query.add_annotation(annotation, alias, is_summary=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1015, in add_annotation
+    summarize=is_summary)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 531, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize, simple_col)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1670, in resolve_ref
+    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1557, in setup_joins
+    names[:pivot], opts, allow_many, fail_on_missing=True,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1473, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'address.latitude' into field. Choices are: address, alternateDays, closeTime, closed, description, doorService, emergency, id, images, isWeekends, masters, name, openTime, user, userTypes, user_id
+ django.request 2020-05-09 23:05:31,698 ERROR    Internal Server Error: /user/vendorsByAddress
+Traceback (most recent call last):
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "D:\MISC\GITHUB\knit_server//app\users\kviews\vendor_view.py", line 240, in get_queryset
+    return Vendor.objects.filter(address__latitude__in=[17]).annotate(distance=Expression).order_by('distance')
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\query.py", line 1071, in annotate
+    clone.query.add_annotation(annotation, alias, is_summary=False)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1015, in add_annotation
+    summarize=is_summary)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 468, in resolve_expression
+    c.lhs = c.lhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 469, in resolve_expression
+    c.rhs = c.rhs.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 616, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\expressions.py", line 531, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize, simple_col)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1670, in resolve_ref
+    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1557, in setup_joins
+    names[:pivot], opts, allow_many, fail_on_missing=True,
+  File "C:\ProgramData\Miniconda3\lib\site-packages\django\db\models\sql\query.py", line 1473, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'address.latitude' into field. Choices are: address, alternateDays, closeTime, closed, description, doorService, emergency, id, images, isWeekends, masters, name, openTime, user, userTypes, user_id

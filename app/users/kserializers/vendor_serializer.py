@@ -9,6 +9,7 @@ import datetime
 from .profile_serializer import ProfileSerializer
 from .image_serializer import KImageSerializer
 from .usertype_serializer import UserTypeSerializer
+from .address_serializer import AddressSerializer
 from .user_serializer import UserSerializer
 
 import logging
@@ -22,16 +23,26 @@ class VendorSerializer(serializers.ModelSerializer):
     email =  serializers.EmailField(source="user.email", required=False)
     fullName =  serializers.EmailField(source="user.profile.get_full_name", required=False)
     # images = KImageSerializer(many=True, required=False, allow_null=True)
-    userTypes = UserTypeSerializer(source='user.profile.userTypes', many=True, required=False, allow_null=True) 
-    
-    
+    address = serializers.SerializerMethodField(read_only=True)
+    userTypes = serializers.SerializerMethodField(read_only=True)
+     
     openTime = serializers.TimeField(format='%I:%M:%S %p', input_formats='%I:%M:%S %p', required=False)
     closeTime = serializers.TimeField(format='%I:%M:%S %p', input_formats='%I:%M:%S %p', required=False)
+     
     
+    def get_address(self, obj):
+        serializer = AddressSerializer(obj.address, many=True)
+        return serializer.data
+
+    def get_userTypes(self, obj):
+        serializer = UserTypeSerializer(obj.userTypes, many=True)
+        return serializer.data    
+
     class Meta:
         model = Vendor
-        fields = [ 'id', 'name','user_id', 'phone', 'email', 'userTypes', 'fullName', "openTime", 'closeTime']
+        fields = [ 'id', 'name','user_id', 'phone', 'email', 'fullName', "openTime", 'closeTime', 'userTypes', 'address']
         # fields = ["id", "name", "user", 'open_time', 'close_time', 'masters_count', 'is_weekends', 'is_open', 'is_emergency_available', 'is_door_service', 'address']
+    
     def validate(self, data):
         data = self.initial_data.get('data')
         if data.get('name') is None:
@@ -39,8 +50,15 @@ class VendorSerializer(serializers.ModelSerializer):
         return data
 
     def create(self, validated_data):
+        address_data = {}
+        usertype_data = {}
         users_data = self.initial_data.pop('user')  
-        validated_data = self.initial_data.pop('vendor')  
+        validated_data = self.initial_data.pop('vendor')
+        if validated_data.get("address"):
+            address_data = validated_data.pop("address")
+        if validated_data.get("userTypes"):
+            usertype_data = validated_data.pop("userTypes")
+
         # User creation
         logger.info("User create initiated from vendor")
         user_serializer = UserSerializer(data={'user': users_data, 'profile': users_data.get('profile'), 'data':users_data}, many=False)
@@ -50,6 +68,31 @@ class VendorSerializer(serializers.ModelSerializer):
 
         # Vendor creation
         vendor = Vendor.objects.create(user=user_serializer.instance, **validated_data)
+        if address_data:
+            if isinstance(address_data, list):
+                address = list(Address.objects.filter(id__in=address_data))
+                vendor.address.set(address)
+
+            elif isinstance(address_data, str):
+                arr = address_data.split(",")
+                addr = list(Address.objects.filter(id__in=arr))
+                vendor.address.set(addr)
+
+            else:
+                logger.warning("NOT SAVED ADDRESS TO PROFILE : Expected Address ids should be an array {}".format(type(address_data)))
+        
+        if usertype_data is not None:
+            if isinstance(usertype_data, list):
+                usertypes = list(UserType.objects.filter(id__in=usertype_data))
+                instance.userTypes.set(usertypes)
+            elif isinstance(usertype_data, str):
+                arr = usertype_data.split(",")
+                addr = list(UserType.objects.filter(id__in=arr))
+                vendor.userTypes.set(addr)
+
+            else:
+                logger.warning("NOT SAVED USERTYPES : Expected usertype ids should be an array {}".format(type(usertype_data)))
+                
         return vendor
             
     def update(self, instance, validated_data):

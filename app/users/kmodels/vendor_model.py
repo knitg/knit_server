@@ -3,8 +3,8 @@ from datetime import datetime
 from django.conf import settings
 from django.utils.timezone import now
 from .address_model import Address
-from .image_model import KImage
 from .usertype_model import UserType
+from .image_model import KImage 
 from users.models import User
 from .timestamp_model import TimestampedModel
 
@@ -29,6 +29,8 @@ class Vendor(models.Model):
     description = models.TextField(max_length=180, blank=True, null=True)
     
     images = models.ManyToManyField(KImage, blank=True, default=None)
+    address = models.ManyToManyField(Address, blank=True, default=None)
+    userTypes = models.ManyToManyField(UserType, blank=True, default=None)
     
     class Meta:
         db_table = 'knit_vendor'

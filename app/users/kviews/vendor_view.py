@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.parsers import MultiPartParser, FormParser,FileUploadParser, JSONParser
+# from django.contrib.gis.geos import GEOSGeometry
+from django.db.models import Func, F
 
 from users.models import User
 from ..kmodels.vendor_model import Vendor
@@ -22,6 +24,20 @@ logger = logging.getLogger(__name__)
 
 from datetime import datetime, time,date
 
+
+class Sin(Func):
+    function = 'SIN'
+
+class Cos(Func):
+    function = 'COS'
+
+class Acos(Func):
+    function = 'ACOS'
+
+class Radians(Func):
+    function = 'RADIANS'
+
+
 class VendorUserViewSet(viewsets.ModelViewSet):
     queryset = Vendor.objects.all()
     serializer_class = VendorSerializer
@@ -42,21 +58,21 @@ class VendorUserViewSet(viewsets.ModelViewSet):
     
 
     def get_queryset(self):
-        radius = 3
-        limit=100
-        radius = float(radius) / 1000.0
-        query = """SELECT id, (6367*acos(cos(radians(%2f))
-                *cos(radians(17.51941353))*cos(radians(78.37865102)-radians(%2f))
-                +sin(radians(%2f))*sin(radians(17.51941353))))
-                AS distance FROM knit_user_profile HAVING
-                distance < %2f ORDER BY distance LIMIT 0, %d""" % (
-            float(17.51941353),
-            float(78.37865102),
-            float(17.51941353),
-            radius,
-            limit
-        )
-        queryset = Vendor.objects.raw(query) 
+        # radius = 3
+        # limit=100
+        # radius = float(radius) / 1000.0
+        # query = """SELECT id, (6367*acos(cos(radians(%2f))
+        #         *cos(radians(17.51941353))*cos(radians(78.37865102)-radians(%2f))
+        #         +sin(radians(%2f))*sin(radians(17.51941353))))
+        #         AS distance FROM knit_user_profile HAVING
+        #         distance < %2f ORDER BY distance LIMIT 0, %d""" % (
+        #     float(17.51941353),
+        #     float(78.37865102),
+        #     float(17.51941353),
+        #     radius,
+        #     limit
+        # )
+        queryset = Vendor.objects.all() 
         return queryset
 
     def create(self, request, *args, **kwargs):
@@ -142,6 +158,8 @@ class VendorUserViewSet(viewsets.ModelViewSet):
         vendor_details['closed'] = vendor_info.get('closed')
         vendor_details['doorService'] = vendor_info.get('doorService')
         vendor_details['emergency'] = vendor_info.get('emergency')
+        vendor_details['address'] = vendor_info.get("address")
+        vendor_details['userTypes'] = vendor_info.get("userTypes")
         return vendor_details
 
 import csv
@@ -189,3 +207,35 @@ class UploadVendorSpreadSheetViewSet(viewsets.ModelViewSet):
                     except Exception:
                         print("Already has the vendor")
         return Response(results, status=status.HTTP_201_CREATED)
+
+
+class VendorOnlyViewSet(viewsets.ModelViewSet): 
+    serializer_class = VendorSerializer
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    
+    permission_classes = (ActionBasedPermission,)
+    action_permissions = {
+        IsAuthenticated: ['update', 'partial_update', 'retrieve', 'destroy'],
+        AllowAny: ['list', 'create']
+    }
+    
+    search_fields = ['name','masters', 'emergency', 'doorService']
+    
+    pagination_class = LinkSetPagination
+
+    filter_fields = ['id','name', 'masters', 'closed', 'emergency', 'doorService']
+    parser_classes = (JSONParser, FormParser, MultiPartParser, FileUploadParser) # set parsers if not set in settings. Edited
+    
+
+    def get_queryset(self):
+        # radlat = Radians(17.43) # given latitude
+        # radlong = Radians(78.37) # given longitude
+        # radflat = Radians(F('address.latitude'))
+        # radflong = Radians(F('address.longitude'))
+
+        # Expression = 3959.0 * Acos(Cos(radlat) * Cos(radflat) *
+        #                         Cos(radflong - radlong) +
+        #                         Sin(radlat) * Sin(radflat))
+         return Vendor.objects.filter(address__latitude__contains=17).filter(address__longitude__contains=78)
+        # return Vendor.objects.filter(address__latitude__in=[17]).annotate(distance=Expression).order_by('distance')
+ 

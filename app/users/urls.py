@@ -5,7 +5,7 @@ from django.conf.urls import url
 from .kviews.address_view import AddressViewSet
 from .kviews.usertype_view import UserTypeViewSet
 from .kviews.user_view import UserViewSet
-from .kviews.vendor_view import VendorUserViewSet, UploadVendorSpreadSheetViewSet
+from .kviews.vendor_view import VendorUserViewSet, UploadVendorSpreadSheetViewSet, VendorOnlyViewSet
 from .kviews.image_view import ImageViewSet
 from .kviews.login_view import LoginViewSet
 from .kviews.profile_view import ProfileListViewSet, ProfileViewSet
@@ -23,6 +23,7 @@ router.register(r'upload', ImageViewSet)
 router.register(r'users', UserViewSet)
 router.register(r'profiles', ProfileListViewSet, )
 router.register(r'vendors', VendorUserViewSet, basename="vendors")
+router.register(r'vendorsByAddress', VendorOnlyViewSet, basename="vendorsByAddress")
 router.register(r'csv-vendors', UploadVendorSpreadSheetViewSet, basename="csv_vendors")
 router.register(r'csv-user-ref-tables', CSVUploadUserRefTblViewSet, basename="csv-user-ref-tables")
 

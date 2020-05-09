@@ -190,12 +190,15 @@ def create_vendor_users():
                         user_data['email'] = row[2] if row[2] else None
                         user_data['password'] = row[3] if row[3] else None
                         user_data['profile']['address'] = row[8] if row[8] else None
+                        user_data['profile']['userTypes'] = row[9] if row[9] else None
 
                         vendor_details = {}
                         vendor_details['name'] = row[4] if row[4] else None
                         vendor_details['emergency'] = row[5] if row[7] else None
                         vendor_details['doorService'] = row[6] if row[6] else None
                         vendor_details['masters'] = int(row[7]) if row[7] else None
+                        vendor_details['address'] = row[8] if row[8] else None
+                        vendor_details['userTypes'] = row[9] if row[9] else None
 
                         vendor_serializer = VendorSerializer(data= {'user': user_data, 'vendor': vendor_details, 'data': vendor_details})
                         logger.info(vendor_serializer.is_valid())    
